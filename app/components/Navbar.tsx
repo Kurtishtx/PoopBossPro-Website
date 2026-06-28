@@ -2,15 +2,14 @@
 import { useState } from 'react';
 
 const solutions = [
-  { label: 'Lawn Care Software',           href: '/lawn-care-software' },
-  { label: 'Lawn Care Scheduling',         href: '/lawn-care-scheduling-software' },
-  { label: 'Mosquito Control Software',    href: '/mosquito-control-software' },
-  { label: 'Mosquito Spray Software',      href: '/mosquito-spray-software' },
-  { label: 'Pest Control Software',        href: '/pest-control-software' },
-  { label: 'Pest Control Scheduling',      href: '/pest-control-scheduling-software' },
-  { label: 'Spray Business Software',      href: '/spray-business-software' },
-  { label: 'Weed Control Software',        href: '/weed-control-software' },
-  { label: 'Fertilizer Software',          href: '/fertilizer-software' },
+  { label: 'Pooper Scooper Software',     href: '/pooper-scooper-software' },
+  { label: 'Pet Waste Removal',           href: '/pet-waste-removal-software' },
+  { label: 'Dog Waste Scheduling',        href: '/dog-waste-cleanup-scheduling-software' },
+  { label: 'Routes & Dispatch',           href: '/pet-waste-routes-dispatch-software' },
+  { label: 'Billing & Payments',          href: '/pet-waste-billing-software' },
+  { label: 'Pet Waste Business Software', href: '/pet-waste-business-software' },
+  { label: 'Crew Mobile App',             href: '/pet-waste-crew-app-software' },
+  { label: 'Customer Management',         href: '/pet-waste-customer-management-software' },
 ];
 
 const comparisons = [
@@ -18,13 +17,7 @@ const comparisons = [
   { label: 'vs. ServiceTitan',       href: '/vs-servicetitan' },
   { label: 'vs. GorillaDesk',        href: '/vs-gorilladesk' },
   { label: 'vs. Housecall Pro',      href: '/vs-housecallpro' },
-  { label: 'vs. FieldRoutes',        href: '/vs-fieldroutes' },
   { label: 'vs. Service AutoPilot',  href: '/vs-serviceautopilot' },
-  { label: 'vs. Spraye',             href: '/vs-spraye' },
-  { label: 'vs. RealGreen',          href: '/vs-realgreen' },
-  { label: 'vs. LawnPro',            href: '/vs-lawnpro' },
-  { label: 'vs. CLIP',               href: '/vs-clip' },
-  { label: 'vs. Aspire',             href: '/vs-aspire' },
 ];
 
 export default function Navbar({ onTrialClick }: { onTrialClick: (el: HTMLElement) => void }) {
@@ -43,8 +36,8 @@ export default function Navbar({ onTrialClick }: { onTrialClick: (el: HTMLElemen
         <div className="navbar-inner">
           <div className="navbar-brand">
             <a href="/" style={{textDecoration:'none', display:'flex', alignItems:'center', gap:'8px'}}>
-              <span className="navbar-icon">🌿</span>
-              <span className="navbar-name">SprayBossPro</span>
+              <span className="navbar-icon">💩</span>
+              <span className="navbar-name">PoopBossPro</span>
             </a>
           </div>
           <div className="navbar-links">
@@ -70,7 +63,7 @@ export default function Navbar({ onTrialClick }: { onTrialClick: (el: HTMLElemen
             </div>
             <a href="/features">Features</a>
             <a href="/pricing">Pricing</a>
-            <a href="https://my.spraybosspro.com" target="_blank" rel="noreferrer">Log In</a>
+            <a href="https://my.poopbosspro.com" target="_blank" rel="noreferrer">Log In</a>
             <button
               className="navbar-cta"
               onClick={(e) => onTrialClick(e.currentTarget as HTMLElement)}
@@ -109,7 +102,7 @@ export default function Navbar({ onTrialClick }: { onTrialClick: (el: HTMLElemen
           </div>
           <a href="/features" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Features</a>
           <a href="/pricing" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Pricing</a>
-          <a href="https://my.spraybosspro.com" target="_blank" rel="noreferrer" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Log In</a>
+          <a href="https://my.poopbosspro.com" target="_blank" rel="noreferrer" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Log In</a>
           <button
             className="nav-mobile-cta"
             onClick={(e) => { toggleMenu(false); onTrialClick(e.currentTarget as HTMLElement); }}

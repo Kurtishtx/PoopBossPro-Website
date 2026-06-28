@@ -4,8 +4,8 @@ import Footer from "./components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SprayBossPro | Lawn Care & Pest Control Software",
-  description: "SprayBossPro is premium lawn care and pest control software built by people who've run real routes. Circle a map area and instantly know sq ft, stops, and chemical needs. $129/month, everything included.",
+  title: "PoopBossPro | Pooper Scooper & Pet Waste Removal Software",
+  description: "PoopBossPro is all-in-one software for pooper scooper and pet waste removal businesses, built by people who've run real routes. Recurring scheduling, route building, crew dispatch, and card-on-file billing. $79/month, everything included.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

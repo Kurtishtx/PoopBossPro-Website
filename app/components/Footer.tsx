@@ -4,27 +4,26 @@ export default function Footer() {
       <div className="site-footer-inner">
         <div className="site-footer-top">
           <a href="/" className="site-footer-brand">
-            <span>🌿</span>
-            <span>SprayBossPro</span>
+            <span>💩</span>
+            <span>PoopBossPro</span>
           </a>
           <div className="site-footer-cols">
             <div className="site-footer-col">
               <h4>Product</h4>
               <a href="/features">Features</a>
               <a href="/pricing">Pricing</a>
-              <a href="https://my.spraybosspro.com" target="_blank" rel="noreferrer">Log In</a>
+              <a href="https://my.poopbosspro.com" target="_blank" rel="noreferrer">Log In</a>
             </div>
             <div className="site-footer-col">
               <h4>Solutions</h4>
-              <a href="/lawn-care-software">Lawn Care Software</a>
-              <a href="/lawn-care-scheduling-software">Lawn Care Scheduling</a>
-              <a href="/mosquito-spray-software">Mosquito Spray</a>
-              <a href="/mosquito-control-software">Mosquito Control</a>
-              <a href="/pest-control-software">Pest Control</a>
-              <a href="/pest-control-scheduling-software">Pest Control Scheduling</a>
-              <a href="/weed-control-software">Weed Control</a>
-              <a href="/fertilizer-software">Fertilizer Software</a>
-              <a href="/spray-business-software">Spray Business</a>
+              <a href="/pooper-scooper-software">Pooper Scooper Software</a>
+              <a href="/pet-waste-removal-software">Pet Waste Removal</a>
+              <a href="/dog-waste-cleanup-scheduling-software">Dog Waste Scheduling</a>
+              <a href="/pet-waste-routes-dispatch-software">Routes & Dispatch</a>
+              <a href="/pet-waste-billing-software">Billing & Payments</a>
+              <a href="/pet-waste-business-software">Pet Waste Business</a>
+              <a href="/pet-waste-crew-app-software">Crew Mobile App</a>
+              <a href="/pet-waste-customer-management-software">Customer Management</a>
             </div>
             <div className="site-footer-col">
               <h4>Compare</h4>
@@ -32,13 +31,7 @@ export default function Footer() {
               <a href="/vs-servicetitan">vs. ServiceTitan</a>
               <a href="/vs-housecallpro">vs. Housecall Pro</a>
               <a href="/vs-gorilladesk">vs. GorillaDesk</a>
-              <a href="/vs-fieldroutes">vs. FieldRoutes</a>
               <a href="/vs-serviceautopilot">vs. Service Autopilot</a>
-              <a href="/vs-realgreen">vs. RealGreen</a>
-              <a href="/vs-lawnpro">vs. LawnPro</a>
-              <a href="/vs-aspire">vs. Aspire</a>
-              <a href="/vs-clip">vs. CLIP</a>
-              <a href="/vs-spraye">vs. Spraye</a>
             </div>
             <div className="site-footer-col">
               <h4>Resources</h4>
@@ -51,7 +44,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="site-footer-bottom">
-          © {new Date().getFullYear()} SprayBossPro. All rights reserved.
+          © {new Date().getFullYear()} PoopBossPro. All rights reserved.
         </div>
       </div>
     </footer>
