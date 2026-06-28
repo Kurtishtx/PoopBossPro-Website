@@ -330,7 +330,7 @@ export default function VsServiceAutopilot() {
           <div className="price-card featured" style={{width:'100%'}}>
             <div className="featured-badge">Everything Included — No Tiers</div>
             <div className="price-tier">One Plan. One Price. No Sign-Up Fee.</div>
-            <div className="price-amount"><sup>$</sup>129</div>
+            <div className="price-amount"><sup>$</sup>79</div>
             <div className="price-period">per month — cancel anytime, no sign-up fee</div>
             <ul className="price-features">
               <li>Unlimited Clients, Yards &amp; Leads</li>

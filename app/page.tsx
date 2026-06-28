@@ -42,7 +42,7 @@ async function sbpCreateAccount(n: number) {
     const trialEnd = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString();
     await sb.from('user_profiles').upsert({ id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd, product: 'poopbosspro' }, { onConflict: 'id' });
     await sb.from('company_info').insert({ user_id: uid, company_name: comp, display_name: comp });
-    await sb.from('platform_accounts').insert({ user_id: uid, email, plan: 'Monthly Subscription', monthly_amount: 129, trial_ends_at: trialEnd, active: false });
+    await sb.from('platform_accounts').insert({ user_id: uid, email, plan: 'Monthly Subscription', monthly_amount: 79, trial_ends_at: trialEnd, active: false });
     const reasons = ['Cancel Maintaining Self','Cancel Sold House','Cancel Too Expensive','Cancel Unknown','Dropping Customer','Sold House'].map(nm => ({ name: nm, active: true, user_id: uid }));
     await sb.from('cancellation_reasons').insert(reasons);
     document.getElementById('sbp' + n + '-step2')!.style.display = 'none'; document.getElementById('sbp' + n + '-success')!.style.display = 'block';
@@ -243,12 +243,12 @@ export default function Home() {
       {/* ═══ PREMIUM BAND ═══ */}
       <div className="premium-band">
         <h2>Affordable Doesn&apos;t Mean Cheap.<br /><span>This Is Enterprise-Level Software.</span></h2>
-        <p>We charged less because we&apos;ve been the customer. We know what it feels like to pay $600 a month for software that still doesn&apos;t do what a pet waste business actually needs. PoopBossPro does everything the big platforms do &mdash; recurring cleanup scheduling, route building, crew dispatch, automated customer texts, card-on-file billing, monthly subscriptions, role-based access, and a full mobile app &mdash; built specifically for pooper scooper operators, and priced for the real world. $129 a month isn&apos;t a cheap price. It&apos;s a fair price. The big platforms aren&apos;t charging $500 because they&apos;re better. They&apos;re charging $500 because they can &mdash; and because their customers don&apos;t have a better option. Now you do.</p>
+        <p>We charged less because we&apos;ve been the customer. We know what it feels like to pay $600 a month for software that still doesn&apos;t do what a pet waste business actually needs. PoopBossPro does everything the big platforms do &mdash; recurring cleanup scheduling, route building, crew dispatch, automated customer texts, card-on-file billing, monthly subscriptions, role-based access, and a full mobile app &mdash; built specifically for pooper scooper operators, and priced for the real world. $79 a month isn&apos;t a cheap price. It&apos;s a fair price. The big platforms aren&apos;t charging $500 because they&apos;re better. They&apos;re charging $500 because they can &mdash; and because their customers don&apos;t have a better option. Now you do.</p>
         <div className="premium-grid">
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Enterprise Route Intelligence</h4><p>Live route maps, drag-and-drop stop ordering, and circle-to-schedule map selection &mdash; tools that cost thousands per month at other platforms are standard in PoopBossPro at every plan level.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Recurring Cleanup Scheduling</h4><p>Weekly, twice-weekly, or every-other-week yard cleanups build themselves on autopilot. Set the frequency once and PoopBossPro keeps the visits coming &mdash; no rebooking, no missed weeks.</p></div>
           <div className="premium-card"><div className="premium-card-icon">💬</div><h4>Automated Customer Texts</h4><p>On-my-way texts, completed-cleanup texts, gate-left-open alerts, and payment reminders &mdash; all sent automatically from a two-way inbox so your customers always know their yard is clean.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">💳</div><h4>Monthly Subscription Billing</h4><p>Card-on-file storage, automatic monthly charges, partial payments, and full payment history. The same billing infrastructure the big guys use &mdash; included in your $129.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💳</div><h4>Monthly Subscription Billing</h4><p>Card-on-file storage, automatic monthly charges, partial payments, and full payment history. The same billing infrastructure the big guys use &mdash; included in your $79.</p></div>
           <div className="premium-card"><div className="premium-card-icon">👑</div><h4>Role-Based Access Control</h4><p>Owner, Manager, Office, and Scooper roles &mdash; the same granular permission system as platforms charging 5× more per month. Your office staff sees what they need. Your crew sees only their stops.</p></div>
           <div className="premium-card"><div className="premium-card-icon">📱</div><h4>Full Mobile App for Your Crew</h4><p>Your scoopers see their stops, view gate codes and the number of dogs, mark yards complete, snap a photo, and add notes from their phone &mdash; built for someone working a yard, not sitting at a desk.</p></div>
         </div>
@@ -402,7 +402,7 @@ export default function Home() {
           <p className="section-sub">Over the years we tried just about every field service software out there &mdash; and for too long we were paying $500&ndash;$700 a month. Every feature was an add-on. Every user cost more. Every upgrade was another invoice.</p>
           <div style={{background:'#fff', border:'1.5px solid var(--border)', borderRadius:'14px', padding:'36px 40px', maxWidth:'800px', margin:'0 auto 56px', textAlign:'left', borderLeft:'5px solid var(--orange)'}}>
             <p style={{fontSize:'17px', color:'var(--text)', lineHeight:'1.8', marginBottom:'16px'}}>We were paying <strong>$500 to $700 a month</strong> for software that nickel-and-dimed us at every turn. Want texting? That&apos;s an add-on. Want more users? Pay per user. Want the reporting module? Upgrade your plan. It never ended &mdash; and none of those people had ever scooped a yard in their life.</p>
-            <p style={{fontSize:'17px', color:'var(--text)', lineHeight:'1.8', marginBottom:'16px'}}>That&apos;s exactly why we built PoopBossPro with one flat price that includes everything. <strong>$129 a month.</strong> No add-ons. No user fees. No locked features. We include it all because that&apos;s how it should have been from day one.</p>
+            <p style={{fontSize:'17px', color:'var(--text)', lineHeight:'1.8', marginBottom:'16px'}}>That&apos;s exactly why we built PoopBossPro with one flat price that includes everything. <strong>$79 a month.</strong> No add-ons. No user fees. No locked features. We include it all because that&apos;s how it should have been from day one.</p>
             <p style={{fontSize:'17px', color:'var(--text)', lineHeight:'1.8'}}>The only reason we charge a small fee for outbound text messages is simple &mdash; they cost us money to send. We&apos;re not marking them up to make a profit off you. 500 outbound messages are included every month, and if you go over, it&apos;s just $15 per additional 500. That&apos;s it. No gotchas. No surprises. We&apos;re operators just like you, and we built the pricing we always wished existed.</p>
           </div>
         </div>
@@ -410,7 +410,7 @@ export default function Home() {
           <div className="price-card featured" style={{width:'100%'}}>
             <div className="featured-badge">Everything Included</div>
             <div className="price-tier">One Plan. No Surprises.</div>
-            <div className="price-amount"><sup>$</sup>129</div>
+            <div className="price-amount"><sup>$</sup>79</div>
             <div className="price-period">per month</div>
             <div className="price-desc">Every feature. Unlimited customers, yards, employees, and users. No tiers, no locked features, no per-seat fees.</div>
             <ul className="price-features">
@@ -749,7 +749,7 @@ export default function Home() {
             <div id={`sbp${n}-err2`} style={{background:'#fff0f0', border:'1px solid #f5c6c6', color:'#c0392b', borderRadius:'6px', padding:'10px 12px', fontSize:'13px', marginBottom:'14px', display:'none'}}></div>
             <div style={{background:'#f0fdf4', border:'1px solid #bbf7d0', borderRadius:'6px', padding:'10px 14px', marginBottom:'16px'}}>
               <div style={{fontSize:'12px', color:'#16a34a', fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div>
-              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $129/month after trial.</div>
+              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div>
             </div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Login Email</label><input id={`sbp${n}-login-email`} type="email" readOnly style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', background:'#f8f8f8', color:'#333'}} /></div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Password</label><input id={`sbp${n}-password`} type="password" placeholder="At least 8 characters" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>

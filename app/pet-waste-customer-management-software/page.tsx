@@ -164,7 +164,7 @@ function SignupForm({ n }: { n: number }) {
         <div id={`sbp${n}-err2`} className="sbp-err"></div>
         <div className="sbp-trial-note">
           <div className="sbp-trial-note-title">14-Day Free Trial — No Credit Card Required</div>
-          <div className="sbp-trial-note-sub">Full access to every feature. $129/month after trial.</div>
+          <div className="sbp-trial-note-sub">Full access to every feature. $79/month after trial.</div>
         </div>
         <div className="sbp-field">
           <label className="sbp-label">Login Email</label>
@@ -228,7 +228,7 @@ export default function PetWasteCustomerManagementSoftware() {
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">1 Record</div><div className="hero-stat-lbl">Every Client &amp; Yard In One Place</div></div>
-          <div><div className="hero-stat-val">$129</div><div className="hero-stat-lbl">Flat Monthly — No Add-Ons</div></div>
+          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat Monthly — No Add-Ons</div></div>
           <div><div className="hero-stat-val">24/7</div><div className="hero-stat-lbl">Self-Serve Client Portal</div></div>
           <div><div className="hero-stat-val">2006</div><div className="hero-stat-lbl">In the Industry Since</div></div>
         </div>
@@ -467,7 +467,7 @@ export default function PetWasteCustomerManagementSoftware() {
           <div className="lc-price-card featured">
             <div className="featured-badge">Everything Included</div>
             <div className="price-tier">One Plan. No Surprises.</div>
-            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>129</div>
+            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>79</div>
             <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month</div>
             <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Every feature. Unlimited clients, yards, employees, and users. No tiers, no locked features, no per-seat fees.</div>
             <ul className="price-features">
@@ -500,7 +500,7 @@ export default function PetWasteCustomerManagementSoftware() {
             {q:'Can new customers sign themselves up online?', a:'Yes. A branded online signup page collects the client&apos;s address, pickup frequency, pet details, and a card on file. The account is created automatically and lands on your waiting list ready to schedule &mdash; no manual data entry on your end.'},
             {q:'How are skip and hold requests handled?', a:'Clients submit a one-time skip or a vacation hold from the portal. PoopBossPro updates the route automatically so your crew never shows up to a yard that asked for a break, and the request is logged on the customer record for full history.'},
             {q:'Does photo proof of pickup attach to the customer?', a:'Yes. The crew snaps a timestamped photo from the mobile app when a yard is cleared. It attaches to that customer record and appears in the client portal, which ends most billing and missed-pickup disputes before they start.'},
-            {q:'How much does PoopBossPro cost?', a:'$129/month with every feature included &mdash; online signup, client portal, customer records, billing, SMS, retention, and the crew app. No per-client fees and no portal upcharge. 14-day free trial, no credit card required.'},
+            {q:'How much does PoopBossPro cost?', a:'$79/month with every feature included &mdash; online signup, client portal, customer records, billing, SMS, retention, and the crew app. No per-client fees and no portal upcharge. 14-day free trial, no credit card required.'},
           ].map(({q, a}, i, arr) => (
             <div key={i} style={{padding:'28px 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none'}}>
               <h3 style={{fontWeight:700, fontSize:'17px', color:'var(--text)', marginBottom:'10px', lineHeight:1.4}} dangerouslySetInnerHTML={{__html: q}} />

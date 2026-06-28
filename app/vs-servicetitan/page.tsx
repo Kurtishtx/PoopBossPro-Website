@@ -297,7 +297,7 @@ export default function VsServiceTitan() {
           <div className="price-card featured" style={{width:'100%'}}>
             <div className="featured-badge">Everything Included</div>
             <div className="price-tier">One Plan. No Surprises.</div>
-            <div className="price-amount"><sup>$</sup>129</div>
+            <div className="price-amount"><sup>$</sup>79</div>
             <div className="price-period">per month — flat</div>
             <ul className="price-features">
               <li>Unlimited Clients, Yards &amp; Leads</li>

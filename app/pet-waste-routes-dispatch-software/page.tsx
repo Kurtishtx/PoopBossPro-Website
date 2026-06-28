@@ -164,7 +164,7 @@ function SignupForm({ n }: { n: number }) {
         <div id={`sbp${n}-err2`} className="sbp-err"></div>
         <div className="sbp-trial-note">
           <div className="sbp-trial-note-title">14-Day Free Trial — No Credit Card Required</div>
-          <div className="sbp-trial-note-sub">Full access to every feature. $129/month after trial.</div>
+          <div className="sbp-trial-note-sub">Full access to every feature. $79/month after trial.</div>
         </div>
         <div className="sbp-field">
           <label className="sbp-label">Login Email</label>
@@ -228,7 +228,7 @@ export default function RoutesCrewDispatchSoftware() {
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">Stops</div><div className="hero-stat-lbl">Yards Routed Per Day, Not Per Hour</div></div>
-          <div><div className="hero-stat-val">$129</div><div className="hero-stat-lbl">Flat Monthly &mdash; No Add-Ons</div></div>
+          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat Monthly &mdash; No Add-Ons</div></div>
           <div><div className="hero-stat-val">500+</div><div className="hero-stat-lbl">SMS Alerts Included Monthly</div></div>
           <div><div className="hero-stat-val">2006</div><div className="hero-stat-lbl">In the Industry Since</div></div>
         </div>
@@ -250,7 +250,7 @@ export default function RoutesCrewDispatchSoftware() {
       {/* PREMIUM BAND */}
       <div className="premium-band">
         <h2>Affordable Doesn&apos;t Mean Cheap.<br /><span>This Is Enterprise-Level Dispatch Software.</span></h2>
-        <p>$129/month sounds modest. But what you&apos;re getting isn&apos;t modest at all. PoopBossPro is built to the same standard as software that costs 10 times more &mdash; the difference is we built it ourselves, for ourselves, and we don&apos;t have a sales team, investor overhead, or a $500/month add-on for every feature you actually need to run pet waste routes.</p>
+        <p>$79/month sounds modest. But what you&apos;re getting isn&apos;t modest at all. PoopBossPro is built to the same standard as software that costs 10 times more &mdash; the difference is we built it ourselves, for ourselves, and we don&apos;t have a sales team, investor overhead, or a $500/month add-on for every feature you actually need to run pet waste routes.</p>
         <div className="premium-grid">
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Route Intelligence</h4><p>Live route maps, drag-and-drop stop ordering, and geographic clustering that groups nearby yards onto the same day. Build a tight weekly cleanup loop so your crew spends time scooping &mdash; not driving across town between two houses.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🚐</div><h4>Crew Dispatch</h4><p>Assign every yard to a crew, a truck, and a day. The dispatch board shows the whole route at a glance, and your scoopers see their stops on the mobile app the moment you assign them &mdash; no morning phone calls, no paper run sheets.</p></div>
@@ -384,7 +384,7 @@ export default function RoutesCrewDispatchSoftware() {
             {icon:'🚛', title:'Truck Management', body:'Create truck profiles, assign vehicles to crews, and track which truck handled each yard. Know exactly what\'s rolling and who\'s on it every day.'},
             {icon:'⏱️', title:'Employee Hour Tracking', body:'Track crew hours per route and generate payroll-ready reports. Know exactly what you owe before payday without running a separate system.'},
             {icon:'📊', title:'Dashboard & Reports', body:'Custom stat cards show today\'s revenue, yards cleaned, visits completed, money owed, and more — all at a glance the moment you log in.'},
-            {icon:'👥', title:'Unlimited Users', body:'Add every scooper, office staff member, and manager at no extra cost. No per-seat fees. Unlimited users are included in the flat $129/month rate.'},
+            {icon:'👥', title:'Unlimited Users', body:'Add every scooper, office staff member, and manager at no extra cost. No per-seat fees. Unlimited users are included in the flat $79/month rate.'},
             {icon:'🏢', title:'Unlimited Customers & Yards', body:'No caps on customers, properties, or leads. Whether you have 50 accounts or 5,000 — PoopBossPro handles it all at the same flat price.'},
           ].map(({icon, title, body}) => (
             <div key={title} className="feature-card">
@@ -506,7 +506,7 @@ export default function RoutesCrewDispatchSoftware() {
           <div className="lc-price-card featured">
             <div className="featured-badge">Everything Included</div>
             <div className="price-tier">One Plan. No Surprises.</div>
-            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>129</div>
+            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>79</div>
             <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month</div>
             <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Every feature. Unlimited customers, yards, employees, and users. No tiers, no locked features, no per-seat fees.</div>
             <ul className="price-features">
@@ -539,7 +539,7 @@ export default function RoutesCrewDispatchSoftware() {
             {q:'Can I run recurring weekly and twice-weekly plans automatically?', a:'Yes. Put each customer on a weekly, twice-weekly, or every-other-week plan and PoopBossPro generates every visit automatically. You set the plan once and the schedule keeps building itself — no re-entering the same yards each week.'},
             {q:'Does it handle gate codes, dog counts, and yard notes?', a:'Yes. Every property has its own profile with the gate code, the number of dogs, where the cans live, and any access notes. All of it rides along to the assigned scooper\'s phone so they can get into the yard and clean it without calling the office.'},
             {q:'How does billing work for recurring cleanup plans?', a:'PoopBossPro stores cards on file through Stripe and runs recurring monthly charges for every plan, or charges after each cleanup if you prefer. Quotes convert to invoices in one click, and every payment is tracked with method and date in one place.'},
-            {q:'How much does PoopBossPro cost?', a:'$129/month, all features included. No per-user fees, no add-ons for SMS or route tools, no setup fees. 14-day free trial with no credit card required.'},
+            {q:'How much does PoopBossPro cost?', a:'$79/month, all features included. No per-user fees, no add-ons for SMS or route tools, no setup fees. 14-day free trial with no credit card required.'},
           ].map(({q, a}, i, arr) => (
             <div key={i} style={{padding:'28px 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none'}}>
               <h3 style={{fontWeight:700, fontSize:'17px', color:'var(--text)', marginBottom:'10px', lineHeight:1.4}}>{q}</h3>

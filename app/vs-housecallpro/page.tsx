@@ -274,7 +274,7 @@ export default function VsHousecallPro() {
           <div className="price-card featured" style={{width:'100%'}}>
             <div className="featured-badge">Less Than HCP Essentials — More Service Features</div>
             <div className="price-tier">One Plan. Built for Service. Start Today.</div>
-            <div className="price-amount"><sup>$</sup>129</div>
+            <div className="price-amount"><sup>$</sup>79</div>
             <div className="price-period">per month — cancel anytime</div>
             <ul className="price-features">
               <li>Unlimited Clients, Yards &amp; Leads</li>
