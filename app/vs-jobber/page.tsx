@@ -13,7 +13,7 @@ function closeSignupModal(n: number) { document.getElementById('sbp-form-' + n)!
 function closeAllModals() { [1, 2, 3].forEach(i => { const el = document.getElementById('sbp-form-' + i); if (el) el.style.display = 'none'; }); const bd = document.getElementById('sbp-backdrop'); if (bd) bd.style.display = 'none'; document.body.style.overflow = ''; sbpOpenForm = 0; }
 function sbpStep2(n: number) { const err = document.getElementById('sbp' + n + '-err1')!; err.style.display = 'none'; const first = (document.getElementById('sbp' + n + '-first') as HTMLInputElement).value.trim(); const last = (document.getElementById('sbp' + n + '-last') as HTMLInputElement).value.trim(); const comp = (document.getElementById('sbp' + n + '-company') as HTMLInputElement).value.trim(); const email = (document.getElementById('sbp' + n + '-email') as HTMLInputElement).value.trim(); if (!first || !last) return sbpShowErr(err as HTMLElement, 'Please enter your first and last name.'); if (!comp) return sbpShowErr(err as HTMLElement, 'Please enter your company name.'); if (!email || !email.includes('@')) return sbpShowErr(err as HTMLElement, 'Please enter a valid email address.'); (document.getElementById('sbp' + n + '-login-email') as HTMLInputElement).value = email; document.getElementById('sbp' + n + '-step1')!.style.display = 'none'; document.getElementById('sbp' + n + '-step2')!.style.display = 'block'; (document.getElementById('sbp' + n + '-password') as HTMLInputElement).focus(); }
 function sbpBackToStep1(n: number) { document.getElementById('sbp' + n + '-step2')!.style.display = 'none'; document.getElementById('sbp' + n + '-step1')!.style.display = 'block'; document.getElementById('sbp' + n + '-err2')!.style.display = 'none'; }
-async function sbpCreateAccount(n: number) { const err = document.getElementById('sbp' + n + '-err2')!; const btn = document.getElementById('sbp' + n + '-create-btn') as HTMLButtonElement; err.style.display = 'none'; const email = (document.getElementById('sbp' + n + '-login-email') as HTMLInputElement).value.trim(); const password = (document.getElementById('sbp' + n + '-password') as HTMLInputElement).value; const confirm = (document.getElementById('sbp' + n + '-confirm') as HTMLInputElement).value; if (password.length < 8) return sbpShowErr(err as HTMLElement, 'Password must be at least 8 characters.'); if (password !== confirm) return sbpShowErr(err as HTMLElement, 'Passwords do not match.'); if (!(document.getElementById('sbp' + n + '-agree') as HTMLInputElement).checked) return sbpShowErr(err as HTMLElement, 'Please agree to the Terms of Service and Privacy Policy.'); btn.disabled = true; btn.textContent = 'Creating your account…'; try { const res = await fetch(SBP_URL + '/functions/v1/manage-users', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SBP_ANON, 'apikey': SBP_ANON }, body: JSON.stringify({ action: 'create', email, password }) }); const result = await res.json(); if (result.error) throw new Error(result.error); const sb = getSbpClient(); const { data: signInData, error: signInErr } = await sb.auth.signInWithPassword({ email, password }); if (signInErr) throw new Error(signInErr.message); const uid = signInData.user.id; const first = (document.getElementById('sbp' + n + '-first') as HTMLInputElement).value.trim(); const last = (document.getElementById('sbp' + n + '-last') as HTMLInputElement).value.trim(); const comp = (document.getElementById('sbp' + n + '-company') as HTMLInputElement).value.trim(); await sb.auth.updateUser({ data: { full_name: first + ' ' + last } }); const trialEnd = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(); await sb.from('user_profiles').upsert({ id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd }, { onConflict: 'id' }); await sb.from('company_info').insert({ user_id: uid, company_name: comp, display_name: comp }); const reasons = ['Cancel Maintaining Self', 'Cancel Sold House', 'Cancel Too Expensive', 'Cancel Unknown', 'Dropping Customer', 'Sold House'].map(nm => ({ name: nm, active: true, user_id: uid })); await sb.from('cancellation_reasons').insert(reasons); document.getElementById('sbp' + n + '-step2')!.style.display = 'none'; document.getElementById('sbp' + n + '-success')!.style.display = 'block'; let secs = 4; const cd = document.getElementById('sbp' + n + '-countdown')!; cd.textContent = 'Redirecting in ' + secs + ' seconds…'; const iv = setInterval(() => { secs--; if (secs <= 0) { clearInterval(iv); window.location.href = 'https://my.poopbosspro.com/dashboard.html'; } else cd.textContent = 'Redirecting in ' + secs + ' second' + (secs === 1 ? '' : 's') + '…'; }, 1000); } catch (e: any) { sbpShowErr(err as HTMLElement, e.message || 'Something went wrong. Please try again.'); btn.disabled = false; btn.textContent = 'Create My Account'; } }
+async function sbpCreateAccount(n: number) { const err = document.getElementById('sbp' + n + '-err2')!; const btn = document.getElementById('sbp' + n + '-create-btn') as HTMLButtonElement; err.style.display = 'none'; const email = (document.getElementById('sbp' + n + '-login-email') as HTMLInputElement).value.trim(); const password = (document.getElementById('sbp' + n + '-password') as HTMLInputElement).value; const confirm = (document.getElementById('sbp' + n + '-confirm') as HTMLInputElement).value; if (password.length < 8) return sbpShowErr(err as HTMLElement, 'Password must be at least 8 characters.'); if (password !== confirm) return sbpShowErr(err as HTMLElement, 'Passwords do not match.'); if (!(document.getElementById('sbp' + n + '-agree') as HTMLInputElement).checked) return sbpShowErr(err as HTMLElement, 'Please agree to the Terms of Service and Privacy Policy.'); btn.disabled = true; btn.textContent = 'Creating your account…'; try { const res = await fetch(SBP_URL + '/functions/v1/manage-users', { method: 'POST', headers: { 'Content-Type': 'visit/json', 'Authorization': 'Bearer ' + SBP_ANON, 'apikey': SBP_ANON }, body: JSON.stringify({ action: 'create', email, password }) }); const result = await res.json(); if (result.error) throw new Error(result.error); const sb = getSbpClient(); const { data: signInData, error: signInErr } = await sb.auth.signInWithPassword({ email, password }); if (signInErr) throw new Error(signInErr.message); const uid = signInData.user.id; const first = (document.getElementById('sbp' + n + '-first') as HTMLInputElement).value.trim(); const last = (document.getElementById('sbp' + n + '-last') as HTMLInputElement).value.trim(); const comp = (document.getElementById('sbp' + n + '-company') as HTMLInputElement).value.trim(); await sb.auth.updateUser({ data: { full_name: first + ' ' + last } }); const trialEnd = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(); await sb.from('user_profiles').upsert({ id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd }, { onConflict: 'id' }); await sb.from('company_info').insert({ user_id: uid, company_name: comp, display_name: comp }); const reasons = ['Cancel Maintaining Self', 'Cancel Sold House', 'Cancel Too Expensive', 'Cancel Unknown', 'Dropping Customer', 'Sold House'].map(nm => ({ name: nm, active: true, user_id: uid })); await sb.from('cancellation_reasons').insert(reasons); document.getElementById('sbp' + n + '-step2')!.style.display = 'none'; document.getElementById('sbp' + n + '-success')!.style.display = 'block'; let secs = 4; const cd = document.getElementById('sbp' + n + '-countdown')!; cd.textContent = 'Redirecting in ' + secs + ' seconds…'; const iv = setInterval(() => { secs--; if (secs <= 0) { clearInterval(iv); window.location.href = 'https://my.poopbosspro.com/dashboard.html'; } else cd.textContent = 'Redirecting in ' + secs + ' second' + (secs === 1 ? '' : 's') + '…'; }, 1000); } catch (e: any) { sbpShowErr(err as HTMLElement, e.message || 'Something went wrong. Please try again.'); btn.disabled = false; btn.textContent = 'Create My Account'; } }
 function sbpShowErr(el: HTMLElement, msg: string) { el.textContent = msg; el.style.display = 'block'; }
 
 export default function VsJobber() {
@@ -142,14 +142,14 @@ export default function VsJobber() {
       <div className="hero">
         <div className="hero-badge">Jobber Alternative</div>
         <h1>Jobber Is Built for Every Industry.<br /><span>PoopBossPro Is Built for Yours.</span></h1>
-        <p>Jobber is a solid general-purpose field service tool. But "general purpose" means it wasn't designed around square footage waiting lists, chemical compliance logs, the lasso route selector, or the way lawn care and pest control businesses actually schedule recurring spray routes. PoopBossPro was.</p>
+        <p>Jobber is a solid general-purpose field service tool. But "general purpose" means it wasn't designed around yard size waiting lists, service verification logs, the lasso route selector, or the way pet waste removal businesses actually schedule recurring service routes. PoopBossPro was.</p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
         </div>
         <div className="hero-stats">
-          <div><div className="hero-stat-val">$129</div><div className="hero-stat-lbl">Flat Monthly vs Jobber&apos;s Per-Tier Pricing</div></div>
+          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat Monthly vs Jobber&apos;s Per-Tier Pricing</div></div>
           <div><div className="hero-stat-val">Unlimited</div><div className="hero-stat-lbl">Users — No Per-Seat Fees</div></div>
-          <div><div className="hero-stat-val">Sq Ft</div><div className="hero-stat-lbl">Waiting List — Jobber Doesn&apos;t Have This</div></div>
+          <div><div className="hero-stat-val">Visit</div><div className="hero-stat-lbl">Waiting List — Jobber Doesn&apos;t Have This</div></div>
           <div><div className="hero-stat-val">2006</div><div className="hero-stat-lbl">In the Industry Since</div></div>
         </div>
       </div>
@@ -158,7 +158,7 @@ export default function VsJobber() {
         <div className="centered" style={{maxWidth:'900px', margin:'0 auto'}}>
           <span className="section-label">Side by Side</span>
           <h2 className="section-title">PoopBossPro vs Jobber</h2>
-          <p className="section-sub">The features that matter most for lawn care and pest control — not general field service.</p>
+          <p className="section-sub">The features that matter most for pet waste removal — not general field service.</p>
         </div>
         <div className="compare-wrap">
           <table className="compare-table">
@@ -170,38 +170,38 @@ export default function VsJobber() {
               </tr>
             </thead>
             <tbody>
-              <tr><td className="feature-name">Sq Ft Waiting List by Service Type</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Chemical Application Compliance Logs</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Lasso — Draw a Circle on Any Area of the Map, Instantly See Every Stop, Sq Ft &amp; Service Due Inside</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗ Not available</span></td></tr>
-              <tr><td className="feature-name">Built Specifically for Lawn Care &amp; Pest Control</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
+              <tr><td className="feature-name">Visit Waiting List by Service Type</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
+              <tr><td className="feature-name">Cleanup visit Compliance Logs</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
+              <tr><td className="feature-name">Lasso — Draw a Circle on Any Area of the Map, Instantly See Every Stop, Visit &amp; Service Due Inside</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗ Not available</span></td></tr>
+              <tr><td className="feature-name">Built Specifically for Pet waste removal &amp; Pet waste removal</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">True Two-Way SMS Inbox (Included)</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Grow plan only ($299/mo)</span></td></tr>
-              <tr><td className="feature-name">Recurring Treatment Waiting List</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
+              <tr><td className="feature-name">Recurring Cleanup Waiting List</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Package Plans &amp; Renewal Tracking</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Limited</span></td></tr>
-              <tr><td className="feature-name">Product Mix &amp; Chemical Catalog</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
+              <tr><td className="feature-name">Product Mix &amp; Service Catalog</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Estimates &amp; Online Acceptance</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Card-on-File Payments</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
-              <tr><td className="feature-name">Mobile App for Technicians</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
+              <tr><td className="feature-name">Mobile App for Scoopers</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Automated Review Requests</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Automated Estimate Follow-Ups</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Unlimited Users at Flat Price</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Starting Price (Annual Billing)</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800, fontSize:'15px'}}>$129 / month</td><td style={{color:'var(--muted)'}}>$29/mo (1 user only)</td></tr>
-              <tr><td className="feature-name">Price for a 5-Person Team (Annual)</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$129 / month</td><td style={{color:'var(--muted)'}}>$149/mo (Connect — no SMS)</td></tr>
-              <tr><td className="feature-name">Price with Two-Way SMS (Annual)</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$129 / month</td><td style={{color:'var(--muted)'}}>$299/mo (Grow — up to 10 users)</td></tr>
+              <tr><td className="feature-name">Starting Price (Annual Billing)</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800, fontSize:'15px'}}>$79 / month</td><td style={{color:'var(--muted)'}}>$29/mo (1 user only)</td></tr>
+              <tr><td className="feature-name">Price for a 5-Person Team (Annual)</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$79 / month</td><td style={{color:'var(--muted)'}}>$149/mo (Connect — no SMS)</td></tr>
+              <tr><td className="feature-name">Price with Two-Way SMS (Annual)</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$79 / month</td><td style={{color:'var(--muted)'}}>$299/mo (Grow — up to 10 users)</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
       <div className="premium-band">
-        <h2>Jobber Charges More as You Grow.<br /><span>PoopBossPro Charges $129. Period.</span></h2>
-        <p>The moment you add your 6th employee on Jobber, you&apos;re bumped to a higher tier. Add more features, pay more. Add more users, pay more. PoopBossPro has one price — $129/month — that covers your entire team, every feature, forever. No tiers. No per-seat math. No surprises on your invoice.</p>
+        <h2>Jobber Charges More as You Grow.<br /><span>PoopBossPro Charges $79. Period.</span></h2>
+        <p>The moment you add your 6th employee on Jobber, you&apos;re bumped to a higher tier. Add more features, pay more. Add more users, pay more. PoopBossPro has one price — $79/month — that covers your entire team, every feature, forever. No tiers. No per-seat math. No surprises on your invoice.</p>
         <div className="premium-grid">
-          <div className="premium-card"><div className="premium-card-icon">📋</div><h4>Sq Ft Waiting List</h4><p>Before you schedule a single stop, PoopBossPro shows you the total square footage waiting per service type. Know exactly how much Lawn Care 4, Mosquito, or Insect Control you can fit before you call anyone. Jobber has no concept of this.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">🧪</div><h4>Chemical Compliance Logs</h4><p>Every application logged automatically with product, mix rate, gallons, area, weather, and tech license. Pull a print-ready compliance report in 30 seconds. Jobber has job notes. That&apos;s not the same thing as a pesticide compliance log.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Lasso Map Route Selector</h4><p>Draw a circle on the map, instantly see every property inside with a service due. Stops, service types, sq ft — all calculated before you schedule anything. Jobber has basic route optimization. Not the same as Lasso.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">📋</div><h4>Visit Waiting List</h4><p>Before you schedule a single stop, PoopBossPro shows you the total yard size waiting per service type. Know exactly how much Pet waste removal 4, Pet waste, or Insect Control you can fit before you call anyone. Jobber has no concept of this.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">🧪</div><h4>Service verification Logs</h4><p>Every visit logged automatically with product, mix rate, gallons, area, weather, and tech license. Pull a print-ready service history report in 30 seconds. Jobber has job notes. That&apos;s not the same thing as a service compliance log.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Lasso Map Route Selector</h4><p>Draw a circle on the map, instantly see every yard inside with a service due. Stops, service types, visit — all calculated before you schedule anything. Jobber has basic route optimization. Not the same as Lasso.</p></div>
           <div className="premium-card"><div className="premium-card-icon">💬</div><h4>True Two-Way SMS Inbox</h4><p>Send and receive text messages inside PoopBossPro with full conversation history per contact. Jobber has limited client messaging — not a full SMS inbox with inbound/outbound history organized by customer.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Recurring Treatment Tracking</h4><p>Set recurring schedules per property, track what&apos;s due, and build waiting lists by service type. Jobber handles recurring jobs, but not the lawn care waiting list model that shows you all your due work before you build a route.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">👥</div><h4>Unlimited Users, One Price</h4><p>Every employee — techs, office staff, managers — included at $129/month. Jobber charges per tier based on user count. Add your 6th employee and your bill goes up. Ours doesn&apos;t.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Recurring Cleanup Tracking</h4><p>Set recurring schedules per yard, track what&apos;s due, and build waiting lists by service type. Jobber handles recurring jobs, but not the pet waste removal waiting list model that shows you all your due work before you build a route.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">👥</div><h4>Unlimited Users, One Price</h4><p>Every employee — scoopers, office staff, managers — included at $79/month. Jobber charges per tier based on user count. Add your 6th employee and your bill goes up. Ours doesn&apos;t.</p></div>
         </div>
       </div>
 
@@ -209,17 +209,17 @@ export default function VsJobber() {
         <div className="highlight-row">
           <div className="highlight-text">
             <span className="section-label">The Real Difference</span>
-            <h2>Jobber Is a Great Tool for Many Industries.<br />Lawn Care and Pest Control Aren&apos;t Really One of Them.</h2>
-            <p>Jobber does a lot of things well. But it was designed to work for cleaning companies, landscapers, HVAC techs, plumbers, and dozens of other trades. When you build software for everyone, you can&apos;t build the deep features that spray businesses actually need. PoopBossPro was built by people who ran spray routes — and it shows.</p>
+            <h2>Jobber Is a Great Tool for Many Industries.<br />Pet waste removal Aren&apos;t Really One of Them.</h2>
+            <p>Jobber does a lot of things well. But it was designed to work for cleaning companies, landscapers, HVAC scoopers, plumbers, and dozens of other trades. When you build software for everyone, you can&apos;t build the deep features that service businesses actually need. PoopBossPro was built by people who ran service routes — and it shows.</p>
             <ul className="check-list">
-              <li>Sq ft waiting list grouped by service type — know what&apos;s due before you schedule</li>
-              <li>Chemical compliance logs that hold up to any state inspector</li>
+              <li>Visit waiting list grouped by service type — know what&apos;s due before you schedule</li>
+              <li>Service verification logs that hold up to any state inspector</li>
               <li>Product mix catalog with mix recipes stored and logged per job</li>
               <li>Lasso circle map selector — build tight geographic routes fast</li>
-              <li>Recurring treatment tracking with automatic due-date flags</li>
-              <li>Package program renewals tracked per property automatically</li>
+              <li>Recurring cleanup tracking with automatic due-date flags</li>
+              <li>Recurring cleanup plan renewals tracked per yard automatically</li>
               <li>True inbound/outbound SMS inbox organized by customer</li>
-              <li>$129/month flat — add 20 employees, price doesn&apos;t change</li>
+              <li>$79/month flat — add 20 employees, price doesn&apos;t change</li>
             </ul>
           </div>
           <div className="highlight-visual">
@@ -227,7 +227,7 @@ export default function VsJobber() {
             <div className="mock-item">
               <div className="mock-dot orange"></div>
               <div><div className="mock-label">PoopBossPro</div><div className="mock-sub">Unlimited users — every feature — SMS included</div></div>
-              <div className="mock-badge">$129/mo</div>
+              <div className="mock-badge">$79/mo</div>
             </div>
             <div className="mock-item">
               <div className="mock-dot blue"></div>
@@ -246,7 +246,7 @@ export default function VsJobber() {
             </div>
             <div style={{marginTop:'16px', background:'rgba(255,255,255,.07)', borderRadius:'8px', padding:'14px 16px'}}>
               <div style={{color:'var(--orange)', fontSize:'13px', fontWeight:700, marginBottom:'8px'}}>PoopBossPro also includes things Jobber doesn&apos;t:</div>
-              <div style={{color:'rgba(255,255,255,.6)', fontSize:'12px', lineHeight:2}}>✓ Sq Ft Waiting List by Service Type<br />✓ Chemical Compliance Logs &amp; Reports<br />✓ Lasso Circle Map Route Selector<br />✓ Recurring Treatment Waiting List<br />✓ Package Plan Renewal Tracking</div>
+              <div style={{color:'rgba(255,255,255,.6)', fontSize:'12px', lineHeight:2}}>✓ Visit Waiting List by Service Type<br />✓ Service verification Logs &amp; Reports<br />✓ Lasso Circle Map Route Selector<br />✓ Recurring Cleanup Waiting List<br />✓ Package Plan Renewal Tracking</div>
             </div>
           </div>
         </div>
@@ -257,10 +257,10 @@ export default function VsJobber() {
           <div className="highlight-text">
             <span className="section-label">Lasso — Circle Map Scheduling</span>
             <h2 style={{color:'#fff'}}>One Feature Jobber Can&apos;t Match.</h2>
-            <p style={{color:'rgba(255,255,255,.65)'}}>Draw a circle on your service area map and PoopBossPro instantly shows every property inside that radius with a service due — total stops, service types, sq ft, all calculated before you schedule a single stop. Jobber has route optimization. That&apos;s completely different from Lasso. No competitor has built anything like this.</p>
+            <p style={{color:'rgba(255,255,255,.65)'}}>Draw a circle on your service area map and PoopBossPro instantly shows every yard inside that radius with a service due — total stops, service types, visit, all calculated before you schedule a single stop. Jobber has route optimization. That&apos;s completely different from Lasso. No competitor has built anything like this.</p>
             <ul className="check-list" style={{marginTop:'20px'}}>
-              <li style={{color:'rgba(255,255,255,.75)'}}>Draw any size circle — instantly see all properties with services due inside</li>
-              <li style={{color:'rgba(255,255,255,.75)'}}>Breaks down stops, sq ft, and service types in real time</li>
+              <li style={{color:'rgba(255,255,255,.75)'}}>Draw any size circle — instantly see all yards with services due inside</li>
+              <li style={{color:'rgba(255,255,255,.75)'}}>Breaks down stops, visit, and service types in real time</li>
               <li style={{color:'rgba(255,255,255,.75)'}}>One click to schedule all selected stops to a date and truck</li>
               <li style={{color:'rgba(255,255,255,.75)'}}>Tighten routes geographically — stop wasting fuel on scattered stops</li>
               <li style={{color:'rgba(255,255,255,.75)'}}>Cuts route-building from an hour to under 5 minutes</li>
@@ -282,9 +282,9 @@ export default function VsJobber() {
             <div className="stat-grid">
               <div className="stat-cell"><div className="stat-val">14</div><div className="stat-lbl">Stops Selected</div></div>
               <div className="stat-cell"><div className="stat-val">19</div><div className="stat-lbl">Total Services</div></div>
-              <div className="stat-cell"><div className="stat-val">118,400</div><div className="stat-lbl">Sq Ft</div></div>
+              <div className="stat-cell"><div className="stat-val">118,400</div><div className="stat-lbl">Visit</div></div>
               <div className="stat-cell"><div className="stat-val">4,200</div><div className="stat-lbl">Linear Ft (Beds)</div></div>
-              <div className="stat-cell full"><div className="stat-val">Lawn Care 4 · 8 &nbsp;|&nbsp; Mosquito · 6 &nbsp;|&nbsp; Insect · 5</div><div className="stat-lbl">Breakdown by Service Type</div></div>
+              <div className="stat-cell full"><div className="stat-val">Pet waste removal 4 · 8 &nbsp;|&nbsp; Pet waste · 6 &nbsp;|&nbsp; Insect · 5</div><div className="stat-lbl">Breakdown by Service Type</div></div>
             </div>
           </div>
         </div>
@@ -293,13 +293,13 @@ export default function VsJobber() {
       <section style={{background:'var(--light-bg)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto 56px'}}>
           <span className="section-label">Simplicity</span>
-          <h2 className="section-title">Easier to Learn Than Jobber. More Powerful for Spray Routes.</h2>
-          <p className="section-sub" style={{maxWidth:'720px'}}>Jobber has been around for years and has a solid UI. But PoopBossPro was designed specifically for the way spray businesses work — which means less configuration, less hunting through menus, and a dispatch board that actually makes sense for recurring service routes.</p>
+          <h2 className="section-title">Easier to Learn Than Jobber. More Powerful for Service Routes.</h2>
+          <p className="section-sub" style={{maxWidth:'720px'}}>Jobber has been around for years and has a solid UI. But PoopBossPro was designed specifically for the way service businesses work — which means less configuration, less hunting through menus, and a dispatch board that actually makes sense for recurring service routes.</p>
         </div>
         <div className="simple-grid">
-          <div className="simple-card"><div className="simple-num">01</div><h3>Set Up in One Afternoon</h3><p>Add your services, import clients and properties, connect payments, set up your SMS alerts — most owners are fully operational the same day. No onboarding call, no implementation consultant, no 90-day timeline to get started.</p></div>
-          <div className="simple-card"><div className="simple-num">02</div><h3>Built Around the Dispatch Board</h3><p>Everything flows through the dispatch board — waiting list, scheduling, map, dispatch, chemical log. It&apos;s designed the way a spray business thinks about its day. Not the way a plumber or cleaning company would.</p></div>
-          <div className="simple-card"><div className="simple-num">03</div><h3>Techs Are Up and Running Fast</h3><p>The mobile app shows your techs exactly what they need — today&apos;s stops, the property notes, the complete button. No training videos, no IT ticket, no confused crew. They&apos;re using it on day one.</p></div>
+          <div className="simple-card"><div className="simple-num">01</div><h3>Set Up in One Afternoon</h3><p>Add your services, import clients and yards, connect payments, set up your SMS alerts — most owners are fully operational the same day. No onboarding call, no implementation consultant, no 90-day timeline to get started.</p></div>
+          <div className="simple-card"><div className="simple-num">02</div><h3>Built Around the Dispatch Board</h3><p>Everything flows through the dispatch board — waiting list, scheduling, map, dispatch, service note. It&apos;s designed the way a pet waste removal business thinks about its day. Not the way a plumber or cleaning company would.</p></div>
+          <div className="simple-card"><div className="simple-num">03</div><h3>Scoopers Are Up and Running Fast</h3><p>The mobile app shows your scoopers exactly what they need — today&apos;s stops, the yard notes, the complete button. No training videos, no IT ticket, no confused crew. They&apos;re using it on day one.</p></div>
           <div className="simple-card"><div className="simple-num">04</div><h3>Automation That Actually Runs</h3><p>SMS alerts, estimate follow-ups, payment reminders, review requests — set them up once and PoopBossPro runs them every time, automatically. You&apos;re not babysitting automations or configuring Zapier workflows.</p></div>
         </div>
       </section>
@@ -308,7 +308,7 @@ export default function VsJobber() {
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
           <h2 className="section-title">One Price. Every Feature. Unlimited Users.</h2>
-          <p className="section-sub">No tiers. No per-seat fees. No upgrade prompts. Just $129/month for your entire operation.</p>
+          <p className="section-sub">No tiers. No per-seat fees. No upgrade prompts. Just $79/month for your entire operation.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
           <div className="price-card featured" style={{width:'100%'}}>
@@ -316,18 +316,18 @@ export default function VsJobber() {
             <div className="price-tier">One Plan. No Surprises.</div>
             <div className="price-amount"><sup>$</sup>129</div>
             <div className="price-period">per month — flat</div>
-            <div className="price-desc">Every feature. Unlimited clients, properties, employees, and users. No tiers, no per-seat fees, no locked features.</div>
+            <div className="price-desc">Every feature. Unlimited clients, yards, employees, and users. No tiers, no per-seat fees, no locked features.</div>
             <ul className="price-features">
-              <li>Unlimited Clients, Properties &amp; Leads</li>
+              <li>Unlimited Clients, Yards &amp; Leads</li>
               <li>Unlimited Employees &amp; Users</li>
-              <li>Sq Ft Waiting List by Service Type</li>
+              <li>Visit Waiting List by Service Type</li>
               <li>Lasso Circle Map Route Selector</li>
-              <li>Chemical Compliance Logs &amp; Reports</li>
+              <li>Service verification Logs &amp; Reports</li>
               <li>Full Scheduling, Dispatch &amp; Route Map</li>
               <li>Estimates, Invoices &amp; Card-on-File Payments</li>
               <li>Two-Way SMS &amp; 10+ Automated Alerts</li>
               <li>Package Plans &amp; Renewal Tracking</li>
-              <li>Mobile App for Technicians</li>
+              <li>Mobile App for Scoopers</li>
               <li>500 Outbound SMS/month included</li>
             </ul>
             <button className="price-btn price-btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(2, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
@@ -337,7 +337,7 @@ export default function VsJobber() {
       </section>
 
       <div className="cta-band">
-        <h2>Ready to Switch from Jobber to Software<br />Actually Built for Spray Routes?</h2>
+        <h2>Ready to Switch from Jobber to Software<br />Actually Built for Service Routes?</h2>
         <p>Try PoopBossPro free for 14 days. No credit card required. Set up in an afternoon.</p>
         <div className="hero-btns">
           <button className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}} onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
@@ -359,7 +359,7 @@ export default function VsJobber() {
               <div style={{flex:1}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>First Name</label><input id={`sbp${n}-first`} type="text" placeholder="John" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
               <div style={{flex:1}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Last Name</label><input id={`sbp${n}-last`} type="text" placeholder="Smith" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
             </div>
-            <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Company Name</label><input id={`sbp${n}-company`} type="text" placeholder="Smith Lawn Care" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
+            <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Company Name</label><input id={`sbp${n}-company`} type="text" placeholder="Smith Pet waste removal" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
             <div style={{marginBottom:'20px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Email Address</label><input id={`sbp${n}-email`} type="email" placeholder="you@yourcompany.com" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
             <button onClick={() => sbpStep2(n)} style={{width:'100%', background:'#f0820e', color:'#fff', border:'none', borderRadius:'6px', padding:'13px', fontSize:'15px', fontWeight:700, cursor:'pointer', fontFamily:'inherit'}}>Next: Create Password →</button>
           </div>
@@ -367,7 +367,7 @@ export default function VsJobber() {
             <div id={`sbp${n}-err2`} style={{background:'#fff0f0', border:'1px solid #f5c6c6', color:'#c0392b', borderRadius:'6px', padding:'10px 12px', fontSize:'13px', marginBottom:'14px', display:'none'}}></div>
             <div style={{background:'#f0fdf4', border:'1px solid #bbf7d0', borderRadius:'6px', padding:'10px 14px', marginBottom:'16px'}}>
               <div style={{fontSize:'12px', color:'#16a34a', fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div>
-              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $129/month after trial.</div>
+              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div>
             </div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Login Email</label><input id={`sbp${n}-login-email`} type="email" readOnly style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', background:'#f8f8f8', color:'#333'}} /></div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Password</label><input id={`sbp${n}-password`} type="password" placeholder="At least 8 characters" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>

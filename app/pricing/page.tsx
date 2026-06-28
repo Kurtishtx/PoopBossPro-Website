@@ -85,7 +85,7 @@ async function sbpCreateAccount(n: number) {
   try {
     const res = await fetch(SBP_URL + '/functions/v1/manage-users', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SBP_ANON, 'apikey': SBP_ANON },
+      headers: { 'Content-Type': 'visit/json', 'Authorization': 'Bearer ' + SBP_ANON, 'apikey': SBP_ANON },
       body: JSON.stringify({ action: 'create', email, password }),
     });
     const result = await res.json();
@@ -122,40 +122,40 @@ async function sbpCreateAccount(n: number) {
 function sbpShowErr(el: HTMLElement, msg: string) { el.textContent = msg; el.style.display = 'block'; }
 
 const tableRows = [
-  ['Scheduling & Dispatch Board', 'Schedule stops, assign techs, build routes, view day summary'],
-  ['Sq Ft Waiting List', 'See total sq ft waiting per service type before you build a route'],
+  ['Scheduling & Dispatch Board', 'Schedule stops, assign scoopers, build routes, view day summary'],
+  ['Visit Waiting List', 'See total visit waiting per service type before you build a route'],
   ['Live Route Map', 'Interactive map with all stops pinned — drag to reorder'],
-  ['Chemical Application Tracking', 'Log product, rate, gallons, weather, and tech per stop'],
-  ['Compliance Reports', 'Print-ready pesticide application reports for any inspector'],
+  ['Photo proof of every cleanup', 'Log product, rate, gallons, weather, and tech per stop'],
+  ['Service history reports', 'Print-ready service history reports for any inspector'],
   ['Estimates', 'Build, email, and track estimates with a service catalog'],
   ['Invoices & Payments', 'Stripe card-on-file billing, payment history, partial payments'],
   ['Two-Way SMS Inbox', 'Send and receive texts with customers inside the app'],
   ['Automated SMS Alerts (10+ types)', 'Service scheduled, completed, estimate sent, review request, and more'],
   ['Estimate Follow-Up Sequence', "3 automated texts if a client doesn't respond to an estimate"],
   ['Payment Follow-Up Sequence', '3 automated texts for unpaid invoices'],
-  ['Package Programs', 'Multi-treatment packages with renewal tracking'],
+  ['Recurring cleanup plans', 'Recurring cleanup plans with renewal tracking'],
   ['Client & Lead Management', 'Full CRM for existing customers and open prospects'],
-  ['Property Profiles', 'Service history, chemical logs, notes, sq ft, GPS per address'],
-  ['Mobile App for Technicians', 'Field-optimized stop list, mark complete, log chemicals'],
+  ['Yard profiles', 'Service history, service notes, notes, visit, GPS per address'],
+  ['Mobile App for Scoopers', 'Field-optimized stop list, mark complete, log supplies'],
   ['Role-Based Access', 'Owner, Manager, Office, Tech, Mobile — granular permissions'],
   ['Truck Management', 'Assign vehicles to routes, track by truck'],
   ['Employee Hour Tracking', 'Hours per job, payroll-ready reports'],
   ['Google Review Requests', 'Auto-sent after every completed service'],
-  ['Dashboard & Reports', 'Revenue, stops, money owed, properties served — at a glance'],
+  ['Dashboard & Reports', 'Revenue, stops, money owed, yards served — at a glance'],
   ['Discount Codes & Sales Tax', 'Percentage or flat discounts, auto tax calculation per invoice'],
   ['Unlimited Users', 'Add every employee at no per-user cost'],
-  ['Unlimited Clients & Properties', 'No caps — 50 accounts or 5,000, same price'],
+  ['Unlimited Clients & Yards', 'No caps — 50 accounts or 5,000, same price'],
   ['500 SMS/month', 'Outbound SMS included; +$15 per additional 500 after that'],
 ];
 
 const faqs = [
-  { q: 'Is there really just one plan?', a: "$129/month, everything included. We don't believe in tiers that lock you out of features you need to run your business. You get the full platform from day one." },
-  { q: 'What happens after the 14-day free trial?', a: "You'll be prompted to enter a card and continue for $129/month. If you decide not to continue, your account simply stops — no charges, no cancellation fees. We don't auto-charge without you knowing it's coming." },
+  { q: 'Is there really just one plan?', a: "$79/month, everything included. We don't believe in tiers that lock you out of features you need to run your business. You get the full platform from day one." },
+  { q: 'What happens after the 14-day free trial?', a: "You'll be prompted to enter a card and continue for $79/month. If you decide not to continue, your account simply stops — no charges, no cancellation fees. We don't auto-charge without you knowing it's coming." },
   { q: 'Do I need a credit card to start the trial?', a: 'No. Create your account and get full access for 14 days with no card required. You only enter payment info if you decide to keep going after the trial.' },
   { q: 'How many users can I add?', a: 'Unlimited. Add every tech, office staff member, and manager at no extra cost. No per-user fees. Ever.' },
-  { q: "What's the SMS pricing?", a: '500 outbound SMS messages per month are included in your $129. If you go over, you can add blocks of 500 for $15 each. Most businesses with under 300 active properties never hit the 500 limit.' },
+  { q: "What's the SMS pricing?", a: '500 outbound SMS messages per month are included in your $79. If you go over, you can add blocks of 500 for $15 each. Most businesses with under 300 active yards never hit the 500 limit.' },
   { q: 'Are there any contracts or annual commitments?', a: 'None. Month to month, always. Cancel anytime from your account settings.' },
-  { q: 'Does this work for both lawn care and pest control?', a: 'Yes. PoopBossPro was built for spray businesses — lawn care, pest control, mosquito treatment, or any combination. The service types, chemical tracking, and waiting list work the same way regardless of what you spray.' },
+  { q: 'Does this work for pet waste removal?', a: 'Yes. PoopBossPro was built for service businesses — pet waste removal, pet waste cleanup, or any combination. The service types, service verification, and waiting list work the same way regardless of what you service.' },
   { q: 'What if I have questions or need help getting set up?', a: "We're a small team and we respond fast. Reach us anytime at support@poopbosspro.com. We've run routes ourselves — we know what setup actually looks like and we're here to help." },
 ];
 
@@ -181,7 +181,7 @@ export default function Pricing() {
       {/* HERO */}
       <div className="hero">
         <div className="hero-badge">Simple, Honest Pricing</div>
-        <h1>$129/Month.<br /><span>Everything Included.</span></h1>
+        <h1>$79/Month.<br /><span>Everything Included.</span></h1>
         <p>One flat price covers your entire operation — unlimited users, unlimited clients, every feature. No tiers, no add-ons, no surprises.</p>
         <p style={{color:'rgba(255,255,255,.45)',fontSize:'14px',marginBottom:'40px'}}>14-day free trial · No credit card required · Cancel anytime</p>
         <div className="hero-btns">
@@ -196,9 +196,9 @@ export default function Pricing() {
           <div style={{fontSize:'13px',fontWeight:700,color:'var(--muted)',textTransform:'uppercase',letterSpacing:'1px',marginBottom:'10px'}}>PoopBossPro</div>
           <div style={{fontSize:'72px',fontWeight:800,color:'var(--text)',lineHeight:1}}><sup style={{fontSize:'30px',verticalAlign:'super'}}>$</sup>129</div>
           <div style={{color:'var(--muted)',fontSize:'15px',marginBottom:'8px',marginTop:'6px'}}>per month</div>
-          <div style={{fontSize:'16px',color:'var(--text)',fontWeight:600,marginBottom:'32px'}}>Your entire lawn care or pest control operation. One price.</div>
+          <div style={{fontSize:'16px',color:'var(--text)',fontWeight:600,marginBottom:'32px'}}>Your entire pet waste removal operation. One price.</div>
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px 24px',marginBottom:'36px',textAlign:'left'}}>
-            {['Unlimited Users','Unlimited Clients','Unlimited Properties','Unlimited Leads','Scheduling & Dispatch','Live Route Map','Sq Ft Waiting List','Chemical Tracking','Estimates & Invoices','Stripe Payments','Two-Way SMS Inbox','Automated Alerts','Package Programs','Mobile App for Techs','Chemical Compliance Reports','Role-Based Access','Truck Management','Hour Tracking','Review Requests','Dashboard & Reports'].map((item,i) => (
+            {['Unlimited Users','Unlimited Clients','Unlimited Yards','Unlimited Leads','Scheduling & Dispatch','Live Route Map','Visit Waiting List','Service verification','Estimates & Invoices','Stripe Payments','Two-Way SMS Inbox','Automated Alerts','Recurring cleanup plans','Mobile App for Scoopers','Service history reports','Role-Based Access','Truck Management','Hour Tracking','Review Requests','Dashboard & Reports'].map((item,i) => (
               <div key={i} style={{display:'flex',alignItems:'center',gap:'8px',fontSize:'14px',color:'var(--text)'}}>
                 <span style={{color:'var(--orange)',fontWeight:700,flexShrink:0,fontSize:'15px'}}>✓</span>{item}
               </div>
@@ -218,10 +218,10 @@ export default function Pricing() {
         <h2 style={{color:'#fff',fontSize:'clamp(24px,3.5vw,38px)',fontWeight:800,marginBottom:'48px',maxWidth:'700px',marginLeft:'auto',marginRight:'auto'}}>We Were Paying $500–$700/Month for Software<br />That Still Didn&apos;t Do What We Needed.</h2>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:'24px',maxWidth:'900px',margin:'0 auto'}}>
           {[
-            {old:'$149/user/mo',nw:'$129 flat',desc:'Unlimited users. Add every tech and office staff at no extra cost.'},
-            {old:'Locked features',nw:'All features',desc:'No tiers. No "upgrade to access chemical tracking." Everything is included.'},
+            {old:'$149/user/mo',nw:'$79 flat',desc:'Unlimited users. Add every tech and office staff at no extra cost.'},
+            {old:'Locked features',nw:'All features',desc:'No tiers. No "upgrade to access service verification." Everything is included.'},
             {old:'Annual contracts',nw:'Month to month',desc:'No contracts. No cancellation fees. Stop whenever you want.'},
-            {old:'Generic software',nw:'Built for spray',desc:'Sq ft waiting lists, chemical logs, spray-specific workflows. Not adapted from a plumbing app.'},
+            {old:'Generic software',nw:'Built for service',desc:'Visit waiting lists, service notes, service-specific workflows. Not adapted from a plumbing app.'},
           ].map((c,i) => (
             <div key={i} style={{background:'rgba(255,255,255,.06)',border:'1px solid rgba(255,255,255,.1)',borderRadius:'12px',padding:'24px 20px'}}>
               <div style={{color:'rgba(255,255,255,.35)',fontSize:'13px',fontWeight:600,textTransform:'uppercase',letterSpacing:'1px',marginBottom:'6px',textDecoration:'line-through'}}>{c.old}</div>
@@ -237,7 +237,7 @@ export default function Pricing() {
         <div style={{textAlign:'center',maxWidth:'900px',margin:'0 auto 48px'}}>
           <span style={{display:'inline-block',color:'var(--orange)',fontSize:'12px',fontWeight:700,letterSpacing:'1.8px',textTransform:'uppercase',marginBottom:'12px'}}>Everything Included</span>
           <h2 style={{fontSize:'clamp(26px,4vw,40px)',fontWeight:800,lineHeight:1.2,marginBottom:'16px',color:'var(--text)'}}>Every Feature. One Price.</h2>
-          <p style={{color:'var(--muted)',fontSize:'17px',maxWidth:'620px',margin:'0 auto'}}>Here&apos;s exactly what you get for $129/month — nothing hidden, nothing locked behind a higher tier.</p>
+          <p style={{color:'var(--muted)',fontSize:'17px',maxWidth:'620px',margin:'0 auto'}}>Here&apos;s exactly what you get for $79/month — nothing hidden, nothing locked behind a higher tier.</p>
         </div>
         <table style={{width:'100%',maxWidth:'900px',margin:'0 auto',borderCollapse:'collapse'}}>
           <thead>
@@ -304,13 +304,13 @@ export default function Pricing() {
             <div style={{flex:1}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>First Name</label><input id="sbp1-first" type="text" placeholder="John" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
             <div style={{flex:1}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Last Name</label><input id="sbp1-last" type="text" placeholder="Smith" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           </div>
-          <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Company Name</label><input id="sbp1-company" type="text" placeholder="Smith Lawn & Spray Co." style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
+          <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Company Name</label><input id="sbp1-company" type="text" placeholder="Smith Yard & Service Co." style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'20px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Email Address</label><input id="sbp1-email" type="email" placeholder="you@yourcompany.com" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <button onClick={() => sbpStep2(1)} style={{width:'100%',background:'#f0820e',color:'#fff',border:'none',borderRadius:'6px',padding:'13px',fontSize:'15px',fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>Next: Create Password →</button>
         </div>
         <div id="sbp1-step2" style={{padding:'24px 28px',display:'none'}}>
           <div id="sbp1-err2" style={{background:'#fff0f0',border:'1px solid #f5c6c6',color:'#c0392b',borderRadius:'6px',padding:'10px 12px',fontSize:'13px',marginBottom:'14px',display:'none'}}></div>
-          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $129/month after trial.</div></div>
+          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Login Email</label><input id="sbp1-login-email" type="email" readOnly style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',background:'#f8f8f8',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Password</label><input id="sbp1-password" type="password" placeholder="At least 8 characters" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Confirm Password</label><input id="sbp1-confirm" type="password" placeholder="Repeat password" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
@@ -342,13 +342,13 @@ export default function Pricing() {
             <div style={{flex:1}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>First Name</label><input id="sbp2-first" type="text" placeholder="John" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
             <div style={{flex:1}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Last Name</label><input id="sbp2-last" type="text" placeholder="Smith" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           </div>
-          <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Company Name</label><input id="sbp2-company" type="text" placeholder="Smith Lawn & Spray Co." style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
+          <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Company Name</label><input id="sbp2-company" type="text" placeholder="Smith Yard & Service Co." style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'20px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Email Address</label><input id="sbp2-email" type="email" placeholder="you@yourcompany.com" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <button onClick={() => sbpStep2(2)} style={{width:'100%',background:'#f0820e',color:'#fff',border:'none',borderRadius:'6px',padding:'13px',fontSize:'15px',fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>Next: Create Password →</button>
         </div>
         <div id="sbp2-step2" style={{padding:'24px 28px',display:'none'}}>
           <div id="sbp2-err2" style={{background:'#fff0f0',border:'1px solid #f5c6c6',color:'#c0392b',borderRadius:'6px',padding:'10px 12px',fontSize:'13px',marginBottom:'14px',display:'none'}}></div>
-          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $129/month after trial.</div></div>
+          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Login Email</label><input id="sbp2-login-email" type="email" readOnly style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',background:'#f8f8f8',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Password</label><input id="sbp2-password" type="password" placeholder="At least 8 characters" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Confirm Password</label><input id="sbp2-confirm" type="password" placeholder="Repeat password" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>

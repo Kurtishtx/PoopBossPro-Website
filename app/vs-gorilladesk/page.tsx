@@ -13,7 +13,7 @@ function closeSignupModal(n: number) { document.getElementById('sbp-form-' + n)!
 function closeAllModals() { [1,2,3].forEach(i => { const el = document.getElementById('sbp-form-' + i); if (el) el.style.display = 'none'; }); const bd = document.getElementById('sbp-backdrop'); if (bd) bd.style.display = 'none'; document.body.style.overflow = ''; sbpOpenForm = 0; }
 function sbpStep2(n: number) { const err = document.getElementById('sbp' + n + '-err1')!; err.style.display = 'none'; const first = (document.getElementById('sbp' + n + '-first') as HTMLInputElement).value.trim(); const last = (document.getElementById('sbp' + n + '-last') as HTMLInputElement).value.trim(); const comp = (document.getElementById('sbp' + n + '-company') as HTMLInputElement).value.trim(); const email = (document.getElementById('sbp' + n + '-email') as HTMLInputElement).value.trim(); if (!first || !last) return sbpShowErr(err as HTMLElement, 'Please enter your first and last name.'); if (!comp) return sbpShowErr(err as HTMLElement, 'Please enter your company name.'); if (!email || !email.includes('@')) return sbpShowErr(err as HTMLElement, 'Please enter a valid email address.'); (document.getElementById('sbp' + n + '-login-email') as HTMLInputElement).value = email; document.getElementById('sbp' + n + '-step1')!.style.display = 'none'; document.getElementById('sbp' + n + '-step2')!.style.display = 'block'; (document.getElementById('sbp' + n + '-password') as HTMLInputElement).focus(); }
 function sbpBackToStep1(n: number) { document.getElementById('sbp' + n + '-step2')!.style.display = 'none'; document.getElementById('sbp' + n + '-step1')!.style.display = 'block'; document.getElementById('sbp' + n + '-err2')!.style.display = 'none'; }
-async function sbpCreateAccount(n: number) { const err = document.getElementById('sbp' + n + '-err2')!; const btn = document.getElementById('sbp' + n + '-create-btn') as HTMLButtonElement; err.style.display = 'none'; const email = (document.getElementById('sbp' + n + '-login-email') as HTMLInputElement).value.trim(); const password = (document.getElementById('sbp' + n + '-password') as HTMLInputElement).value; const confirm = (document.getElementById('sbp' + n + '-confirm') as HTMLInputElement).value; if (password.length < 8) return sbpShowErr(err as HTMLElement, 'Password must be at least 8 characters.'); if (password !== confirm) return sbpShowErr(err as HTMLElement, 'Passwords do not match.'); if (!(document.getElementById('sbp' + n + '-agree') as HTMLInputElement).checked) return sbpShowErr(err as HTMLElement, 'Please agree to the Terms of Service and Privacy Policy.'); btn.disabled = true; btn.textContent = 'Creating your account…'; try { const res = await fetch(SBP_URL + '/functions/v1/manage-users', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SBP_ANON, 'apikey': SBP_ANON }, body: JSON.stringify({ action: 'create', email, password }) }); const result = await res.json(); if (result.error) throw new Error(result.error); const sb = getSbpClient(); const { data: signInData, error: signInErr } = await sb.auth.signInWithPassword({ email, password }); if (signInErr) throw new Error(signInErr.message); const uid = signInData.user.id; const first = (document.getElementById('sbp' + n + '-first') as HTMLInputElement).value.trim(); const last = (document.getElementById('sbp' + n + '-last') as HTMLInputElement).value.trim(); const comp = (document.getElementById('sbp' + n + '-company') as HTMLInputElement).value.trim(); await sb.auth.updateUser({ data: { full_name: first + ' ' + last } }); const trialEnd = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(); await sb.from('user_profiles').upsert({ id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd }, { onConflict: 'id' }); await sb.from('company_info').insert({ user_id: uid, company_name: comp, display_name: comp }); const reasons = ['Cancel Maintaining Self', 'Cancel Sold House', 'Cancel Too Expensive', 'Cancel Unknown', 'Dropping Customer', 'Sold House'].map(nm => ({ name: nm, active: true, user_id: uid })); await sb.from('cancellation_reasons').insert(reasons); document.getElementById('sbp' + n + '-step2')!.style.display = 'none'; document.getElementById('sbp' + n + '-success')!.style.display = 'block'; let secs = 4; const cd = document.getElementById('sbp' + n + '-countdown')!; cd.textContent = 'Redirecting in ' + secs + ' seconds…'; const iv = setInterval(() => { secs--; if (secs <= 0) { clearInterval(iv); window.location.href = 'https://my.poopbosspro.com/dashboard.html'; } else cd.textContent = 'Redirecting in ' + secs + ' second' + (secs === 1 ? '' : 's') + '…'; }, 1000); } catch (e: any) { sbpShowErr(err as HTMLElement, e.message || 'Something went wrong. Please try again.'); btn.disabled = false; btn.textContent = 'Create My Account'; } }
+async function sbpCreateAccount(n: number) { const err = document.getElementById('sbp' + n + '-err2')!; const btn = document.getElementById('sbp' + n + '-create-btn') as HTMLButtonElement; err.style.display = 'none'; const email = (document.getElementById('sbp' + n + '-login-email') as HTMLInputElement).value.trim(); const password = (document.getElementById('sbp' + n + '-password') as HTMLInputElement).value; const confirm = (document.getElementById('sbp' + n + '-confirm') as HTMLInputElement).value; if (password.length < 8) return sbpShowErr(err as HTMLElement, 'Password must be at least 8 characters.'); if (password !== confirm) return sbpShowErr(err as HTMLElement, 'Passwords do not match.'); if (!(document.getElementById('sbp' + n + '-agree') as HTMLInputElement).checked) return sbpShowErr(err as HTMLElement, 'Please agree to the Terms of Service and Privacy Policy.'); btn.disabled = true; btn.textContent = 'Creating your account…'; try { const res = await fetch(SBP_URL + '/functions/v1/manage-users', { method: 'POST', headers: { 'Content-Type': 'visit/json', 'Authorization': 'Bearer ' + SBP_ANON, 'apikey': SBP_ANON }, body: JSON.stringify({ action: 'create', email, password }) }); const result = await res.json(); if (result.error) throw new Error(result.error); const sb = getSbpClient(); const { data: signInData, error: signInErr } = await sb.auth.signInWithPassword({ email, password }); if (signInErr) throw new Error(signInErr.message); const uid = signInData.user.id; const first = (document.getElementById('sbp' + n + '-first') as HTMLInputElement).value.trim(); const last = (document.getElementById('sbp' + n + '-last') as HTMLInputElement).value.trim(); const comp = (document.getElementById('sbp' + n + '-company') as HTMLInputElement).value.trim(); await sb.auth.updateUser({ data: { full_name: first + ' ' + last } }); const trialEnd = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(); await sb.from('user_profiles').upsert({ id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd }, { onConflict: 'id' }); await sb.from('company_info').insert({ user_id: uid, company_name: comp, display_name: comp }); const reasons = ['Cancel Maintaining Self', 'Cancel Sold House', 'Cancel Too Expensive', 'Cancel Unknown', 'Dropping Customer', 'Sold House'].map(nm => ({ name: nm, active: true, user_id: uid })); await sb.from('cancellation_reasons').insert(reasons); document.getElementById('sbp' + n + '-step2')!.style.display = 'none'; document.getElementById('sbp' + n + '-success')!.style.display = 'block'; let secs = 4; const cd = document.getElementById('sbp' + n + '-countdown')!; cd.textContent = 'Redirecting in ' + secs + ' seconds…'; const iv = setInterval(() => { secs--; if (secs <= 0) { clearInterval(iv); window.location.href = 'https://my.poopbosspro.com/dashboard.html'; } else cd.textContent = 'Redirecting in ' + secs + ' second' + (secs === 1 ? '' : 's') + '…'; }, 1000); } catch (e: any) { sbpShowErr(err as HTMLElement, e.message || 'Something went wrong. Please try again.'); btn.disabled = false; btn.textContent = 'Create My Account'; } }
 function sbpShowErr(el: HTMLElement, msg: string) { el.textContent = msg; el.style.display = 'block'; }
 
 export default function VsGorillaDesk() {
@@ -143,16 +143,16 @@ export default function VsGorillaDesk() {
 
       <div className="hero">
         <div className="hero-badge">GorillaDesk Alternative</div>
-        <h1>GorillaDesk Charges Per Route.<br /><span>PoopBossPro Is $129 Flat — Unlimited Routes, Unlimited Stops.</span></h1>
-        <p>GorillaDesk uses a per-route pricing model — the more trucks you run, the more you pay, every month. PoopBossPro is $129/month regardless of how many routes you schedule, how many trucks you run, or how many stops you dispatch. No per-route fees. Ever.</p>
+        <h1>GorillaDesk Charges Per Route.<br /><span>PoopBossPro Is $79 Flat — Unlimited Routes, Unlimited Stops.</span></h1>
+        <p>GorillaDesk uses a per-route pricing model — the more trucks you run, the more you pay, every month. PoopBossPro is $79/month regardless of how many routes you schedule, how many trucks you run, or how many stops you dispatch. No per-route fees. Ever.</p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
         </div>
         <div className="hero-stats">
-          <div><div className="hero-stat-val">$129</div><div className="hero-stat-lbl">Flat — vs GorillaDesk&apos;s per-route pricing</div></div>
+          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat — vs GorillaDesk&apos;s per-route pricing</div></div>
           <div><div className="hero-stat-val">Unlimited</div><div className="hero-stat-lbl">Routes</div></div>
           <div><div className="hero-stat-val">Unlimited</div><div className="hero-stat-lbl">Stops — Basic caps at 25</div></div>
-          <div><div className="hero-stat-val">Built</div><div className="hero-stat-lbl">For Spray Routes</div></div>
+          <div><div className="hero-stat-val">Built</div><div className="hero-stat-lbl">For Service Routes</div></div>
         </div>
       </div>
 
@@ -172,22 +172,22 @@ export default function VsGorillaDesk() {
               </tr>
             </thead>
             <tbody>
-              <tr><td className="feature-name">Flat Monthly Pricing — No Per-Route Fees</td><td className="sbp-col"><span className="chk">✓ $129/mo</span></td><td><span className="crs">✗ Per-route model</span></td></tr>
+              <tr><td className="feature-name">Flat Monthly Pricing — No Per-Route Fees</td><td className="sbp-col"><span className="chk">✓ $79/mo</span></td><td><span className="crs">✗ Per-route model</span></td></tr>
               <tr><td className="feature-name">Unlimited Stops per Route</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Basic: 25 stop cap</span></td></tr>
-              <tr><td className="feature-name">Sq Ft Waiting List by Service Type</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
+              <tr><td className="feature-name">Visit Waiting List by Service Type</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Lasso Circle Map Route Selector</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Chemical Compliance Logs</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Basic logs only</span></td></tr>
-              <tr><td className="feature-name">Recurring Treatment Waiting List</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
+              <tr><td className="feature-name">Service verification Logs</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Basic logs only</span></td></tr>
+              <tr><td className="feature-name">Recurring Cleanup Waiting List</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Two-Way SMS Inbox Included</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Pro plan only</span></td></tr>
               <tr><td className="feature-name">Package Plans &amp; Renewal Tracking</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Limited</span></td></tr>
               <tr><td className="feature-name">Estimates &amp; Online Acceptance</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Card-on-File Payments</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
-              <tr><td className="feature-name">Mobile App for Technicians</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
+              <tr><td className="feature-name">Mobile App for Scoopers</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Automated SMS Alerts &amp; Follow-Ups</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Unlimited Users at Flat Price</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Price for 3 Routes</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$129 flat</td><td style={{color:'var(--muted)'}}>$147/mo (Basic ×3)</td></tr>
-              <tr><td className="feature-name">Price for 3 Routes — Pro Features</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$129 flat</td><td style={{color:'var(--muted)'}}>$297/mo (Pro ×3)</td></tr>
-              <tr><td className="feature-name">Price as You Scale to 5+ Routes</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>Still $129</td><td style={{color:'var(--muted)'}}>Keeps climbing</td></tr>
+              <tr><td className="feature-name">Price for 3 Routes</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$79 flat</td><td style={{color:'var(--muted)'}}>$147/mo (Basic ×3)</td></tr>
+              <tr><td className="feature-name">Price for 3 Routes — Pro Features</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$79 flat</td><td style={{color:'var(--muted)'}}>$297/mo (Pro ×3)</td></tr>
+              <tr><td className="feature-name">Price as You Scale to 5+ Routes</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>Still $79</td><td style={{color:'var(--muted)'}}>Keeps climbing</td></tr>
               <tr><td className="feature-name">No Annual Contract</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
             </tbody>
           </table>
@@ -195,15 +195,15 @@ export default function VsGorillaDesk() {
       </section>
 
       <div className="premium-band">
-        <h2>GorillaDesk Charges You More Every Time You Grow.<br /><span>PoopBossPro Is $129 No Matter How Many Routes You Run.</span></h2>
-        <p>GorillaDesk&apos;s per-route model sounds fine until you&apos;re running three trucks. At Basic ×3, you&apos;re at $147/month with a 25-stop cap and no two-way SMS. At Pro ×3, you&apos;re at $297/month. PoopBossPro is $129/month for your entire operation — unlimited routes, unlimited stops, every feature included. The more you grow, the more PoopBossPro saves you.</p>
+        <h2>GorillaDesk Charges You More Every Time You Grow.<br /><span>PoopBossPro Is $79 No Matter How Many Routes You Run.</span></h2>
+        <p>GorillaDesk&apos;s per-route model sounds fine until you&apos;re running three trucks. At Basic ×3, you&apos;re at $147/month with a 25-stop cap and no two-way SMS. At Pro ×3, you&apos;re at $297/month. PoopBossPro is $79/month for your entire operation — unlimited routes, unlimited stops, every feature included. The more you grow, the more PoopBossPro saves you.</p>
         <div className="premium-grid">
-          <div className="premium-card"><div className="premium-card-icon">💰</div><h4>Price Doesn&apos;t Scale With Routes</h4><p>$129/month covers your entire operation regardless of route count. Run 1 truck or 10 — same price. GorillaDesk multiplies by your route count every single month. That math only gets worse as you grow.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">📋</div><h4>Sq Ft Waiting List</h4><p>Before scheduling, see exactly how much square footage is waiting per service type. Know your lawn care 4, mosquito, and insect control backlog before you build a route. GorillaDesk doesn&apos;t have a sq ft waiting list model.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💰</div><h4>Price Doesn&apos;t Scale With Routes</h4><p>$79/month covers your entire operation regardless of route count. Run 1 truck or 10 — same price. GorillaDesk multiplies by your route count every single month. That math only gets worse as you grow.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">📋</div><h4>Visit Waiting List</h4><p>Before scheduling, see exactly how much yard size is waiting per service type. Know your pet waste removal 4, pet waste, and insect control backlog before you build a route. GorillaDesk doesn&apos;t have a visit waiting list model.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Lasso Circle Selector</h4><p>Draw a circle on the map, see every stop inside with a service due. GorillaDesk has route optimization. Not the same as drawing a geographic circle and instantly seeing all your due work inside it before you schedule.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">🧪</div><h4>Chemical Compliance</h4><p>Full chemical application logs with product, mix rate, area, weather, and tech license. Pull compliance reports on demand. GorillaDesk has basic job notes — not a dedicated pesticide compliance logging system.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">💬</div><h4>SMS Inbox Included</h4><p>True two-way SMS inbox at $129/month. GorillaDesk locks SMS behind their Pro tier. Add up the per-route Pro pricing and you&apos;re paying more for less — and still missing spray-specific features.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Unlimited Stops</h4><p>GorillaDesk Basic caps routes at 25 stops. PoopBossPro has no stop limit. Schedule 50-stop routes, 100-stop routes — no restrictions. Spray businesses run dense routes. A 25-stop cap is a real operational problem.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">🧪</div><h4>Service verification</h4><p>Full cleanup visit logs with product, mix rate, area, weather, and tech license. Pull service history reports on demand. GorillaDesk has basic job notes — not a dedicated service compliance logging system.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💬</div><h4>SMS Inbox Included</h4><p>True two-way SMS inbox at $79/month. GorillaDesk locks SMS behind their Pro tier. Add up the per-route Pro pricing and you&apos;re paying more for less — and still missing service-specific features.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Unlimited Stops</h4><p>GorillaDesk Basic caps routes at 25 stops. PoopBossPro has no stop limit. Schedule 50-stop routes, 100-stop routes — no restrictions. Service businesses run dense routes. A 25-stop cap is a real operational problem.</p></div>
         </div>
       </div>
 
@@ -212,15 +212,15 @@ export default function VsGorillaDesk() {
           <div className="highlight-text">
             <span className="section-label">The Real Cost</span>
             <h2>What GorillaDesk Actually Costs When You Run Multiple Routes</h2>
-            <p>GorillaDesk pricing looks reasonable for one route. The problem is what happens at 2, 3, or 5 trucks. PoopBossPro is $129 no matter how many routes you run — and includes features GorillaDesk doesn&apos;t offer at any tier.</p>
+            <p>GorillaDesk pricing looks reasonable for one route. The problem is what happens at 2, 3, or 5 trucks. PoopBossPro is $79 no matter how many routes you run — and includes features GorillaDesk doesn&apos;t offer at any tier.</p>
             <ul className="check-list">
               <li>GorillaDesk Basic ×3 = $147/mo — still has 25-stop cap and no SMS</li>
               <li>GorillaDesk Pro ×3 = $297/mo — SMS unlocked, stop cap removed</li>
-              <li>GorillaDesk Basic ×5 = $245/mo — missing lasso, sq ft list, compliance logs</li>
-              <li>PoopBossPro = $129/mo — unlimited routes, all features, forever</li>
-              <li>No sq ft waiting list at any GorillaDesk tier</li>
+              <li>GorillaDesk Basic ×5 = $245/mo — missing lasso, visit list, compliance logs</li>
+              <li>PoopBossPro = $79/mo — unlimited routes, all features, forever</li>
+              <li>No visit waiting list at any GorillaDesk tier</li>
               <li>No lasso route selector at any GorillaDesk tier</li>
-              <li>No dedicated chemical compliance logs at any GorillaDesk tier</li>
+              <li>No dedicated service verification logs at any GorillaDesk tier</li>
             </ul>
           </div>
           <div className="highlight-visual">
@@ -228,7 +228,7 @@ export default function VsGorillaDesk() {
             <div className="mock-item">
               <div className="mock-dot orange"></div>
               <div><div className="mock-label">PoopBossPro</div><div className="mock-sub">Unlimited routes, all features, SMS included</div></div>
-              <div className="mock-badge">$129/mo</div>
+              <div className="mock-badge">$79/mo</div>
             </div>
             <div className="mock-item">
               <div className="mock-dot amber"></div>
@@ -242,10 +242,10 @@ export default function VsGorillaDesk() {
             </div>
             <div className="mock-extra">
               <div className="mock-extra-title">At every GorillaDesk tier, you still don&apos;t get:</div>
-              <div className="mock-extra-item"><span style={{color:'#dc2626'}}>✗</span> Sq Ft Waiting List by Service Type</div>
+              <div className="mock-extra-item"><span style={{color:'#dc2626'}}>✗</span> Visit Waiting List by Service Type</div>
               <div className="mock-extra-item"><span style={{color:'#dc2626'}}>✗</span> Lasso Circle Map Route Selector</div>
-              <div className="mock-extra-item"><span style={{color:'#dc2626'}}>✗</span> Recurring Treatment Waiting List</div>
-              <div className="mock-extra-item"><span style={{color:'#dc2626'}}>✗</span> Dedicated Chemical Compliance Logs</div>
+              <div className="mock-extra-item"><span style={{color:'#dc2626'}}>✗</span> Recurring Cleanup Waiting List</div>
+              <div className="mock-extra-item"><span style={{color:'#dc2626'}}>✗</span> Dedicated Service verification Logs</div>
             </div>
           </div>
         </div>
@@ -256,10 +256,10 @@ export default function VsGorillaDesk() {
           <div className="highlight-text">
             <span className="section-label">Lasso — Circle Map Scheduling</span>
             <h2 style={{color:'#fff'}}>GorillaDesk Has Route Optimization. PoopBossPro Has Lasso.</h2>
-            <p style={{color:'rgba(255,255,255,.65)'}}>They&apos;re not the same thing. Lasso lets you draw a circle on your map and instantly see every property inside with a service due — stops, sq ft, service types — all calculated before you schedule anything. No competitor has built this. GorillaDesk can optimize the order of stops you already selected. Lasso shows you which stops to select in the first place.</p>
+            <p style={{color:'rgba(255,255,255,.65)'}}>They&apos;re not the same thing. Lasso lets you draw a circle on your map and instantly see every yard inside with a service due — stops, visit, service types — all calculated before you schedule anything. No competitor has built this. GorillaDesk can optimize the order of stops you already selected. Lasso shows you which stops to select in the first place.</p>
             <ul className="check-list" style={{marginTop:'20px'}}>
-              <li style={{color:'rgba(255,255,255,.75)'}}>Draw any size circle — instantly see all properties with services due inside</li>
-              <li style={{color:'rgba(255,255,255,.75)'}}>Breaks down stops, sq ft, and service types in real time</li>
+              <li style={{color:'rgba(255,255,255,.75)'}}>Draw any size circle — instantly see all yards with services due inside</li>
+              <li style={{color:'rgba(255,255,255,.75)'}}>Breaks down stops, visit, and service types in real time</li>
               <li style={{color:'rgba(255,255,255,.75)'}}>One click to schedule all selected stops to a date and truck</li>
               <li style={{color:'rgba(255,255,255,.75)'}}>Tighten routes geographically — stop wasting fuel on scattered stops</li>
               <li style={{color:'rgba(255,255,255,.75)'}}>Works across all service types simultaneously</li>
@@ -280,9 +280,9 @@ export default function VsGorillaDesk() {
             <div className="stat-grid">
               <div className="stat-cell"><div className="stat-val">14</div><div className="stat-lbl">Stops Selected</div></div>
               <div className="stat-cell"><div className="stat-val">19</div><div className="stat-lbl">Total Services</div></div>
-              <div className="stat-cell"><div className="stat-val">118,400</div><div className="stat-lbl">Sq Ft</div></div>
+              <div className="stat-cell"><div className="stat-val">118,400</div><div className="stat-lbl">Visit</div></div>
               <div className="stat-cell"><div className="stat-val">4,200</div><div className="stat-lbl">Linear Ft (Beds)</div></div>
-              <div className="stat-cell full"><div className="stat-val">Lawn Care 4 · 8 &nbsp;|&nbsp; Mosquito · 6 &nbsp;|&nbsp; Insect · 5</div><div className="stat-lbl">Breakdown by Service Type</div></div>
+              <div className="stat-cell full"><div className="stat-val">Pet waste removal 4 · 8 &nbsp;|&nbsp; Pet waste · 6 &nbsp;|&nbsp; Insect · 5</div><div className="stat-lbl">Breakdown by Service Type</div></div>
             </div>
           </div>
         </div>
@@ -291,21 +291,21 @@ export default function VsGorillaDesk() {
       <section style={{background:'var(--light-bg)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto 56px'}}>
           <span className="section-label">Simplicity</span>
-          <h2 className="section-title">Built for Spray Businesses. Not Generic Pest Control Software.</h2>
-          <p className="section-sub" style={{maxWidth:'720px'}}>GorillaDesk is built for general pest control — termites, rodents, general bugs. PoopBossPro is built around lawn care and spray routes with recurring treatment schedules, sq ft tracking, and the specific way spray businesses manage their client base.</p>
+          <h2 className="section-title">Built for Service Businesses. Not Generic Pet waste removal Software.</h2>
+          <p className="section-sub" style={{maxWidth:'720px'}}>GorillaDesk is built for general pet waste removal — termites, rodents, general bugs. PoopBossPro is built around pet waste removal and service routes with recurring cleanup schedules, visit tracking, and the specific way service businesses manage their client base.</p>
         </div>
         <div className="simple-grid">
-          <div className="simple-card"><div className="simple-num">01</div><h3>Sq Ft First — Not Just Stop Count</h3><p>PoopBossPro tracks everything in square feet — waiting list, route totals, property-level breakdown. Not just stop counts. Because lawn care and pest control pricing is based on sq ft, and your routing should be too.</p></div>
-          <div className="simple-card"><div className="simple-num">02</div><h3>Recurring Spray Route Model</h3><p>Built around the way spray businesses work — recurring treatment schedules, waiting lists, package programs, chemical logs. GorillaDesk is built around one-off pest service calls. Different model entirely.</p></div>
-          <div className="simple-card"><div className="simple-num">03</div><h3>Set Up in One Afternoon</h3><p>Add your services, import clients and properties, connect payments — fully operational same day. No onboarding call, no implementation timeline, no training manual. Self-serve from minute one.</p></div>
-          <div className="simple-card"><div className="simple-num">04</div><h3>Price That Doesn&apos;t Scale Against You</h3><p>$129/month flat. Add routes, trucks, employees — price doesn&apos;t change. GorillaDesk&apos;s per-route model turns every growth decision into a cost increase. PoopBossPro doesn&apos;t do that.</p></div>
+          <div className="simple-card"><div className="simple-num">01</div><h3>Visit First — Not Just Stop Count</h3><p>PoopBossPro tracks everything in yard size — waiting list, route totals, yard-level breakdown. Not just stop counts. Because pet waste removal pricing is based on visit, and your routing should be too.</p></div>
+          <div className="simple-card"><div className="simple-num">02</div><h3>Recurring Service Route Model</h3><p>Built around the way service businesses work — recurring cleanup schedules, waiting lists, recurring cleanup plans, service notes. GorillaDesk is built around one-off pest service calls. Different model entirely.</p></div>
+          <div className="simple-card"><div className="simple-num">03</div><h3>Set Up in One Afternoon</h3><p>Add your services, import clients and yards, connect payments — fully operational same day. No onboarding call, no implementation timeline, no training manual. Self-serve from minute one.</p></div>
+          <div className="simple-card"><div className="simple-num">04</div><h3>Price That Doesn&apos;t Scale Against You</h3><p>$79/month flat. Add routes, trucks, employees — price doesn&apos;t change. GorillaDesk&apos;s per-route model turns every growth decision into a cost increase. PoopBossPro doesn&apos;t do that.</p></div>
         </div>
       </section>
 
       <section>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
-          <h2 className="section-title">$129/Month. No Matter How Many Routes You Run.</h2>
+          <h2 className="section-title">$79/Month. No Matter How Many Routes You Run.</h2>
           <p className="section-sub">One price. Unlimited routes. Every feature. No per-route math.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
@@ -317,11 +317,11 @@ export default function VsGorillaDesk() {
             <ul className="price-features">
               <li>Unlimited Routes — No Per-Route Fees Ever</li>
               <li>Unlimited Stops Per Route</li>
-              <li>Unlimited Clients, Properties &amp; Leads</li>
+              <li>Unlimited Clients, Yards &amp; Leads</li>
               <li>Unlimited Employees &amp; Users</li>
-              <li>Sq Ft Waiting List by Service Type</li>
+              <li>Visit Waiting List by Service Type</li>
               <li>Lasso Circle Map Route Selector</li>
-              <li>Chemical Compliance Logs &amp; Reports</li>
+              <li>Service verification Logs &amp; Reports</li>
               <li>Full Scheduling, Dispatch &amp; Route Map</li>
               <li>Estimates, Invoices &amp; Card-on-File Payments</li>
               <li>Two-Way SMS &amp; 10+ Automated Alerts</li>
@@ -335,7 +335,7 @@ export default function VsGorillaDesk() {
       </section>
 
       <div className="cta-band">
-        <h2>Done Paying More Every Time You Add a Truck?<br />PoopBossPro Is $129. No Matter How Many Routes You Run.</h2>
+        <h2>Done Paying More Every Time You Add a Truck?<br />PoopBossPro Is $79. No Matter How Many Routes You Run.</h2>
         <p>Try PoopBossPro free for 14 days. No credit card required. Set up in an afternoon.</p>
         <div className="hero-btns">
           <button className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}} onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
@@ -356,7 +356,7 @@ export default function VsGorillaDesk() {
               <div style={{flex:1}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>First Name</label><input id={`sbp${n}-first`} type="text" placeholder="John" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
               <div style={{flex:1}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Last Name</label><input id={`sbp${n}-last`} type="text" placeholder="Smith" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
             </div>
-            <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Company Name</label><input id={`sbp${n}-company`} type="text" placeholder="Smith Lawn Care" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
+            <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Company Name</label><input id={`sbp${n}-company`} type="text" placeholder="Smith Pet waste removal" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
             <div style={{marginBottom:'20px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Email Address</label><input id={`sbp${n}-email`} type="email" placeholder="you@yourcompany.com" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
             <button onClick={() => sbpStep2(n)} style={{width:'100%', background:'#f0820e', color:'#fff', border:'none', borderRadius:'6px', padding:'13px', fontSize:'15px', fontWeight:700, cursor:'pointer', fontFamily:'inherit'}}>Next: Create Password →</button>
           </div>
@@ -364,7 +364,7 @@ export default function VsGorillaDesk() {
             <div id={`sbp${n}-err2`} style={{background:'#fff0f0', border:'1px solid #f5c6c6', color:'#c0392b', borderRadius:'6px', padding:'10px 12px', fontSize:'13px', marginBottom:'14px', display:'none'}}></div>
             <div style={{background:'#f0fdf4', border:'1px solid #bbf7d0', borderRadius:'6px', padding:'10px 14px', marginBottom:'16px'}}>
               <div style={{fontSize:'12px', color:'#16a34a', fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div>
-              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $129/month after trial.</div>
+              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div>
             </div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Login Email</label><input id={`sbp${n}-login-email`} type="email" readOnly style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', background:'#f8f8f8', color:'#333'}} /></div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Password</label><input id={`sbp${n}-password`} type="password" placeholder="At least 8 characters" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>

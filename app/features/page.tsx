@@ -85,7 +85,7 @@ async function sbpCreateAccount(n: number) {
   try {
     const res = await fetch(SBP_URL + '/functions/v1/manage-users', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SBP_ANON, 'apikey': SBP_ANON },
+      headers: { 'Content-Type': 'visit/json', 'Authorization': 'Bearer ' + SBP_ANON, 'apikey': SBP_ANON },
       body: JSON.stringify({ action: 'create', email, password }),
     });
     const result = await res.json();
@@ -143,8 +143,8 @@ export default function Features() {
       {/* HERO */}
       <div className="hero">
         <div className="hero-badge">Full Feature List</div>
-        <h1>Everything You Need to Run<br /><span>Your Spray Business</span></h1>
-        <p>PoopBossPro is built specifically for lawn care and pest control. Every feature listed here is included in your $129/month — nothing locked, nothing extra.</p>
+        <h1>Everything You Need to Run<br /><span>Your Pet waste removal business</span></h1>
+        <p>PoopBossPro is built specifically for pet waste removal. Every feature listed here is included in your $79/month — nothing locked, nothing extra.</p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={(e) => openSignupModal(1, e.currentTarget as HTMLElement)}>Start Your 14-Day Free Trial</button>
         </div>
@@ -156,15 +156,15 @@ export default function Features() {
           <div className="spotlight-text">
             <div className="spotlight-label">Only in PoopBossPro</div>
             <div className="spotlight-title">Circle an Area on the Map.<br /><span>Instantly Know Everything Inside It.</span></div>
-            <div className="spotlight-desc">On the waiting list map, draw a circle around any geographic area. PoopBossPro instantly shows you the total sq ft, linear ft, stop count, number of services, and a breakdown of every service type inside that circle — before you schedule a single stop.</div>
+            <div className="spotlight-desc">On the waiting list map, draw a circle around any geographic area. PoopBossPro instantly shows you the total visit, linear ft, stop count, number of services, and a breakdown of every service type inside that circle — before you schedule a single stop.</div>
             <ul className="spotlight-checks">
               <li>Draw a lasso around any area on the map</li>
-              <li>See total sq ft and linear ft for everything inside</li>
+              <li>See total visit and linear ft for everything inside</li>
               <li>Total stops and total services in the selected area</li>
               <li>Breakdown by service type with totals for each</li>
               <li>Schedule all circled stops with one click</li>
               <li>They drop straight onto the dispatch board with a full route map</li>
-              <li>No other lawn care or pest control software does this</li>
+              <li>No other pet waste removal software does this</li>
             </ul>
           </div>
           <div className="spotlight-visual">
@@ -180,9 +180,9 @@ export default function Features() {
             <div className="stat-row">
               <div className="stat-box"><div className="stat-val">14</div><div className="stat-lbl">Stops Selected</div></div>
               <div className="stat-box"><div className="stat-val">19</div><div className="stat-lbl">Total Services</div></div>
-              <div className="stat-box"><div className="stat-val">118,400</div><div className="stat-lbl">Sq Ft</div></div>
+              <div className="stat-box"><div className="stat-val">118,400</div><div className="stat-lbl">Visit</div></div>
               <div className="stat-box"><div className="stat-val">4,200</div><div className="stat-lbl">Linear Ft</div></div>
-              <div className="stat-box wide"><div className="stat-val">Lawn Care 4 · 8 &nbsp;|&nbsp; Mosquito · 6 &nbsp;|&nbsp; Insect · 5</div><div className="stat-lbl">Services by Type</div></div>
+              <div className="stat-box wide"><div className="stat-val">Pet waste removal 4 · 8 &nbsp;|&nbsp; Pet waste · 6 &nbsp;|&nbsp; Insect · 5</div><div className="stat-lbl">Services by Type</div></div>
             </div>
             <button style={{width:'100%',marginTop:'14px',background:'var(--orange)',color:'#fff',border:'none',borderRadius:'8px',padding:'13px',fontSize:'14px',fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}
               onClick={(e) => openSignupModal(1, e.currentTarget as HTMLElement)}>Schedule These 14 Stops →</button>
@@ -199,14 +199,14 @@ export default function Features() {
           </div>
           <div className="feat-grid">
             {[
-              {t:'Sq Ft Waiting List by Service Type',d:'See total square footage waiting for each service type before you build a route. Know what you have before you make a call.'},
-              {t:'Circle-to-Schedule Map Tool',d:'Draw a circle on the waiting list map. Get instant totals — sq ft, linear ft, stops, services by type — then schedule them all at once.'},
-              {t:'One-Click Schedule from Waiting List',d:'Click any property and assign a date, tech, and truck in seconds. No extra screens, no copy-paste.'},
+              {t:'Visit Waiting List by Service Type',d:'See total yard size waiting for each service type before you build a route. Know what you have before you make a call.'},
+              {t:'Circle-to-Schedule Map Tool',d:'Draw a circle on the waiting list map. Get instant totals — visit, linear ft, stops, services by type — then schedule them all at once.'},
+              {t:'One-Click Schedule from Waiting List',d:'Click any yard and assign a date, tech, and truck in seconds. No extra screens, no copy-paste.'},
               {t:'Daily Dispatch Board',d:'All scheduled stops for any day in one view. Filter by tech, truck, or service. Print dispatch sheets for drivers.'},
-              {t:'Technician & Truck Assignment',d:'Assign a tech and truck to every stop at scheduling time. Track who handled what and with which vehicle.'},
+              {t:'Scooper & Truck Assignment',d:'Assign a tech and truck to every stop at scheduling time. Track who handled what and with which vehicle.'},
               {t:'Mark Complete, Skip, or Reschedule',d:'Update stop status from the board or mobile app. Skipped stops return to the waiting list automatically.'},
-              {t:'Day Summary Bar',d:'Total stops, total sq ft, and total revenue for the day shown at the top of the dispatch board at a glance.'},
-              {t:'Full Service History per Property',d:'Every completed stop logged to the property record with date, tech, notes, and chemicals used.'},
+              {t:'Day Summary Bar',d:'Total stops, total visit, and total revenue for the day shown at the top of the dispatch board at a glance.'},
+              {t:'Full Service History per Yard',d:'Every completed stop logged to the yard record with date, tech, notes, and supplies used.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
             ))}
@@ -225,7 +225,7 @@ export default function Features() {
             {[
               {t:'Live Route Map',d:'Every scheduled stop for the day pinned on an interactive map. See your full route before anyone leaves the shop.'},
               {t:'Drag-and-Drop Stop Reordering',d:'Reorder stops on the map or dispatch board. Build tight geographic clusters to cut windshield time.'},
-              {t:'GPS Coordinates per Property',d:'Every property stores GPS coordinates for accurate map pinning and turn-by-turn navigation links.'},
+              {t:'GPS Coordinates per Yard',d:'Every yard stores GPS coordinates for accurate map pinning and turn-by-turn navigation links.'},
               {t:'Color-Coded Status Pins',d:"Map pins update color as stops are completed or skipped — see your crew's progress in real time from the office."},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
@@ -234,21 +234,21 @@ export default function Features() {
         </div>
       </section>
 
-      {/* CHEMICAL TRACKING */}
+      {/* Service verification */}
       <div className="dark-cat">
         <div className="cat-block" style={{maxWidth:'1200px',margin:'0 auto'}}>
           <div className="cat-header">
             <span className="cat-icon">🧪</span>
-            <div><div className="cat-title">Chemical Tracking &amp; Compliance</div><div className="cat-desc">Every application logged automatically — print a compliance report in under 30 seconds</div></div>
+            <div><div className="cat-title">Service verification &amp; Compliance</div><div className="cat-desc">Every visit logged automatically — print a service history report in under 30 seconds</div></div>
           </div>
           <div className="feat-grid">
             {[
-              {t:'Application Log per Stop',d:'Product, mix rate, gallons, area treated, and weather logged on every completed job — automatically.'},
-              {t:'Technician & License Tracking',d:'Record which tech made the application and their license number — required for most state compliance records.'},
-              {t:'Product Catalog with Mix Recipes',d:'Build your product library once. Techs select from your catalog in the field — no free-typing product names.'},
-              {t:'Area Type Logging',d:'Log treatment area — lawn, shrubs, flower beds, perimeter, interior — per application for detailed records.'},
-              {t:'Filter by Product, Property, Tech, or Date',d:'Pull any slice of your chemical history instantly. Find every application of a specific product across all properties.'},
-              {t:'Print-Ready Compliance Reports',d:'Generate a formatted pesticide application report for any date range or property. Ready for any state inspector.'},
+              {t:'Visit Log per Stop',d:'Product, mix rate, gallons, area treated, and weather logged on every completed job — automatically.'},
+              {t:'Scooper & License Tracking',d:'Record which tech made the visit and their license number — required for most state compliance records.'},
+              {t:'Product Catalog with Mix Recipes',d:'Build your product library once. Scoopers select from your catalog in the field — no free-typing product names.'},
+              {t:'Area Type Logging',d:'Log cleanup area — yard, shrubs, flower beds, perimeter, interior — per visit for detailed records.'},
+              {t:'Filter by Product, Yard, Tech, or Date',d:'Pull any slice of your service history instantly. Find every visit of a specific product across all yards.'},
+              {t:'Print-Ready Service history reports',d:'Generate a formatted cleanup visit report for any date range or yard. Ready for any state inspector.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
             ))}
@@ -311,13 +311,13 @@ export default function Features() {
             {[
               {t:'Two-Way SMS Inbox',d:'Send and receive texts with customers inside PoopBossPro. Full conversation history organized by contact.'},
               {t:'Service Scheduled Alert',d:'Customer gets a text the moment a service is added to the schedule. Fully customizable message.'},
-              {t:'Tech On the Way Alert',d:'Notify customers automatically when your technician is heading to their property.'},
+              {t:'Tech On the Way Alert',d:'Notify customers automatically when your scooper is heading to their yard.'},
               {t:'Service Completed Alert',d:'Text the customer when the job is marked done — what was done, no phone call needed.'},
               {t:'Service Skipped Alert',d:"If a stop is skipped, an alert goes out automatically so the customer isn't left in the dark."},
               {t:'Estimate Sent & Accepted Alerts',d:'Notify clients when their estimate is on the way, and get notified yourself when they accept.'},
               {t:'Google Review Request',d:'Automatically sent after every completed service. More 5-star reviews with zero extra effort.'},
               {t:'Payment & Estimate Follow-Up Sequences',d:'3-step automated sequences for both unpaid invoices and unanswered estimates — fully customizable timing and copy.'},
-              {t:'500 SMS/Month Included',d:'500 outbound SMS messages included in the $129/month. Add more in blocks of 500 for $15 each.'},
+              {t:'500 SMS/Month Included',d:'500 outbound SMS messages included in the $79/month. Add more in blocks of 500 for $15 each.'},
               {t:'Customizable Alert Templates',d:'Edit the message for every alert type. Use your own voice and include details that matter to your customers.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
@@ -326,21 +326,21 @@ export default function Features() {
         </div>
       </div>
 
-      {/* CLIENTS & PROPERTIES */}
+      {/* CLIENTS & Yards */}
       <section style={{background:'var(--light-bg)'}}>
         <div className="cat-block">
           <div className="cat-header">
             <span className="cat-icon">🏠</span>
-            <div><div className="cat-title">Clients, Leads &amp; Properties</div><div className="cat-desc">Full CRM built for spray businesses — everything tied to the address, not just the name</div></div>
+            <div><div className="cat-title">Clients, Leads &amp; Yards</div><div className="cat-desc">Full CRM built for service businesses — everything tied to the address, not just the name</div></div>
           </div>
           <div className="feat-grid">
             {[
               {t:'Client Database',d:'Full searchable database of every customer — contact info, notes, service history, invoices, and estimates in one place.'},
               {t:'Lead Management',d:'Track open prospects separately from active clients. Manage estimates, follow-ups, and conversion all in one view.'},
-              {t:'Property Profiles',d:'Every address has its own record — sq footage, GPS, photos, service history, chemical log, and notes.'},
-              {t:'Multiple Properties per Client',d:'One client can own multiple service addresses. Each property is tracked independently with its own full history.'},
-              {t:'Property Photos & Notes',d:'Attach photos and field notes to any property. Tech notes from the field show up in the office view instantly.'},
-              {t:'Unlimited Clients & Properties',d:'No caps. 50 accounts or 5,000 — same flat price, no tiers.'},
+              {t:'Yard profiles',d:'Every address has its own record — sq footage, GPS, photos, service history, service note, and notes.'},
+              {t:'Multiple Yards per Client',d:'One client can own multiple service addresses. Each yard is tracked independently with its own full history.'},
+              {t:'Yard Photos & Notes',d:'Attach photos and field notes to any yard. Tech notes from the field show up in the office view instantly.'},
+              {t:'Unlimited Clients & Yards',d:'No caps. 50 accounts or 5,000 — same flat price, no tiers.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
             ))}
@@ -353,14 +353,14 @@ export default function Features() {
         <div className="cat-block">
           <div className="cat-header">
             <span className="cat-icon">📦</span>
-            <div><div className="cat-title">Package Programs &amp; Renewals</div><div className="cat-desc">Manage recurring treatment packages and never miss a renewal</div></div>
+            <div><div className="cat-title">Recurring cleanup plans &amp; Renewals</div><div className="cat-desc">Manage recurring cleanup packages and never miss a renewal</div></div>
           </div>
           <div className="feat-grid">
             {[
-              {t:'Custom Package Plans',d:'Create any package — 6-app lawn care, quarterly pest, annual mosquito. Fully custom service types and counts.'},
-              {t:'Assign Clients to Packages',d:'Link any client to any package. Track start date, treatments used, and treatments remaining automatically.'},
+              {t:'Custom Package Plans',d:'Create any package — 6-app pet waste removal, quarterly pest, annual pet waste. Fully custom service types and counts.'},
+              {t:'Assign Clients to Packages',d:'Link any client to any package. Track start date, cleanups used, and cleanups remaining automatically.'},
               {t:'Renewal Alerts',d:'Get alerted before a package expires so you can reach out before the client looks elsewhere.'},
-              {t:'Treatment Count Tracking',d:'PoopBossPro counts down remaining applications automatically each time a service is marked complete.'},
+              {t:'Cleanup Count Tracking',d:'PoopBossPro counts down remaining visits automatically each time a service is marked complete.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
             ))}
@@ -377,9 +377,9 @@ export default function Features() {
           </div>
           <div className="feat-grid">
             {[
-              {t:'Unlimited Users',d:'Add every employee — techs, office staff, managers — at no extra cost. No per-user fees, ever.'},
-              {t:'Role-Based Permissions',d:'Owner, Manager, Office, Technician, and Mobile roles — each with different access levels built in.'},
-              {t:'Mobile Role for Field Techs',d:'Techs on the Mobile role only see their assigned stops — no billing, client info, or business settings.'},
+              {t:'Unlimited Users',d:'Add every employee — scoopers, office staff, managers — at no extra cost. No per-user fees, ever.'},
+              {t:'Role-Based Permissions',d:'Owner, Manager, Office, Scooper, and Mobile roles — each with different access levels built in.'},
+              {t:'Mobile Role for Field Scoopers',d:'Scoopers on the Mobile role only see their assigned stops — no billing, client info, or business settings.'},
               {t:'Truck Management',d:'Create vehicle profiles, assign trucks to routes, and track which vehicle handled each stop.'},
               {t:'Employee Hour Tracking',d:'Log hours per job per employee. Generate payroll-ready reports without a separate system.'},
             ].map((f,i) => (
@@ -394,14 +394,14 @@ export default function Features() {
         <div className="cat-block">
           <div className="cat-header">
             <span className="cat-icon">📱</span>
-            <div><div className="cat-title">Mobile App for Technicians</div><div className="cat-desc">Field-optimized for your techs — no office calls, no app store required</div></div>
+            <div><div className="cat-title">Mobile App for Scoopers</div><div className="cat-desc">Field-optimized for your scoopers — no office calls, no app store required</div></div>
           </div>
           <div className="feat-grid">
             {[
-              {t:'Daily Stop List',d:'Techs see only their assigned stops for the day — optimized for mobile with clear status and large tap targets.'},
+              {t:'Daily Stop List',d:'Scoopers see only their assigned stops for the day — optimized for mobile with clear status and large tap targets.'},
               {t:'Mark Complete from the Field',d:'Tap to mark complete, skip, or reschedule — all without calling the office. Syncs in real time.'},
-              {t:'Chemical Log Entry',d:'Techs log the product, rate, gallons, and weather at each stop from their phone. Records are automatic.'},
-              {t:'Property Notes & Photos',d:'Techs can add field notes and photos to any property from their device. Office sees them instantly.'},
+              {t:'Service note Entry',d:'Scoopers log the product, rate, gallons, and weather at each stop from their phone. Records are automatic.'},
+              {t:'Yard Notes & Photos',d:'Scoopers can add field notes and photos to any yard from their device. Office sees them instantly.'},
               {t:'No App Download Required',d:"PoopBossPro's mobile experience runs in any browser. No app store, no install, no update prompts."},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
@@ -419,10 +419,10 @@ export default function Features() {
           </div>
           <div className="feat-grid">
             {[
-              {t:'Custom Dashboard Stat Cards',d:"Today's revenue, stops completed, properties served, money owed — all on your dashboard when you log in."},
+              {t:'Custom Dashboard Stat Cards',d:"Today's revenue, stops completed, yards served, money owed — all on your dashboard when you log in."},
               {t:'Revenue Tracking',d:"Track revenue by day, week, or month. See what's been collected vs. what's still outstanding at any time."},
               {t:'Outstanding Balance View',d:'Total amount owed across all open invoices at a glance — drill into individual accounts in one click.'},
-              {t:'Chemical Compliance Reports',d:'Pull a print-ready pesticide application report for any date range, product, property, or technician in seconds.'},
+              {t:'Service history reports',d:'Pull a print-ready cleanup visit report for any date range, product, yard, or scooper in seconds.'},
               {t:'Payroll Hour Reports',d:'Employee hour totals by date range — export-ready for your payroll process without a separate system.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
@@ -433,7 +433,7 @@ export default function Features() {
 
       {/* CTA */}
       <div className="cta-band">
-        <h2>Every Feature. One Price.<br />$129/Month.</h2>
+        <h2>Every Feature. One Price.<br />$79/Month.</h2>
         <p>No tiers, no locked features, no per-user fees. Start free for 14 days — no credit card required.</p>
         <div className="hero-btns">
           <button className="btn-primary" style={{fontSize:'17px',padding:'18px 44px'}} onClick={(e) => openSignupModal(2, e.currentTarget as HTMLElement)}>Start Your 14-Day Free Trial</button>
@@ -456,13 +456,13 @@ export default function Features() {
             <div style={{flex:1}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>First Name</label><input id="sbp1-first" type="text" placeholder="John" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
             <div style={{flex:1}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Last Name</label><input id="sbp1-last" type="text" placeholder="Smith" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           </div>
-          <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Company Name</label><input id="sbp1-company" type="text" placeholder="Smith Lawn & Spray Co." style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
+          <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Company Name</label><input id="sbp1-company" type="text" placeholder="Smith Yard & Service Co." style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'20px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Email Address</label><input id="sbp1-email" type="email" placeholder="you@yourcompany.com" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <button onClick={() => sbpStep2(1)} style={{width:'100%',background:'#f0820e',color:'#fff',border:'none',borderRadius:'6px',padding:'13px',fontSize:'15px',fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>Next: Create Password →</button>
         </div>
         <div id="sbp1-step2" style={{padding:'24px 28px',display:'none'}}>
           <div id="sbp1-err2" style={{background:'#fff0f0',border:'1px solid #f5c6c6',color:'#c0392b',borderRadius:'6px',padding:'10px 12px',fontSize:'13px',marginBottom:'14px',display:'none'}}></div>
-          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $129/month after trial.</div></div>
+          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Login Email</label><input id="sbp1-login-email" type="email" readOnly style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',background:'#f8f8f8',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Password</label><input id="sbp1-password" type="password" placeholder="At least 8 characters" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Confirm Password</label><input id="sbp1-confirm" type="password" placeholder="Repeat password" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
@@ -494,13 +494,13 @@ export default function Features() {
             <div style={{flex:1}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>First Name</label><input id="sbp2-first" type="text" placeholder="John" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
             <div style={{flex:1}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Last Name</label><input id="sbp2-last" type="text" placeholder="Smith" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           </div>
-          <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Company Name</label><input id="sbp2-company" type="text" placeholder="Smith Lawn & Spray Co." style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
+          <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Company Name</label><input id="sbp2-company" type="text" placeholder="Smith Yard & Service Co." style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'20px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Email Address</label><input id="sbp2-email" type="email" placeholder="you@yourcompany.com" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <button onClick={() => sbpStep2(2)} style={{width:'100%',background:'#f0820e',color:'#fff',border:'none',borderRadius:'6px',padding:'13px',fontSize:'15px',fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>Next: Create Password →</button>
         </div>
         <div id="sbp2-step2" style={{padding:'24px 28px',display:'none'}}>
           <div id="sbp2-err2" style={{background:'#fff0f0',border:'1px solid #f5c6c6',color:'#c0392b',borderRadius:'6px',padding:'10px 12px',fontSize:'13px',marginBottom:'14px',display:'none'}}></div>
-          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $129/month after trial.</div></div>
+          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Login Email</label><input id="sbp2-login-email" type="email" readOnly style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',background:'#f8f8f8',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Password</label><input id="sbp2-password" type="password" placeholder="At least 8 characters" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Confirm Password</label><input id="sbp2-confirm" type="password" placeholder="Repeat password" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
