@@ -475,7 +475,7 @@ export default function Features() {
         </div>
         <div id="sbp1-success" style={{padding:'48px 28px',textAlign:'center',display:'none'}}>
           <div style={{width:'64px',height:'64px',background:'#16a34a',borderRadius:'50%',display:'inline-flex',alignItems:'center',justifyContent:'center',fontSize:'30px',color:'#fff',marginBottom:'16px'}}>✓</div>
-          <div style={{fontSize:'22px',fontWeight:800,color:'#1a1a2e',marginBottom:'10px'}}>You&apos;re In!</div>
+          <div style={{fontSize:'22px',fontWeight:800,color:'#141414',marginBottom:'10px'}}>You&apos;re In!</div>
           <div style={{fontSize:'15px',color:'#555',lineHeight:1.6,marginBottom:'6px'}}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
           <div id="sbp1-countdown" style={{fontSize:'12px',color:'#aaa',marginTop:'10px'}}></div>
         </div>
@@ -513,7 +513,7 @@ export default function Features() {
         </div>
         <div id="sbp2-success" style={{padding:'48px 28px',textAlign:'center',display:'none'}}>
           <div style={{width:'64px',height:'64px',background:'#16a34a',borderRadius:'50%',display:'inline-flex',alignItems:'center',justifyContent:'center',fontSize:'30px',color:'#fff',marginBottom:'16px'}}>✓</div>
-          <div style={{fontSize:'22px',fontWeight:800,color:'#1a1a2e',marginBottom:'10px'}}>You&apos;re In!</div>
+          <div style={{fontSize:'22px',fontWeight:800,color:'#141414',marginBottom:'10px'}}>You&apos;re In!</div>
           <div style={{fontSize:'15px',color:'#555',lineHeight:1.6,marginBottom:'6px'}}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
           <div id="sbp2-countdown" style={{fontSize:'12px',color:'#aaa',marginTop:'10px'}}></div>
         </div>

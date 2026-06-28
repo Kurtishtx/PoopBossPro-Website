@@ -71,7 +71,7 @@ export default function Home() {
     <>
       <style>{`
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root { --purple-dark:#0a0a0a; --purple-mid:#0d0d0d; --purple-deep:#111111; --orange:#f0820e; --orange-dark:#d4730c; --blue:#7ed957; --text:#1a1a2e; --muted:#555; --light-bg:#f8f7fc; --border:#e4e0f0; }
+        :root { --purple-dark:#0a0a0a; --purple-mid:#0d0d0d; --purple-deep:#111111; --orange:#f0820e; --orange-dark:#d4730c; --blue:#7ed957; --text:#141414; --muted:#555; --light-bg:#f7f7f5; --border:#e6e6e6; }
         html { scroll-behavior: smooth; }
         body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); background: #fff; line-height: 1.6; }
         .hero { background: linear-gradient(135deg, #0a0a0a 0%, #111111 60%, #1a1a1a 100%); padding: 100px 40px 80px; text-align: center; position: relative; overflow: hidden; }
@@ -96,7 +96,7 @@ export default function Home() {
         .centered .section-sub { margin-left: auto; margin-right: auto; }
         .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
         .feature-card { background: #fff; border: 1.5px solid var(--border); border-radius: 12px; padding: 30px 28px; transition: box-shadow .2s, border-color .2s, transform .2s; }
-        .feature-card:hover { box-shadow: 0 8px 32px rgba(8,0,16,.1); border-color: var(--orange); transform: translateY(-3px); }
+        .feature-card:hover { box-shadow: 0 8px 32px rgba(10,10,10,.1); border-color: var(--orange); transform: translateY(-3px); }
         .feature-icon { font-size: 32px; margin-bottom: 14px; display: block; }
         .feature-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; color: var(--text); }
         .feature-card p { color: var(--muted); font-size: 14px; line-height: 1.6; }
@@ -135,7 +135,7 @@ export default function Home() {
         .stat-item .lbl { color: rgba(255,255,255,.85); font-size: 14px; margin-top: 6px; }
         .pricing-grid { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; }
         .price-card { background: #fff; border: 2px solid var(--border); border-radius: 14px; padding: 36px 32px; width: 280px; position: relative; transition: box-shadow .2s, transform .2s; }
-        .price-card:hover { box-shadow: 0 12px 40px rgba(8,0,16,.12); transform: translateY(-4px); }
+        .price-card:hover { box-shadow: 0 12px 40px rgba(10,10,10,.12); transform: translateY(-4px); }
         .price-card.featured { border-color: var(--orange); background: linear-gradient(180deg, #fff 0%, #fff8f2 100%); }
         .featured-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--orange); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; white-space: nowrap; }
         .price-tier { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
@@ -160,7 +160,7 @@ export default function Home() {
         .testimonial-role { font-size: 12px; color: var(--muted); }
         .hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto; }
         .hub-card { display: block; background: #fff; border: 1.5px solid var(--border); border-radius: 12px; padding: 26px 24px; text-decoration: none; transition: box-shadow .2s, border-color .2s, transform .2s; }
-        .hub-card:hover { box-shadow: 0 8px 32px rgba(8,0,16,.1); border-color: var(--orange); transform: translateY(-3px); }
+        .hub-card:hover { box-shadow: 0 8px 32px rgba(10,10,10,.1); border-color: var(--orange); transform: translateY(-3px); }
         .hub-card .hub-icon { font-size: 28px; margin-bottom: 12px; display: block; }
         .hub-card h3 { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
         .hub-card p { color: var(--muted); font-size: 14px; line-height: 1.55; }
@@ -760,7 +760,7 @@ export default function Home() {
           </div>
           <div id={`sbp${n}-success`} style={{padding:'48px 28px', textAlign:'center', display:'none'}}>
             <div style={{width:'64px', height:'64px', background:'#16a34a', borderRadius:'50%', display:'inline-flex', alignItems:'center', justifyContent:'center', fontSize:'30px', color:'#fff', marginBottom:'16px'}}>✓</div>
-            <div style={{fontSize:'22px', fontWeight:800, color:'#1a1a2e', marginBottom:'10px'}}>You&apos;re In!</div>
+            <div style={{fontSize:'22px', fontWeight:800, color:'#141414', marginBottom:'10px'}}>You&apos;re In!</div>
             <div style={{fontSize:'15px', color:'#555', lineHeight:1.6, marginBottom:'6px'}}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
             <div id={`sbp${n}-countdown`} style={{fontSize:'12px', color:'#aaa', marginTop:'10px'}}></div>
           </div>

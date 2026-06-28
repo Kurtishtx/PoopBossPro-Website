@@ -191,7 +191,7 @@ export default function Pricing() {
 
       {/* PRICE CARD */}
       <section>
-        <div style={{background:'#fff',border:'3px solid var(--orange)',borderRadius:'20px',padding:'52px 48px',maxWidth:'620px',margin:'0 auto',position:'relative',boxShadow:'0 0 0 6px rgba(240,130,14,.1), 0 24px 80px rgba(8,0,16,.12)'}}>
+        <div style={{background:'#fff',border:'3px solid var(--orange)',borderRadius:'20px',padding:'52px 48px',maxWidth:'620px',margin:'0 auto',position:'relative',boxShadow:'0 0 0 6px rgba(240,130,14,.1), 0 24px 80px rgba(10,10,10,.12)'}}>
           <div style={{position:'absolute',top:'-16px',left:'50%',transform:'translateX(-50%)',background:'var(--orange)',color:'#fff',fontSize:'12px',fontWeight:700,letterSpacing:'1px',textTransform:'uppercase',padding:'5px 20px',borderRadius:'20px',whiteSpace:'nowrap'}}>One Plan — No Surprises</div>
           <div style={{fontSize:'13px',fontWeight:700,color:'var(--muted)',textTransform:'uppercase',letterSpacing:'1px',marginBottom:'10px'}}>PoopBossPro</div>
           <div style={{fontSize:'72px',fontWeight:800,color:'var(--text)',lineHeight:1}}><sup style={{fontSize:'30px',verticalAlign:'super'}}>$</sup>129</div>
@@ -323,7 +323,7 @@ export default function Pricing() {
         </div>
         <div id="sbp1-success" style={{padding:'48px 28px',textAlign:'center',display:'none'}}>
           <div style={{width:'64px',height:'64px',background:'#16a34a',borderRadius:'50%',display:'inline-flex',alignItems:'center',justifyContent:'center',fontSize:'30px',color:'#fff',marginBottom:'16px'}}>✓</div>
-          <div style={{fontSize:'22px',fontWeight:800,color:'#1a1a2e',marginBottom:'10px'}}>You&apos;re In!</div>
+          <div style={{fontSize:'22px',fontWeight:800,color:'#141414',marginBottom:'10px'}}>You&apos;re In!</div>
           <div style={{fontSize:'15px',color:'#555',lineHeight:1.6,marginBottom:'6px'}}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
           <div id="sbp1-countdown" style={{fontSize:'12px',color:'#aaa',marginTop:'10px'}}></div>
         </div>
@@ -361,7 +361,7 @@ export default function Pricing() {
         </div>
         <div id="sbp2-success" style={{padding:'48px 28px',textAlign:'center',display:'none'}}>
           <div style={{width:'64px',height:'64px',background:'#16a34a',borderRadius:'50%',display:'inline-flex',alignItems:'center',justifyContent:'center',fontSize:'30px',color:'#fff',marginBottom:'16px'}}>✓</div>
-          <div style={{fontSize:'22px',fontWeight:800,color:'#1a1a2e',marginBottom:'10px'}}>You&apos;re In!</div>
+          <div style={{fontSize:'22px',fontWeight:800,color:'#141414',marginBottom:'10px'}}>You&apos;re In!</div>
           <div style={{fontSize:'15px',color:'#555',lineHeight:1.6,marginBottom:'6px'}}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
           <div id="sbp2-countdown" style={{fontSize:'12px',color:'#aaa',marginTop:'10px'}}></div>
         </div>

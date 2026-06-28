@@ -34,7 +34,7 @@ export default function VsServiceAutopilot() {
     <>
       <style>{`
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root { --purple-dark:#0a0a0a; --purple-mid:#0d0d0d; --purple-deep:#111111; --orange:#f0820e; --orange-dark:#d4730c; --text:#1a1a2e; --muted:#555; --light-bg:#f8f7fc; --border:#e4e0f0; }
+        :root { --purple-dark:#0a0a0a; --purple-mid:#0d0d0d; --purple-deep:#111111; --orange:#f0820e; --orange-dark:#d4730c; --text:#141414; --muted:#555; --light-bg:#f7f7f5; --border:#e6e6e6; }
         html { scroll-behavior: smooth; }
         body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); background: #fff; line-height: 1.6; }
         .hero { background: linear-gradient(135deg, #0a0a0a 0%, #111111 60%, #1a1a1a 100%); padding: 100px 40px 80px; text-align: center; position: relative; overflow: hidden; }
@@ -393,7 +393,7 @@ export default function VsServiceAutopilot() {
           </div>
           <div id={`sbp${n}-success`} style={{padding:'48px 28px', textAlign:'center', display:'none'}}>
             <div style={{width:'64px', height:'64px', background:'#16a34a', borderRadius:'50%', display:'inline-flex', alignItems:'center', justifyContent:'center', fontSize:'30px', color:'#fff', marginBottom:'16px'}}>✓</div>
-            <div style={{fontSize:'22px', fontWeight:800, color:'#1a1a2e', marginBottom:'10px'}}>You&apos;re In!</div>
+            <div style={{fontSize:'22px', fontWeight:800, color:'#141414', marginBottom:'10px'}}>You&apos;re In!</div>
             <div style={{fontSize:'15px', color:'#555', lineHeight:1.6, marginBottom:'6px'}}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
             <div id={`sbp${n}-countdown`} style={{fontSize:'12px', color:'#aaa', marginTop:'10px'}}></div>
           </div>
