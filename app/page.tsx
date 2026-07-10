@@ -217,15 +217,8 @@ export default function Home() {
 
       <Navbar onTrialClick={(el) => openSignupModal(1, el)} />
 
-      {/* ═══ MOCKUP IMAGE ═══ */}
-      <div style={{background:'linear-gradient(135deg,#0a0a0a 0%,#111111 60%,#1a1a1a 100%)', padding:'80px 40px 0', textAlign:'center'}}>
-        <div style={{maxWidth:'1000px', margin:'0 auto'}}>
-          <img src="/dashboard-mockup.webp" width={1200} height={800} fetchPriority="high" decoding="async" alt="PoopBossPro pet waste removal software showing the recurring yard cleanup schedule, route map, crew dispatch board, and mobile app for pooper scooper technicians" style={{width:'100%', height:'auto', borderRadius:'16px', boxShadow:'0 32px 80px rgba(0,0,0,.5)', display:'block'}} />
-        </div>
-      </div>
-
       {/* ═══ HERO ═══ */}
-      <div className="hero" style={{paddingTop:'60px'}}>
+      <div className="hero" style={{paddingTop:'110px'}}>
         <div className="hero-badge">Built for Pet Waste Removal</div>
         <h1>Run Your Pooper Scooper Business<br /><span>From One Dashboard</span></h1>
         <p>PoopBossPro is the all-in-one software built specifically for dog-poop cleanup and pet waste removal businesses. Schedule recurring yard cleanups, build tight routes, dispatch your crew, bill monthly subscriptions, and keep every customer texted &mdash; all in one place.</p>
