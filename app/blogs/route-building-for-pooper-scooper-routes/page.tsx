@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Build Tighter Pooper Scooper Routes With PoopBossPro</h3>
           <p>PoopBossPro sequences your recurring yard cleanups by location, dispatches them to your crews, and ties each stop to gate codes, customer texts, and card-on-file billing.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper route building software, pet waste removal route sequencing, dog waste cleanup scheduling, crew dispatch software, recurring yard cleanup billing, gate code yard profiles</div>
       </article>

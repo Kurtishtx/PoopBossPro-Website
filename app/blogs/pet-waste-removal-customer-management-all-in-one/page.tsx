@@ -94,6 +94,7 @@ export default function Page() {
           <h3>Run Your Whole Customer Base From One Platform</h3>
           <p>PoopBossPro brings scheduling, billing, the crew app, and a self-service client portal into one record so your scoop business runs on a single source of truth.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal customer management software, all-in-one client portal, pooper scooper software, self-service scheduling, recurring billing, customer retention software</div>
       </article>

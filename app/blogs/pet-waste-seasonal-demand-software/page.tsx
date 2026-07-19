@@ -98,6 +98,7 @@ export default function Page() {
           <h3>Run Your Pet Waste Business Through Every Season</h3>
           <p>PoopBossPro handles recurring scheduling, route building, dispatch, and subscription billing so demand swings stop catching you off guard.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste software, recurring yard cleanup scheduling, pooper scooper subscription billing, route building software, crew dispatch, card-on-file billing</div>
       </article>

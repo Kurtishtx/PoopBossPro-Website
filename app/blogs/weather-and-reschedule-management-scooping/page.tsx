@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Stop Dreading the Forecast</h3>
           <p>PoopBossPro reschedules rained-out scoop routes, texts your customers automatically, and keeps crews and billing in sync &mdash; all in a few clicks.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper scheduling software, dog waste route management, scoop route rescheduling, pet waste removal dispatch, recurring yard cleanup software, automatic customer text notifications</div>
       </article>

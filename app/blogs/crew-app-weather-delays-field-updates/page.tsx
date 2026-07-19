@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Run Your Crew Through Any Weather With PoopBossPro</h3>
           <p>PoopBossPro is the all-in-one software that helps pooper scooper and pet waste removal businesses dispatch crews, log field updates, reschedule yards, and keep customers informed.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, pooper scooper crew app, weather delay logging, reschedule pet waste stops, dog waste route software, field service updates</div>
       </article>

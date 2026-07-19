@@ -37,6 +37,7 @@ export default function Page() {
           <h3>Onboard new scooper customers any day of the month</h3>
           <p>PoopBossPro prorates the first cycle, charges the card on file, and drops the new yard onto your crew&apos;s route automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: prorated billing pet waste software, pooper scooper subscription billing, card-on-file dog waste removal, recurring yard cleanup billing, mid-cycle signup proration, pet waste removal software</div>
       </article>

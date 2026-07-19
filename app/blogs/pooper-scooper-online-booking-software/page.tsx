@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Let PoopBossPro Sign Up Clients While You Sleep</h3>
           <p>PoopBossPro gives your pet waste removal business a 24/7 online booking page that turns visitors into paying, recurring subscribers automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal online booking software, pooper scooper scheduling software, recurring dog poop cleanup subscriptions, card on file billing for scoopers, yard profile gate code software, scooper route booking software</div>
       </article>

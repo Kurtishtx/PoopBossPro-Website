@@ -58,6 +58,7 @@ export default function Page() {
           <h3>Let PoopBossPro Text Your Clients For You</h3>
           <p>PoopBossPro automates reminders, on-the-way and job-done alerts, and billing texts so your pet waste removal route runs itself.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper customer text software, automated client texts pet waste removal, dog poop cleanup job notifications, on-the-way text software, pet waste billing reminders, scooper route texting app</div>
       </article>

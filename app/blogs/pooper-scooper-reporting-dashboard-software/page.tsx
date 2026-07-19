@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Run Your Pet Waste Business by the Numbers</h3>
           <p>PoopBossPro brings scheduling, routes, billing, and crew tracking into one dashboard so you always know where your dog-poop cleanup business stands.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software, pet waste removal reporting, recurring yard cleanup scheduling, dog poop cleanup billing, route building software, crew dispatch dashboard</div>
       </article>

@@ -37,6 +37,7 @@ export default function Page() {
           <h3>Price Every First Cleanup Right with PoopBossPro</h3>
           <p>PoopBossPro lets pet waste removal businesses schedule, price, and bill heavy first cleanups as one-time jobs before recurring service begins.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software, dog waste removal scheduling, first cleanup pricing, recurring yard cleanup billing, card-on-file pet waste, crew route scheduling</div>
       </article>

@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Get Paid The Moment The Yard Is Clean</h3>
           <p>PoopBossPro stores each client&apos;s card on file and charges it automatically after every cleanup, so you stop chasing invoices and start collecting on time.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: card-on-file pet waste software, automatic payments pooper scooper software, pet waste removal billing software, recurring yard cleanup billing, dog waste removal payment automation</div>
       </article>

@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Let Your Routes Bill Themselves With PoopBossPro</h3>
           <p>PoopBossPro ties recurring subscriptions and card-on-file payments directly to your scoop routes, so finished stops turn into collected revenue automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pooper scooper subscription software, card-on-file billing, recurring yard cleanup billing, pet waste route software, dog poop removal scheduling, crew dispatch software</div>

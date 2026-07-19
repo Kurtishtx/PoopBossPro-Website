@@ -103,6 +103,7 @@ export default function Page() {
             subscriptions so you always know exactly how your pet waste removal business is doing.
           </p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">

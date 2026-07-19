@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Run Every Cleanup Through One System With PoopBossPro</h3>
           <p>PoopBossPro schedules, routes, dispatches, and bills your one-time and recurring pet waste jobs from a single platform.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, one-time yard cleanup scheduling, seasonal pooper scooper jobs, dog waste removal billing, route building software, card-on-file recurring service</div>
       </article>

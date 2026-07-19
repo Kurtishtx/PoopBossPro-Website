@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Keep Your Crews Running Even With No Signal</h3>
           <p>PoopBossPro gives pet waste crews an offline-capable mobile app with routes, gate codes, time tracking, and proof of pickup that sync the moment signal returns.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste crew app offline mode, pooper scooper mobile app, proof of pickup software, crew time tracking app, pet waste removal software, dog waste route app</div>
       </article>

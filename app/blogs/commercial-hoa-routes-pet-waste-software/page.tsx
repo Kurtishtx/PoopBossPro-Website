@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Run Bigger Routes Without Bigger Headaches</h3>
           <p>PoopBossPro maps your commercial and HOA properties, sequences every stop, dispatches your crews, and bills the contract automatically &mdash; so you can scale without losing control.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet-waste route software, HOA pooper scooper dispatch, commercial dog-waste routing, crew dispatch software, recurring pet-waste billing, scoop route scheduling</div>
       </article>

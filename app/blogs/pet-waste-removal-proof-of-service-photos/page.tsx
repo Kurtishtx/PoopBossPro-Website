@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Document Every Cleanup With PoopBossPro</h3>
           <p>PoopBossPro captures timestamped proof-of-service photos, texts them to customers, and protects your card-on-file billing from disputes.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal software, proof-of-service photos, pooper scooper business software, recurring yard cleanup scheduling, card-on-file billing, dog waste removal app</div>

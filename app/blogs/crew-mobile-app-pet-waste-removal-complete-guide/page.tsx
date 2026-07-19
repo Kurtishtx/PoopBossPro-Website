@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Put Your Whole Route In Your Crew&apos;s Pocket</h3>
           <p>PoopBossPro gives pet waste removal crews ordered stop lists, GPS, gate codes, dog counts, and one-tap photo proof so every visit gets done right and billed automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: crew mobile app pet waste removal, pooper scooper crew app, photo proof of pickup software, pet waste removal field tools, gate code access software, scoop business route software</div>
       </article>

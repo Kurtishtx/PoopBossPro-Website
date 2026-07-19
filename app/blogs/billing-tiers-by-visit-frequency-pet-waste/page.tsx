@@ -101,6 +101,7 @@ export default function Page() {
             subscriptions that charge the right amount on their own.
           </p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste subscription billing software, pooper scooper recurring billing, dog waste removal card-on-file, visit frequency plans software, automated scooper invoicing, recurring yard cleanup subscriptions</div>

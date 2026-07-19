@@ -225,6 +225,7 @@ export default function PetWasteCustomerManagementSoftware() {
         <p>Running a pooper scooper route means keeping track of gate codes, dog names, pickup days, billing, and a hundred little requests. PoopBossPro pulls all of it into one customer record — and gives your clients a portal to sign up, pay, and request a skip without ever calling you. This is the customer-management hub for pet waste removal businesses.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">1 Record</div><div className="hero-stat-lbl">Every Client &amp; Yard In One Place</div></div>
@@ -517,6 +518,7 @@ export default function PetWasteCustomerManagementSoftware() {
         <p>PoopBossPro gives your pet waste removal business a real customer database and a self-serve client portal &mdash; built by people who ran the route. Try it free for 14 days.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
       </div>
 

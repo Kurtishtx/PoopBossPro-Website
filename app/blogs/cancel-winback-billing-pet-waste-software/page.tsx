@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Keep More of the Customers You Already Won</h3>
           <p>PoopBossPro turns cancellations into pauses and win-backs, so your pet waste removal business protects the recurring revenue it works hard to earn.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste billing software, pooper scooper subscription churn, win-back automation, recurring yard cleanup billing, card on file retention, dog waste removal software</div>
       </article>

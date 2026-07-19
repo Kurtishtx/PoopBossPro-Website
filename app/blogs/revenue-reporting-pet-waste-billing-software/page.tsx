@@ -49,6 +49,7 @@ export default function Page() {
           <h3>See Your Pet Waste Revenue Clearly</h3>
           <p>PoopBossPro turns every subscription, charge, and cleanup into live reports on MRR, churn, and route profit for your pooper scooper business.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste billing software, pooper scooper revenue reporting, recurring revenue MRR tracking, subscription churn reporting, route profitability software, dog poop cleanup billing</div>
       </article>

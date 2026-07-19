@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Give Your Crew A Stop List That Is Always Right</h3>
           <p>PoopBossPro routes customer skip and hold requests straight to the crew app so your pet waste removal techs only see yards that actually need service.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal crew app, scoop route stop list, skip and hold requests software, pooper scooper field tools, crew app dispatch, proof of pickup software</div>
       </article>

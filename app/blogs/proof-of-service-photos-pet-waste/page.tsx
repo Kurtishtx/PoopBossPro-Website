@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Prove Every Scoop With PoopBossPro</h3>
           <p>PoopBossPro attaches timestamped before-and-after photos to every yard cleanup and texts them to customers automatically &mdash; ending disputes and building trust on every recurring visit.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, proof of service photos, pooper scooper scheduling, dog waste cleanup billing, recurring yard cleanup app, crew dispatch software</div>
       </article>

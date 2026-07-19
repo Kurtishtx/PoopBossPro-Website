@@ -92,6 +92,7 @@ export default function Page() {
           <h3>Trade Your Spreadsheet For A Real Client Portal</h3>
           <p>PoopBossPro gives pooper scooper companies a client portal, online signup, automated billing, and a mobile crew app in one platform.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal client portal, pooper scooper software, online customer signup, automated billing software, skip and hold requests, photo proof of pickup</div>

@@ -37,6 +37,7 @@ export default function Page() {
           <h3>Price Every Yard By Its Dog Count</h3>
           <p>PoopBossPro stores the number of dogs on each property and turns it into accurate per-visit and monthly charges automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: per-dog billing software, pet waste billing, pooper scooper subscription pricing, dog count yard profile, recurring pet waste invoicing, card on file pet waste software</div>
       </article>

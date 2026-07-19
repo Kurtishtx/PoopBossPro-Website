@@ -41,6 +41,7 @@ export default function Page() {
           <h3>See Your Crews Live With PoopBossPro</h3>
           <p>PoopBossPro is the all-in-one software for pooper scooper and pet waste removal businesses, with a live supervisor dashboard, GPS crew tracking, and photo proof of pickup.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, scoop crew dashboard, GPS crew tracking, photo proof of pickup, route stop tracking, pooper scooper supervisor app</div>
       </article>

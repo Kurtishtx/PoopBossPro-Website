@@ -61,6 +61,7 @@ export default function Page() {
           <h3>Price Every Yard Right, Automatically</h3>
           <p>PoopBossPro builds per-dog and per-visit pricing into your quotes, subscriptions, and invoices so your scooper business never underprices a route again.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste pricing software, per-dog pricing plans, per-visit billing, pooper scooper subscription software, yard cleanup quoting software, dog waste removal billing</div>

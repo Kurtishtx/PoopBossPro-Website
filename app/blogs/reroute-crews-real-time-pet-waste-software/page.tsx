@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Keep Every Scooper Route on Schedule</h3>
           <p>PoopBossPro tracks your crews in real time and reroutes pet waste cleanups the moment a stop runs long, so no yard gets missed.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal route software, scooper crew dispatch, real-time rerouting, dog poop cleanup scheduling, yard cleanup dispatch board, property profile software</div>
       </article>

@@ -35,6 +35,7 @@ export default function Page() {
           <h3>See What PoopBossPro Pays Back to Your Route</h3>
           <p>PoopBossPro handles scheduling, routing, dispatch, and billing in one app so a pet waste removal business can fit more stops, get paid on time, and grow without the office grind.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software ROI, pet waste removal business software, dog poop cleanup scheduling software, route building software, recurring yard cleanup billing, pet waste removal automation</div>
       </article>

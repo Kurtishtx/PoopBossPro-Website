@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Hand the Busywork Back to Your Customers</h3>
           <p>PoopBossPro gives every pet waste customer a self-service portal to view schedules, update their card on file, pause service, and pay invoices &mdash; while your routes and billing update automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: customer self-service portal pet waste, pooper scooper customer portal software, pet waste removal billing software, card on file management, recurring scoop schedule changes, dog waste cleanup scheduling software</div>
       </article>

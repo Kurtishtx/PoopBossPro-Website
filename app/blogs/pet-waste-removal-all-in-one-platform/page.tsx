@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Run Your Whole Scooping Business In One Place</h3>
           <p>PoopBossPro unifies recurring scheduling, route building, crew dispatch, card-on-file billing, and customer texts into one platform built for pet waste removal businesses.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: all-in-one pet waste removal software, pooper scooper scheduling software, dog poop cleanup route software, recurring yard cleanup billing, crew dispatch software, card-on-file pet waste billing</div>
       </article>

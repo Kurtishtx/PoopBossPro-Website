@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Stop Losing Visits to Locked Gates</h3>
           <p>PoopBossPro automates reminder texts, route building, crew dispatch, and card-on-file billing so your scooper business runs clean from schedule to payment.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper scheduling software, dog waste removal customer texts, gate code yard profiles, recurring pet waste billing, crew dispatch software, service day reminders</div>
       </article>

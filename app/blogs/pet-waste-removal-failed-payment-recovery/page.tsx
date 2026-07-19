@@ -83,6 +83,7 @@ export default function Page() {
           <h3>Stop Losing Revenue To Silent Card Failures</h3>
           <p>PoopBossPro flags failed cards, retries them automatically, and texts customers to update payment so every cleanup you complete gets paid.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal failed payment recovery, pooper scooper dunning software, recover declined card-on-file charges, automatic payment retry scooping software, recurring pet waste billing recovery, update payment text reminders</div>

@@ -118,6 +118,7 @@ export default function Page() {
             routes, dispatch any crew with confidence, and bill on autopilot.
           </p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">

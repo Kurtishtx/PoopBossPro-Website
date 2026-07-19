@@ -98,6 +98,7 @@ export default function Page() {
           <h3>Make Every Season Run on Autopilot</h3>
           <p>PoopBossPro absorbs your spring rush, converts one-time cleanups into recurring subscribers, and bills every month automatically so demand swings stop running your business.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software, seasonal pet waste demand software, recurring yard cleanup scheduling, pet waste monthly billing software, dog poop cleanup subscriptions, crew dispatch software</div>
       </article>

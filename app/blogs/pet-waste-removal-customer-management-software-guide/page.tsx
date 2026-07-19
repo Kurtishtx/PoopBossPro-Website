@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Run Your Whole Scoop Business In One Place</h3>
           <p>PoopBossPro gives pet waste removal companies customer profiles, gate codes, autopay billing, photo proof, and a self-serve client portal in a single platform.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal customer management software, pooper scooper client portal, scoop business billing software, gate code and pet info storage, online customer signup for pet waste removal, dog waste removal CRM</div>

@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Build Tighter Scoop Routes With PoopBossPro</h3>
           <p>PoopBossPro clusters your recurring yard cleanups by area and day, sequences each run, and bills every client on autopilot so your crews scoop more and drive less.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, dog waste route optimization, scooper crew dispatch, recurring yard cleanup scheduling, route density software, pooper scooper business app</div>
       </article>

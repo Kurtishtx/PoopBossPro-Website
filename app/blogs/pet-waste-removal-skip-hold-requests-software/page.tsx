@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Run Skips And Holds On Autopilot With PoopBossPro</h3>
           <p>PoopBossPro is the all-in-one software for pet waste removal businesses, with a client portal, mobile crew app, and automated scheduling and billing built in.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, pooper scooper client portal, skip and hold requests, pet waste billing automation, dog waste route software, pet waste customer management</div>
       </article>

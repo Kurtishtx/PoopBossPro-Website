@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Document Every Yard Automatically</h3>
           <p>PoopBossPro puts photo proof of pickup, timestamps, and gate codes in your crew&apos;s pocket so every visit is documented, sent to the customer, and saved to the account.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: photo proof of pickup app, pet waste removal crew app, proof of service software, pooper scooper field tools, timestamped visit documentation, pet waste removal software</div>
       </article>

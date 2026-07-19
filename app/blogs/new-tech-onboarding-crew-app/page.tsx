@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Onboard Your Next Scoop Tech In A Day, Not A Week</h3>
           <p>PoopBossPro is the all-in-one software for pooper scooper and pet waste removal businesses&mdash;routing, crew mobile app, photo proof, and client management in one place.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal crew app, scoop tech onboarding software, pooper scooper field app, photo proof of pickup, gate codes and pet info software, GPS route tracking for scoopers</div>
       </article>

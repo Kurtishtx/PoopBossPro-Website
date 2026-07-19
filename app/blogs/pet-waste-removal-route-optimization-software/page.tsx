@@ -101,6 +101,7 @@ export default function Page() {
           <h3>Optimize Every Pet Waste Route With PoopBossPro</h3>
           <p>PoopBossPro sequences your recurring yard cleanups into the shortest drive, dispatches them to your crew, and keeps billing on autopilot.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">

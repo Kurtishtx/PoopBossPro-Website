@@ -89,6 +89,7 @@ export default function Page() {
           <h3>Build Better Yard Profiles with PoopBossPro</h3>
           <p>PoopBossPro stores gate codes, dog counts, and access notes on every yard so your crews scoop faster and your billing runs itself.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste business software, property profiles, gate code tracking, dog count pricing, recurring yard cleanup scheduling, pooper scooper dispatch software</div>
       </article>

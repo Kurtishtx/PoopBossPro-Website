@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Run Payroll Straight From Your Routes</h3>
           <p>PoopBossPro tracks every crew clock-in and completed yard so your dog waste removal payroll is fast, accurate, and built right into the same platform that runs your routes.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pooper scooper crew time tracking software, dog waste removal payroll software, scooper clock in app, per-stop pay tracking, route time tracking, pet waste business software</div>

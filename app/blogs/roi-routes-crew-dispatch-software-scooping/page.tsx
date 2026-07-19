@@ -49,6 +49,7 @@ export default function Page() {
           <h3>See the ROI on Your Own Routes</h3>
           <p>PoopBossPro sequences tight scooper routes, dispatches your crews automatically, and feeds every completed yard straight into billing.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal route software, scooper crew dispatch software, pooper scooper routing app, route density for pet waste, dog waste cleanup dispatch software, pet waste removal ROI software</div>
       </article>

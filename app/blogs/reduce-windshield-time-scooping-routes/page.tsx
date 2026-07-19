@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Run Tighter Scooper Routes With PoopBossPro</h3>
           <p>PoopBossPro auto-sequences your pet waste routes, clusters stops by service day, and keeps gate codes and yard details at your crew&apos;s fingertips so they spend the day scooping, not driving.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste route optimization software, pooper scooper routing software, scooper crew dispatch, dog poop cleanup scheduling software, recurring yard cleanup routing, pet waste removal business software</div>
       </article>

@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Know What Every Customer Is Worth</h3>
           <p>PoopBossPro is all-in-one software for pooper scooper and pet waste removal businesses, with the customer management tools and client portal that track tenure, recurring revenue, and lifetime value account by account.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal customer lifetime value software, pooper scooper retention software, recurring revenue tracking, dog waste removal client management, pet waste churn software, customer management &amp; client portal</div>
       </article>

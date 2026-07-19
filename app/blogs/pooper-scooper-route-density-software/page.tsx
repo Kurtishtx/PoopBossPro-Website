@@ -102,6 +102,7 @@ export default function Page() {
           <h3>Build Denser, More Profitable Routes With PoopBossPro</h3>
           <p>PoopBossPro clusters your recurring yard cleanups into tight, drive-efficient routes so your crews scoop more dogs per mile and keep more of every dollar.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">

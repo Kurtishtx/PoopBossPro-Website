@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Pack Your Routes, Grow Your Margin</h3>
           <p>PoopBossPro builds dense recurring routes, dispatches your crews, and bills cards on file so every stop earns more.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste route software, scooper route density, dog poop cleanup dispatch, recurring yard cleanup scheduling, crew dispatch software, pooper scooper billing software</div>
       </article>

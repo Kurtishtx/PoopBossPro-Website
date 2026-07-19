@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Run Every Yard The Way The Customer Wants</h3>
           <p>PoopBossPro stores gate codes, pet info, and yard notes and delivers them to your crew at every stop&mdash;so nothing gets missed.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, yard notes app, gate code tracking, pooper scooper client portal, special instructions software, dog waste crew app</div>
       </article>

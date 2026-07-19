@@ -67,6 +67,7 @@ export default function Page() {
           <h3>Run Your Whole Day From One App</h3>
           <p>PoopBossPro builds your routes, stores your gate codes, texts your customers, and bills your subscriptions so your crew can focus on the yards.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, dog poop cleanup scheduling, scooper route building, crew dispatch app, recurring yard service billing, gate code customer profiles</div>
       </article>

@@ -94,6 +94,7 @@ export default function Page() {
           <h3>Capture Every Field Upsell With PoopBossPro</h3>
           <p>PoopBossPro is the all-in-one software for pooper scooper and pet waste removal businesses &mdash; crew app, photo proof, routing, and billing in one platform.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste crew app, add-on service logging software, pooper scooper upsell software, field service photo proof, scoop crew mobile app, pet waste removal billing software</div>
       </article>

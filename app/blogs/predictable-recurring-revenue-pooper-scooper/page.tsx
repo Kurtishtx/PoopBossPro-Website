@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Turn Your Pooper Scooper Route Into Predictable Revenue</h3>
           <p>PoopBossPro converts recurring yard cleanups into subscriptions billed automatically to a card on file, so you know your monthly revenue before the first truck rolls.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: recurring revenue pooper scooper software, pet waste subscription billing software, card-on-file autopay for dog waste removal, recurring yard cleanup subscriptions, predictable revenue pet waste software, pooper scooper monthly subscription software</div>
       </article>

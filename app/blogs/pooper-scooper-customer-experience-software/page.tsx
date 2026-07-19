@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Give Your Customers a Cleaner, Smoother Experience</h3>
           <p>PoopBossPro automates scheduling, arrival texts, card-on-file billing, and yard profiles so your pet waste removal customers stay happy and stay subscribed.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pooper scooper software, pet waste removal customer experience, dog poop cleanup scheduling software, recurring yard cleanup billing, card-on-file pet waste subscriptions, arrival text notifications</div>

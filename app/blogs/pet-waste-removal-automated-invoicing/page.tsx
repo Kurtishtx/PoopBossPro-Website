@@ -89,6 +89,7 @@ export default function Page() {
           <h3>Let PoopBossPro Invoice Every Yard For You</h3>
           <p>PoopBossPro builds invoices straight from completed jobs, charges card-on-file automatically, and keeps your recurring accounts billing on schedule.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal automated invoicing, pooper scooper invoicing software, dog poop cleanup billing automation, card-on-file scooping invoices, recurring pet waste billing software, automatic yard cleanup invoices</div>

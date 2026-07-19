@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Stop Answering The Same Three Questions All Day</h3>
           <p>PoopBossPro sends automatic on-the-way, completed, and billing texts so your scooping clients stay informed and your phone stays quiet.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal software, customer text notifications, scooping route updates, recurring yard cleanup scheduling, card-on-file billing texts, proof of service photos</div>

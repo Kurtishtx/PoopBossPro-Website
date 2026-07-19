@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Price Every Yard By The Dogs With PoopBossPro</h3>
           <p>PoopBossPro turns dog count into accurate quotes, recurring billing, and right-sized routes for your pooper scooper business.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal software, pooper scooper pricing software, dog count yard pricing, recurring scoop billing, route building software, card-on-file pet waste billing</div>

@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Turn Every Clean Yard Into A Five-Star Review</h3>
           <p>PoopBossPro is the all-in-one software for pooper scooper and pet waste removal businesses, with a crew app that captures photo proof and triggers review requests automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, pooper scooper crew app, automated review requests, photo proof of pickup, scooper business reviews, field service automation</div>
       </article>

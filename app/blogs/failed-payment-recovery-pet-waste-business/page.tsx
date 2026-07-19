@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Stop Letting Declined Cards Eat Your Profit</h3>
           <p>PoopBossPro automatically retries failed charges, texts customers to update their cards, and recovers the subscription revenue your pet waste business is owed.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: failed payment recovery software, pet waste billing software, card-on-file scooper software, recurring subscription billing, automated payment retries, pooper scooper invoicing</div>
       </article>

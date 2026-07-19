@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Run Your Recurring Routes the Easy Way</h3>
           <p>PoopBossPro handles skips, pauses, vacation holds, scheduling, dispatch, and card-on-file billing so your pet waste removal business runs without the busywork.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software, pet waste removal scheduling, recurring yard cleanup billing, vacation hold software, card-on-file billing, route dispatch software</div>
       </article>

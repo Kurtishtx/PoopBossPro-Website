@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Stop Losing Yards to the Cracks</h3>
           <p>PoopBossPro turns every recurring cleanup into a scheduled, tracked, dispatchable job so no yard ever gets skipped.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper scheduling software, dog waste cleanup routing, recurring yard scheduling, crew dispatch software, pet waste route building, missed stop tracking</div>
       </article>

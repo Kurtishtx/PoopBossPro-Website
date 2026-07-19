@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Build Payroll From The Field, Not From Memory</h3>
           <p>PoopBossPro turns crew clock-ins, stop timestamps, and proof-of-pickup data into accurate, defensible payroll hours for your pet waste removal business &mdash; all in one app.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal payroll software, scoop crew app field data, pooper scooper time tracking app, crew app payroll hours, dog waste removal crew software, crew mobile app field tools</div>

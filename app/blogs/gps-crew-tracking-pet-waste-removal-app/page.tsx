@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Know Where Every Scoop Tech Is, All Day</h3>
           <p>PoopBossPro puts GPS crew tracking, live stop lists, and photo proof in one mobile app so you always know where your pet waste removal crews are and which yards are done.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: GPS crew tracking software, pet waste removal crew app, scoop tech location tracking, pooper scooper field tools, real-time route tracking, dog waste removal crew management</div>

@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Run Every Scoop Cadence From One Dashboard</h3>
           <p>PoopBossPro sets visit frequency per yard and automatically builds routes, bills the right plan, and texts customers on schedule.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, dog poop scooping scheduling software, recurring yard cleanup scheduling, twice-weekly scoop route software, pet waste billing subscriptions, customer text reminders for poop scooping</div>
       </article>

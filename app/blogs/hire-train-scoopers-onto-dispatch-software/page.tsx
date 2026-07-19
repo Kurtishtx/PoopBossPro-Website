@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Onboard New Scoopers in a Day, Not a Month</h3>
           <p>PoopBossPro turns route knowledge into shareable yard profiles so any new hire can run a clean, efficient route from day one.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper dispatch software, pet waste crew management, yard profile onboarding, scooper route assignment, dog poop cleanup scheduling software, crew dispatch app</div>
       </article>

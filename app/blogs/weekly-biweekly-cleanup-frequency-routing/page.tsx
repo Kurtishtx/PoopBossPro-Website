@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Route Every Cadence Together With PoopBossPro</h3>
           <p>PoopBossPro reads each yard&apos;s weekly, biweekly, or twice-weekly cadence, builds one tight daily route, and dispatches it to your crews with gate codes, customer texts, and card-on-file billing built in.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal routing software, weekly biweekly twice-weekly scheduling, recurring yard cleanup cadence, crew dispatch software, route density pooper scooper, card-on-file recurring billing</div>
       </article>

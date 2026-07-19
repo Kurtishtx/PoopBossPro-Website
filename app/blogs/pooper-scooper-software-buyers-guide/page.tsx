@@ -99,6 +99,7 @@ export default function Page() {
           <h3>See Why Pet Waste Owners Choose PoopBossPro</h3>
           <p>PoopBossPro bundles recurring scheduling, drive-efficient routing, crew dispatch, and card-on-file billing into one tool built only for pet waste removal.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">

@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Turn Every Cleared Yard Into A Paid Invoice With PoopBossPro</h3>
           <p>PoopBossPro converts each completed route stop into a billable visit and charges the card on file, so dispatch and billing stay in perfect sync.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste billing software, scooper route to invoice, dog poop cleanup recurring billing, card on file autopay pet waste, crew dispatch billing software, pooper scooper subscription invoicing</div>
       </article>

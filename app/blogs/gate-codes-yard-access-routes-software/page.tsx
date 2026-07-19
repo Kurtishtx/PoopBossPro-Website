@@ -44,6 +44,7 @@ export default function Page() {
           <h3>Put Gate Codes Right on Every Stop</h3>
           <p>PoopBossPro keeps gate codes, yard access notes, and dog counts attached to each stop on the route so your crews always get in and get the job done.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper route software, crew dispatch software, gate code storage, yard access notes, pet waste route building, dog waste crew dispatch</div>
       </article>

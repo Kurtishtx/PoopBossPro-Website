@@ -58,6 +58,7 @@ export default function Page() {
           <h3>Grow Your Routes With PoopBossPro</h3>
           <p>PoopBossPro is the all-in-one software for pet waste removal businesses, handling routes, crews, billing, customer referrals, and the client portal in one place.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal referral software, pooper scooper client portal, customer referral credits, pet waste online signup, dog waste customer retention software, scooping business referral tracking</div>

@@ -41,6 +41,7 @@ export default function Page() {
           <h3>Run Smarter Pet Waste Routes with PoopBossPro</h3>
           <p>PoopBossPro stores dog counts on every yard profile so your quotes, schedules, and recurring billing stay accurate as accounts grow.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, dog waste cleanup scheduling, pooper scooper route software, recurring yard cleanup billing, dogs per yard tracking, pet waste subscription software</div>
       </article>

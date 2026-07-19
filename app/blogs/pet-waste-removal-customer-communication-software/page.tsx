@@ -38,6 +38,7 @@ export default function Page() {
           <h3>Run Every Customer Conversation From One Platform</h3>
           <p>PoopBossPro is all-in-one software for pet waste removal businesses, connecting your crew app, client portal, automatic notifications, and customer management in one place.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, customer communication software, pooper scooper client portal, automatic visit notifications, pet waste removal customer management, dog waste removal software</div>
       </article>

@@ -89,6 +89,7 @@ export default function Page() {
           <h3>Give Your Customers A Portal That Runs Itself</h3>
           <p>PoopBossPro gives every client a self-service login to manage schedules, payments, and yard details so your phone stops ringing.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, customer portal, self-service scheduling, card on file payments, recurring subscription billing, pooper scooper software</div>
       </article>

@@ -38,6 +38,7 @@ export default function Page() {
           <h3>Keep More Customers With PoopBossPro</h3>
           <p>PoopBossPro is all-in-one software for pet waste removal businesses, with a client portal, photo proof, autopay, and crew routing that keep customers loyal.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, pooper scooper client portal, customer retention software, scooping business autopay, photo proof of pickup, pet waste removal app</div>
       </article>

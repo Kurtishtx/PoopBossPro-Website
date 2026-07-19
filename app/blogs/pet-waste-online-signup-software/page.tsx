@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Turn Your Website Into a 24/7 Signup Machine</h3>
           <p>PoopBossPro lets pet waste customers subscribe online, build their yard profile, and land on your recurring schedule automatically&mdash;no phone tag required.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste online signup software, pooper scooper customer signup, auto-schedule recurring yard cleanup, dog poop subscription billing software, pet waste route scheduling software, scooper business intake form</div>
       </article>

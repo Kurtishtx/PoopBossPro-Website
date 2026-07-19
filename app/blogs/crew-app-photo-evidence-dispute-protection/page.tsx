@@ -81,6 +81,7 @@ export default function Page() {
           <h3>Settle Disputes With Proof, Not Arguments</h3>
           <p>PoopBossPro is the all-in-one software that runs your pet waste removal business, from crew routing to timestamped photo proof of every pickup.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper crew app, photo proof of pickup software, pet waste removal GPS tracking, dog poop scooping route software, service proof timestamps, client portal pet waste</div>
       </article>

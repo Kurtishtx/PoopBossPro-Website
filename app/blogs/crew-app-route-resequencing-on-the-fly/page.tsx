@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Run Tighter Routes With PoopBossPro</h3>
           <p>PoopBossPro is the all-in-one software for pet waste removal businesses, from crew routing and photo proof to billing and the client portal.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal crew app, route resequencing software, pooper scooper routing app, GPS crew tracking, real-time stop list, photo proof of pickup</div>

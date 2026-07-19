@@ -101,6 +101,7 @@ export default function Page() {
             and texts customers automatically &mdash; so every yard gets cleaned and billed on time.
           </p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste route software, pooper scooper dispatch, daily route board, crew dispatch software, yard cleanup scheduling, dog waste removal app</div>

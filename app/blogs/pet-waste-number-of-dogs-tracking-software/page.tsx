@@ -96,6 +96,7 @@ export default function Page() {
           <h3>Price Every Yard by the Real Workload</h3>
           <p>PoopBossPro tracks the number of dogs per property so your quotes, routes, and monthly billing always match the job in front of your crew.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste software, number of dogs per yard tracking, pooper scooper scheduling software, dog waste removal billing, yard profile software, recurring cleanup route software</div>
       </article>

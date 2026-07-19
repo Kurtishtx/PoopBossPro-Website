@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Document Every Cleanup With PoopBossPro</h3>
           <p>PoopBossPro logs a complete service history, captures timestamped proof of cleanup, and texts it to customers to protect your recurring billing.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste software, service history tracking, proof of cleanup photos, pooper scooper business software, recurring yard cleanup scheduling, card-on-file billing</div>

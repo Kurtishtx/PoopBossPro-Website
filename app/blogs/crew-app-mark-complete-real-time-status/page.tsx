@@ -51,6 +51,7 @@ export default function Page() {
           <h3>Keep Your Crews And Office In Perfect Sync</h3>
           <p>PoopBossPro gives pet waste removal businesses real-time job status, one-tap Mark Complete, photo proof, GPS, and live route tracking so the office always knows what&apos;s done.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal crew app, real-time job status software, mark complete pooper scooper app, photo proof of pickup, scoop crew GPS tracking, pet waste field tools</div>

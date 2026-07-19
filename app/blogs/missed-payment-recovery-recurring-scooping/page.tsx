@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Stop Scooping Yards You Are Not Getting Paid For</h3>
           <p>PoopBossPro automatically retries failed cards, texts customers to update their info, and pauses unpaid routes so your recurring scoop revenue stays collected.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal billing software, recurring scoop subscription payments, card-on-file autopay for pooper scooper business, automated dunning texts, failed payment recovery, dog waste cleanup scheduling software</div>
       </article>

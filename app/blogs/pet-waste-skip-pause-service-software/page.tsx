@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Stop Babysitting Skips and Vacation Holds</h3>
           <p>PoopBossPro lets you skip, pause, or hold any pet waste account in seconds while your routes, billing, and crew list update on their own.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste scheduling software, pooper scooper vacation hold, skip and pause recurring service, dog poop cleanup route software, card-on-file autopay, yard profile management</div>
       </article>

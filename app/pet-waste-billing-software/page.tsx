@@ -225,6 +225,7 @@ export default function PetWasteBillingSoftware() {
         <p>Pooper scooper businesses live and die by recurring revenue. PoopBossPro keeps your monthly subscriptions running on autopilot &mdash; card-on-file billing, automatic charges, payment reminders, and a clean record of every dollar collected. No more chasing checks at the door or wondering who hasn&apos;t paid for last month&apos;s yard cleanups.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">Monthly</div><div className="hero-stat-lbl">Subscriptions on Autopilot</div></div>
@@ -501,6 +502,7 @@ export default function PetWasteBillingSoftware() {
         <p>PoopBossPro is billing built for pooper scooper businesses &mdash; monthly subscriptions, card on file, and automatic collection, all from one platform. Try it free for 14 days.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
       </div>
 

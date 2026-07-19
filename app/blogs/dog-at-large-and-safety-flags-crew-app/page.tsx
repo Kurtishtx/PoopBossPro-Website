@@ -37,6 +37,7 @@ export default function Page() {
           <h3>Keep Your Scoop Techs Safe With PoopBossPro</h3>
           <p>PoopBossPro is the all-in-one software for pet waste removal businesses &mdash; routing, crew app, safety flags, pet info, photo proof, and billing in one place.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, scoop tech crew app, loose dog safety flags, pet info on file, pooper scooper route software, dog waste field app</div>
       </article>

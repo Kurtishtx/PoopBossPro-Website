@@ -54,6 +54,7 @@ export default function Page() {
           <h3>Get Your Pooper Scooper Business Running in a Week</h3>
           <p>PoopBossPro walks you from empty account to scheduled routes, monthly billing, and dispatched crews in just a few short days.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software setup, pet waste removal software onboarding, recurring cleanup scheduling, route building software, monthly subscription billing, crew dispatch software</div>
       </article>

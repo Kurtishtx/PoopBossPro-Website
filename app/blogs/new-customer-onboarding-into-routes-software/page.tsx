@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Onboard New Yards in Minutes, Not Days</h3>
           <p>PoopBossPro drops every new pet-waste customer onto the right recurring route with a full yard profile, automatic texts, and card-on-file billing from day one.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal software, pooper scooper route software, dog waste customer onboarding, recurring cleanup scheduling, crew dispatch software, card-on-file billing</div>
       </article>

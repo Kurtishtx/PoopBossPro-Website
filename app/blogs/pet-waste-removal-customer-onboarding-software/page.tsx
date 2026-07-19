@@ -103,6 +103,7 @@ export default function Page() {
           <h3>Onboard New Clients In Minutes, Not Days</h3>
           <p>PoopBossPro is the all-in-one software that lets pet waste removal businesses sign up clients online, route them to a mobile crew app, and prove every pickup with photos.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal onboarding software, online customer signup, pooper scooper client portal, gate codes and pet info, photo proof of pickup, crew app stop list</div>

@@ -61,6 +61,7 @@ export default function Page() {
           <h3>Keep every crew moving with PoopBossPro</h3>
           <p>PoopBossPro dispatches your pet waste removal crews, routes their yards, texts your customers, and bills the subscriptions automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal crew dispatch software, pooper scooper dispatch app, dog poop cleanup route software, recurring yard cleanup scheduling, pet waste removal billing software, card-on-file subscription billing</div>

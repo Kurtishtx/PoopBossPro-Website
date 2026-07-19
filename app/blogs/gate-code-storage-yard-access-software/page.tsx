@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Never Get Locked Out of a Cleanup Again</h3>
           <p>PoopBossPro stores gate codes, yard access notes, and dog details on every property profile so your crews always get in and get the job done.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software, dog waste cleanup scheduling, gate code storage, yard access notes, pet waste route software, crew dispatch software</div>
       </article>

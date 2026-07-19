@@ -67,6 +67,7 @@ export default function Page() {
           <h3>Run predictable cleanup days with PoopBossPro</h3>
           <p>PoopBossPro saves your routes as reusable templates so every cleanup day loads ordered stops, assigned crews, and yard profiles in seconds.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pooper scooper route software, pet waste route templates, dog poop cleanup scheduling, crew dispatch software, recurring yard cleanup routes, scooper route optimization</div>

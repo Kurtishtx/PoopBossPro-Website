@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Cover Every Yard, Every Week</h3>
           <p>PoopBossPro schedules your recurring cleanups, flags any missed stop, and proves every visit so no customer slips through the cracks.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste cleanup tracking software, missed stop alerts, recurring yard cleanup scheduling, pooper scooper route software, proof of service photos, dog waste removal dispatch</div>
       </article>

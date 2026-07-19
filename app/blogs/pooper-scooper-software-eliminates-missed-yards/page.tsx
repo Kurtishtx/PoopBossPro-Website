@@ -38,6 +38,7 @@ export default function Page() {
           <h3>Never Miss A Yard Again With PoopBossPro</h3>
           <p>PoopBossPro automates recurring scheduling, routing, crew dispatch, and billing so every pet waste cleanup gets done and gets logged.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software, pet waste removal scheduling, recurring yard cleanup software, dog poop pickup route software, pet waste billing software, crew dispatch software</div>
       </article>

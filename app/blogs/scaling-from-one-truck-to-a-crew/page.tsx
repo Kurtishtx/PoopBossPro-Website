@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Build a Crew Your Business Can Grow On</h3>
           <p>PoopBossPro gives your scooper crew shared routes, dispatch, yard profiles, and card-on-file billing so you can scale past one truck without losing control.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper crew dispatch software, dog waste removal route building, recurring yard cleanup scheduling, pet waste billing software, card-on-file pet waste subscriptions, scooper crew management app</div>
       </article>

@@ -41,6 +41,7 @@ export default function Page() {
           <h3>Onboard pet waste customers and capture cards with PoopBossPro</h3>
           <p>PoopBossPro signs up new scooping clients with full yard profiles, recurring schedules, and a card on file &mdash; before the first visit.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste customer onboarding software, dog poop cleanup card on file, recurring scooping subscription billing, yard profile and gate code software, pooper scooper route scheduling</div>
       </article>

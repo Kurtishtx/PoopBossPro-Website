@@ -51,6 +51,7 @@ export default function Page() {
           <h3>Run Every Scoop Route From One Phone</h3>
           <p>PoopBossPro gives pet waste removal crews a mobile app with sequenced stops, gate codes, photo proof, live tracking, and billing that runs off the work they log in the field.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal crew app, scoop route software, pooper scooper scheduling software, dog waste route building, gate code storage software, recurring yard cleanup billing</div>

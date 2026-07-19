@@ -51,6 +51,7 @@ export default function Page() {
           <h3>Make Every First Visit Run Like A Veteran Account</h3>
           <p>PoopBossPro gives pet waste removal businesses first-visit checklists, gate codes and pet info on file, photo proof, GPS, and live tracking to onboard new accounts flawlessly.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal crew app, first-visit checklist software, pooper scooper onboarding software, gate code storage app, photo proof of pickup, scoop crew field tools</div>

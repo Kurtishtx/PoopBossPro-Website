@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Keep Your Pooper Scooper Customers Longer</h3>
           <p>PoopBossPro combines reliable recurring scheduling, autopay, and automatic texts so your pet waste removal customers stay subscribed month after month.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste customer retention software, pooper scooper subscription software, recurring yard cleanup scheduling, card-on-file autopay, automated customer texts, dog poop cleanup software</div>
       </article>

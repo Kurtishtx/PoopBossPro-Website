@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Turn Your Recurring Yards Into Tight Weekly Loops</h3>
           <p>PoopBossPro builds and sequences your weekly routes off your recurring subscriptions, so every scooper drives a clean loop and you fit more yards into the same day.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: recurring yard cleanup scheduling software, pet waste removal route building, pooper scooper route sequencing, dog waste cleanup routing software, crew dispatch app, weekly recurring service routes</div>
       </article>

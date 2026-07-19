@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Stop Chasing Invoices and Let PoopBossPro Do It</h3>
           <p>PoopBossPro automates payment reminder texts, card-on-file billing, and subscriptions so your pet waste removal business gets paid on time, every time.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal billing software, automated payment reminder texts, pooper scooper subscription billing, card-on-file payments, failed payment recovery, recurring yard cleanup invoicing</div>
       </article>

@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Even Out Every Crew&apos;s Day With PoopBossPro</h3>
           <p>PoopBossPro weights each yard by dogs, frequency, and drive time so you can balance scooper crews with a glance and a drag.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste crew dispatch software, scooper route balancing, dog poop cleanup scheduling, workload balancing dispatch tools, recurring yard cleanup routes, pooper scooper crew management</div>
       </article>

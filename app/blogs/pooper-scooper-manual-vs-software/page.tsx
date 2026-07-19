@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Trade the Notebook for PoopBossPro</h3>
           <p>PoopBossPro automates recurring scheduling, routing, crew dispatch, subscription billing, and customer texts for pet waste removal businesses &mdash; all in one place.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software, pet waste removal scheduling, recurring yard cleanup billing, dog poop route software, card-on-file pet waste subscriptions, crew dispatch app</div>
       </article>

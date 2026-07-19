@@ -51,6 +51,7 @@ export default function Page() {
           <h3>Handle Your Toughest Properties From One App</h3>
           <p>PoopBossPro gives pet waste removal businesses per-area notes, pet info, gate codes, and photo proof so crews nail multi-pet and multi-yard accounts every visit.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal crew app, multi-pet property software, pooper scooper field tools, gate codes and pet info software, photo proof of pickup, scoop crew GPS tracking</div>

@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Build routes that actually hold their schedule</h3>
           <p>PoopBossPro turns # of dogs and yard size into accurate scoop times so your crews finish on time and your customers always know when you&apos;re coming.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper route software, pet waste route times, dog poop crew dispatch, yard profile scheduling, scoop time estimating, pet waste removal software</div>
       </article>

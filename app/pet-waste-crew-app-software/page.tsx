@@ -225,6 +225,7 @@ export default function CrewMobileAppFieldTools() {
         <p>PoopBossPro puts every stop, gate code, pet name, and skip request in your scooper&apos;s pocket. Your crew opens the app, sees their run for the day, scoops the yard, snaps photo proof, and taps complete &mdash; no phone calls to the office, no paper stop sheets, no missed yards. This is the field side of the only software built from the ground up for pet waste removal businesses.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">In Pocket</div><div className="hero-stat-lbl">Every Stop, Gate Code &amp; Pet Note</div></div>
@@ -499,6 +500,7 @@ export default function CrewMobileAppFieldTools() {
         <p>PoopBossPro is the only pet waste removal software with a crew mobile app built by people who have actually run scoop routes. Put every stop, gate code, and pet note in your scooper&apos;s pocket. Try it free for 14 days.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
       </div>
 

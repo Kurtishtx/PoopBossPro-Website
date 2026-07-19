@@ -93,6 +93,7 @@ export default function Page() {
           <h3>Never Leave a Cleanup Unassigned Again</h3>
           <p>PoopBossPro&apos;s job board turns every open pet waste cleanup into a claimable card so your crews fill gaps fast and every yard gets serviced on time.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pooper scooper software, pet waste job board software, dog poop cleanup scheduling, crew dispatch software, recurring yard cleanup routing, pet waste removal software</div>
       </article>

@@ -38,6 +38,7 @@ export default function Page() {
           <h3>Cover Every Yard Without the Phone Tag</h3>
           <p>PoopBossPro posts your open cleanups to a live job board so scoopers claim the work, routes stay covered, and billing handles itself.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal job board software, scooper dispatch software, yard cleanup scheduling software, crew route claiming app, dog poop cleanup business software, recurring pet waste billing</div>
       </article>

@@ -37,6 +37,7 @@ export default function Page() {
           <h3>Give Your Customers A Portal They Can Use Anywhere</h3>
           <p>PoopBossPro is all-in-one software for pooper scooper and pet waste removal businesses, including a mobile-friendly client portal for signup, billing, service history, and self-serve requests.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste removal client portal, pooper scooper customer portal software, mobile client portal pet waste, dog waste removal online account, self-serve pet waste software, pet waste removal customer management</div>
       </article>

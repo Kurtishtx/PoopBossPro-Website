@@ -35,6 +35,7 @@ export default function Page() {
           <h3>Stop Undercharging Your Pet Waste Routes</h3>
           <p>PoopBossPro ties every invoice to the yard profile, dog count, and service frequency so your recurring billing stays accurate as customers change.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste billing software, pooper scooper subscription billing, yard profile pricing, dog count billing, card-on-file pet waste, recurring scooper invoicing</div>
       </article>

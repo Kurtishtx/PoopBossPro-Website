@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Put Your Whole Route In Your Crew&apos;s Pocket</h3>
           <p>PoopBossPro hands your scoopers ordered routes, gate codes, dog counts, and one-tap completion so every yard gets done right and billed automatically.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="blog-keywords">Keywords: pet waste mobile app, pooper scooper crew software, pet waste business software, crew dispatch software, yard cleanup route software, proof of service app</div>
       </article>

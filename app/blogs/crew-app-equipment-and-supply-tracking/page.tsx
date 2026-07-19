@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Keep Every Scoop Truck Stocked And On Route</h3>
           <p>PoopBossPro is the all-in-one software for pet waste removal businesses &mdash; crew app, routing, billing, and supply tracking in one place.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: pet waste removal crew app, pooper scooper supply tracking software, scoop crew field tools, waste bag and bin tracking app, pet waste route management software, crew mobile app for pet waste removal</div>

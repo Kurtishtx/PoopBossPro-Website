@@ -225,6 +225,7 @@ export default function RoutesCrewDispatchSoftware() {
         <p>Most field service software is built for plumbers and HVAC techs. PoopBossPro is built from the ground up for pooper scooper and pet waste removal businesses &mdash; the way you build recurring yard-cleanup routes, dispatch a crew across hundreds of stops, and bill it all is completely different, and your software should be too.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">Stops</div><div className="hero-stat-lbl">Yards Routed Per Day, Not Per Hour</div></div>
@@ -556,6 +557,7 @@ export default function RoutesCrewDispatchSoftware() {
         <p>PoopBossPro is the only routes and crew dispatch software built by someone who has actually run a pet waste removal route. Try it free for 14 days.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
       </div>
 

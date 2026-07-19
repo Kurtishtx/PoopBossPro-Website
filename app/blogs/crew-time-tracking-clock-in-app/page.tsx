@@ -49,6 +49,7 @@ export default function Page() {
           <h3>Put The Clock In Every Scooper&apos;s Pocket</h3>
           <p>PoopBossPro captures accurate in-app clock-in and clock-out tied to real yards, so your pet waste removal payroll is honest, fast, and built into the same app that runs your routes.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
         </div>
 
         <div className="blog-keywords">Keywords: scoop crew clock in app, pet waste removal time tracking software, pooper scooper crew app, in-app time tracking, dog waste payroll software, crew mobile app field tools</div>
