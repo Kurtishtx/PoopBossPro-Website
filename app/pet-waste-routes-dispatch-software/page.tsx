@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import HeroDemo from '../components/HeroDemo';
 
 const SBP_URL  = 'https://knjdbgroiyhvqwrpqzcx.supabase.co';
 const SBP_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtuamRiZ3JvaXlodnF3cnBxemN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0OTczMDMsImV4cCI6MjA5NTA3MzMwM30.zoExtkem-XZqU86S4yJjA_xOOaS1G0IPU2M9OAAza2g';
@@ -235,17 +236,9 @@ export default function RoutesCrewDispatchSoftware() {
         </div>
       </div>
 
-      {/* HERO IMAGE */}
-      <div style={{background:'var(--purple-dark)', padding:'0 40px 60px', textAlign:'center'}}>
-        <img
-          src="/dashboard-mockup.webp"
-          width={1200}
-          height={800}
-          fetchPriority="high"
-          decoding="async"
-          alt="PoopBossPro pet waste removal software dashboard on laptop showing the route builder and dispatch board, with the crew mobile app on a phone"
-          style={{maxWidth:'1100px', width:'100%', borderRadius:'16px', boxShadow:'0 32px 80px rgba(0,0,0,.5)', display:'block', margin:'0 auto'}}
-        />
+            {/* LIVE INTERACTIVE DEMO — Desktop / Client / Crew, real apps (replaces the static mockup) */}
+      <div style={{background:'var(--purple-dark)', padding:'0 20px 60px', textAlign:'center'}}>
+        <HeroDemo />
       </div>
 
       {/* PREMIUM BAND */}
