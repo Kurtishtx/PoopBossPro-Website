@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import { pixelDemoStarted } from './MetaPixel';
 
 type Key = 'business' | 'client' | 'crew';
 type Demo = { url: string; label: string; kind: 'phone' | 'desktop'; cap: string };
@@ -22,6 +23,10 @@ const DEMOS: Record<Key, Demo> = {
     cap: 'Your crew’s day — job list, route map, gate codes, notes, and one-tap arrival alerts.',
   },
 };
+/* Glow kept tight on purpose. The original had 90px and 170px halo layers inherited from
+   SprayBossPro, where they sit on a dark purple page. On this one they bled far enough into
+   the frame to wash out the embedded dashboard's corners — the Log Out button in the
+   bottom-left became unreadable, and looked like an app bug rather than a frame one. */
 const ORDER: Key[] = ['business', 'client', 'crew'];
 const PHONE_LOGICAL = 400;
 const DESK_LOGICAL = 1300;
@@ -79,6 +84,9 @@ export default function HeroDemo() {
         }),
       });
     } catch (e) { /* analytics only — never block the page */ }
+
+    /* Tell Meta this visitor opened the demo, not merely landed. */
+    if (!nt) pixelDemoStarted();
   }, []);
 
   // Scale the desktop dashboard (rendered at a real 1300px width) down to fit its frame.
@@ -128,7 +136,7 @@ export default function HeroDemo() {
         ? 'radial-gradient(ellipse 40% 80% at 50% 47%, rgba(255,106,0,.5) 0%, rgba(255,106,0,.2) 42%, transparent 68%)'
         : 'radial-gradient(ellipse 92% 88% at 50% 46%, rgba(255,106,0,.42) 0%, rgba(255,106,0,.18) 34%, transparent 72%)' }}>
         {/* PHONE STAGE — single iframe, remounts on switch (reliable load) */}
-        <div style={{ display: isPhone ? 'block' : 'none', position: 'relative', width: '300px', maxWidth: '86vw', height: '620px', background: '#0a0a0a', borderRadius: '46px', padding: '11px', boxShadow: '0 0 0 1px #ff6a00, 0 0 22px 6px rgba(255,106,0,.85), 0 0 48px 13px rgba(255,106,0,.45), 0 0 82px 20px rgba(255,106,0,.2), inset 0 0 0 2px #2c2c30' }}>
+        <div style={{ display: isPhone ? 'block' : 'none', position: 'relative', width: '300px', maxWidth: '86vw', height: '620px', background: '#0a0a0a', borderRadius: '46px', padding: '11px', boxShadow: '0 0 0 1px #ff6a00, 0 0 20px 4px rgba(255,106,0,.42), inset 0 0 0 2px #2c2c30' }}>
           <div style={{ position: 'relative', width: '100%', height: '100%', background: '#fff', borderRadius: '36px', overflow: 'hidden' }}>
             {isPhone && (
               <>
@@ -141,7 +149,7 @@ export default function HeroDemo() {
         </div>
 
         {/* DESKTOP STAGE — mounted once (loads first), hidden when a phone is active so the session persists */}
-        <div style={{ display: active === 'business' ? 'block' : 'none', width: '100%', maxWidth: '1000px', borderRadius: '12px', overflow: 'hidden', background: '#1b1b22', boxShadow: '0 0 0 1px #ff6a00, 0 0 30px 8px rgba(255,106,0,.85), 0 0 90px 24px rgba(255,106,0,.5), 0 0 170px 48px rgba(255,106,0,.25), inset 0 0 0 1px rgba(255,255,255,.08)' }}>
+        <div style={{ display: active === 'business' ? 'block' : 'none', width: '100%', maxWidth: '1000px', borderRadius: '12px', overflow: 'hidden', background: '#1b1b22', boxShadow: '0 0 0 1px #ff6a00, 0 0 26px 4px rgba(255,106,0,.42), inset 0 0 0 1px rgba(255,255,255,.08)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '7px', padding: '10px 14px', background: '#25252e' }}>
             <span style={{ width: '11px', height: '11px', borderRadius: '50%', background: '#ff5f57' }} />
             <span style={{ width: '11px', height: '11px', borderRadius: '50%', background: '#febc2e' }} />
