@@ -144,7 +144,7 @@ export default function Features() {
       <div className="hero">
         <div className="hero-badge">Full Feature List</div>
         <h1>Everything You Need to Run<br /><span>Your Pet waste removal business</span></h1>
-        <p>PoopBossPro is built specifically for pet waste removal. Every feature listed here is included in your $79/month — nothing locked, nothing extra.</p>
+        <p>PoopBossPro is built specifically for pet waste removal. Here is everything the software does. Your plan sets the seat and volume limits — see the pricing page for where each one stops.</p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={(e) => openSignupModal(1, e.currentTarget as HTMLElement)}>Start Your 14-Day Free Trial</button>
         </div>
@@ -317,7 +317,7 @@ export default function Features() {
               {t:'Estimate Sent & Accepted Alerts',d:'Notify clients when their estimate is on the way, and get notified yourself when they accept.'},
               {t:'Google Review Request',d:'Automatically sent after every completed service. More 5-star reviews with zero extra effort.'},
               {t:'Payment & Estimate Follow-Up Sequences',d:'3-step automated sequences for both unpaid invoices and unanswered estimates — fully customizable timing and copy.'},
-              {t:'500 SMS/Month Included',d:'500 outbound SMS messages included in the $79/month. Add more in blocks of 500 for $15 each.'},
+              {t:'Outbound SMS Included',d:'100 texts a month on Start, 500 on Pro, 1,000 on Crew. Add more in blocks of 500 for $15 each. Replies from customers are free.'},
               {t:'Customizable Alert Templates',d:'Edit the message for every alert type. Use your own voice and include details that matter to your customers.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
@@ -340,7 +340,7 @@ export default function Features() {
               {t:'Yard profiles',d:'Every address has its own record — sq footage, GPS, photos, service history, service note, and notes.'},
               {t:'Multiple Yards per Client',d:'One client can own multiple service addresses. Each yard is tracked independently with its own full history.'},
               {t:'Yard Photos & Notes',d:'Attach photos and field notes to any yard. Tech notes from the field show up in the office view instantly.'},
-              {t:'Unlimited Clients & Yards',d:'No caps. 50 accounts or 5,000 — same flat price, no tiers.'},
+              {t:'Unlimited Clients & Yards',d:'No caps on any plan. 50 accounts or 5,000 — your client count never changes the price.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
             ))}
@@ -373,11 +373,11 @@ export default function Features() {
         <div className="cat-block" style={{maxWidth:'1200px',margin:'0 auto'}}>
           <div className="cat-header">
             <span className="cat-icon">👥</span>
-            <div><div className="cat-title">Team Management &amp; Access Control</div><div className="cat-desc">Unlimited users with role-based permissions from full access down to field-only</div></div>
+            <div><div className="cat-title">Team Management &amp; Access Control</div><div className="cat-desc">Role-based permissions from full access down to field-only, unlimited users on Crew</div></div>
           </div>
           <div className="feat-grid">
             {[
-              {t:'Unlimited Users',d:'Add every employee — scoopers, office staff, managers — at no extra cost. No per-user fees, ever.'},
+              {t:'Never Priced Per Seat',d:'Add employees without a per-user fee. Your plan sets the number; Crew is unlimited.'},
               {t:'Role-Based Permissions',d:'Owner, Manager, Office, Scooper, and Mobile roles — each with different access levels built in.'},
               {t:'Mobile Role for Field Scoopers',d:'Scoopers on the Mobile role only see their assigned stops — no billing, client info, or business settings.'},
               {t:'Truck Management',d:'Create vehicle profiles, assign trucks to routes, and track which vehicle handled each stop.'},
@@ -433,8 +433,8 @@ export default function Features() {
 
       {/* CTA */}
       <div className="cta-band">
-        <h2>Every Feature. One Price.<br />$79/Month.</h2>
-        <p>No tiers, no locked features, no per-user fees. Start free for 14 days — no credit card required.</p>
+        <h2>Every Feature.<br />From $49/Month.</h2>
+        <p>No per-user fees and nothing held back for a sales call. Start free for 14 days — no credit card required.</p>
         <div className="hero-btns">
           <button className="btn-primary" style={{fontSize:'17px',padding:'18px 44px'}} onClick={(e) => openSignupModal(2, e.currentTarget as HTMLElement)}>Start Your 14-Day Free Trial</button>
         </div>
@@ -447,7 +447,7 @@ export default function Features() {
       <div id="sbp-form-1" style={{display:'none',position:'fixed',zIndex:99999,width:'420px',maxWidth:'calc(100vw - 24px)',background:'#fff',borderRadius:'14px',border:'3px solid #f0820e',boxShadow:'0 0 0 4px rgba(240,130,14,.35), 0 16px 60px rgba(0,0,0,.45)',maxHeight:'calc(100vh - 40px)',overflowY:'auto'}}>
         <div style={{background:'linear-gradient(135deg,#0a0a0a,#1a1a1a)',padding:'28px 28px 22px',position:'relative'}}>
           <div style={{color:'#fff',fontSize:'20px',fontWeight:800,paddingRight:'36px'}}>Start Your 14-Day Free Trial</div>
-          <div style={{color:'rgba(255,255,255,.6)',fontSize:'13px',marginTop:'5px'}}>No credit card required · Full access · $79/mo after your 14-day trial</div>
+          <div style={{color:'rgba(255,255,255,.6)',fontSize:'13px',marginTop:'5px'}}>No credit card required · Full access · from $49/mo after your 14-day trial</div>
           <button onClick={() => closeSignupModal(1)} style={{position:'absolute',top:'16px',right:'16px',background:'rgba(255,255,255,.12)',border:'none',color:'#fff',width:'32px',height:'32px',borderRadius:'50%',cursor:'pointer',fontSize:'20px',display:'flex',alignItems:'center',justifyContent:'center'}}>×</button>
         </div>
         <div id="sbp1-step1" style={{padding:'24px 28px'}}>
@@ -462,7 +462,7 @@ export default function Features() {
         </div>
         <div id="sbp1-step2" style={{padding:'24px 28px',display:'none'}}>
           <div id="sbp1-err2" style={{background:'#fff0f0',border:'1px solid #f5c6c6',color:'#c0392b',borderRadius:'6px',padding:'10px 12px',fontSize:'13px',marginBottom:'14px',display:'none'}}></div>
-          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div></div>
+          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. From $49/month after trial.</div></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Login Email</label><input id="sbp1-login-email" type="email" readOnly style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',background:'#f8f8f8',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Password</label><input id="sbp1-password" type="password" placeholder="At least 8 characters" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Confirm Password</label><input id="sbp1-confirm" type="password" placeholder="Repeat password" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
@@ -485,7 +485,7 @@ export default function Features() {
       <div id="sbp-form-2" style={{display:'none',position:'fixed',zIndex:99999,width:'420px',maxWidth:'calc(100vw - 24px)',background:'#fff',borderRadius:'14px',border:'3px solid #f0820e',boxShadow:'0 0 0 4px rgba(240,130,14,.35), 0 16px 60px rgba(0,0,0,.45)',maxHeight:'calc(100vh - 40px)',overflowY:'auto'}}>
         <div style={{background:'linear-gradient(135deg,#0a0a0a,#1a1a1a)',padding:'28px 28px 22px',position:'relative'}}>
           <div style={{color:'#fff',fontSize:'20px',fontWeight:800,paddingRight:'36px'}}>Start Your 14-Day Free Trial</div>
-          <div style={{color:'rgba(255,255,255,.6)',fontSize:'13px',marginTop:'5px'}}>No credit card required · Full access · $79/mo after your 14-day trial</div>
+          <div style={{color:'rgba(255,255,255,.6)',fontSize:'13px',marginTop:'5px'}}>No credit card required · Full access · from $49/mo after your 14-day trial</div>
           <button onClick={() => closeSignupModal(2)} style={{position:'absolute',top:'16px',right:'16px',background:'rgba(255,255,255,.12)',border:'none',color:'#fff',width:'32px',height:'32px',borderRadius:'50%',cursor:'pointer',fontSize:'20px',display:'flex',alignItems:'center',justifyContent:'center'}}>×</button>
         </div>
         <div id="sbp2-step1" style={{padding:'24px 28px'}}>
@@ -500,7 +500,7 @@ export default function Features() {
         </div>
         <div id="sbp2-step2" style={{padding:'24px 28px',display:'none'}}>
           <div id="sbp2-err2" style={{background:'#fff0f0',border:'1px solid #f5c6c6',color:'#c0392b',borderRadius:'6px',padding:'10px 12px',fontSize:'13px',marginBottom:'14px',display:'none'}}></div>
-          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div></div>
+          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. From $49/month after trial.</div></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Login Email</label><input id="sbp2-login-email" type="email" readOnly style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',background:'#f8f8f8',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Password</label><input id="sbp2-password" type="password" placeholder="At least 8 characters" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Confirm Password</label><input id="sbp2-confirm" type="password" placeholder="Repeat password" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>

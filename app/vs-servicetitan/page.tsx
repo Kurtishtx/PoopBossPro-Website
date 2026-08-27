@@ -144,7 +144,7 @@ export default function VsServiceTitan() {
           <button className="btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
         </div>
         <div className="hero-stats">
-          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat Monthly — No Enterprise Pricing</div></div>
+          <div><div className="hero-stat-val">From $49</div><div className="hero-stat-lbl">Published Pricing — No Sales Call</div></div>
           <div><div className="hero-stat-val">1 Day</div><div className="hero-stat-lbl">To Set Up — Not Months</div></div>
           <div><div className="hero-stat-val">Built</div><div className="hero-stat-lbl">For Service Routes — Not HVAC</div></div>
           <div><div className="hero-stat-val">2006</div><div className="hero-stat-lbl">In the Industry Since</div></div>
@@ -171,7 +171,7 @@ export default function VsServiceTitan() {
               <tr><td className="feature-name">Visit Waiting List by Service Type</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Lasso Circle Map Route Selector</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Service verification Logs</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Published, Transparent Pricing</td><td className="sbp-col"><span className="chk">✓ $79/mo</span></td><td><span className="crs">✗ Must call sales</span></td></tr>
+              <tr><td className="feature-name">Published, Transparent Pricing</td><td className="sbp-col"><span className="chk">✓ From $49/mo</span></td><td><span className="crs">✗ Must call sales</span></td></tr>
               <tr><td className="feature-name">Set Up in a Day — No Implementation Team</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗ 60–90 days typical</span></td></tr>
               <tr><td className="feature-name">Two-Way SMS Inbox Included</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Add-on cost</span></td></tr>
               <tr><td className="feature-name">Package Plan Renewals</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Generic contracts</span></td></tr>
@@ -181,7 +181,7 @@ export default function VsServiceTitan() {
               <tr><td className="feature-name">Automated SMS Alerts</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Affordable for Small-Mid Operations</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗ Enterprise only</span></td></tr>
               <tr><td className="feature-name">No Annual Contract Required</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗ Annual contracts</span></td></tr>
-              <tr><td className="feature-name">Starting Price</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$79/month</td><td style={{color:'var(--muted)'}}>$300–$500+/month (est.)</td></tr>
+              <tr><td className="feature-name">Starting Price</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$49/month</td><td style={{color:'var(--muted)'}}>$300–$500+/month (est.)</td></tr>
             </tbody>
           </table>
         </div>
@@ -189,14 +189,14 @@ export default function VsServiceTitan() {
 
       <div className="premium-band">
         <h2>ServiceTitan Was Built for $5M+ HVAC Companies.<br /><span>PoopBossPro Was Built for Service Routes.</span></h2>
-        <p>ServiceTitan is one of the most powerful field service platforms in the world. It&apos;s also one of the most expensive, most complex, and most overkill tools you could choose for a pet waste removal business. You&apos;d spend 90 days implementing it, pay $300–$500+/month, and still be missing features built specifically for service businesses. PoopBossPro is $79, set up in an afternoon, and built around how your routes actually work.</p>
+        <p>ServiceTitan is one of the most powerful field service platforms in the world. It&apos;s also one of the most expensive, most complex, and most overkill tools you could choose for a pet waste removal business. You&apos;d spend 90 days implementing it, pay $300–$500+/month, and still be missing features built specifically for service businesses. PoopBossPro starts at $49, sets up in an afternoon, and built around how your routes actually work.</p>
         <div className="premium-grid">
           <div className="premium-card"><div className="premium-card-icon">📋</div><h4>Service-Specific Features</h4><p>Visit waiting lists, service verification logs, lasso route selector, recurring cleanup tracking — features built around how pet waste removal actually runs. ServiceTitan doesn&apos;t have any of these.</p></div>
           <div className="premium-card"><div className="premium-card-icon">⚡</div><h4>Up in a Day, Not 90</h4><p>ServiceTitan implementations take months. You&apos;ll need an onboarding team, configuration calls, and a lot of patience. PoopBossPro is designed for owners who want to be operational today — not next quarter.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">💰</div><h4>$79 vs $300–500+</h4><p>ServiceTitan pricing is custom, but independent estimates consistently put it at $300–$500+ per month for small operations — before add-ons. PoopBossPro is $79/month. No negotiation, no annual contract, no surprise invoices.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💰</div><h4>From $49 vs $300–500+</h4><p>ServiceTitan pricing is custom, but independent estimates consistently put it at $300–$500+ per month for small operations — before add-ons. PoopBossPro is $49 to $169/month, all three published. No negotiation, no annual contract, no surprise invoices.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Lasso Route Selector</h4><p>Draw a circle on the map, instantly see every stop inside with a service due — visit, service type, all calculated. ServiceTitan has route optimization but nothing like the Lasso geographic selector built for service route density.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🧪</div><h4>Service verification</h4><p>Log every visit with product, mix rate, weather, and tech license. Pull service history reports any time. ServiceTitan tracks jobs. That&apos;s not the same as a service compliance log built for yard and pest operations.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">💬</div><h4>SMS Included</h4><p>Two-way SMS inbox, automated appointment alerts, estimate follow-ups, review requests — all built in at $79/month. ServiceTitan charges extra for messaging features and requires separate configuration for automation.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💬</div><h4>SMS Included</h4><p>Two-way SMS inbox, automated appointment alerts, estimate follow-ups, review requests — all built in from $79/month on Pro. ServiceTitan charges extra for messaging features and requires separate configuration for automation.</p></div>
         </div>
       </div>
 
@@ -221,7 +221,7 @@ export default function VsServiceTitan() {
             <div className="mock-item">
               <div className="mock-dot orange"></div>
               <div><div className="mock-label">PoopBossPro</div><div className="mock-sub">Every feature — built for service routes</div></div>
-              <div className="mock-badge">$79/mo</div>
+              <div className="mock-badge">from $49/mo</div>
             </div>
             <div className="mock-item">
               <div className="mock-dot red"></div>
@@ -281,7 +281,7 @@ export default function VsServiceTitan() {
         </div>
         <div className="simple-grid">
           <div className="simple-card"><div className="simple-num">01</div><h3>No Onboarding Team Required</h3><p>PoopBossPro is designed to be self-serve from day one. Add your services, import your clients and yards, connect your payment processor, and you&apos;re scheduling. No implementation consultant, no 90-day setup timeline.</p></div>
-          <div className="simple-card"><div className="simple-num">02</div><h3>Pricing You Can Plan Around</h3><p>$79/month. No custom quotes, no sales calls, no contract negotiations. ServiceTitan won&apos;t even give you pricing without a demo — because their pricing is based on your revenue. PoopBossPro is $79. Always.</p></div>
+          <div className="simple-card"><div className="simple-num">02</div><h3>Pricing You Can Plan Around</h3><p>From $49/month. No custom quotes, no sales calls, no contract negotiations. ServiceTitan won&apos;t even give you pricing without a demo — because their pricing is based on your revenue. PoopBossPro publishes all three prices. Always.</p></div>
           <div className="simple-card"><div className="simple-num">03</div><h3>Scoopers Learn It Fast</h3><p>Your crew picks up the mobile app in minutes. No training program, no certification, no thick manual. The tech app shows today&apos;s stops, yard notes, and a complete button. That&apos;s it.</p></div>
           <div className="simple-card"><div className="simple-num">04</div><h3>Cancel Anytime — No Lock-In</h3><p>No annual contract required. Month to month from day one. ServiceTitan requires annual agreements that lock you in regardless of how the software performs. PoopBossPro earns your business every month.</p></div>
         </div>
@@ -290,15 +290,15 @@ export default function VsServiceTitan() {
       <section>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
-          <h2 className="section-title">$79/Month. No Surprises. No Sales Call Required.</h2>
-          <p className="section-sub">ServiceTitan won&apos;t tell you their price until you sit through a demo. PoopBossPro is $79. Right here, right now.</p>
+          <h2 className="section-title">From $49/Month. No Surprises. No Sales Call Required.</h2>
+          <p className="section-sub">ServiceTitan won&apos;t tell you their price until you sit through a demo. PoopBossPro publishes all three. Right here, right now.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
           <div className="price-card featured" style={{width:'100%'}}>
-            <div className="featured-badge">Everything Included</div>
-            <div className="price-tier">One Plan. No Surprises.</div>
-            <div className="price-amount"><sup>$</sup>79</div>
-            <div className="price-period">per month — flat</div>
+            <div className="featured-badge">Crew — published, not quoted</div>
+            <div className="price-tier">Crew — our top plan, published</div>
+            <div className="price-amount"><sup>$</sup>169</div>
+            <div className="price-period">per month · Start $49 · Pro $79 if you are smaller</div>
             <ul className="price-features">
               <li>Unlimited Clients, Yards &amp; Leads</li>
               <li>Unlimited Employees &amp; Users</li>
@@ -310,7 +310,7 @@ export default function VsServiceTitan() {
               <li>Two-Way SMS &amp; 10+ Automated Alerts</li>
               <li>Package Plans &amp; Renewal Tracking</li>
               <li>Mobile App for Scoopers</li>
-              <li>500 Outbound SMS/month included</li>
+              <li>1,000 Outbound SMS/month on Crew</li>
             </ul>
             <button className="price-btn price-btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(2, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
           </div>
@@ -320,7 +320,7 @@ export default function VsServiceTitan() {
 
       <div className="cta-band">
         <h2>You Don&apos;t Need an Enterprise Platform.<br />You Need Software Built for Service Routes.</h2>
-        <p>Try PoopBossPro free for 14 days. Set up in an afternoon. $79/month — no sales call required.</p>
+        <p>Try PoopBossPro free for 14 days. Set up in an afternoon. From $49/month — no sales call required.</p>
         <div className="hero-btns">
           <button className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}} onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
         </div>
@@ -331,7 +331,7 @@ export default function VsServiceTitan() {
         <div key={n} id={`sbp-form-${n}`} style={{display:'none', position:'fixed', zIndex:99999, width:'420px', maxWidth:'calc(100vw - 24px)', background:'#fff', borderRadius:'14px', border:'3px solid #f0820e', boxShadow:'0 0 0 4px rgba(240,130,14,.35), 0 16px 60px rgba(0,0,0,.45)', maxHeight:'calc(100vh - 40px)', overflowY:'auto'}}>
           <div style={{background:'linear-gradient(135deg,#0a0a0a,#1a1a1a)', padding:'28px 28px 22px', position:'relative'}}>
             <div style={{color:'#fff', fontSize:'20px', fontWeight:800, paddingRight:'36px'}}>Start Your 14-Day Free Trial</div>
-            <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', marginTop:'5px'}}>No credit card required · Full access · $79/mo after your 14-day trial</div>
+            <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', marginTop:'5px'}}>No credit card required · Full access · from $49/mo after your 14-day trial</div>
             <button onClick={() => closeSignupModal(n)} style={{position:'absolute', top:'16px', right:'16px', background:'rgba(255,255,255,.12)', border:'none', color:'#fff', width:'32px', height:'32px', borderRadius:'50%', cursor:'pointer', fontSize:'20px', display:'flex', alignItems:'center', justifyContent:'center'}}>×</button>
           </div>
           <div id={`sbp${n}-step1`} style={{padding:'24px 28px'}}>
@@ -348,7 +348,7 @@ export default function VsServiceTitan() {
             <div id={`sbp${n}-err2`} style={{background:'#fff0f0', border:'1px solid #f5c6c6', color:'#c0392b', borderRadius:'6px', padding:'10px 12px', fontSize:'13px', marginBottom:'14px', display:'none'}}></div>
             <div style={{background:'#f0fdf4', border:'1px solid #bbf7d0', borderRadius:'6px', padding:'10px 14px', marginBottom:'16px'}}>
               <div style={{fontSize:'12px', color:'#16a34a', fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div>
-              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div>
+              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. From $49/month after trial.</div>
             </div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Login Email</label><input id={`sbp${n}-login-email`} type="email" readOnly style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', background:'#f8f8f8', color:'#333'}} /></div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Password</label><input id={`sbp${n}-password`} type="password" placeholder="At least 8 characters" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>

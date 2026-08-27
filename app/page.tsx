@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import HeroDemo from './components/HeroDemo';
+import PlanCompare from './components/PlanCompare';
 
 const SBP_URL  = 'https://knjdbgroiyhvqwrpqzcx.supabase.co';
 const SBP_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtuamRiZ3JvaXlodnF3cnBxemN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0OTczMDMsImV4cCI6MjA5NTA3MzMwM30.zoExtkem-XZqU86S4yJjA_xOOaS1G0IPU2M9OAAza2g';
@@ -226,7 +227,7 @@ export default function Home() {
         {/* Price up top, above the demo — same order sprayboss-website uses. */}
         <div style={{textAlign:'center', marginBottom:'clamp(22px,3vw,32px)'}}>
           <div style={{display:'inline-flex', alignItems:'baseline', gap:'12px', flexWrap:'wrap', justifyContent:'center', color:'#fff'}}>
-            <span style={{fontSize:'clamp(30px,4.6vw,46px)', fontWeight:800, lineHeight:1}}>$79<span style={{fontSize:'.46em', fontWeight:700, color:'rgba(255,255,255,.6)'}}>/month</span></span>
+            <span style={{fontSize:'clamp(30px,4.6vw,46px)', fontWeight:800, lineHeight:1}}><span style={{fontSize:'.5em', fontWeight:700, color:'rgba(255,255,255,.6)'}}>from </span>$49<span style={{fontSize:'.46em', fontWeight:700, color:'rgba(255,255,255,.6)'}}>/month</span></span>
             <span style={{fontSize:'clamp(16px,2.2vw,22px)', fontWeight:800, color:'var(--orange)'}}>&middot; 14-Day Free Trial</span>
           </div>
           <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', fontWeight:600, marginTop:'7px', letterSpacing:'.3px'}}>No credit card required &middot; Cancel anytime</div>
@@ -248,7 +249,7 @@ export default function Home() {
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
           <a href="https://my.poopbosspro.com/demo.html" className="btn-demo"><span className="btn-demo-dot" />Try the Live Demo</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">100+</div><div className="hero-stat-lbl">Features Built In</div></div>
@@ -261,12 +262,12 @@ export default function Home() {
       {/* ═══ PREMIUM BAND ═══ */}
       <div className="premium-band">
         <h2>Affordable Doesn&apos;t Mean Cheap.<br /><span>This Is Enterprise-Level Software.</span></h2>
-        <p>We charged less because we&apos;ve been the customer. We know what it feels like to pay $600 a month for software that still doesn&apos;t do what a pet waste business actually needs. PoopBossPro does everything the big platforms do &mdash; recurring cleanup scheduling, route building, crew dispatch, automated customer texts, card-on-file billing, monthly subscriptions, role-based access, and a full mobile app &mdash; built specifically for pooper scooper operators, and priced for the real world. $79 a month isn&apos;t a cheap price. It&apos;s a fair price. The big platforms aren&apos;t charging $500 because they&apos;re better. They&apos;re charging $500 because they can &mdash; and because their customers don&apos;t have a better option. Now you do.</p>
+        <p>We charged less because we&apos;ve been the customer. We know what it feels like to pay $600 a month for software that still doesn&apos;t do what a pet waste business actually needs. PoopBossPro does everything the big platforms do &mdash; recurring cleanup scheduling, route building, crew dispatch, automated customer texts, card-on-file billing, monthly subscriptions, role-based access, and a full mobile app &mdash; built specifically for pooper scooper operators, and priced for the real world. $49 a month isn&apos;t a cheap price. It&apos;s a fair price. The big platforms aren&apos;t charging $500 because they&apos;re better. They&apos;re charging $500 because they can &mdash; and because their customers don&apos;t have a better option. Now you do.</p>
         <div className="premium-grid">
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Enterprise Route Intelligence</h4><p>Live route maps, drag-and-drop stop ordering, and circle-to-schedule map selection &mdash; tools that cost thousands per month at other platforms are standard in PoopBossPro at every plan level.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Recurring Cleanup Scheduling</h4><p>Weekly, twice-weekly, or every-other-week yard cleanups build themselves on autopilot. Set the frequency once and PoopBossPro keeps the visits coming &mdash; no rebooking, no missed weeks.</p></div>
           <div className="premium-card"><div className="premium-card-icon">💬</div><h4>Automated Customer Texts</h4><p>On-my-way texts, completed-cleanup texts, gate-left-open alerts, and payment reminders &mdash; all sent automatically from a two-way inbox so your customers always know their yard is clean.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">💳</div><h4>Monthly Subscription Billing</h4><p>Card-on-file storage, automatic monthly charges, partial payments, and full payment history. The same billing infrastructure the big guys use &mdash; included in your $79.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💳</div><h4>Monthly Subscription Billing</h4><p>Card-on-file storage, automatic monthly charges, partial payments, and full payment history. The same billing infrastructure the big guys use &mdash; included on every plan.</p></div>
           <div className="premium-card"><div className="premium-card-icon">👑</div><h4>Role-Based Access Control</h4><p>Owner, Manager, Office, and Scooper roles &mdash; the same granular permission system as platforms charging 5× more per month. Your office staff sees what they need. Your crew sees only their stops.</p></div>
           <div className="premium-card"><div className="premium-card-icon">📱</div><h4>Full Mobile App for Your Crew</h4><p>Your scoopers see their stops, view gate codes and the number of dogs, mark yards complete, snap a photo, and add notes from their phone &mdash; built for someone working a yard, not sitting at a desk.</p></div>
         </div>
@@ -444,33 +445,15 @@ export default function Home() {
           <p className="section-sub">Over the years we tried just about every field service software out there &mdash; and for too long we were paying $500&ndash;$700 a month. Every feature was an add-on. Every user cost more. Every upgrade was another invoice.</p>
           <div style={{background:'#fff', border:'1.5px solid var(--border)', borderRadius:'14px', padding:'36px 40px', maxWidth:'800px', margin:'0 auto 56px', textAlign:'left', borderLeft:'5px solid var(--orange)'}}>
             <p style={{fontSize:'17px', color:'var(--text)', lineHeight:'1.8', marginBottom:'16px'}}>We were paying <strong>$500 to $700 a month</strong> for software that nickel-and-dimed us at every turn. Want texting? That&apos;s an add-on. Want more users? Pay per user. Want the reporting module? Upgrade your plan. It never ended &mdash; and none of those people had ever scooped a yard in their life.</p>
-            <p style={{fontSize:'17px', color:'var(--text)', lineHeight:'1.8', marginBottom:'16px'}}>That&apos;s exactly why we built PoopBossPro with one flat price that includes everything. <strong>$79 a month.</strong> No add-ons. No user fees. No locked features. We include it all because that&apos;s how it should have been from day one.</p>
+            <p style={{fontSize:'17px', color:'var(--text)', lineHeight:'1.8', marginBottom:'16px'}}>That&apos;s exactly why we built PoopBossPro with plans priced to the size you actually are. <strong>From $49 a month.</strong> No add-ons. No user fees. Nothing held back for a sales call. We include it all because that&apos;s how it should have been from day one.</p>
             <p style={{fontSize:'17px', color:'var(--text)', lineHeight:'1.8'}}>The only reason we charge a small fee for outbound text messages is simple &mdash; they cost us money to send. We&apos;re not marking them up to make a profit off you. 500 outbound messages are included every month, and if you go over, it&apos;s just $15 per additional 500. That&apos;s it. No gotchas. No surprises. We&apos;re operators just like you, and we built the pricing we always wished existed.</p>
           </div>
         </div>
-        <div style={{maxWidth:'520px', margin:'0 auto'}}>
-          <div className="price-card featured" style={{width:'100%'}}>
-            <div className="featured-badge">Everything Included</div>
-            <div className="price-tier">One Plan. No Surprises.</div>
-            <div className="price-amount"><sup>$</sup>79</div>
-            <div className="price-period">per month</div>
-            <div className="price-desc">Every feature. Unlimited customers, yards, employees, and users. No tiers, no locked features, no per-seat fees.</div>
-            <ul className="price-features">
-              <li>Unlimited Customers, Yards &amp; Leads</li>
-              <li>Unlimited Employees &amp; Users</li>
-              <li>Recurring Scheduling, Dispatch &amp; Route Map</li>
-              <li>Smart Maps &amp; Yard Property Profiles</li>
-              <li>Monthly Subscriptions &amp; Card-on-File Billing</li>
-              <li>Two-Way Texts &amp; Automated Alerts</li>
-              <li>The Job Board for Every Request</li>
-              <li>Gate Codes &amp; Number-of-Dogs Tracking</li>
-              <li>Mobile App for Your Crew</li>
-              <li>500 Outbound Texts/month included</li>
-              <li>+$15 per additional 500 texts after that</li>
-            </ul>
-            <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(2, e.currentTarget as HTMLElement); }} className="price-btn price-btn-primary">Start Your 14-Day Free Trial</a>
-          </div>
-        </div>
+        {/* The plans, rendered from the shared component instead of the single $79 card that
+            used to sit here. That card promised "One Plan. No Surprises." with unlimited users —
+            a Crew-sized promise at what is now the middle price. One component feeds this page
+            and /pricing, so the two can never quote different numbers again. */}
+        <PlanCompare />
         <p style={{textAlign:'center', color:'var(--muted)', fontSize:'13px', marginTop:'32px'}}>No contracts. Cancel anytime. No hidden fees &mdash; ever.</p>
       </section>
 
@@ -765,7 +748,7 @@ export default function Home() {
         <p>Stop running your pooper scooper business out of a notepad and a group text. Get every yard on a recurring schedule, get paid automatically, and give your customers an experience that wins referrals.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
       </div>
 
@@ -775,7 +758,7 @@ export default function Home() {
         <div key={n} id={`sbp-form-${n}`} style={{display:'none', position:'fixed', zIndex:99999, width:'420px', maxWidth:'calc(100vw - 24px)', background:'#fff', borderRadius:'14px', border:'3px solid #f0820e', boxShadow:'0 0 0 4px rgba(240,130,14,.35), 0 16px 60px rgba(0,0,0,.45)', maxHeight:'calc(100vh - 40px)', overflowY:'auto'}}>
           <div style={{background:'linear-gradient(135deg,#0a0a0a,#1a1a1a)', padding:'28px 28px 22px', position:'relative'}}>
             <div style={{color:'#fff', fontSize:'20px', fontWeight:800, paddingRight:'36px'}}>Start Your 14-Day Free Trial</div>
-            <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', marginTop:'5px'}}>No credit card required · Full access · $79/mo after your 14-day trial</div>
+            <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', marginTop:'5px'}}>No credit card required · Full access · from $49/mo after your 14-day trial</div>
             <button onClick={() => closeSignupModal(n)} style={{position:'absolute', top:'16px', right:'16px', background:'rgba(255,255,255,.12)', border:'none', color:'#fff', width:'32px', height:'32px', borderRadius:'50%', cursor:'pointer', fontSize:'20px', display:'flex', alignItems:'center', justifyContent:'center'}}>×</button>
           </div>
           <div id={`sbp${n}-step1`} style={{padding:'24px 28px'}}>
@@ -792,7 +775,7 @@ export default function Home() {
             <div id={`sbp${n}-err2`} style={{background:'#fff0f0', border:'1px solid #f5c6c6', color:'#c0392b', borderRadius:'6px', padding:'10px 12px', fontSize:'13px', marginBottom:'14px', display:'none'}}></div>
             <div style={{background:'#f0fdf4', border:'1px solid #bbf7d0', borderRadius:'6px', padding:'10px 14px', marginBottom:'16px'}}>
               <div style={{fontSize:'12px', color:'#16a34a', fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div>
-              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div>
+              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. From $49/month after trial.</div>
             </div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Login Email</label><input id={`sbp${n}-login-email`} type="email" readOnly style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', background:'#f8f8f8', color:'#333'}} /></div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Password</label><input id={`sbp${n}-password`} type="password" placeholder="At least 8 characters" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>

@@ -134,7 +134,7 @@ function SignupForm({ n }: { n: number }) {
     <div id={`sbp-form-${n}`} className="sbp-form">
       <div className="sbp-form-header">
         <div className="sbp-form-title">Start Your 14-Day Free Trial</div>
-        <div className="sbp-form-subtitle">No credit card required · Full access · $79/mo after your 14-day trial</div>
+        <div className="sbp-form-subtitle">No credit card required · Full access · from $49/mo after your 14-day trial</div>
         <button className="sbp-form-close" onClick={() => closeSignupModal(n)}>×</button>
       </div>
       <div id={`sbp${n}-step1`} className="sbp-form-body">
@@ -165,7 +165,7 @@ function SignupForm({ n }: { n: number }) {
         <div id={`sbp${n}-err2`} className="sbp-err"></div>
         <div className="sbp-trial-note">
           <div className="sbp-trial-note-title">14-Day Free Trial — No Credit Card Required</div>
-          <div className="sbp-trial-note-sub">Full access to every feature. $79/month after trial.</div>
+          <div className="sbp-trial-note-sub">Full access to every feature. From $49/month after trial.</div>
         </div>
         <div className="sbp-field">
           <label className="sbp-label">Login Email</label>
@@ -226,11 +226,11 @@ export default function PetWasteCustomerManagementSoftware() {
         <p>Running a pooper scooper route means keeping track of gate codes, dog names, pickup days, billing, and a hundred little requests. PoopBossPro pulls all of it into one customer record — and gives your clients a portal to sign up, pay, and request a skip without ever calling you. This is the customer-management hub for pet waste removal businesses.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">1 Record</div><div className="hero-stat-lbl">Every Client &amp; Yard In One Place</div></div>
-          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat Monthly — No Add-Ons</div></div>
+          <div><div className="hero-stat-val">From $49</div><div className="hero-stat-lbl">Three Plans — No Add-Ons</div></div>
           <div><div className="hero-stat-val">24/7</div><div className="hero-stat-lbl">Self-Serve Client Portal</div></div>
           <div><div className="hero-stat-val">2006</div><div className="hero-stat-lbl">In the Industry Since</div></div>
         </div>
@@ -454,16 +454,16 @@ export default function PetWasteCustomerManagementSoftware() {
       <section style={{background:'var(--light-bg)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
-          <h2 className="section-title">One Flat Price. Every Customer Tool Included.</h2>
+          <h2 className="section-title">Priced To Your Size. Every Customer Tool Included.</h2>
           <p className="section-sub">No per-client fees, no upcharge for the client portal, no add-on for SMS. Everything your pet waste removal business needs to sign up, serve, bill, and keep customers is in one plan.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
           <div className="lc-price-card featured">
-            <div className="featured-badge">Everything Included</div>
-            <div className="price-tier">One Plan. No Surprises.</div>
-            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>79</div>
-            <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month</div>
-            <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Every feature. Unlimited clients, yards, employees, and users. No tiers, no locked features, no per-seat fees.</div>
+            <div className="featured-badge">Crew &mdash; Unlimited Seats</div>
+            <div className="price-tier">Crew &mdash; our top plan</div>
+            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>169</div>
+            <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month &middot; Start $49 &middot; Pro $79 if you are smaller</div>
+            <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Unlimited clients and yards on every plan, and Crew lifts the seat limits too. Never billed per seat, and nothing held back for a sales call.</div>
             <ul className="price-features">
               <li>Unlimited Clients, Yards &amp; Leads</li>
               <li>Unlimited Employees &amp; Users</li>
@@ -475,7 +475,7 @@ export default function PetWasteCustomerManagementSoftware() {
               <li>Two-Way SMS &amp; Automated Alerts</li>
               <li>Retention, Win-Back &amp; Review Requests</li>
               <li>Crew Mobile App Included</li>
-              <li>500 Outbound SMS/month included</li>
+              <li>Outbound SMS included &mdash; 100 / 500 / 1,000 by plan</li>
             </ul>
             <button onClick={(e) => openSignupModal(2, e.currentTarget as HTMLElement)} className="price-btn price-btn-primary">Start Your 14-Day Free Trial</button>
           </div>
@@ -494,7 +494,7 @@ export default function PetWasteCustomerManagementSoftware() {
             {q:'Can new customers sign themselves up online?', a:'Yes. A branded online signup page collects the client&apos;s address, pickup frequency, pet details, and a card on file. The account is created automatically and lands on your waiting list ready to schedule &mdash; no manual data entry on your end.'},
             {q:'How are skip and hold requests handled?', a:'Clients submit a one-time skip or a vacation hold from the portal. PoopBossPro updates the route automatically so your crew never shows up to a yard that asked for a break, and the request is logged on the customer record for full history.'},
             {q:'Does photo proof of pickup attach to the customer?', a:'Yes. The crew snaps a timestamped photo from the mobile app when a yard is cleared. It attaches to that customer record and appears in the client portal, which ends most billing and missed-pickup disputes before they start.'},
-            {q:'How much does PoopBossPro cost?', a:'$79/month with every feature included &mdash; online signup, client portal, customer records, billing, SMS, retention, and the crew app. No per-client fees and no portal upcharge. 14-day free trial, no credit card required.'},
+            {q:'How much does PoopBossPro cost?', a:'Three plans — Start $49, Pro $79, Crew $169 a month — online signup, client portal, customer records, billing, SMS, retention, and the crew app. No per-client fees and no portal upcharge. 14-day free trial, no credit card required.'},
           ].map(({q, a}, i, arr) => (
             <div key={i} style={{padding:'28px 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none'}}>
               <h3 style={{fontWeight:700, fontSize:'17px', color:'var(--text)', marginBottom:'10px', lineHeight:1.4}} dangerouslySetInnerHTML={{__html: q}} />
@@ -511,7 +511,7 @@ export default function PetWasteCustomerManagementSoftware() {
         <p>PoopBossPro gives your pet waste removal business a real customer database and a self-serve client portal &mdash; built by people who ran the route. Try it free for 14 days.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
       </div>
 

@@ -134,7 +134,7 @@ function SignupForm({ n }: { n: number }) {
     <div id={`sbp-form-${n}`} className="sbp-form">
       <div className="sbp-form-header">
         <div className="sbp-form-title">Start Your 14-Day Free Trial</div>
-        <div className="sbp-form-subtitle">No credit card required · Full access · $79/mo after your 14-day trial</div>
+        <div className="sbp-form-subtitle">No credit card required · Full access · from $49/mo after your 14-day trial</div>
         <button className="sbp-form-close" onClick={() => closeSignupModal(n)}>×</button>
       </div>
       <div id={`sbp${n}-step1`} className="sbp-form-body">
@@ -165,7 +165,7 @@ function SignupForm({ n }: { n: number }) {
         <div id={`sbp${n}-err2`} className="sbp-err"></div>
         <div className="sbp-trial-note">
           <div className="sbp-trial-note-title">14-Day Free Trial — No Credit Card Required</div>
-          <div className="sbp-trial-note-sub">Full access to every feature. $79/month after trial.</div>
+          <div className="sbp-trial-note-sub">Full access to every feature. From $49/month after trial.</div>
         </div>
         <div className="sbp-field">
           <label className="sbp-label">Login Email</label>
@@ -226,11 +226,11 @@ export default function PetWasteBillingSoftware() {
         <p>Pooper scooper businesses live and die by recurring revenue. PoopBossPro keeps your monthly subscriptions running on autopilot &mdash; card-on-file billing, automatic charges, payment reminders, and a clean record of every dollar collected. No more chasing checks at the door or wondering who hasn&apos;t paid for last month&apos;s yard cleanups.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">Monthly</div><div className="hero-stat-lbl">Subscriptions on Autopilot</div></div>
-          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat Monthly — No Add-Ons</div></div>
+          <div><div className="hero-stat-val">From $49</div><div className="hero-stat-lbl">Three Plans — No Add-Ons</div></div>
           <div><div className="hero-stat-val">Card</div><div className="hero-stat-lbl">On File via Stripe</div></div>
           <div><div className="hero-stat-val">2006</div><div className="hero-stat-lbl">In the Industry Since</div></div>
         </div>
@@ -244,7 +244,7 @@ export default function PetWasteBillingSoftware() {
       {/* PREMIUM BAND */}
       <div className="premium-band">
         <h2>Affordable Doesn&apos;t Mean Cheap.<br /><span>This Is Enterprise-Level Billing for Pet Waste Removal.</span></h2>
-        <p>$79/month sounds modest. But what you&apos;re getting isn&apos;t modest at all. PoopBossPro&apos;s billing engine is built to the same standard as software that costs 10 times more &mdash; the difference is we built it ourselves, for ourselves, and we don&apos;t charge a percentage of every payment or a $200/month add-on just to put cards on file.</p>
+        <p>$49 a month sounds modest. But what you&apos;re getting isn&apos;t modest at all. PoopBossPro&apos;s billing engine is built to the same standard as software that costs 10 times more &mdash; the difference is we built it ourselves, for ourselves, and we don&apos;t charge a percentage of every payment or a $200/month add-on just to put cards on file.</p>
         <div className="premium-grid">
           <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Monthly Subscriptions</h4><p>Put every recurring yard cleanup customer on a monthly plan. PoopBossPro charges their card automatically on the same day each month so your revenue arrives without a single phone call or paper invoice.</p></div>
           <div className="premium-card"><div className="premium-card-icon">💳</div><h4>Card on File</h4><p>Store every customer&apos;s card securely through Stripe at signup. Charge after each cleanup or on a monthly cycle &mdash; no swiping, no checks left under the mat, no awkward &quot;you still owe me&quot; conversations.</p></div>
@@ -438,16 +438,16 @@ export default function PetWasteBillingSoftware() {
       <section style={{background:'var(--light-bg)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
-          <h2 className="section-title">One Flat Price. Billing Included.</h2>
+          <h2 className="section-title">Priced To Your Size. Billing Included.</h2>
           <p className="section-sub">We were paying $500–$700 a month for software that still charged extra to put a card on file. We built PoopBossPro to be the pricing we always wished existed &mdash; billing and payments built in, no percentage skimmed off the top.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
           <div className="lc-price-card featured">
-            <div className="featured-badge">Everything Included</div>
-            <div className="price-tier">One Plan. No Surprises.</div>
-            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>79</div>
-            <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month</div>
-            <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Every feature. Unlimited customers, properties, employees, and users. No tiers, no locked features, no per-transaction fees from us.</div>
+            <div className="featured-badge">Crew &mdash; Unlimited Seats</div>
+            <div className="price-tier">Crew &mdash; our top plan</div>
+            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>169</div>
+            <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month &middot; Start $49 &middot; Pro $79 if you are smaller</div>
+            <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Unlimited customers and properties on every plan, and Crew lifts the seat limits too. Never billed per seat, and nothing held back for a sales call.</div>
             <ul className="price-features">
               <li>Unlimited Customers, Properties &amp; Leads</li>
               <li>Unlimited Employees &amp; Users</li>
@@ -458,7 +458,7 @@ export default function PetWasteBillingSoftware() {
               <li>Failed-Card Alerts &amp; Auto-Retry</li>
               <li>Discount Codes &amp; Sales Tax</li>
               <li>Revenue Dashboard &amp; Reports</li>
-              <li>500 Outbound SMS/month included</li>
+              <li>Outbound SMS included &mdash; 100 / 500 / 1,000 by plan</li>
               <li>+$15 per additional 500 SMS after that</li>
             </ul>
             <button onClick={(e) => openSignupModal(2, e.currentTarget as HTMLElement)} className="price-btn price-btn-primary">Start Your 14-Day Free Trial</button>
@@ -478,7 +478,7 @@ export default function PetWasteBillingSoftware() {
             {q:'What happens when a card is declined or expires?', a:'PoopBossPro flags the failed payment the same day, automatically retries the charge, and texts the customer a secure link to update their card. A bad card gets caught and fixed instead of quietly costing you a full month of revenue.'},
             {q:'Can I price subscriptions by the number of dogs or yard size?', a:'Yes. Each property profile stores the number of dogs and the yard size, so you can set subscription pricing that reflects how much work the yard actually takes. Bigger yards and more dogs bill more, automatically and consistently across every customer.'},
             {q:'Can I send one-time invoices too?', a:'Yes. Alongside recurring subscriptions you can send one-time invoices for initial cleanups, gate fees, or extra visits. Filter invoices by unpaid, partial, paid, or overdue, and let automated reminder texts collect anything that goes past due.'},
-            {q:'How much does PoopBossPro cost?', a:'$79/month, all features included &mdash; subscriptions, card-on-file payments, invoicing, and automated payment texts. No per-transaction fee from us and no add-on to enable billing. Standard Stripe processing rates apply on the payments themselves. 14-day free trial, no credit card required.'},
+            {q:'How much does PoopBossPro cost?', a:'Three plans — Start $49, Pro $79, Crew $169 a month — subscriptions, card-on-file payments, invoicing, and automated payment texts. No per-transaction fee from us and no add-on to enable billing. Standard Stripe processing rates apply on the payments themselves. 14-day free trial, no credit card required.'},
           ].map(({q, a}, i, arr) => (
             <div key={i} style={{padding:'28px 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none'}}>
               <h3 style={{fontWeight:700, fontSize:'17px', color:'var(--text)', marginBottom:'10px', lineHeight:1.4}}>{q}</h3>
@@ -495,7 +495,7 @@ export default function PetWasteBillingSoftware() {
         <p>PoopBossPro is billing built for pooper scooper businesses &mdash; monthly subscriptions, card on file, and automatic collection, all from one platform. Try it free for 14 days.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
       </div>
 

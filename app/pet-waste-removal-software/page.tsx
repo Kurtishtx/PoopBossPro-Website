@@ -134,7 +134,7 @@ function SignupForm({ n }: { n: number }) {
     <div id={`sbp-form-${n}`} className="sbp-form">
       <div className="sbp-form-header">
         <div className="sbp-form-title">Start Your 14-Day Free Trial</div>
-        <div className="sbp-form-subtitle">No credit card required · Full access · $79/mo after your 14-day trial</div>
+        <div className="sbp-form-subtitle">No credit card required · Full access · from $49/mo after your 14-day trial</div>
         <button className="sbp-form-close" onClick={() => closeSignupModal(n)}>×</button>
       </div>
       <div id={`sbp${n}-step1`} className="sbp-form-body">
@@ -165,7 +165,7 @@ function SignupForm({ n }: { n: number }) {
         <div id={`sbp${n}-err2`} className="sbp-err"></div>
         <div className="sbp-trial-note">
           <div className="sbp-trial-note-title">14-Day Free Trial — No Credit Card Required</div>
-          <div className="sbp-trial-note-sub">Full access to every feature. $79/month after trial.</div>
+          <div className="sbp-trial-note-sub">Full access to every feature. From $49/month after trial.</div>
         </div>
         <div className="sbp-field">
           <label className="sbp-label">Login Email</label>
@@ -226,11 +226,11 @@ export default function PetWasteRemovalSoftware() {
         <p>Most field service software is built for plumbers and HVAC techs. PoopBossPro is built from the ground up for pooper scooper businesses &mdash; the way you schedule recurring yard cleanups, build routes, dispatch your crew, and bill monthly subscriptions is completely different, and your software should be too.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">Yards</div><div className="hero-stat-lbl">Stops Waiting Per Day</div></div>
-          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat Monthly — No Add-Ons</div></div>
+          <div><div className="hero-stat-val">From $49</div><div className="hero-stat-lbl">Three Plans — No Add-Ons</div></div>
           <div><div className="hero-stat-val">500+</div><div className="hero-stat-lbl">SMS Alerts Included Monthly</div></div>
           <div><div className="hero-stat-val">2006</div><div className="hero-stat-lbl">In the Industry Since</div></div>
         </div>
@@ -244,7 +244,7 @@ export default function PetWasteRemovalSoftware() {
       {/* PREMIUM BAND */}
       <div className="premium-band">
         <h2>Affordable Doesn&apos;t Mean Cheap.<br /><span>This Is Enterprise-Level Pet Waste Removal Software.</span></h2>
-        <p>$79/month sounds modest. But what you&apos;re getting isn&apos;t modest at all. PoopBossPro is built to the same standard as software that costs 10 times more &mdash; the difference is we built it ourselves, for ourselves, and we don&apos;t have a sales team, investor overhead, or a $500/month add-on for every feature you actually need.</p>
+        <p>$49 a month sounds modest. But what you&apos;re getting isn&apos;t modest at all. PoopBossPro is built to the same standard as software that costs 10 times more &mdash; the difference is we built it ourselves, for ourselves, and we don&apos;t have a sales team, investor overhead, or a $500/month add-on for every feature you actually need.</p>
         <div className="premium-grid">
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Route Intelligence</h4><p>Live route maps, drag-and-drop stop ordering, geographic clustering, and a waiting list that shows you every yard due for a cleanup before you schedule a single stop. No other pet waste removal software has this.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Recurring Subscriptions</h4><p>Weekly, twice-weekly, and bi-weekly yard cleanups set up once and recur forever. Monthly subscription billing runs on autopilot so your customers stay scheduled and your revenue is predictable.</p></div>
@@ -380,7 +380,7 @@ export default function PetWasteRemovalSoftware() {
             {icon:'⏱️', title:'Employee Hour Tracking', body:'Track scooper hours per route and generate payroll-ready reports. Know exactly what you owe before payday without running a separate system.'},
             {icon:'📊', title:'Dashboard & Reports', body:'Custom stat cards on your dashboard show today\'s revenue, yards completed, stops served, money owed, and more — all at a glance the moment you log in.'},
             {icon:'🔔', title:'10+ Automated Alert Types', body:'Cleanup scheduled, completed, skipped, rescheduled, estimate sent, estimate accepted, review request, payment declined, inbound text — all automated, all customizable.'},
-            {icon:'👥', title:'Unlimited Users', body:'Add every scooper, office staff member, and crew lead at no extra cost. No per-seat fees. Unlimited users are included in the flat $79/month rate.'},
+            {icon:'👥', title:'Never Priced Per Seat', body:'Add every scooper, office staff member, and crew lead without a per-user fee — your plan sets the number, and Crew lifts it entirely. Unlimited users on Crew at $169/month.'},
             {icon:'🏢', title:'Unlimited Customers & Yards', body:'No caps on customers, yards, or leads. Whether you have 50 accounts or 5,000 — PoopBossPro handles it all at the same flat price.'},
           ].map(({icon, title, body}) => (
             <div key={title} className="feature-card">
@@ -495,16 +495,16 @@ export default function PetWasteRemovalSoftware() {
       <section style={{background:'var(--light-bg)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
-          <h2 className="section-title">One Flat Price. Everything Included.</h2>
+          <h2 className="section-title">Priced To Your Size. Everything Included.</h2>
           <p className="section-sub">We were paying $500&ndash;$700 a month for software that nickel-and-dimed us. We built PoopBossPro to be the pricing we always wished existed.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
           <div className="lc-price-card featured">
-            <div className="featured-badge">Everything Included</div>
-            <div className="price-tier">One Plan. No Surprises.</div>
-            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>79</div>
-            <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month</div>
-            <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Every feature. Unlimited customers, yards, employees, and users. No tiers, no locked features, no per-seat fees.</div>
+            <div className="featured-badge">Crew &mdash; Unlimited Seats</div>
+            <div className="price-tier">Crew &mdash; our top plan</div>
+            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>169</div>
+            <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month &middot; Start $49 &middot; Pro $79 if you are smaller</div>
+            <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Unlimited customers and yards on every plan, and Crew lifts the seat limits too. Never billed per seat, and nothing held back for a sales call.</div>
             <ul className="price-features">
               <li>Unlimited Customers, Yards &amp; Leads</li>
               <li>Unlimited Employees &amp; Users</li>
@@ -515,7 +515,7 @@ export default function PetWasteRemovalSoftware() {
               <li>Monthly Subscription Billing &amp; Card-on-File</li>
               <li>Gate Codes, Dog Counts &amp; Yard Profiles</li>
               <li>Mobile App for Scoopers</li>
-              <li>500 Outbound SMS/month included</li>
+              <li>Outbound SMS included &mdash; 100 / 500 / 1,000 by plan</li>
               <li>+$15 per additional 500 SMS after that</li>
             </ul>
             <button onClick={(e) => openSignupModal(2, e.currentTarget as HTMLElement)} className="price-btn price-btn-primary">Start Your 14-Day Free Trial</button>
@@ -535,7 +535,7 @@ export default function PetWasteRemovalSoftware() {
             {q:'How does route building work for a scooping route?', a:'You open the circle-map lasso tool, draw a circle around a geographic area, and every yard due inside is selected and added to your route. Stop count and estimated revenue update in real time. Route planning that takes 30 minutes in a spreadsheet takes 5 minutes on the map — and gate codes and dog counts ride along to the mobile app.'},
             {q:'Does PoopBossPro handle monthly subscription billing?', a:'Yes. Every recurring yard is tied to a flat monthly subscription plan, and the card on file is charged automatically each month through Stripe. Failed payments trigger automatic retries and reminder texts, so your recurring revenue stays predictable without manual invoicing.'},
             {q:'Does it replace spreadsheets and scheduling apps?', a:'Yes. PoopBossPro replaces spreadsheet scheduling, route planning, customer tracking, subscription billing, and SMS communication tools in one platform. Most owners are fully operational the same day they sign up — no onboarding consultant, no implementation timeline.'},
-            {q:'How much does PoopBossPro cost?', a:'$79/month, all features included. No per-user fees, no add-ons for SMS or route tools, no setup fees. 14-day free trial with no credit card required.'},
+            {q:'How much does PoopBossPro cost?', a:'Three plans — Start $49, Pro $79, Crew $169 a month. Every plan is the same software; the bigger ones lift the seat limits and switch on the automation. No per-user fees, no add-ons for SMS or route tools, no setup fees. 14-day free trial with no credit card required.'},
           ].map(({q, a}, i, arr) => (
             <div key={i} style={{padding:'28px 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none'}}>
               <h3 style={{fontWeight:700, fontSize:'17px', color:'var(--text)', marginBottom:'10px', lineHeight:1.4}}>{q}</h3>
@@ -552,7 +552,7 @@ export default function PetWasteRemovalSoftware() {
         <p>PoopBossPro is the only pet waste removal management software built by someone who has actually run a scooping route. Try it free for 14 days.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import PlanCompare from '../components/PlanCompare';
 
 const SBP_URL  = 'https://knjdbgroiyhvqwrpqzcx.supabase.co';
 const SBP_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtuamRiZ3JvaXlodnF3cnBxemN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0OTczMDMsImV4cCI6MjA5NTA3MzMwM30.zoExtkem-XZqU86S4yJjA_xOOaS1G0IPU2M9OAAza2g';
@@ -145,15 +146,15 @@ const tableRows = [
   ['Discount Codes & Sales Tax', 'Percentage or flat discounts, auto tax calculation per invoice'],
   ['Unlimited Users', 'Add every employee at no per-user cost'],
   ['Unlimited Clients & Yards', 'No caps — 50 accounts or 5,000, same price'],
-  ['500 SMS/month', 'Outbound SMS included; +$15 per additional 500 after that'],
+  ['Outbound SMS', '100/month on Start, 500 on Pro, 1,000 on Crew; +$15 per additional 500 on any plan'],
 ];
 
 const faqs = [
-  { q: 'Is there really just one plan?', a: "$79/month, everything included. We don't believe in tiers that lock you out of features you need to run your business. You get the full platform from day one." },
-  { q: 'What happens after the 14-day free trial?', a: "You'll be prompted to enter a card and continue for $79/month. If you decide not to continue, your account simply stops — no charges, no cancellation fees. We don't auto-charge without you knowing it's coming." },
+  { q: 'How do the plans differ?', a: "Three plans — Start at $49, Pro at $79, Crew at $169. Every plan is the same software: the bigger plans lift the limits on users, employees and trucks, and turn on the automation (automatic invoice sending, card charging, and the full alert set). A solo scooper is not paying for seats they do not have." },
+  { q: 'What happens after the 14-day free trial?', a: "You'll be prompted to enter a card and continue on the plan you pick, from $49/month. Your trial runs with everything switched on, so you can see what each plan holds before you choose. If you decide not to continue, your account simply stops — no charges, no cancellation fees. We don't auto-charge without you knowing it's coming." },
   { q: 'Do I need a credit card to start the trial?', a: 'No. Create your account and get full access for 14 days with no card required. You only enter payment info if you decide to keep going after the trial.' },
   { q: 'How many users can I add?', a: 'Unlimited. Add every tech, office staff member, and manager at no extra cost. No per-user fees. Ever.' },
-  { q: "What's the SMS pricing?", a: '500 outbound SMS messages per month are included in your $79. If you go over, you can add blocks of 500 for $15 each. Most businesses with under 300 active yards never hit the 500 limit.' },
+  { q: "What's the SMS pricing?", a: 'Outbound texts are included with every plan — 100/month on Start, 500 on Pro, 1,000 on Crew. Go over and you can add blocks of 500 for $15 each. Inbound replies from your customers are free and never counted.' },
   { q: 'Are there any contracts or annual commitments?', a: 'None. Month to month, always. Cancel anytime from your account settings.' },
   { q: 'Does this work for pet waste removal?', a: 'Yes. PoopBossPro was built for service businesses — pet waste removal, pet waste cleanup, or any combination. The service types, service verification, and waiting list work the same way regardless of what you service.' },
   { q: 'What if I have questions or need help getting set up?', a: "We're a small team and we respond fast. Reach us anytime at Support@bossprohq.com. We've run routes ourselves — we know what setup actually looks like and we're here to help." },
@@ -181,45 +182,27 @@ export default function Pricing() {
       {/* HERO */}
       <div className="hero">
         <div className="hero-badge">Simple, Honest Pricing</div>
-        <h1>$79/Month.<br /><span>Everything Included.</span></h1>
-        <p>One flat price covers your entire operation — unlimited users, unlimited clients, every feature. No tiers, no add-ons, no surprises.</p>
+        <h1>From $49/Month.<br /><span>Priced To Your Size.</span></h1>
+        <p>Three plans, all the same software. Unlimited clients and yards on every one — the bigger plans lift the seat limits and switch on the automation. No add-ons, no per-user fees, no surprises.</p>
         <p style={{color:'rgba(255,255,255,.45)',fontSize:'14px',marginBottom:'40px'}}>14-day free trial · No credit card required · Cancel anytime</p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={(e) => openSignupModal(1, e.currentTarget as HTMLElement)}>Start Your 14-Day Free Trial</button>
         </div>
       </div>
 
-      {/* PRICE CARD */}
-      <section>
-        <div style={{background:'#fff',border:'3px solid var(--orange)',borderRadius:'20px',padding:'52px 48px',maxWidth:'620px',margin:'0 auto',position:'relative',boxShadow:'0 0 0 6px rgba(240,130,14,.1), 0 24px 80px rgba(10,10,10,.12)'}}>
-          <div style={{position:'absolute',top:'-16px',left:'50%',transform:'translateX(-50%)',background:'var(--orange)',color:'#fff',fontSize:'12px',fontWeight:700,letterSpacing:'1px',textTransform:'uppercase',padding:'5px 20px',borderRadius:'20px',whiteSpace:'nowrap'}}>One Plan — No Surprises</div>
-          <div style={{fontSize:'13px',fontWeight:700,color:'var(--muted)',textTransform:'uppercase',letterSpacing:'1px',marginBottom:'10px'}}>PoopBossPro</div>
-          <div style={{fontSize:'72px',fontWeight:800,color:'var(--text)',lineHeight:1}}><sup style={{fontSize:'30px',verticalAlign:'super'}}>$</sup>79</div>
-          <div style={{color:'var(--muted)',fontSize:'15px',marginBottom:'8px',marginTop:'6px'}}>per month</div>
-          <div style={{fontSize:'16px',color:'var(--text)',fontWeight:600,marginBottom:'32px'}}>Your entire pet waste removal operation. One price.</div>
-          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px 24px',marginBottom:'36px',textAlign:'left'}}>
-            {['Unlimited Users','Unlimited Clients','Unlimited Yards','Unlimited Leads','Scheduling & Dispatch','Live Route Map','Visit Waiting List','Service verification','Estimates & Invoices','Stripe Payments','Two-Way SMS Inbox','Automated Alerts','Recurring cleanup plans','Mobile App for Scoopers','Service history reports','Role-Based Access','Truck Management','Hour Tracking','Review Requests','Dashboard & Reports'].map((item,i) => (
-              <div key={i} style={{display:'flex',alignItems:'center',gap:'8px',fontSize:'14px',color:'var(--text)'}}>
-                <span style={{color:'var(--orange)',fontWeight:700,flexShrink:0,fontSize:'15px'}}>✓</span>{item}
-              </div>
-            ))}
-          </div>
-          <hr style={{border:'none',borderTop:'1.5px solid var(--border)',margin:'28px 0'}} />
-          <div style={{background:'var(--light-bg)',border:'1.5px solid var(--border)',borderRadius:'10px',padding:'16px 20px',fontSize:'14px',color:'var(--muted)',marginBottom:'28px',lineHeight:1.6}}>
-            <strong style={{color:'var(--text)'}}>500 outbound SMS/month included.</strong> Need more? Add blocks of 500 for <strong style={{color:'var(--text)'}}>$15 each</strong>. Most businesses never exceed the included 500. The SMS credit rolls month to month — you only pay when you actually use it.
-          </div>
-          <button className="btn-primary" style={{width:'100%',fontSize:'16px',padding:'16px'}} onClick={(e) => openSignupModal(1, e.currentTarget as HTMLElement)}>Start Your 14-Day Free Trial</button>
-          <p style={{textAlign:'center',color:'var(--muted)',fontSize:'13px',marginTop:'14px'}}>No credit card required. No contracts. Cancel anytime.</p>
-        </div>
-      </section>
+      {/* PLANS — rendered from the shared PlanCompare component rather than hand-maintained here.
+          This page used to carry its own copy of the pricing (a single $79 card with a hardcoded
+          feature list), which is exactly how the Industry site's numbers drifted out of step with
+          plan_limits. One component, one set of numbers. */}
+      <PlanCompare />
 
       {/* PAIN BAND */}
       <div style={{background:'linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 100%)',padding:'80px 40px',textAlign:'center'}}>
         <h2 style={{color:'#fff',fontSize:'clamp(24px,3.5vw,38px)',fontWeight:800,marginBottom:'48px',maxWidth:'700px',marginLeft:'auto',marginRight:'auto'}}>We Were Paying $500–$700/Month for Software<br />That Still Didn&apos;t Do What We Needed.</h2>
         <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:'24px',maxWidth:'900px',margin:'0 auto'}}>
           {[
-            {old:'$149/user/mo',nw:'$79 flat',desc:'Unlimited users. Add every tech and office staff at no extra cost.'},
-            {old:'Locked features',nw:'All features',desc:'No tiers. No "upgrade to access service verification." Everything is included.'},
+            {old:'$149/user/mo',nw:'No user fees',desc:'Never billed per seat. Your plan sets the number, and Crew is unlimited.'},
+            {old:'Enterprise gates',nw:'Nothing held back',desc:'Route building, the crew app and card-on-file payments are on every plan, including the $49 one.'},
             {old:'Annual contracts',nw:'Month to month',desc:'No contracts. No cancellation fees. Stop whenever you want.'},
             {old:'Generic software',nw:'Built for service',desc:'Visit waiting lists, service notes, service-specific workflows. Not adapted from a plumbing app.'},
           ].map((c,i) => (
@@ -237,7 +220,7 @@ export default function Pricing() {
         <div style={{textAlign:'center',maxWidth:'900px',margin:'0 auto 48px'}}>
           <span style={{display:'inline-block',color:'var(--orange)',fontSize:'12px',fontWeight:700,letterSpacing:'1.8px',textTransform:'uppercase',marginBottom:'12px'}}>Everything Included</span>
           <h2 style={{fontSize:'clamp(26px,4vw,40px)',fontWeight:800,lineHeight:1.2,marginBottom:'16px',color:'var(--text)'}}>Every Feature. One Price.</h2>
-          <p style={{color:'var(--muted)',fontSize:'17px',maxWidth:'620px',margin:'0 auto'}}>Here&apos;s exactly what you get for $79/month — nothing hidden, nothing locked behind a higher tier.</p>
+          <p style={{color:'var(--muted)',fontSize:'17px',maxWidth:'620px',margin:'0 auto'}}>Here&apos;s exactly what the software does. The plan you pick sets the seat and volume limits — the table above shows where each one stops.</p>
         </div>
         <table style={{width:'100%',maxWidth:'900px',margin:'0 auto',borderCollapse:'collapse'}}>
           <thead>
@@ -295,7 +278,7 @@ export default function Pricing() {
       <div id="sbp-form-1" style={{display:'none',position:'fixed',zIndex:99999,width:'420px',maxWidth:'calc(100vw - 24px)',background:'#fff',borderRadius:'14px',border:'3px solid #f0820e',boxShadow:'0 0 0 4px rgba(240,130,14,.35), 0 16px 60px rgba(0,0,0,.45)',maxHeight:'calc(100vh - 40px)',overflowY:'auto'}}>
         <div style={{background:'linear-gradient(135deg,#0a0a0a,#1a1a1a)',padding:'28px 28px 22px',position:'relative'}}>
           <div style={{color:'#fff',fontSize:'20px',fontWeight:800,paddingRight:'36px'}}>Start Your 14-Day Free Trial</div>
-          <div style={{color:'rgba(255,255,255,.6)',fontSize:'13px',marginTop:'5px'}}>No credit card required · Full access · $79/mo after your 14-day trial</div>
+          <div style={{color:'rgba(255,255,255,.6)',fontSize:'13px',marginTop:'5px'}}>No credit card required · Full access · from $49/mo after your 14-day trial</div>
           <button onClick={() => closeSignupModal(1)} style={{position:'absolute',top:'16px',right:'16px',background:'rgba(255,255,255,.12)',border:'none',color:'#fff',width:'32px',height:'32px',borderRadius:'50%',cursor:'pointer',fontSize:'20px',display:'flex',alignItems:'center',justifyContent:'center'}}>×</button>
         </div>
         <div id="sbp1-step1" style={{padding:'24px 28px'}}>
@@ -310,7 +293,7 @@ export default function Pricing() {
         </div>
         <div id="sbp1-step2" style={{padding:'24px 28px',display:'none'}}>
           <div id="sbp1-err2" style={{background:'#fff0f0',border:'1px solid #f5c6c6',color:'#c0392b',borderRadius:'6px',padding:'10px 12px',fontSize:'13px',marginBottom:'14px',display:'none'}}></div>
-          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div></div>
+          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. From $49/month after trial.</div></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Login Email</label><input id="sbp1-login-email" type="email" readOnly style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',background:'#f8f8f8',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Password</label><input id="sbp1-password" type="password" placeholder="At least 8 characters" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Confirm Password</label><input id="sbp1-confirm" type="password" placeholder="Repeat password" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
@@ -333,7 +316,7 @@ export default function Pricing() {
       <div id="sbp-form-2" style={{display:'none',position:'fixed',zIndex:99999,width:'420px',maxWidth:'calc(100vw - 24px)',background:'#fff',borderRadius:'14px',border:'3px solid #f0820e',boxShadow:'0 0 0 4px rgba(240,130,14,.35), 0 16px 60px rgba(0,0,0,.45)',maxHeight:'calc(100vh - 40px)',overflowY:'auto'}}>
         <div style={{background:'linear-gradient(135deg,#0a0a0a,#1a1a1a)',padding:'28px 28px 22px',position:'relative'}}>
           <div style={{color:'#fff',fontSize:'20px',fontWeight:800,paddingRight:'36px'}}>Start Your 14-Day Free Trial</div>
-          <div style={{color:'rgba(255,255,255,.6)',fontSize:'13px',marginTop:'5px'}}>No credit card required · Full access · $79/mo after your 14-day trial</div>
+          <div style={{color:'rgba(255,255,255,.6)',fontSize:'13px',marginTop:'5px'}}>No credit card required · Full access · from $49/mo after your 14-day trial</div>
           <button onClick={() => closeSignupModal(2)} style={{position:'absolute',top:'16px',right:'16px',background:'rgba(255,255,255,.12)',border:'none',color:'#fff',width:'32px',height:'32px',borderRadius:'50%',cursor:'pointer',fontSize:'20px',display:'flex',alignItems:'center',justifyContent:'center'}}>×</button>
         </div>
         <div id="sbp2-step1" style={{padding:'24px 28px'}}>
@@ -348,7 +331,7 @@ export default function Pricing() {
         </div>
         <div id="sbp2-step2" style={{padding:'24px 28px',display:'none'}}>
           <div id="sbp2-err2" style={{background:'#fff0f0',border:'1px solid #f5c6c6',color:'#c0392b',borderRadius:'6px',padding:'10px 12px',fontSize:'13px',marginBottom:'14px',display:'none'}}></div>
-          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div></div>
+          <div style={{background:'#f0fdf4',border:'1px solid #bbf7d0',borderRadius:'6px',padding:'10px 14px',marginBottom:'16px'}}><div style={{fontSize:'12px',color:'#16a34a',fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div><div style={{fontSize:'12px',color:'#555',marginTop:'2px'}}>Full access to every feature. From $49/month after trial.</div></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Login Email</label><input id="sbp2-login-email" type="email" readOnly style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',background:'#f8f8f8',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Password</label><input id="sbp2-password" type="password" placeholder="At least 8 characters" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>
           <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px',fontWeight:700,color:'#555',textTransform:'uppercase',letterSpacing:'.5px',display:'block',marginBottom:'5px'}}>Confirm Password</label><input id="sbp2-confirm" type="password" placeholder="Repeat password" style={{width:'100%',border:'1px solid #ddd',borderRadius:'6px',padding:'10px 12px',fontSize:'14px',fontFamily:'inherit',color:'#333'}} /></div>

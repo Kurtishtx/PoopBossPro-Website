@@ -134,7 +134,7 @@ function SignupForm({ n }: { n: number }) {
     <div id={`sbp-form-${n}`} className="sbp-form">
       <div className="sbp-form-header">
         <div className="sbp-form-title">Start Your 14-Day Free Trial</div>
-        <div className="sbp-form-subtitle">No credit card required · Full access · $79/mo after your 14-day trial</div>
+        <div className="sbp-form-subtitle">No credit card required · Full access · from $49/mo after your 14-day trial</div>
         <button className="sbp-form-close" onClick={() => closeSignupModal(n)}>×</button>
       </div>
       <div id={`sbp${n}-step1`} className="sbp-form-body">
@@ -165,7 +165,7 @@ function SignupForm({ n }: { n: number }) {
         <div id={`sbp${n}-err2`} className="sbp-err"></div>
         <div className="sbp-trial-note">
           <div className="sbp-trial-note-title">14-Day Free Trial — No Credit Card Required</div>
-          <div className="sbp-trial-note-sub">Full access to every feature. $79/month after trial.</div>
+          <div className="sbp-trial-note-sub">Full access to every feature. From $49/month after trial.</div>
         </div>
         <div className="sbp-field">
           <label className="sbp-label">Login Email</label>
@@ -226,11 +226,11 @@ export default function CrewMobileAppFieldTools() {
         <p>PoopBossPro puts every stop, gate code, pet name, and skip request in your scooper&apos;s pocket. Your crew opens the app, sees their run for the day, scoops the yard, snaps photo proof, and taps complete &mdash; no phone calls to the office, no paper stop sheets, no missed yards. This is the field side of the only software built from the ground up for pet waste removal businesses.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">In Pocket</div><div className="hero-stat-lbl">Every Stop, Gate Code &amp; Pet Note</div></div>
-          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat Monthly &mdash; No Add-Ons</div></div>
+          <div><div className="hero-stat-val">From $49</div><div className="hero-stat-lbl">Three Plans &mdash; No Add-Ons</div></div>
           <div><div className="hero-stat-val">Photo</div><div className="hero-stat-lbl">Proof of Pickup on Every Yard</div></div>
           <div><div className="hero-stat-val">2006</div><div className="hero-stat-lbl">In the Field Service Industry Since</div></div>
         </div>
@@ -244,7 +244,7 @@ export default function CrewMobileAppFieldTools() {
       {/* PREMIUM BAND */}
       <div className="premium-band">
         <h2>Your Crew&apos;s Day, In Their Pocket.<br /><span>This Is the Field App Pet Waste Removal Has Been Missing.</span></h2>
-        <p>$79/month sounds modest. But the crew app you&apos;re getting isn&apos;t. PoopBossPro&apos;s mobile field tools were built so a scooper can run an entire route with one thumb &mdash; stop list, GPS navigation, gate codes, pet info, photo proof, and instant skip and hold handling, all without ever calling the office. To go deeper on how it all fits together, read <a href="/blogs/crew-mobile-app-pet-waste-removal-complete-guide">The Crew Mobile App For Pet Waste Removal: A Complete Guide For Scoop Business Owners</a>.</p>
+        <p>$49 a month sounds modest. But the crew app you&apos;re getting isn&apos;t. PoopBossPro&apos;s mobile field tools were built so a scooper can run an entire route with one thumb &mdash; stop list, GPS navigation, gate codes, pet info, photo proof, and instant skip and hold handling, all without ever calling the office. To go deeper on how it all fits together, read <a href="/blogs/crew-mobile-app-pet-waste-removal-complete-guide">The Crew Mobile App For Pet Waste Removal: A Complete Guide For Scoop Business Owners</a>.</p>
         <div className="premium-grid">
           <div className="premium-card"><div className="premium-card-icon">📱</div><h4>The Crew Stop List</h4><p>Every scooper opens the app to their run for the day, in route order. Tap a stop to see the address, the pet, the gate code, and any special notes. Complete, skip, or flag a yard &mdash; the office sees it the second it happens.</p></div>
           <div className="premium-card"><div className="premium-card-icon">📍</div><h4>GPS Route Navigation</h4><p>One tap launches turn-by-turn directions to the next yard. Stops are ordered to cut windshield time, so your crew spends the day scooping instead of hunting for the right house on a cul-de-sac.</p></div>
@@ -370,7 +370,7 @@ export default function CrewMobileAppFieldTools() {
             {icon:'🏠', title:'Client Portal Sync', body:'Skip requests, hold dates, and account changes a customer makes in the client portal push straight to the crew app, so the field always matches what the customer asked for.'},
             {icon:'⭐', title:'Review Requests After Service', body:'A completed yard can automatically trigger a review request to the happy customer &mdash; fired off the moment your crew taps complete in the field.'},
             {icon:'🔐', title:'Role-Based Field Access', body:'Mobile-only scoopers see their stops and nothing else. Owners and managers control exactly what each role can view and do, in the office and in the field.'},
-            {icon:'👥', title:'Unlimited Crew Members', body:'Add every scooper and driver at no extra cost. No per-seat fees &mdash; unlimited crew on the mobile app is included in the flat $79/month rate.'},
+            {icon:'👥', title:'Never Priced Per Seat', body:'Add every scooper and driver without a per-user fee. The crew app is on every plan, and Crew lifts the seat limit entirely at $169/month.'},
           ].map(({icon, title, body}) => (
             <div key={title} className="feature-card">
               <span className="feature-icon">{icon}</span>
@@ -436,16 +436,16 @@ export default function CrewMobileAppFieldTools() {
       <section style={{background:'var(--light-bg)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
-          <h2 className="section-title">One Flat Price. Crew App Included.</h2>
+          <h2 className="section-title">Priced To Your Size. Crew App Included.</h2>
           <p className="section-sub">No per-seat fees for your scoopers, no add-on charge for the mobile app, no upsell for photo proof. The full crew app and field tools come standard with PoopBossPro.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
           <div className="lc-price-card featured">
-            <div className="featured-badge">Everything Included</div>
-            <div className="price-tier">One Plan. No Surprises.</div>
-            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>79</div>
-            <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month</div>
-            <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Every feature. Unlimited customers, yards, and crew members on the mobile app. No tiers, no locked features, no per-seat fees.</div>
+            <div className="featured-badge">Crew &mdash; Unlimited Seats</div>
+            <div className="price-tier">Crew &mdash; our top plan</div>
+            <div style={{fontSize:'48px', fontWeight:800, color:'var(--text)', lineHeight:1}}><sup style={{fontSize:'22px', verticalAlign:'super'}}>$</sup>169</div>
+            <div style={{color:'var(--muted)', fontSize:'13px', marginBottom:'24px', marginTop:'4px'}}>per month &middot; Start $49 &middot; Pro $79 if you are smaller</div>
+            <div style={{color:'var(--muted)', fontSize:'14px', marginBottom:'24px', lineHeight:1.5}}>Unlimited customers and yards on every plan, and the crew app is on every plan too. Never billed per seat.</div>
             <ul className="price-features">
               <li>Crew Mobile App for Unlimited Scoopers</li>
               <li>In-App Stop List &amp; GPS Navigation</li>
@@ -476,7 +476,7 @@ export default function CrewMobileAppFieldTools() {
             {q:'Can the app store gate codes and pet information?', a:'Yes. Every stop carries the gate code, the dog\'s name, and any warnings like &quot;aggressive &mdash; call first.&quot; It updates the instant the office changes it, so a new scooper can run an unfamiliar route on day one without getting locked out or surprised at the gate.'},
             {q:'How do skip and hold requests reach the crew?', a:'When a customer requests a skip or vacation hold &mdash; in the client portal or to your office &mdash; it drops onto the crew app as a hold automatically. Your scooper sees it on the stop list and skips that yard, so there\'s no wasted trip and no double-charge.'},
             {q:'Does it track my crew\'s time and location?', a:'The app stamps arrival and completion at each yard, giving you real time-on-property and payroll-ready hours without a separate punch clock. Photo proof carries a timestamp and location, so you always know each yard was actually serviced.'},
-            {q:'How much does PoopBossPro cost?', a:'$79/month with everything included &mdash; the crew mobile app for unlimited scoopers, photo proof, GPS, time tracking, online sign-up, and the client portal. No per-seat fees and no add-ons. 14-day free trial, no credit card required.'},
+            {q:'How much does PoopBossPro cost?', a:'Three plans — Start $49, Pro $79, Crew $169 a month — the crew mobile app on every one, photo proof, GPS, time tracking, online sign-up, and the client portal. No per-seat fees and no add-ons. 14-day free trial, no credit card required.'},
           ].map(({q, a}, i, arr) => (
             <div key={i} style={{padding:'28px 0', borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none'}}>
               <h3 style={{fontWeight:700, fontSize:'17px', color:'var(--text)', marginBottom:'10px', lineHeight:1.4}}>{q}</h3>
@@ -493,7 +493,7 @@ export default function CrewMobileAppFieldTools() {
         <p>PoopBossPro is the only pet waste removal software with a crew mobile app built by people who have actually run scoop routes. Put every stop, gate code, and pet note in your scooper&apos;s pocket. Try it free for 14 days.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }} className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}}>Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>$79/mo</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $49/mo</b> after</div>
         </div>
       </div>
 

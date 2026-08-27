@@ -143,13 +143,13 @@ export default function VsGorillaDesk() {
 
       <div className="hero">
         <div className="hero-badge">GorillaDesk Alternative</div>
-        <h1>GorillaDesk Charges Per Route.<br /><span>PoopBossPro Is $79 Flat — Unlimited Routes, Unlimited Stops.</span></h1>
-        <p>GorillaDesk uses a per-route pricing model — the more trucks you run, the more you pay, every month. PoopBossPro is $79/month regardless of how many routes you schedule, how many trucks you run, or how many stops you dispatch. No per-route fees. Ever.</p>
+        <h1>GorillaDesk Charges Per Route.<br /><span>PoopBossPro Never Charges Per Route.</span></h1>
+        <p>GorillaDesk uses a per-route pricing model — the more trucks you run, the more you pay, every month. PoopBossPro never multiplies by your route count: your plan covers the whole operation, stops and clients are unlimited on every plan, and Crew is $169/month with unlimited trucks and routes. No per-route fees. Ever.</p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
         </div>
         <div className="hero-stats">
-          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">Flat — vs GorillaDesk&apos;s per-route pricing</div></div>
+          <div><div className="hero-stat-val">$169</div><div className="hero-stat-lbl">Crew — unlimited routes, vs $297 at GorillaDesk</div></div>
           <div><div className="hero-stat-val">Unlimited</div><div className="hero-stat-lbl">Routes</div></div>
           <div><div className="hero-stat-val">Unlimited</div><div className="hero-stat-lbl">Stops — Basic caps at 25</div></div>
           <div><div className="hero-stat-val">Built</div><div className="hero-stat-lbl">For Service Routes</div></div>
@@ -172,7 +172,7 @@ export default function VsGorillaDesk() {
               </tr>
             </thead>
             <tbody>
-              <tr><td className="feature-name">Flat Monthly Pricing — No Per-Route Fees</td><td className="sbp-col"><span className="chk">✓ $79/mo</span></td><td><span className="crs">✗ Per-route model</span></td></tr>
+              <tr><td className="feature-name">Never Billed Per Route</td><td className="sbp-col"><span className="chk">✓ Never per route</span></td><td><span className="crs">✗ Per-route model</span></td></tr>
               <tr><td className="feature-name">Unlimited Stops per Route</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Basic: 25 stop cap</span></td></tr>
               <tr><td className="feature-name">Visit Waiting List by Service Type</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Lasso Circle Map Route Selector</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
@@ -185,9 +185,9 @@ export default function VsGorillaDesk() {
               <tr><td className="feature-name">Mobile App for Scoopers</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Automated SMS Alerts &amp; Follow-Ups</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Unlimited Users at Flat Price</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Price for 3 Routes</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$79 flat</td><td style={{color:'var(--muted)'}}>$147/mo (Basic ×3)</td></tr>
-              <tr><td className="feature-name">Price for 3 Routes — Pro Features</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$79 flat</td><td style={{color:'var(--muted)'}}>$297/mo (Pro ×3)</td></tr>
-              <tr><td className="feature-name">Price as You Scale to 5+ Routes</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>Still $79</td><td style={{color:'var(--muted)'}}>Keeps climbing</td></tr>
+              <tr><td className="feature-name">Price for 3 Routes</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$169 flat</td><td style={{color:'var(--muted)'}}>$147/mo (Basic ×3)</td></tr>
+              <tr><td className="feature-name">Price for 3 Routes — Pro Features</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$169 flat</td><td style={{color:'var(--muted)'}}>$297/mo (Pro ×3)</td></tr>
+              <tr><td className="feature-name">Price as You Scale to 5+ Routes</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>Still $169</td><td style={{color:'var(--muted)'}}>Keeps climbing</td></tr>
               <tr><td className="feature-name">No Annual Contract</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
             </tbody>
           </table>
@@ -195,14 +195,14 @@ export default function VsGorillaDesk() {
       </section>
 
       <div className="premium-band">
-        <h2>GorillaDesk Charges You More Every Time You Grow.<br /><span>PoopBossPro Is $79 No Matter How Many Routes You Run.</span></h2>
-        <p>GorillaDesk&apos;s per-route model sounds fine until you&apos;re running three trucks. At Basic ×3, you&apos;re at $147/month with a 25-stop cap and no two-way SMS. At Pro ×3, you&apos;re at $297/month. PoopBossPro is $79/month for your entire operation — unlimited routes, unlimited stops, every feature included. The more you grow, the more PoopBossPro saves you.</p>
+        <h2>GorillaDesk Charges You More Every Time You Grow.<br /><span>PoopBossPro Crew Is $169 No Matter How Many Routes You Run.</span></h2>
+        <p>GorillaDesk&apos;s per-route model sounds fine until you&apos;re running three trucks. At Basic ×3, you&apos;re at $147/month with a 25-stop cap and no two-way SMS. At Pro ×3, you&apos;re at $297/month. PoopBossPro Crew is $169/month for your entire operation — unlimited routes, unlimited stops, every feature included. The more you grow, the more PoopBossPro saves you.</p>
         <div className="premium-grid">
-          <div className="premium-card"><div className="premium-card-icon">💰</div><h4>Price Doesn&apos;t Scale With Routes</h4><p>$79/month covers your entire operation regardless of route count. Run 1 truck or 10 — same price. GorillaDesk multiplies by your route count every single month. That math only gets worse as you grow.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💰</div><h4>Price Doesn&apos;t Scale With Routes</h4><p>Crew at $169/month covers your entire operation regardless of route count. Run 1 truck or 10 — same price. GorillaDesk multiplies by your route count every single month. That math only gets worse as you grow.</p></div>
           <div className="premium-card"><div className="premium-card-icon">📋</div><h4>Visit Waiting List</h4><p>Before scheduling, see exactly how much yard size is waiting per service type. Know your pet waste removal 4, pet waste, and insect control backlog before you build a route. GorillaDesk doesn&apos;t have a visit waiting list model.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Lasso Circle Selector</h4><p>Draw a circle on the map, see every stop inside with a service due. GorillaDesk has route optimization. Not the same as drawing a geographic circle and instantly seeing all your due work inside it before you schedule.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🧪</div><h4>Service verification</h4><p>Full cleanup visit logs with product, mix rate, area, weather, and tech license. Pull service history reports on demand. GorillaDesk has basic job notes — not a dedicated service compliance logging system.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">💬</div><h4>SMS Inbox Included</h4><p>True two-way SMS inbox at $79/month. GorillaDesk locks SMS behind their Pro tier. Add up the per-route Pro pricing and you&apos;re paying more for less — and still missing service-specific features.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💬</div><h4>SMS Inbox Included</h4><p>True two-way SMS inbox from $79/month on Pro. GorillaDesk locks SMS behind their Pro tier. Add up the per-route Pro pricing and you&apos;re paying more for less — and still missing service-specific features.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Unlimited Stops</h4><p>GorillaDesk Basic caps routes at 25 stops. PoopBossPro has no stop limit. Schedule 50-stop routes, 100-stop routes — no restrictions. Service businesses run dense routes. A 25-stop cap is a real operational problem.</p></div>
         </div>
       </div>
@@ -212,12 +212,12 @@ export default function VsGorillaDesk() {
           <div className="highlight-text">
             <span className="section-label">The Real Cost</span>
             <h2>What GorillaDesk Actually Costs When You Run Multiple Routes</h2>
-            <p>GorillaDesk pricing looks reasonable for one route. The problem is what happens at 2, 3, or 5 trucks. PoopBossPro is $79 no matter how many routes you run — and includes features GorillaDesk doesn&apos;t offer at any tier.</p>
+            <p>GorillaDesk pricing looks reasonable for one route. The problem is what happens at 2, 3, or 5 trucks. PoopBossPro Crew is $169 no matter how many routes you run — and includes features GorillaDesk doesn&apos;t offer at any tier.</p>
             <ul className="check-list">
               <li>GorillaDesk Basic ×3 = $147/mo — still has 25-stop cap and no SMS</li>
               <li>GorillaDesk Pro ×3 = $297/mo — SMS unlocked, stop cap removed</li>
               <li>GorillaDesk Basic ×5 = $245/mo — missing lasso, visit list, compliance logs</li>
-              <li>PoopBossPro = $79/mo — unlimited routes, all features, forever</li>
+              <li>PoopBossPro Crew = $169/mo — unlimited routes, all features</li>
               <li>No visit waiting list at any GorillaDesk tier</li>
               <li>No lasso route selector at any GorillaDesk tier</li>
               <li>No dedicated service verification logs at any GorillaDesk tier</li>
@@ -228,7 +228,7 @@ export default function VsGorillaDesk() {
             <div className="mock-item">
               <div className="mock-dot orange"></div>
               <div><div className="mock-label">PoopBossPro</div><div className="mock-sub">Unlimited routes, all features, SMS included</div></div>
-              <div className="mock-badge">$79/mo</div>
+              <div className="mock-badge">from $49/mo</div>
             </div>
             <div className="mock-item">
               <div className="mock-dot amber"></div>
@@ -298,22 +298,22 @@ export default function VsGorillaDesk() {
           <div className="simple-card"><div className="simple-num">01</div><h3>Visit First — Not Just Stop Count</h3><p>PoopBossPro tracks everything in yard size — waiting list, route totals, yard-level breakdown. Not just stop counts. Because pet waste removal pricing is based on visit, and your routing should be too.</p></div>
           <div className="simple-card"><div className="simple-num">02</div><h3>Recurring Service Route Model</h3><p>Built around the way service businesses work — recurring cleanup schedules, waiting lists, recurring cleanup plans, service notes. GorillaDesk is built around one-off pest service calls. Different model entirely.</p></div>
           <div className="simple-card"><div className="simple-num">03</div><h3>Set Up in One Afternoon</h3><p>Add your services, import clients and yards, connect payments — fully operational same day. No onboarding call, no implementation timeline, no training manual. Self-serve from minute one.</p></div>
-          <div className="simple-card"><div className="simple-num">04</div><h3>Price That Doesn&apos;t Scale Against You</h3><p>$79/month flat. Add routes, trucks, employees — price doesn&apos;t change. GorillaDesk&apos;s per-route model turns every growth decision into a cost increase. PoopBossPro doesn&apos;t do that.</p></div>
+          <div className="simple-card"><div className="simple-num">04</div><h3>Price That Doesn&apos;t Scale Against You</h3><p>Crew at $169/month. Add routes, trucks, employees — price doesn&apos;t change. GorillaDesk&apos;s per-route model turns every growth decision into a cost increase. PoopBossPro doesn&apos;t do that.</p></div>
         </div>
       </section>
 
       <section>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
-          <h2 className="section-title">$79/Month. No Matter How Many Routes You Run.</h2>
+          <h2 className="section-title">$169/Month On Crew. No Matter How Many Routes You Run.</h2>
           <p className="section-sub">One price. Unlimited routes. Every feature. No per-route math.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
           <div className="price-card featured" style={{width:'100%'}}>
-            <div className="featured-badge">Everything Included</div>
-            <div className="price-tier">One Plan. No Route Fees.</div>
-            <div className="price-amount"><sup>$</sup>79</div>
-            <div className="price-period">per month — flat, regardless of route count</div>
+            <div className="featured-badge">Crew — Unlimited Routes</div>
+            <div className="price-tier">Crew — where GorillaDesk wants $297</div>
+            <div className="price-amount"><sup>$</sup>169</div>
+            <div className="price-period">per month, regardless of route count · Start $49 · Pro $79</div>
             <ul className="price-features">
               <li>Unlimited Routes — No Per-Route Fees Ever</li>
               <li>Unlimited Stops Per Route</li>
@@ -335,7 +335,7 @@ export default function VsGorillaDesk() {
       </section>
 
       <div className="cta-band">
-        <h2>Done Paying More Every Time You Add a Truck?<br />PoopBossPro Is $79. No Matter How Many Routes You Run.</h2>
+        <h2>Done Paying More Every Time You Add a Truck?<br />PoopBossPro Crew Is $169. No Matter How Many Routes You Run.</h2>
         <p>Try PoopBossPro free for 14 days. No credit card required. Set up in an afternoon.</p>
         <div className="hero-btns">
           <button className="btn-primary" style={{fontSize:'17px', padding:'18px 44px'}} onClick={(e) => { e.preventDefault(); openSignupModal(3, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
@@ -347,7 +347,7 @@ export default function VsGorillaDesk() {
         <div key={n} id={`sbp-form-${n}`} style={{display:'none', position:'fixed', zIndex:99999, width:'420px', maxWidth:'calc(100vw - 24px)', background:'#fff', borderRadius:'14px', border:'3px solid #f0820e', boxShadow:'0 0 0 4px rgba(240,130,14,.35), 0 16px 60px rgba(0,0,0,.45)', maxHeight:'calc(100vh - 40px)', overflowY:'auto'}}>
           <div style={{background:'linear-gradient(135deg,#0a0a0a,#1a1a1a)', padding:'28px 28px 22px', position:'relative'}}>
             <div style={{color:'#fff', fontSize:'20px', fontWeight:800, paddingRight:'36px'}}>Start Your 14-Day Free Trial</div>
-            <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', marginTop:'5px'}}>No credit card required · Full access · $79/mo after your 14-day trial</div>
+            <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', marginTop:'5px'}}>No credit card required · Full access · from $49/mo after your 14-day trial</div>
             <button onClick={() => closeSignupModal(n)} style={{position:'absolute', top:'16px', right:'16px', background:'rgba(255,255,255,.12)', border:'none', color:'#fff', width:'32px', height:'32px', borderRadius:'50%', cursor:'pointer', fontSize:'20px', display:'flex', alignItems:'center', justifyContent:'center'}}>×</button>
           </div>
           <div id={`sbp${n}-step1`} style={{padding:'24px 28px'}}>
@@ -364,7 +364,7 @@ export default function VsGorillaDesk() {
             <div id={`sbp${n}-err2`} style={{background:'#fff0f0', border:'1px solid #f5c6c6', color:'#c0392b', borderRadius:'6px', padding:'10px 12px', fontSize:'13px', marginBottom:'14px', display:'none'}}></div>
             <div style={{background:'#f0fdf4', border:'1px solid #bbf7d0', borderRadius:'6px', padding:'10px 14px', marginBottom:'16px'}}>
               <div style={{fontSize:'12px', color:'#16a34a', fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div>
-              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div>
+              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. From $49/month after trial.</div>
             </div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Login Email</label><input id={`sbp${n}-login-email`} type="email" readOnly style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', background:'#f8f8f8', color:'#333'}} /></div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Password</label><input id={`sbp${n}-password`} type="password" placeholder="At least 8 characters" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>

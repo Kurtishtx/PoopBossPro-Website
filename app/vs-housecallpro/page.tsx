@@ -131,24 +131,24 @@ export default function VsHousecallPro() {
 
       <div className="hero">
         <div className="hero-badge">Housecall Pro Alternative</div>
-        <h1>Housecall Pro Is Built for Plumbers and HVAC.<br /><span>PoopBossPro Is Built for Service.</span><br />$79 vs $149 — and No Comparison on Features.</h1>
+        <h1>Housecall Pro Is Built for Plumbers and HVAC.<br /><span>PoopBossPro Is Built for Service.</span><br />From $49 — and No Comparison on Features.</h1>
         <p>Housecall Pro serves cleaning companies, plumbers, HVAC scoopers, and dozens of other trades. PoopBossPro is built specifically for pet waste removal — with the visit waiting list, service verification logs, lasso route selector, and recurring cleanup tracking that HCP doesn&apos;t have at any price.</p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(1, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">1</div><div className="hero-stat-lbl">User on HCP Basic ($59/mo)</div></div>
-          <div><div className="hero-stat-val">Unlimited</div><div className="hero-stat-lbl">Users on PoopBossPro ($79/mo)</div></div>
+          <div><div className="hero-stat-val">Unlimited</div><div className="hero-stat-lbl">Users on PoopBossPro Crew ($169/mo)</div></div>
           <div><div className="hero-stat-val">$149</div><div className="hero-stat-lbl">HCP Essentials — 5-User Cap</div></div>
-          <div><div className="hero-stat-val">$79</div><div className="hero-stat-lbl">PoopBossPro — Unlimited Users</div></div>
+          <div><div className="hero-stat-val">$169</div><div className="hero-stat-lbl">PoopBossPro Crew — Unlimited Users</div></div>
         </div>
       </div>
 
       <section style={{background:'var(--light-bg)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto 48px'}}>
           <span className="section-label">Housecall Pro Pricing Reality</span>
-          <h2 className="section-title">HCP Charges More Per Tier. PoopBossPro Is $79 — Unlimited.</h2>
-          <p className="section-sub" style={{marginLeft:'auto', marginRight:'auto'}}>Housecall Pro structures pricing around user count. The moment you need more than one user, your price jumps. PoopBossPro doesn&apos;t have user tiers — your whole team is included at $79/month.</p>
+          <h2 className="section-title">HCP Charges Per User. PoopBossPro Never Does.</h2>
+          <p className="section-sub" style={{marginLeft:'auto', marginRight:'auto'}}>Housecall Pro structures pricing around user count. The moment you need more than one user, your price jumps. PoopBossPro never prices by head count — your whole team sits on one plan, and Crew is unlimited at $169/month.</p>
         </div>
         <div style={{maxWidth:'1100px', margin:'0 auto'}}>
           <div className="highlight-row">
@@ -180,7 +180,7 @@ export default function VsHousecallPro() {
                 </div>
               </div>
               <div className="sbp-contrast">
-                <div className="sbp-contrast-label">PoopBossPro — $79/month</div>
+                <div className="sbp-contrast-label">PoopBossPro Crew — $169/month</div>
                 <div className="sbp-contrast-row"><span className="sbp-contrast-row-label">Users</span><span className="sbp-contrast-row-val">Unlimited — no caps</span></div>
                 <div className="sbp-contrast-row"><span className="sbp-contrast-row-label">Visit Waiting List</span><span className="sbp-contrast-row-val">✓ Included</span></div>
                 <div className="sbp-contrast-row"><span className="sbp-contrast-row-label">Service verification Logs</span><span className="sbp-contrast-row-val">✓ Included</span></div>
@@ -189,13 +189,13 @@ export default function VsHousecallPro() {
             <div className="highlight-text" style={{flex:1, minWidth:'280px'}}>
               <span className="section-label">The Math</span>
               <h2>At the Same Price as HCP Essentials, PoopBossPro Has Features HCP Doesn&apos;t Have at Any Price.</h2>
-              <p>HCP Essentials is $149/month and covers up to 5 users. PoopBossPro is $79/month with unlimited users. But the bigger gap isn&apos;t price — it&apos;s features. HCP doesn&apos;t have a visit waiting list, a lasso circle route selector, or dedicated service verification logs. These aren&apos;t premium add-ons in PoopBossPro — they&apos;re in the base price.</p>
+              <p>HCP Essentials is $149/month and covers up to 5 users. PoopBossPro Crew is $169/month with unlimited users — and Start is $49 if you are still working on your own. But the bigger gap isn&apos;t price — it&apos;s features. HCP doesn&apos;t have a visit waiting list, a lasso circle route selector, or dedicated service verification logs. These aren&apos;t premium add-ons in PoopBossPro — they&apos;re in the base price.</p>
               <ul className="check-list">
                 <li>Visit waiting list by service type — doesn&apos;t exist in HCP</li>
                 <li>Lasso circle map selector — doesn&apos;t exist in HCP</li>
                 <li>Service verification logs — doesn&apos;t exist in HCP</li>
                 <li>Recurring cleanup waiting list — doesn&apos;t exist in HCP</li>
-                <li>Unlimited users at $79 — HCP needs MAX ($299) for 8 users</li>
+                <li>Unlimited users at $169 — HCP needs MAX ($299) for 8 users</li>
               </ul>
             </div>
           </div>
@@ -209,9 +209,9 @@ export default function VsHousecallPro() {
           <div className="premium-card"><div className="premium-card-icon">📋</div><h4>Visit Waiting List</h4><p>Before scheduling, PoopBossPro shows you exactly how much visit is waiting per service type. Know your Pet waste removal 4, Pet waste, and Insect Control backlog. Build routes around what&apos;s due. HCP doesn&apos;t have this model at any tier.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Lasso Route Selector</h4><p>Draw a circle on your map, instantly see every yard inside with a service due. Stops, visit, service type — all shown before you schedule. HCP has basic job scheduling. Not the same as a geographic lasso built for service route density.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🧪</div><h4>Service verification Logs</h4><p>Log product, mix rate, area, weather, and tech license automatically on every visit. Pull service history reports on demand. HCP has job notes — not a dedicated service compliance system built for applicator licensing requirements.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">👥</div><h4>Unlimited Users at $79</h4><p>HCP Basic is 1 user. HCP Essentials caps at 5 users for $149. PoopBossPro covers your entire team at $79 — no user caps, no tier jumps, no per-seat math as you hire. Add your 10th employee at no extra cost.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">👥</div><h4>Unlimited Users at $169</h4><p>HCP Basic is 1 user. HCP Essentials caps at 5 users for $149. PoopBossPro Crew covers your entire team at $169 — no user caps, no tier jumps, no per-seat math as you hire. Add your 10th employee at no extra cost.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Recurring Cleanup Model</h4><p>PoopBossPro is built around recurring service programs — waiting lists, cleanup cycles, package renewals, due-date flags. HCP handles recurring jobs for general trades. The service-specific workflow is different, and HCP wasn&apos;t built for it.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">💬</div><h4>Two-Way SMS Inbox</h4><p>Full inbound/outbound SMS conversation history per contact, organized by customer. Automated appointment alerts, estimate follow-ups, payment reminders — all built in. Included at $79, not locked behind a premium tier.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">💬</div><h4>Two-Way SMS Inbox</h4><p>Full inbound/outbound SMS conversation history per contact, organized by customer. Automated appointment alerts, estimate follow-ups, payment reminders — all built in. Included from $79 on Pro, not held back for a $299 tier.</p></div>
         </div>
       </div>
 
@@ -244,7 +244,7 @@ export default function VsHousecallPro() {
               <tr><td className="feature-name">Mobile App for Scoopers</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Automated Review Requests</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Unlimited Users at Flat Price</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗ Capped by tier</span></td></tr>
-              <tr><td className="feature-name">Price for a 5-Person Team</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$79/month</td><td style={{color:'var(--muted)'}}>$149/month (Essentials)</td></tr>
+              <tr><td className="feature-name">Price for a 5-Person Team</td><td className="sbp-col" style={{color:'var(--orange)', fontWeight:800}}>$169/month</td><td style={{color:'var(--muted)'}}>$149/month (Essentials)</td></tr>
             </tbody>
           </table>
         </div>
@@ -260,7 +260,7 @@ export default function VsHousecallPro() {
           <div className="simple-card"><div className="simple-num">01</div><h3>Visit Is the Unit That Matters</h3><p>PoopBossPro tracks everything in yard size — waiting lists, route totals, yard breakdowns, billing. Pet waste removal pricing is visit based. Your software should be too. HCP tracks job duration and billing, not visit.</p></div>
           <div className="simple-card"><div className="simple-num">02</div><h3>The Service Route Model Is Different</h3><p>Service businesses run recurring cleanup schedules across hundreds of yards. That&apos;s a different operating model than one-off plumbing calls or cleaning visits. PoopBossPro was built around the service model from day one.</p></div>
           <div className="simple-card"><div className="simple-num">03</div><h3>Service verification Isn&apos;t Optional</h3><p>Service applicators are subject to state compliance requirements. Cleanup visit logs, product records, license tracking — these need to be built into the software. HCP has job notes. PoopBossPro has compliance logs.</p></div>
-          <div className="simple-card"><div className="simple-num">04</div><h3>$20 Less — And More Included</h3><p>PoopBossPro is $79/month with unlimited users, unlimited routes, service notes, lasso, visit waiting list, and SMS. HCP Essentials is $149 with a 5-user cap and none of those service-specific features. Less money. More service.</p></div>
+          <div className="simple-card"><div className="simple-num">04</div><h3>More Included, Fewer Caps</h3><p>PoopBossPro Crew is $169/month with unlimited users, unlimited routes, service notes, lasso, visit waiting list, and SMS. HCP Essentials is $149 with a 5-user cap and none of those service-specific features. Less money. More service.</p></div>
         </div>
       </section>
 
@@ -268,14 +268,14 @@ export default function VsHousecallPro() {
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
           <span className="section-label">Pricing</span>
           <h2 className="section-title">Less Than HCP Essentials — More Service Features</h2>
-          <p className="section-sub">$79/month. Unlimited users. Every service-specific feature included.</p>
+          <p className="section-sub">From $49/month. Unlimited users on Crew. Every service-specific feature included.</p>
         </div>
         <div style={{maxWidth:'520px', margin:'0 auto'}}>
           <div className="price-card featured" style={{width:'100%'}}>
-            <div className="featured-badge">Less Than HCP Essentials — More Service Features</div>
-            <div className="price-tier">One Plan. Built for Service. Start Today.</div>
-            <div className="price-amount"><sup>$</sup>79</div>
-            <div className="price-period">per month — cancel anytime</div>
+            <div className="featured-badge">Crew — Unlimited Users, vs HCP MAX at $299</div>
+            <div className="price-tier">Crew — built for service. Start today.</div>
+            <div className="price-amount"><sup>$</sup>169</div>
+            <div className="price-period">per month, cancel anytime · Start $49 · Pro $79</div>
             <ul className="price-features">
               <li>Unlimited Clients, Yards &amp; Leads</li>
               <li>Unlimited Employees &amp; Users</li>
@@ -287,7 +287,7 @@ export default function VsHousecallPro() {
               <li>Two-Way SMS &amp; 10+ Automated Alerts</li>
               <li>Package Plans &amp; Renewal Tracking</li>
               <li>Mobile App for Scoopers</li>
-              <li>500 Outbound SMS/month included</li>
+              <li>1,000 Outbound SMS/month on Crew</li>
               <li>14-day free trial — no credit card required</li>
             </ul>
             <button className="price-btn price-btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(2, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
@@ -309,7 +309,7 @@ export default function VsHousecallPro() {
         <div key={n} id={`sbp-form-${n}`} style={{display:'none', position:'fixed', zIndex:99999, width:'420px', maxWidth:'calc(100vw - 24px)', background:'#fff', borderRadius:'14px', border:'3px solid #f0820e', boxShadow:'0 0 0 4px rgba(240,130,14,.35), 0 16px 60px rgba(0,0,0,.45)', maxHeight:'calc(100vh - 40px)', overflowY:'auto'}}>
           <div style={{background:'linear-gradient(135deg,#0a0a0a,#1a1a1a)', padding:'28px 28px 22px', position:'relative'}}>
             <div style={{color:'#fff', fontSize:'20px', fontWeight:800, paddingRight:'36px'}}>Start Your 14-Day Free Trial</div>
-            <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', marginTop:'5px'}}>No credit card required · Full access · $79/mo after your 14-day trial</div>
+            <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', marginTop:'5px'}}>No credit card required · Full access · from $49/mo after your 14-day trial</div>
             <button onClick={() => closeSignupModal(n)} style={{position:'absolute', top:'16px', right:'16px', background:'rgba(255,255,255,.12)', border:'none', color:'#fff', width:'32px', height:'32px', borderRadius:'50%', cursor:'pointer', fontSize:'20px', display:'flex', alignItems:'center', justifyContent:'center'}}>×</button>
           </div>
           <div id={`sbp${n}-step1`} style={{padding:'24px 28px'}}>
@@ -326,7 +326,7 @@ export default function VsHousecallPro() {
             <div id={`sbp${n}-err2`} style={{background:'#fff0f0', border:'1px solid #f5c6c6', color:'#c0392b', borderRadius:'6px', padding:'10px 12px', fontSize:'13px', marginBottom:'14px', display:'none'}}></div>
             <div style={{background:'#f0fdf4', border:'1px solid #bbf7d0', borderRadius:'6px', padding:'10px 14px', marginBottom:'16px'}}>
               <div style={{fontSize:'12px', color:'#16a34a', fontWeight:700}}>14-Day Free Trial — No Credit Card Required</div>
-              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. $79/month after trial.</div>
+              <div style={{fontSize:'12px', color:'#555', marginTop:'2px'}}>Full access to every feature. From $49/month after trial.</div>
             </div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Login Email</label><input id={`sbp${n}-login-email`} type="email" readOnly style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', background:'#f8f8f8', color:'#333'}} /></div>
             <div style={{marginBottom:'14px'}}><label style={{fontSize:'11px', fontWeight:700, color:'#555', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:'5px'}}>Password</label><input id={`sbp${n}-password`} type="password" placeholder="At least 8 characters" style={{width:'100%', border:'1px solid #ddd', borderRadius:'6px', padding:'10px 12px', fontSize:'14px', fontFamily:'inherit', color:'#333'}} /></div>
