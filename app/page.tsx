@@ -231,6 +231,12 @@ export default function Home() {
           </div>
           <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', fontWeight:600, marginTop:'7px', letterSpacing:'.3px'}}>No credit card required &middot; Cancel anytime</div>
         </div>
+        {/* EXACTLY ONE of these on the page. It was rendered twice - here and again in a
+            "LIVE INTERACTIVE DEMO" section further down - which broke the demo outright: each
+            instance mounts its own iframe onto my.poopbosspro.com/demo.html, and every load mints
+            a magic-link token for the same demo account. GoTrue keeps only one live token per
+            user, so the second mount killed the first one's token and the visitor got "Email link
+            is invalid or has expired". It also logged two pageviews per visit. */}
         <HeroDemo />
       </div>
 
@@ -250,11 +256,6 @@ export default function Home() {
           <div><div className="hero-stat-val">0</div><div className="hero-stat-lbl">Apps to Install</div></div>
           <div><div className="hero-stat-val">24/7</div><div className="hero-stat-lbl">Access Anywhere</div></div>
         </div>
-      </div>
-
-      {/* ═══ LIVE INTERACTIVE DEMO — Desktop / Client / Crew, real apps ═══ */}
-      <div style={{background:'var(--purple-dark)', padding:'0 20px 70px', textAlign:'center'}}>
-        <HeroDemo />
       </div>
 
       {/* ═══ PREMIUM BAND ═══ */}
