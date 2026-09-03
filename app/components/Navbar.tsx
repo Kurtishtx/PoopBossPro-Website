@@ -36,7 +36,7 @@ export default function Navbar({ onTrialClick }: { onTrialClick: (el: HTMLElemen
         <div className="navbar-inner">
           <div className="navbar-brand">
             <a href="/" style={{textDecoration:'none', display:'flex', alignItems:'center', gap:'8px'}}>
-              <span className="navbar-icon">💩</span>
+              <span className="navbar-icon"><img src="/poop-logo.png" alt="PoopBossPro" style={{width:"1.4em",height:"1.4em",objectFit:"contain",verticalAlign:"middle"}} /></span>
               <span className="navbar-name">PoopBossPro</span>
             </a>
           </div>

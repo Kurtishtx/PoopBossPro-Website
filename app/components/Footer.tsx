@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="site-footer-inner">
         <div className="site-footer-top">
           <a href="/" className="site-footer-brand">
-            <span>💩</span>
+            <span><img src="/poop-logo.png" alt="PoopBossPro" style={{width:"1.2em",height:"1.2em",objectFit:"contain",verticalAlign:"middle"}} /></span>
             <span>PoopBossPro</span>
           </a>
           <div className="site-footer-cols">
