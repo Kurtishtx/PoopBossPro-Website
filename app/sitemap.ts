@@ -13,6 +13,12 @@ const hubPages = [
   '/pet-waste-customer-management-software',
 ];
 
+/* Canada landing page — CAD customer billing is native, so this targets "pooper scooper
+   software canada" searches with real substance rather than a geo word-swap. */
+const canadaPages = [
+  '/pooper-scooper-software-canada',
+];
+
 const vsPages = [
   '/vs-jobber',
   '/vs-servicetitan',
@@ -272,6 +278,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   for (const p of hubPages) {
     entries.push({ url: `${BASE}${p}`, lastModified: lm, changeFrequency: 'monthly', priority: 0.9 });
+  }
+  for (const p of canadaPages) {
+    entries.push({ url: `${BASE}${p}`, lastModified: new Date('2026-09-06'), changeFrequency: 'monthly', priority: 0.9 });
   }
   for (const p of vsPages) {
     entries.push({ url: `${BASE}${p}`, lastModified: lm, changeFrequency: 'monthly', priority: 0.8 });
