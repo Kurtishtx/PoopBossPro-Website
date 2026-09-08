@@ -27,13 +27,13 @@ type Cell = string | boolean;
 
 const PLANS = [
   { key: 'start', name: 'Start', price: 49,  tag: 'Solo scooper, one truck' },
-  /* Named Pro, not Solo, because the plan carries 3 users, 3 employees and 3 trucks, which is
+  /* Named Pro, not Solo, because the plan carries 3 users and 3 trucks, which is
      not one person however you read it. A name the table contradicts costs more trust than a
      plain one ever earns. */
   { key: 'solo',  name: 'Pro',   price: 79,  tag: 'Small crew, fully equipped', featured: true },
   /* Named Crew, not Unlimited. Outbound texts are capped on every plan, and a plan called
      Unlimited that stops sending in week three reads as a bait-and-switch however fair the cap
-     is. Users, employees and trucks ARE unlimited here — that belongs in the table as a line you
+     is. Users and trucks ARE unlimited here (employees are unlimited on every plan) — that belongs in the table as a line you
      can check, not in the name as a promise the texting row contradicts. */
   { key: 'unl',   name: 'Crew',  price: 169, tag: 'Multiple trucks and routes' },
 ];
@@ -48,8 +48,8 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
   /* ── What each plan lets you have ── */
   { label: 'Users', note: 'Office logins — the people who schedule, invoice and see the money',
                                                      cells: ['2', '3', 'Unlimited'] },
-  { label: 'Employees', note: 'Crew-app seats — they run the route and complete jobs, they never see the money',
-                                                     cells: ['2', '3', 'Unlimited'] },
+  { label: 'Employees', note: 'Crew-app seats - they run the route and complete jobs, they never see the money. Unlimited on every plan.',
+                                                     cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
   /* Trucks move separately from users: a second user on Start is the spouse doing the books,
      not a second truck on the route. Pricing them together priced the wrong thing. */
   { label: 'Trucks',                                 cells: ['1', '2', 'Unlimited'] },
