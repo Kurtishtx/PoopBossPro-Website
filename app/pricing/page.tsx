@@ -155,6 +155,7 @@ const faqs = [
   { q: 'What happens after the 14-day free trial?', a: "You'll be prompted to enter a card and continue on the plan you pick, from $49/month. Your trial runs with everything switched on, so you can see what each plan holds before you choose. If you decide not to continue, your account simply stops — no charges, no cancellation fees. We don't auto-charge without you knowing it's coming." },
   { q: 'Do I need a credit card to start the trial?', a: 'No. Create your account and get full access for 14 days with no card required. You only enter payment info if you decide to keep going after the trial.' },
   { q: 'How many users can I add?', a: 'Unlimited. Add every tech, office staff member, and manager at no extra cost. No per-user fees. Ever.' },
+  { q: 'Does it work outside the US?', a: 'Yes. It runs in the US, Canada, Australia, New Zealand and the UK. Set your country once and your invoices and card charges run in your own currency — USD, CAD, AUD, NZD or GBP — through your own Stripe account.' },
   { q: "What's the SMS pricing?", a: 'Texts are included with every plan — 500/month on Start, 1,000 on Pro, 2,000 on Crew, counted sent and received. Go over and you can add blocks of 500 for $15 each.' },
   { q: 'How does auto-routing pricing work?', a: 'Start includes 50 auto-routes a month, Pro 100, and Crew 1,000. Go over and 250 more are added automatically for $5 - your dispatcher is never stopped mid-day. Smart Lasso map selections are unlimited on every plan.' },
   { q: 'Are there any contracts or annual commitments?', a: 'None. Month to month, always. Cancel anytime from your account settings.' },
@@ -186,7 +187,8 @@ export default function Pricing() {
         <div className="hero-badge">Simple, Honest Pricing</div>
         <h1>From $49/Month.<br /><span>Priced To Your Size.</span></h1>
         <p>Three plans, all the same software. Unlimited clients and yards on every one — the bigger plans lift the seat limits and switch on the automation. No add-ons, no per-user fees, no surprises.</p>
-        <p style={{color:'rgba(255,255,255,.45)',fontSize:'14px',marginBottom:'40px'}}>14-day free trial · No credit card required · Cancel anytime</p>
+        <p style={{color:'rgba(255,255,255,.45)',fontSize:'14px',marginBottom:'10px'}}>14-day free trial · No credit card required · Cancel anytime</p>
+        <p style={{color:'rgba(255,255,255,.7)',fontSize:'14px',marginBottom:'40px'}}>Works in the US, Canada, Australia, New Zealand and the UK — bills your customers in your own currency.</p>
         <div className="hero-btns">
           <button className="btn-primary" onClick={(e) => openSignupModal(1, e.currentTarget as HTMLElement)}>Start Your 14-Day Free Trial</button>
         </div>
