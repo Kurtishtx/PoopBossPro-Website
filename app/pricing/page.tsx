@@ -147,6 +147,7 @@ const tableRows = [
   ['Unlimited Users', 'Add every employee at no per-user cost'],
   ['Unlimited Clients & Yards', 'No caps — 50 accounts or 5,000, same price'],
   ['Texts (sent + received)', '500/month on Start, 1,000 on Pro, 2,000 on Crew; +$15 per additional 500 on any plan'],
+  ['Auto-routing', '50 / 100 / 1,000 per month by plan; need more and 250 are added automatically for $5'],
 ];
 
 const faqs = [
@@ -155,6 +156,7 @@ const faqs = [
   { q: 'Do I need a credit card to start the trial?', a: 'No. Create your account and get full access for 14 days with no card required. You only enter payment info if you decide to keep going after the trial.' },
   { q: 'How many users can I add?', a: 'Unlimited. Add every tech, office staff member, and manager at no extra cost. No per-user fees. Ever.' },
   { q: "What's the SMS pricing?", a: 'Texts are included with every plan — 500/month on Start, 1,000 on Pro, 2,000 on Crew, counted sent and received. Go over and you can add blocks of 500 for $15 each.' },
+  { q: 'How does auto-routing pricing work?', a: 'Start includes 50 auto-routes a month, Pro 100, and Crew 1,000. Go over and 250 more are added automatically for $5 - your dispatcher is never stopped mid-day. Smart Lasso map selections are unlimited on every plan.' },
   { q: 'Are there any contracts or annual commitments?', a: 'None. Month to month, always. Cancel anytime from your account settings.' },
   { q: 'Does this work for pet waste removal?', a: 'Yes. PoopBossPro was built for service businesses — pet waste removal, pet waste cleanup, or any combination. The service types, service verification, and waiting list work the same way regardless of what you service.' },
   { q: 'What if I have questions or need help getting set up?', a: "We're a small team and we respond fast. Reach us anytime at Support@bossprohq.com. We've run routes ourselves — we know what setup actually looks like and we're here to help." },
