@@ -513,7 +513,7 @@ export default function RoutesCrewDispatchSoftware() {
               <li>Two-Way SMS &amp; Automated Customer Texts</li>
               <li>Gate Codes, Dog Counts &amp; Yard Profiles</li>
               <li>Mobile App for Your Crew</li>
-              <li>Outbound SMS included &mdash; 100 / 500 / 1,000 by plan</li>
+              <li>Texts included (sent + received) &mdash; 500 / 1,000 / 2,000 by plan</li>
               <li>+$15 per additional 500 SMS after that</li>
             </ul>
             <button onClick={(e) => openSignupModal(2, e.currentTarget as HTMLElement)} className="price-btn price-btn-primary">Start Your 14-Day Free Trial</button>

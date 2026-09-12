@@ -475,7 +475,7 @@ export default function PetWasteCustomerManagementSoftware() {
               <li>Two-Way SMS &amp; Automated Alerts</li>
               <li>Retention, Win-Back &amp; Review Requests</li>
               <li>Crew Mobile App Included</li>
-              <li>Outbound SMS included &mdash; 100 / 500 / 1,000 by plan</li>
+              <li>Texts included (sent + received) &mdash; 500 / 1,000 / 2,000 by plan</li>
             </ul>
             <button onClick={(e) => openSignupModal(2, e.currentTarget as HTMLElement)} className="price-btn price-btn-primary">Start Your 14-Day Free Trial</button>
           </div>

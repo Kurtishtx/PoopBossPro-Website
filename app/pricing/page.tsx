@@ -146,7 +146,7 @@ const tableRows = [
   ['Discount Codes & Sales Tax', 'Percentage or flat discounts, auto tax calculation per invoice'],
   ['Unlimited Users', 'Add every employee at no per-user cost'],
   ['Unlimited Clients & Yards', 'No caps — 50 accounts or 5,000, same price'],
-  ['Outbound SMS', '100/month on Start, 500 on Pro, 1,000 on Crew; +$15 per additional 500 on any plan'],
+  ['Texts (sent + received)', '500/month on Start, 1,000 on Pro, 2,000 on Crew; +$15 per additional 500 on any plan'],
 ];
 
 const faqs = [
