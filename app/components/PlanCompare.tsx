@@ -54,7 +54,7 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
      not a second truck on the route. Pricing them together priced the wrong thing. */
   { label: 'Trucks',                                 cells: ['1', '2', 'Unlimited'] },
   { label: 'Clients & yards',                        cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
-  { label: 'Texts included (sent + received)', note: '[[500 extra texts for $15]] on any plan. Sent and received both count. A text is 160 characters; a longer one counts as two.',
+  { label: 'Texts included (sent + received, US & Canada)', note: '[[500 extra texts for $15]] on any plan. Sent and received both count. A text is 160 characters; a longer one counts as two.',
                                                      cells: ['500 / month', '1,000 / month', '2,000 / month'] },
   { label: 'Smart Lasso map selections',             cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
   { label: 'Auto-routing', note: '[[250 extra auto-routes for $5]] on any plan, added automatically when you need them.',

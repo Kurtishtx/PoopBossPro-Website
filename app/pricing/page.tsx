@@ -146,7 +146,7 @@ const tableRows = [
   ['Discount Codes & Sales Tax', 'Percentage or flat discounts, auto tax calculation per invoice'],
   ['Unlimited Users', 'Add every employee at no per-user cost'],
   ['Unlimited Clients & Yards', 'No caps — 50 accounts or 5,000, same price'],
-  ['Texts (sent + received)', '500/month on Start, 1,000 on Pro, 2,000 on Crew; +$15 per additional 500 on any plan'],
+  ['Texts (sent + received, US & Canada)', '500/month on Start, 1,000 on Pro, 2,000 on Crew; +$15 per additional 500 on any plan'],
   ['Auto-routing', '50 / 100 / 1,000 per month by plan; need more and 250 are added automatically for $5'],
 ];
 
@@ -156,7 +156,8 @@ const faqs = [
   { q: 'Do I need a credit card to start the trial?', a: 'No. Create your account and get full access for 14 days with no card required. You only enter payment info if you decide to keep going after the trial.' },
   { q: 'How many users can I add?', a: 'Unlimited. Add every tech, office staff member, and manager at no extra cost. No per-user fees. Ever.' },
   { q: 'Does it work outside the US?', a: 'Yes. It runs in the US, Canada, Australia, New Zealand and the UK. Set your country once and your invoices and card charges run in your own currency — USD, CAD, AUD, NZD or GBP — through your own Stripe account.' },
-  { q: "What's the SMS pricing?", a: 'Texts are included with every plan — 500/month on Start, 1,000 on Pro, 2,000 on Crew, counted sent and received. Go over and you can add blocks of 500 for $15 each.' },
+  { q: 'Where do the included texts apply?', a: 'The US and Canada. Carriers in Australia, New Zealand and the UK charge several times more to deliver a text, so texting there is set up on request and priced by country — everything else works the same, and email alerts are included everywhere.' },
+  { q: "What's the SMS pricing?", a: 'In the US and Canada, texts are included with every plan — 500/month on Start, 1,000 on Pro, 2,000 on Crew, counted sent and received. Go over and you can add blocks of 500 for $15 each.' },
   { q: 'How does auto-routing pricing work?', a: 'Start includes 50 auto-routes a month, Pro 100, and Crew 1,000. Go over and 250 more are added automatically for $5 - your dispatcher is never stopped mid-day. Smart Lasso map selections are unlimited on every plan.' },
   { q: 'Are there any contracts or annual commitments?', a: 'None. Month to month, always. Cancel anytime from your account settings.' },
   { q: 'Does this work for pet waste removal?', a: 'Yes. PoopBossPro was built for service businesses — pet waste removal, pet waste cleanup, or any combination. The service types, service verification, and waiting list work the same way regardless of what you service.' },

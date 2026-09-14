@@ -310,7 +310,7 @@ export default function VsServiceTitan() {
               <li>Two-Way SMS &amp; 10+ Automated Alerts</li>
               <li>Package Plans &amp; Renewal Tracking</li>
               <li>Mobile App for Scoopers</li>
-              <li>2,000 texts/month on Crew (sent + received)</li>
+              <li>2,000 texts/month on Crew (sent + received, US &amp; Canada)</li>
             </ul>
             <button className="price-btn price-btn-primary" onClick={(e) => { e.preventDefault(); openSignupModal(2, e.currentTarget as HTMLElement); }}>Start Your 14-Day Free Trial</button>
           </div>
