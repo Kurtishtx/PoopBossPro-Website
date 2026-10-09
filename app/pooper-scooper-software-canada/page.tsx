@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'What does the PoopBossPro subscription itself cost in Canada?',
-    a: 'Plans are priced in US dollars — from $49 USD a month, never billed per user. Your card is charged in USD and your bank converts it to CAD. We say that plainly because a surprise on your own statement is exactly the kind of thing software companies bury.',
+    a: 'Plans are priced in US dollars — from $59 USD a month, never billed per user. Your card is charged in USD and your bank converts it to CAD. We say that plainly because a surprise on your own statement is exactly the kind of thing software companies bury.',
   },
   {
     q: 'Do the automated customer texts work in Canada?',
@@ -71,7 +71,7 @@ export default function Page() {
       <div style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #111111 60%, #1a1a1a 100%)', padding: 'clamp(76px,7vw,80px) clamp(14px,4vw,40px) 0', textAlign: 'center' }}>
         <div style={{ textAlign: 'center', marginBottom: 'clamp(22px,3vw,32px)' }}>
           <div style={{ display: 'inline-flex', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', color: '#fff' }}>
-            <span style={{ fontSize: 'clamp(30px,4.6vw,46px)', fontWeight: 800, lineHeight: 1 }}><span style={{ fontSize: '.5em', fontWeight: 700, color: 'rgba(255,255,255,.6)' }}>from </span>$49<span style={{ fontSize: '.46em', fontWeight: 700, color: 'rgba(255,255,255,.6)' }}>/month</span></span>
+            <span style={{ fontSize: 'clamp(30px,4.6vw,46px)', fontWeight: 800, lineHeight: 1 }}><span style={{ fontSize: '.5em', fontWeight: 700, color: 'rgba(255,255,255,.6)' }}>from </span>$59<span style={{ fontSize: '.46em', fontWeight: 700, color: 'rgba(255,255,255,.6)' }}>/month</span></span>
             <span style={{ fontSize: 'clamp(16px,2.2vw,22px)', fontWeight: 800, color: 'var(--orange)' }}>&middot; 14-Day Free Trial</span>
           </div>
           <div style={{ color: 'rgba(255,255,255,.6)', fontSize: '13px', fontWeight: 600, marginTop: '7px', letterSpacing: '.3px' }}>No credit card required &middot; Cancel anytime &middot; Your customers billed in CAD</div>
@@ -87,7 +87,7 @@ export default function Page() {
         <p className="hero-sub" style={{ marginBottom: '36px' }}>Dog waste removal in Canada is a year-round route business with one brutal season change: the yards you scoop weekly all summer either run straight through the snow or wait under it — and when the thaw comes, months of buried waste surface at once. PoopBossPro runs the weekly routes, books the spring rush, and bills every one of your customers in Canadian dollars through your own Canadian Stripe account.</p>
         <div className="hero-btns">
           <a href="#" onClick={(e) => { e.preventDefault(); openTrial(e.currentTarget as HTMLElement); }} className="btn-primary">Start Your 14-Day Free Trial</a>
-          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; The demo above is the real software &nbsp;&middot;&nbsp; <b>from $49/mo USD</b> after</div>
+          <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; The demo above is the real software &nbsp;&middot;&nbsp; <b>from $59/mo USD</b> after</div>
         </div>
         <div className="hero-stats">
           <div><div className="hero-stat-val">CAD</div><div className="hero-stat-lbl">Customer Billing Currency</div></div>
@@ -337,7 +337,7 @@ export default function Page() {
       <section id="pricing">
         <div className="centered" style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <span className="section-label">Simple Pricing</span>
-          <h2 className="section-title">From $49 a Month. Never Per User.</h2>
+          <h2 className="section-title">From $59 a Month. Never Per User.</h2>
           <p className="section-sub">Three plans sized to your operation, from a solo scooper to a multi-truck crew. No add-on modules, no per-seat fees, no contract. One straight note for Canadian owners: plans are priced in US dollars and your bank converts &mdash; your customers, meanwhile, are always billed in CAD.</p>
         </div>
         {/* Same shared component the homepage and /pricing use, so this page can never quote
@@ -367,7 +367,7 @@ export default function Page() {
       {/* ═══ CTA ═══ */}
       <div className="cta-band">
         <h2>Ready Before the Next Thaw?</h2>
-        <p>Set your country to Canada, connect your Stripe account, and your first invoice goes out in Canadian dollars. 14 days free, no card up front, from $49 USD/month after.</p>
+        <p>Set your country to Canada, connect your Stripe account, and your first invoice goes out in Canadian dollars. 14 days free, no card up front, from $59 USD/month after.</p>
         <button className="btn-primary" onClick={(e) => openTrial(e.currentTarget)}>
           Start Your 14-Day Free Trial
         </button>

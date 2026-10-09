@@ -4,14 +4,9 @@
  * reference implementation of this table — same structure, same behaviour, PoopBossPro's own
  * numbers.
  *
- * Priced UNDER IndustryBossPro at every tier ($59/$89/$199) because Industry is the umbrella
- * product and carries every vertical; this one carries pet waste. Start at $49 opens a door for
- * the solo scooper, who is the bulk of this trade and who the old flat $79 priced out — Sweep&Go
- * starts around $15 per active staff, so $79 was ABOVE the competition at the small end while
- * handing a five-truck company unlimited everything for the same $79 the solo paid.
- *
- * $79 deliberately survives as the MIDDLE price: it is what the site has always advertised, so
- * nobody already paying it gets repriced and the familiar number keeps its meaning.
+ * Same three prices as every BossPro app ($59/$89/$199) - the owner's rule (Oct 2026). Poop was
+ * briefly priced under the others ($49/$79/$169) without being asked for; nobody had paid at the
+ * old prices, so nobody was repriced. Must match plan_limits and _shared/plan-prices.ts.
  *
  * What Start LACKS is shown, greyed and struck, rather than hidden. Someone comparing wants to
  * know what they give up, and a feature list that only ever says "yes" reads as marketing.
@@ -26,16 +21,16 @@
 type Cell = string | boolean;
 
 const PLANS = [
-  { key: 'start', name: 'Start', price: 49,  tag: 'Solo scooper, one truck' },
+  { key: 'start', name: 'Start', price: 59,  tag: 'Solo scooper, one truck' },
   /* Named Pro, not Solo, because the plan carries 3 users and 3 trucks, which is
      not one person however you read it. A name the table contradicts costs more trust than a
      plain one ever earns. */
-  { key: 'solo',  name: 'Pro',   price: 79,  tag: 'Small crew, fully equipped', featured: true },
+  { key: 'solo',  name: 'Pro',   price: 89,  tag: 'Small crew, fully equipped', featured: true },
   /* Named Crew, not Unlimited. Texts are capped on every plan, and a plan called
      Unlimited that stops sending in week three reads as a bait-and-switch however fair the cap
      is. Users and trucks ARE unlimited here (employees are unlimited on every plan) — that belongs in the table as a line you
      can check, not in the name as a promise the texting row contradicts. */
-  { key: 'unl',   name: 'Crew',  price: 169, tag: 'Multiple trucks and routes' },
+  { key: 'unl',   name: 'Crew',  price: 199, tag: 'Multiple trucks and routes' },
 ];
 
 /* Ordered so the ticks stack into solid blocks rather than scattering:

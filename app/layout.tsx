@@ -6,8 +6,14 @@ import "./globals.css";
 import MetaPixel from './components/MetaPixel';
 
 export const metadata: Metadata = {
+  /* Every route resolves its own canonical against this base, so a page reached as www vs
+     non-www, with a trailing slash, or carrying ?fbclid=/?utm_source= all point at one URL
+     instead of competing with each other. */
+  metadataBase: new URL('https://www.poopbosspro.com'),
+  alternates: { canonical: './' },
+
   title: "PoopBossPro | Pooper Scooper & Pet Waste Removal Software",
-  description: "PoopBossPro is all-in-one software for pooper scooper and pet waste removal businesses, built by people who've run real routes. Recurring scheduling, route building, crew dispatch, and card-on-file billing. Three plans from $49/month — never billed per user.",
+  description: "PoopBossPro is all-in-one software for pooper scooper and pet waste removal businesses, built by people who've run real routes. Recurring scheduling, route building, crew dispatch, and card-on-file billing. Three plans from $59/month — never billed per user.",
   /* Google's search results still show Vercel's default triangle for this domain, cached from
      before the crown existed. The files themselves have been correct for a month — /favicon.ico
      contains the crown at 16, 32 and 48px — but Google has no reason to refetch a URL it already
@@ -26,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 
-const structuredData = {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://poopbosspro.com/#organization","name":"PoopBossPro","url":"https://poopbosspro.com","logo":"https://poopbosspro.com/icon.png","description":"Pet waste removal and pooper scooper software with recurring route scheduling, crew dispatch, and card-on-file billing."},{"@type":"WebSite","@id":"https://poopbosspro.com/#website","url":"https://poopbosspro.com","name":"PoopBossPro","publisher":{"@id":"https://poopbosspro.com/#organization"}},{"@type":"SoftwareApplication","name":"PoopBossPro","applicationCategory":"BusinessApplication","operatingSystem":"Web, iOS, Android","description":"Pet waste removal and pooper scooper software with recurring route scheduling, crew dispatch, and card-on-file billing.","offers":{"@type":"AggregateOffer","lowPrice":"49","highPrice":"169","priceCurrency":"USD","offerCount":"3","description":"Three plans — Start $49, Pro $79, Crew $169. 14-day free trial."},"publisher":{"@id":"https://poopbosspro.com/#organization"}}]};
+const structuredData = {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://poopbosspro.com/#organization","name":"PoopBossPro","url":"https://poopbosspro.com","logo":"https://poopbosspro.com/icon.png","description":"Pet waste removal and pooper scooper software with recurring route scheduling, crew dispatch, and card-on-file billing."},{"@type":"WebSite","@id":"https://poopbosspro.com/#website","url":"https://poopbosspro.com","name":"PoopBossPro","publisher":{"@id":"https://poopbosspro.com/#organization"}},{"@type":"SoftwareApplication","name":"PoopBossPro","applicationCategory":"BusinessApplication","operatingSystem":"Web, iOS, Android","description":"Pet waste removal and pooper scooper software with recurring route scheduling, crew dispatch, and card-on-file billing.","offers":{"@type":"AggregateOffer","lowPrice":"59","highPrice":"199","priceCurrency":"USD","offerCount":"3","description":"Three plans — Start $59, Pro $89, Crew $199. 14-day free trial."},"publisher":{"@id":"https://poopbosspro.com/#organization"}}]};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
