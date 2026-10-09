@@ -103,7 +103,7 @@ async function sbpCreateAccount(n: number) {
     await sb.auth.updateUser({ data: { full_name: first + ' ' + last } });
     const trialEnd = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString();
     await sb.from('user_profiles').upsert(
-      { id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd },
+      { id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd, product: 'poopbosspro' },
       { onConflict: 'id' }
     );
     await sb.from('company_info').insert({ user_id: uid, company_name: comp, display_name: comp });

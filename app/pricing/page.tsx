@@ -100,7 +100,7 @@ async function sbpCreateAccount(n: number) {
     const comp  = (document.getElementById(`sbp${n}-company`) as HTMLInputElement).value.trim();
     await sb.auth.updateUser({ data: { full_name: first + ' ' + last } });
     const trialEnd = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString();
-    await sb.from('user_profiles').upsert({ id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd }, { onConflict: 'id' });
+    await sb.from('user_profiles').upsert({ id: uid, email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd, product: 'poopbosspro' }, { onConflict: 'id' });
     await sb.from('company_info').insert({ user_id: uid, company_name: comp, display_name: comp });
     const reasons = ['Cancel Maintaining Self','Cancel Sold House','Cancel Too Expensive','Cancel Unknown','Dropping Customer','Sold House'].map(nm => ({ name: nm, active: true, user_id: uid }));
     await sb.from('cancellation_reasons').insert(reasons);
