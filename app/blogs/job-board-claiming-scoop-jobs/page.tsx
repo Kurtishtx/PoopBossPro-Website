@@ -1,8 +1,8 @@
 import BlogShell from '../blog-shell';
 
 export const metadata = {
-  title: 'Using the Job Board to Let Scooper Crews Claim Open Cleanup Jobs | PoopBossPro',
-  description: 'See how the PoopBossPro job board lets scooper crews claim open yard cleanup jobs, fill route gaps fast, and keep recurring pet waste service on schedule.',
+  title: 'Using the Pending Jobs board to Let Scooper Crews Claim Open Cleanup Jobs | PoopBossPro',
+  description: 'See how the PoopBossPro Pending Jobs board lets scooper crews claim open yard cleanup jobs, fill route gaps fast, and keep recurring pet waste service on schedule.',
 };
 
 export default function Page() {
@@ -10,18 +10,18 @@ export default function Page() {
     <BlogShell>
       <article className="blog-article">
         <p className="blog-meta">PoopBossPro Blog &mdash; Dog Waste Cleanup Scheduling</p>
-        <h1>Using the Job Board to Let Scooper Crews Claim Open Cleanup Jobs</h1>
+        <h1>Using the Pending Jobs board to Let Scooper Crews Claim Open Cleanup Jobs</h1>
         <p>
           Every pooper scooper business runs into the same problem on a busy week: a crew member calls out, a new
           customer signs up mid-route, or a one-time deep cleanup lands on a day that&apos;s already packed. Instead of
-          texting drivers one by one to see who has room, the PoopBossPro job board puts every open yard cleanup in one
+          texting drivers one by one to see who has room, the PoopBossPro Pending Jobs board puts every open yard cleanup in one
           place and lets your scooper crews claim the work themselves. It turns a scramble into a self-serve queue, and
           it keeps your recurring pet waste service running even when the day doesn&apos;t go as planned.
         </p>
 
-        <h2>What the Job Board Actually Is</h2>
+        <h2>What the Pending Jobs board Actually Is</h2>
         <p>
-          The job board is a live list of unassigned cleanup jobs inside PoopBossPro. When a stop isn&apos;t tied to a
+          The Pending Jobs board is a live list of unassigned cleanup jobs inside PoopBossPro. When a stop isn&apos;t tied to a
           specific crew yet &mdash; a fresh sign-up, a rescheduled visit, an extra one-time scoop, or a job pulled off a
           driver who got sick &mdash; it lands here. Each card shows the property address, the number of dogs, the yard
           size, the gate code, any access notes, and whether it&apos;s a recurring weekly stop or a single visit. Your
@@ -33,7 +33,7 @@ export default function Page() {
         <h2>Why Self-Service Beats Manual Dispatch</h2>
         <p>
           Manual dispatch means you&apos;re the bottleneck. Someone has to know who&apos;s where, who has capacity, and
-          which gate codes matter &mdash; and that someone is usually you, in the office, juggling texts. The job board
+          which gate codes matter &mdash; and that someone is usually you, in the office, juggling texts. The Pending Jobs board
           flips that. Your scoopers know their own neighborhoods and their own remaining capacity better than a
           spreadsheet does. A driver finishing a cluster of homes on the east side can grab the open job two streets
           over instead of you blindly assigning it to whoever&apos;s technically &quot;free.&quot; That cuts windshield
@@ -74,20 +74,20 @@ export default function Page() {
 
         <h2>Using the Board to Cover Call-Outs and Spikes</h2>
         <p>
-          The job board really earns its keep on the bad days. When a scooper calls out sick, you don&apos;t have to
+          The Pending Jobs board really earns its keep on the bad days. When a scooper calls out sick, you don&apos;t have to
           rebuild four routes by hand &mdash; you release their stops to the board and let the rest of the crew absorb
           what they can near their existing runs. During a spring sign-up rush, new customers land on the board the
           moment they subscribe, and crews pull them in as capacity opens up instead of waiting for a manual route
           rebuild. Over time you also get data: which zones generate the most open jobs, how fast claims happen, and
           where you might need another truck. That visibility is exactly why dialing in your{' '}
-          <a href="/dog-waste-cleanup-scheduling-software">dog waste cleanup scheduling</a> around a shared job board
+          <a href="/dog-waste-cleanup-scheduling-software">dog waste cleanup scheduling</a> around a shared Pending Jobs board
           keeps a growing scooper operation from drowning in dispatch texts.
         </p>
 
         <div className="blog-cta-box">
           <h3>Stop Dispatching by Text &mdash; Let Your Crews Claim the Work</h3>
           <p>
-            PoopBossPro gives your scooper crews a live job board, optimized routes, gate codes, and card-on-file
+            PoopBossPro gives your scooper crews a live Pending Jobs board, optimized routes, gate codes, and card-on-file
             billing in one place so every open yard cleanup gets covered.
           </p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
@@ -95,7 +95,7 @@ export default function Page() {
         </div>
 
         <div className="blog-keywords">
-          Keywords: pooper scooper job board software, scooper crew dispatch, pet waste route scheduling, dog poop
+          Keywords: pooper scooper Pending Jobs board software, scooper crew dispatch, pet waste route scheduling, dog poop
           cleanup scheduling software, recurring yard cleanup billing, scooper crew job claiming
         </div>
       </article>

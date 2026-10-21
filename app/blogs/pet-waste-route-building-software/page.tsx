@@ -59,7 +59,7 @@ export default function Page() {
         <p>
           Real days are messy. A customer texts to skip this week, a new sign-up needs to be added today, or a yard needs a one-time double cleanup.
           Route building software absorbs these changes and re-sequences on the fly. Pull a stop off Thursday and the route closes the gap. Add a yard
-          and it slots into the nearest point in the loop. Because PoopBossPro also handles your job board, any unassigned cleanup can be dropped onto a
+          and it slots into the nearest point in the loop. Because PoopBossPro also handles your Pending Jobs board, any unassigned cleanup can be dropped onto a
           route with open capacity instead of being forgotten. The point is that your routes stay optimized even when the day does not go as planned,
           and you are not rebuilding the whole thing by hand every time something shifts.
         </p>

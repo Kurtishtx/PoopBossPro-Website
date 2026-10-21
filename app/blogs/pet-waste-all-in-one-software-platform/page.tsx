@@ -56,11 +56,11 @@ export default function Page() {
           reorder yourself.
         </p>
 
-        <h2>Dispatch, the Job Board, and Crew Visibility</h2>
+        <h2>Dispatch, the Pending Jobs board, and Crew Visibility</h2>
         <p>
           When a tech calls in sick, patchwork tools leave you scrambling to figure out which yards are
           orphaned and texting addresses one at a time. On an all-in-one platform, those stops land back
-          on the job board, and any available crew member can claim them &mdash; with the property
+          on the Pending Jobs board, and any available crew member can claim them &mdash; with the property
           profile, gate code, and dog count already attached. Dispatch is just a matter of moving jobs
           between people on the same board everyone already uses. You can see in real time which yards
           are done, which are in progress, and which still need coverage, because the field app and the

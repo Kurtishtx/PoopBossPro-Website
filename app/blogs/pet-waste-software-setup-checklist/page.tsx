@@ -38,7 +38,7 @@ export default function Page() {
           keep. Instead of rebooking every customer each week, you create a recurring schedule once
           &mdash; weekly, twice weekly, every other week, or monthly &mdash; and PoopBossPro
           generates each upcoming cleanup automatically. Assign each yard its service day and the
-          frequency the customer signed up for. From here forward, your job board fills itself in:
+          frequency the customer signed up for. From here forward, your Pending Jobs board fills itself in:
           every Monday&apos;s weekly clients show up on Monday, every Thursday&apos;s on Thursday,
           with no rebooking on your end. If a customer wants to pause for vacation or bump up to
           twice a week, you adjust the one schedule and every future visit updates.
@@ -60,7 +60,7 @@ export default function Page() {
         <h2>Step 4: Add Your Crew and Turn On Dispatch</h2>
         <p>
           If you run more than one truck, add each scooper as a crew member and assign them their
-          routes. Your team opens the job board on their phone and sees exactly which yards to hit,
+          routes. Your team opens the Pending Jobs board on their phone and sees exactly which yards to hit,
           in what order, with the gate code and dog count right there on each stop. As they finish,
           they mark cleanups complete &mdash; often with a before-and-after photo &mdash; so you can
           see live progress without calling anyone. Dispatch also lets you reassign a route on the

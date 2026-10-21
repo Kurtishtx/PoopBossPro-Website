@@ -78,7 +78,7 @@ export default function Page() {
           progress in real time. If a tech calls in sick, you should be able to reassign their route without
           rebuilding it. On the customer side, look for automatic texts &mdash; an on-the-way alert and a
           job-done confirmation &mdash; because those messages cut down on &quot;did you come today?&quot;
-          calls and make a small operation feel polished. A job board that lets you see unassigned work and
+          calls and make a small operation feel polished. A Pending Jobs board that lets you see unassigned work and
           drag it onto a crew rounds out the dispatch picture as you grow past one truck.
         </p>
 

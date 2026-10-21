@@ -48,7 +48,7 @@ export default function Page() {
           A skip is different from a pause, and PoopBossPro keeps them separate because they affect billing
           differently. A skip is a single missed cleanup &mdash; a gate code that did not work, a dog left
           loose in the yard, or weather that made the property unsafe. Your crew marks the visit as skipped
-          from the mobile job board and selects a reason. That reason matters: a customer-caused skip (loose
+          from the mobile Pending Jobs board and selects a reason. That reason matters: a customer-caused skip (loose
           dog, blocked gate) can still be billed because you sent a tech and burned the drive time, while a
           company-caused skip credits the customer for the visit. Because the reason lives on the visit
           record, your end-of-month billing knows exactly which skips reduce the charge and which do not. No

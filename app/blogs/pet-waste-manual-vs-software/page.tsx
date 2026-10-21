@@ -88,7 +88,7 @@ export default function Page() {
           The real ceiling on a spreadsheet isn&apos;t the software&mdash;it&apos;s you. Every new
           yard adds manual scheduling, manual routing, manual billing, and manual follow-up that
           all land on your plate. Pet waste software removes that ceiling. New scoopers can pick
-          up jobs from a shared job board, crews get dispatched without you playing phone tag, and
+          up jobs from a shared Pending Jobs board, crews get dispatched without you playing phone tag, and
           the same system that ran ten yards runs two hundred without missing a beat. When the
           back office stops being a bottleneck, you can spend your time selling more cleanups
           instead of babysitting cells. If you&apos;re weighing the move, it&apos;s worth seeing

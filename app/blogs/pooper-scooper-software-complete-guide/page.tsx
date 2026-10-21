@@ -80,12 +80,12 @@ export default function Page() {
           and referrals in this business.
         </p>
 
-        <h2>The Job Board and Growing Your Routes</h2>
+        <h2>The Pending Jobs board and Growing Your Routes</h2>
         <p>
-          As your reputation grows, so does demand. Many platforms include a job board where incoming leads and
+          As your reputation grows, so does demand. Many platforms include a Pending Jobs board where incoming leads and
           one-time cleanup requests collect in a single queue, ready to be scheduled and slotted into an existing
           route. Instead of a lead dying in a voicemail, it becomes a job on the calendar with a yard profile
-          attached. Pairing the job board with tight routing means you can take on new customers in neighborhoods
+          attached. Pairing the Pending Jobs board with tight routing means you can take on new customers in neighborhoods
           you already serve without adding a single mile of dead driving. To see how all of these pieces fit
           together in one platform, explore PoopBossPro&apos;s{' '}
           <a href="/pooper-scooper-software">pooper scooper software</a> and how it is built specifically for

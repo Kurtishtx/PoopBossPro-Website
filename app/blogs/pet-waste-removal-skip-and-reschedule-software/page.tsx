@@ -18,7 +18,7 @@ export default function Page() {
           reschedules is what separates a smooth operation from a billing nightmare. The wrong approach leaves
           you charging for visits that never happened, missing visits you meant to keep, and fielding angry
           calls. The right approach treats a skip or a reschedule as a one-tap change that updates the route,
-          the crew&apos;s job board, and the customer&apos;s bill all at once.
+          the crew&apos;s Pending Jobs board, and the customer&apos;s bill all at once.
         </p>
 
         <h2>Skip A Single Visit Without Canceling The Plan</h2>
@@ -50,7 +50,7 @@ export default function Page() {
           the backyards are unworkable. Instead of texting twenty customers one at a time, the software lets you
           bulk-reschedule a day&apos;s worth of stops to the next available date. You select the affected route,
           push it forward, and every customer on it gets moved together while their property profiles, gate
-          codes, and dog counts travel with them. The crew&apos;s job board updates so they see the new lineup,
+          codes, and dog counts travel with them. The crew&apos;s Pending Jobs board updates so they see the new lineup,
           and you can fire off a batch text letting everyone know their cleanup shifted a day. What used to be an
           afternoon of phone calls becomes a two-minute task that keeps your recurring schedule honest.
         </p>

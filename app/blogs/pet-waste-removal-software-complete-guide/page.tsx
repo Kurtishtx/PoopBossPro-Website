@@ -40,9 +40,9 @@ export default function Page() {
           Clients love knowing their yard was actually cleaned, especially when they weren&apos;t home. Pet waste removal software sends automatic customer texts &mdash; a heads-up that the crew is on the way, then a confirmation when the yard is done, often with a photo and a note that the gate was relatched. That proof of service cuts down on &quot;did you come today?&quot; phone calls and builds the kind of trust that keeps subscriptions from canceling. The same texting system handles reminders, schedule changes, and review requests, so your communication stays consistent without anyone typing messages all day.
         </p>
 
-        <h2>The Job Board and Online Booking</h2>
+        <h2>The Pending Jobs board and Online Booking</h2>
         <p>
-          New business should flow in without a phone tag marathon. An online booking page lets prospects enter their address, number of dogs, and preferred frequency, then drops the request straight onto your job board as a ready-to-schedule lead. From there you assign it to a route, set the recurring cadence, and the customer is live &mdash; all without a back-and-forth email chain. As your client list and crew grow, having every lead, job, and route in one connected system is what lets you scale past the point where a spreadsheet falls apart. If you want to understand the full category before committing, start with an overview of <a href="/pet-waste-removal-software">pet waste removal software</a> and how the pieces fit together.
+          New business should flow in without a phone tag marathon. An online booking page lets prospects enter their address, number of dogs, and preferred frequency, then drops the request straight onto your Pending Jobs board as a ready-to-schedule lead. From there you assign it to a route, set the recurring cadence, and the customer is live &mdash; all without a back-and-forth email chain. As your client list and crew grow, having every lead, job, and route in one connected system is what lets you scale past the point where a spreadsheet falls apart. If you want to understand the full category before committing, start with an overview of <a href="/pet-waste-removal-software">pet waste removal software</a> and how the pieces fit together.
         </p>
 
         <div className="blog-cta-box">

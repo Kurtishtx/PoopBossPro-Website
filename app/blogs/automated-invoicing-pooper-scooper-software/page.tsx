@@ -71,7 +71,7 @@ export default function Page() {
           personally nagging anyone about twenty dollars. For most operators, the real upgrade is pairing
           automated invoicing with stored payment cards so the bill is settled before a reminder is even
           needed. That&apos;s exactly why so many owners read{' '}
-          <a href="/blogs/card-on-file-payments-pet-waste-software">Why Card-On-File Payments Transform a Pet Waste Removal Business</a>{' '}
+          <a href="/blogs/card-on-file-autopay-pet-waste-removal">Why Card-On-File Payments Transform a Pet Waste Removal Business</a>{' '}
           right after setting up invoicing &mdash; the two features together close the loop on collection.
         </p>
 

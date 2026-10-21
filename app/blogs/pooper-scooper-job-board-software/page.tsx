@@ -1,8 +1,8 @@
 import BlogShell from '../blog-shell';
 
 export const metadata = {
-  title: 'Using the Job Board in Pooper Scooper Software to Fill Open Cleanups | PoopBossPro',
-  description: 'See how the PoopBossPro job board surfaces open pet waste cleanups so crews claim, route, and finish every yard without dispatch chaos or missed visits.',
+  title: 'Using the Pending Jobs board in Pooper Scooper Software to Fill Open Cleanups | PoopBossPro',
+  description: 'See how the PoopBossPro Pending Jobs board surfaces open pet waste cleanups so crews claim, route, and finish every yard without dispatch chaos or missed visits.',
 };
 
 export default function Page() {
@@ -10,19 +10,19 @@ export default function Page() {
     <BlogShell>
       <article className="blog-article">
         <p className="blog-meta">PoopBossPro Blog &mdash; Pooper Scooper Software</p>
-        <h1>Using the Job Board in Pooper Scooper Software to Fill Open Cleanups</h1>
+        <h1>Using the Pending Jobs board in Pooper Scooper Software to Fill Open Cleanups</h1>
         <p>
           Every pet waste removal business runs into the same problem on a busy week&mdash;a crew member calls out, a new
           customer signs up mid-cycle, or a one-time spring cleanup lands on a day that&apos;s already packed. Suddenly you
           have open yard cleanups with no one assigned, and you&apos;re scrambling through text threads to figure out who
-          can cover what. The job board inside PoopBossPro exists to kill that scramble. It turns every unassigned cleanup
+          can cover what. The Pending Jobs board inside PoopBossPro exists to kill that scramble. It turns every unassigned cleanup
           into a visible, claimable card that your crews can see and pick up&mdash;so no scoop gets missed and no customer
           gets a surprise skip.
         </p>
 
-        <h2>What the Job Board Actually Shows</h2>
+        <h2>What the Pending Jobs board Actually Shows</h2>
         <p>
-          The job board is a single live list of every cleanup that needs a home. When a recurring visit comes due, a
+          The Pending Jobs board is a single live list of every cleanup that needs a home. When a recurring visit comes due, a
           new signup hits your schedule, or a tech drops a route, the affected stops land on the board as open jobs. Each
           card carries the details a scooper actually needs before they commit&mdash;the property address, the gate code,
           how many dogs are on site, the yard size, any access notes, and whether it&apos;s a weekly, twice-weekly, or
@@ -43,7 +43,7 @@ export default function Page() {
         <h2>Filling Gaps Without a Phone Tree</h2>
         <p>
           The old way of covering an open cleanup was a chain of phone calls and texts: ring one scooper, wait, ring the
-          next, repeat. The job board collapses that into a broadcast. The moment a stop opens up, every eligible crew
+          next, repeat. The Pending Jobs board collapses that into a broadcast. The moment a stop opens up, every eligible crew
           member can see it, so the person with room in their afternoon claims it before you&apos;ve even finished your
           coffee. For pet waste businesses that run subscription routes, this matters because a missed weekly visit means
           double the mess next time and an annoyed customer. Keeping the board clear is the same thing as keeping your
@@ -57,7 +57,7 @@ export default function Page() {
 
         <h2>Property Profiles Travel With the Job</h2>
         <p>
-          A job board is only useful if claiming a card gives the crew everything they need to walk into a strange yard
+          A Pending Jobs board is only useful if claiming a card gives the crew everything they need to walk into a strange yard
           and get it done. In PoopBossPro, each open cleanup is wired to the full property profile, so the scooper who
           claims it sees the gate code, the dog count, where the bins live, whether there&apos;s a dog that needs to be
           inside before they enter, and any photos or notes from past visits. That means a tech can pick up a yard
@@ -78,7 +78,7 @@ export default function Page() {
 
         <h2>A Board That Protects Your Routes and Your Revenue</h2>
         <p>
-          At the end of the day, the job board is a routing and accountability tool as much as a staffing one. Every
+          At the end of the day, the Pending Jobs board is a routing and accountability tool as much as a staffing one. Every
           cleanup that sits unclaimed is a flag, every claimed job is a stop that bills correctly, and the whole picture
           lives in one screen instead of in your dispatcher&apos;s head. Crews run tighter routes because they claim jobs
           near where they already are, the office stops playing phone tag, and customers keep getting served on schedule.
@@ -91,11 +91,11 @@ export default function Page() {
 
         <div className="blog-cta-box">
           <h3>Never Leave a Cleanup Unassigned Again</h3>
-          <p>PoopBossPro&apos;s job board turns every open pet waste cleanup into a claimable card so your crews fill gaps fast and every yard gets serviced on time.</p>
+          <p>PoopBossPro&apos;s Pending Jobs board turns every open pet waste cleanup into a claimable card so your crews fill gaps fast and every yard gets serviced on time.</p>
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
           <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $59/mo</b> after</div>
         </div>
-        <div className="blog-keywords">Keywords: pooper scooper software, pet waste job board software, dog poop cleanup scheduling, crew dispatch software, recurring yard cleanup routing, pet waste removal software</div>
+        <div className="blog-keywords">Keywords: pooper scooper software, pet waste Pending Jobs board software, dog poop cleanup scheduling, crew dispatch software, recurring yard cleanup routing, pet waste removal software</div>
       </article>
     </BlogShell>
   );

@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Can I run spring one-time cleanups alongside my weekly routes?',
-    a: 'Yes, and that combination is the whole point in Canada. One-time spring cleanups land on the job board next to your recurring routes — schedule them into an open day, and when the yard is caught up, flip the customer to a weekly or bi-weekly plan without re-entering anything.',
+    a: 'Yes, and that combination is the whole point in Canada. One-time spring cleanups land on the Pending Jobs board next to your recurring routes — schedule them into an open day, and when the yard is caught up, flip the customer to a weekly or bi-weekly plan without re-entering anything.',
   },
   {
     q: 'Is there a free trial? Do I have to sign a contract?',
@@ -104,7 +104,7 @@ export default function Page() {
         <div className="premium-grid">
           <div className="premium-card"><div className="premium-card-icon">🇨🇦</div><h4>CAD Billing, Native</h4><p>Connect your own Canadian Stripe account, set Country to Canada, and every invoice, card-on-file charge and Pay Now link bills your customers in Canadian dollars. No workarounds, no second system.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Routes That Survive Winter</h4><p>Weekly and bi-weekly visits build themselves week after week. Customers who pause for the snow keep their profile, their plan and their spot — restarting in March is a switch, not a re-signup.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">🌷</div><h4>The Spring-Thaw Rush</h4><p>Spring cleanup season is the biggest booking window of the year. One-time thaw cleanups land on the job board beside your recurring routes, so the busiest six weeks don&apos;t run on sticky notes.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">🌷</div><h4>The Spring-Thaw Rush</h4><p>Spring cleanup season is the biggest booking window of the year. One-time thaw cleanups land on the Pending Jobs board beside your recurring routes, so the busiest six weeks don&apos;t run on sticky notes.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🔑</div><h4>Gate Codes &amp; Dog Names</h4><p>Every yard profile carries the gate code, the dogs&apos; names and count, and the notes that matter — the dog that charges the fence, the gate that freezes shut — right on your scooper&apos;s phone.</p></div>
           <div className="premium-card"><div className="premium-card-icon">💳</div><h4>Card-on-File in CAD</h4><p>Charge the card after the visit or on a monthly subscription, send payment reminders automatically, and keep the full payment history — all of it in your customers&apos; own currency.</p></div>
           <div className="premium-card"><div className="premium-card-icon">📱</div><h4>Customers Run Themselves</h4><p>Your customers get their own app — see visits, pay invoices, update their card, skip a week, refer a neighbour. In a no-contract industry, that convenience is what keeps them subscribed.</p></div>
@@ -170,7 +170,7 @@ export default function Page() {
             <h2 className="section-title">Built for the Six Weeks That Make Your Year</h2>
             <p style={{ color: 'var(--muted)', fontSize: '16px', marginBottom: '14px' }}>Every Canadian scooper knows what April smells like. Yards that paused in November have five months of waste surfacing out of the snowpack, the phone rings all day, and every caller wants this week. The companies that win spring are the ones that can book, route and bill the surge without dropping their regulars.</p>
             <ul className="check-list">
-              <li>One-time spring cleanups land on the job board beside recurring routes</li>
+              <li>One-time spring cleanups land on the Pending Jobs board beside recurring routes</li>
               <li>Price the big first cleanup separately from the weekly plan that follows</li>
               <li>Convert a thaw cleanup into a weekly or bi-weekly subscription in one step</li>
               <li>Winter-paused customers keep their profile and restart with a switch</li>
@@ -178,7 +178,7 @@ export default function Page() {
             </ul>
           </div>
           <div className="highlight-visual">
-            <div style={{ color: 'rgba(255,255,255,.45)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '12px' }}>Job Board &mdash; Week of April 13</div>
+            <div style={{ color: 'rgba(255,255,255,.45)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '12px' }}>Pending Jobs Board &mdash; Week of April 13</div>
             <div className="mock-item">
               <div className="mock-dot orange"></div>
               <div><div className="mock-label">Spring cleanup &mdash; Tremblay</div><div className="mock-sub">One-time &middot; paused since Nov &middot; 3 dogs</div></div>
@@ -317,7 +317,7 @@ export default function Page() {
             <div className="step-box">
               <div className="step-circle">1</div>
               <h3>The Office</h3>
-              <p>Scheduling, the job board, the circle-map route builder, CAD invoicing and reports. Where you run the business from.</p>
+              <p>Scheduling, the Pending Jobs board, the circle-map route builder, CAD invoicing and reports. Where you run the business from.</p>
             </div>
             <div className="step-box">
               <div className="step-circle">2</div>

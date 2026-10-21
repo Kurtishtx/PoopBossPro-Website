@@ -77,7 +77,7 @@ export default function Page() {
           Each morning&apos;s route should push to a crew member&apos;s phone with navigation, gate codes, and
           dog counts on every stop, plus a one-tap way to mark a cleanup done so you can watch progress in real
           time. If a tech calls in sick, you should be able to reassign their route without rebuilding it, and a
-          job board that shows unassigned work you can drag onto a crew keeps things sane as you grow past one
+          Pending Jobs board that shows unassigned work you can drag onto a crew keeps things sane as you grow past one
           truck. On the customer side, look for automatic texts &mdash; an on-the-way alert and a job-done
           confirmation. Those messages quietly kill the &quot;did you come today?&quot; calls and make a small
           operation feel polished and professional, which is exactly the impression that keeps recurring

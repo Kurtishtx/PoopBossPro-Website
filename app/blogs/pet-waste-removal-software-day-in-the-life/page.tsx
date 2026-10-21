@@ -33,7 +33,7 @@ export default function Page() {
 
         <h2>9:15 AM &mdash; A Skip And A Same-Day Add</h2>
         <p>
-          Halfway through the morning, a customer texts that their dog is at the vet and the yard does not need service today. The office marks the stop skipped, and PoopBossPro pulls it off the route instantly &mdash; the crew never even drives to it. At the same time, a brand-new sign-up comes in from a house three streets over. Because that lead landed on the job board, the dispatcher can drop it onto the current crew&apos;s route as a same-day add, and the app re-sequences the remaining stops so the new yard slots in without wrecking the loop.
+          Halfway through the morning, a customer texts that their dog is at the vet and the yard does not need service today. The office marks the stop skipped, and PoopBossPro pulls it off the route instantly &mdash; the crew never even drives to it. At the same time, a brand-new sign-up comes in from a house three streets over. Because that lead landed on the Pending Jobs board, the dispatcher can drop it onto the current crew&apos;s route as a same-day add, and the app re-sequences the remaining stops so the new yard slots in without wrecking the loop.
         </p>
         <p>
           This is the part that used to cause chaos with paper and group texts. Now a skip and an add are both handled in seconds, and the crew just sees their list update on the phone.

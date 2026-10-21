@@ -32,7 +32,7 @@ export default function Page() {
 
         <h2>Dispatch And Route Changes In Real Time</h2>
         <p>
-          Days never go exactly as planned. A crew calls out sick, a customer texts asking for an emergency cleanup, or a yard turns out to be twice the size you quoted. With the mobile app, the office can reassign a stop or drop a new one onto a route and the crew sees it appear within seconds &mdash; no phone tag required. If you&apos;re working to tighten your runs, the app pairs perfectly with the ideas in <a href="/blogs/pooper-scooper-route-density-software">Building Route Density With Pooper Scooper Software</a>, because the cleaner your routes, the less your crews have to improvise in the field. Live dispatch means a half-empty afternoon can be filled with the job board work sitting in your queue.
+          Days never go exactly as planned. A crew calls out sick, a customer texts asking for an emergency cleanup, or a yard turns out to be twice the size you quoted. With the mobile app, the office can reassign a stop or drop a new one onto a route and the crew sees it appear within seconds &mdash; no phone tag required. If you&apos;re working to tighten your runs, the app pairs perfectly with the ideas in <a href="/blogs/pooper-scooper-route-density-software">Building Route Density With Pooper Scooper Software</a>, because the cleaner your routes, the less your crews have to improvise in the field. Live dispatch means a half-empty afternoon can be filled with the Pending Jobs board work sitting in your queue.
         </p>
 
         <h2>Capturing Extras And Add-Ons On Site</h2>

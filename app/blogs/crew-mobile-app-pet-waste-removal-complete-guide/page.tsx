@@ -37,7 +37,7 @@ export default function Page() {
 
         <h2>Live Dispatch And Skip Requests In The Field</h2>
         <p>
-          Routes rarely survive the morning untouched. A crew member calls out, a customer requests an emergency cleanup before a weekend party, or a homeowner submits a skip request because they are traveling. From the office, a dispatcher can move a stop to another crew or drop a fresh job onto a route, and the change appears in the field within seconds &mdash; no phone tag, no rewriting anyone&apos;s list. Skip and hold requests flow straight to the app too, so a scooper never wastes a trip to a yard the customer asked to pause. The same loop lets a half-empty afternoon get filled from the job board instead of going to waste, turning every gap into billable work.
+          Routes rarely survive the morning untouched. A crew member calls out, a customer requests an emergency cleanup before a weekend party, or a homeowner submits a skip request because they are traveling. From the office, a dispatcher can move a stop to another crew or drop a fresh job onto a route, and the change appears in the field within seconds &mdash; no phone tag, no rewriting anyone&apos;s list. Skip and hold requests flow straight to the app too, so a scooper never wastes a trip to a yard the customer asked to pause. The same loop lets a half-empty afternoon get filled from the Pending Jobs board instead of going to waste, turning every gap into billable work.
         </p>
 
         <h2>One System From The Desk To The Fence</h2>

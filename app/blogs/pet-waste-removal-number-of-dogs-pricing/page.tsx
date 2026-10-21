@@ -37,7 +37,7 @@ export default function Page() {
 
         <h2>Catching Underpriced Yards Before They Bleed You</h2>
         <p>
-          The yards that quietly kill a pet waste route are the ones where the dog count crept up but the price never did. A customer started with one dog two years ago and now has three, but they are still paying the one-dog rate because nobody flagged it. PoopBossPro makes those mismatches visible. Because the dog count and the rate tier both live on the profile, you can spot yards where the workload no longer matches the price and correct them. You can also use the job board to assign tougher multi-dog yards to your fastest crews and balance the load across the day. The result is a route where every stop pulls its weight and no single yard is dragging your hourly average down.
+          The yards that quietly kill a pet waste route are the ones where the dog count crept up but the price never did. A customer started with one dog two years ago and now has three, but they are still paying the one-dog rate because nobody flagged it. PoopBossPro makes those mismatches visible. Because the dog count and the rate tier both live on the profile, you can spot yards where the workload no longer matches the price and correct them. You can also use the Pending Jobs board to assign tougher multi-dog yards to your fastest crews and balance the load across the day. The result is a route where every stop pulls its weight and no single yard is dragging your hourly average down.
         </p>
 
         <h2>Communicating The Price Clearly To Customers</h2>

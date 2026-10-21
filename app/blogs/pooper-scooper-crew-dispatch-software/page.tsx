@@ -81,7 +81,7 @@ export default function Page() {
           initial-cleanup jobs get added to the next invoice, and a paused account simply drops off the
           dispatch board until it resumes. Nothing slips through the cracks, and you&apos;re never chasing
           payment for service you already delivered. When you&apos;re ready to see how dispatch fits with
-          scheduling, route building, the job board, and billing as one system, explore the full{' '}
+          scheduling, route building, the Pending Jobs board, and billing as one system, explore the full{' '}
           <a href="/pooper-scooper-software">pooper scooper software</a> built for businesses that clean up
           after dogs all day long.
         </p>

@@ -349,19 +349,19 @@ export default function Features() {
         </div>
       </section>
 
-      {/* PACKAGES */}
+      {/* RECURRING SCHEDULES */}
       <section>
         <div className="cat-block">
           <div className="cat-header">
             <span className="cat-icon">📦</span>
-            <div><div className="cat-title">Recurring cleanup plans &amp; Renewals</div><div className="cat-desc">Manage recurring cleanup packages and never miss a renewal</div></div>
+            <div><div className="cat-title">Recurring Schedules &amp; Extensions</div><div className="cat-desc">Plan every visit up front, then change, extend or stop a series any time</div></div>
           </div>
           <div className="feat-grid">
             {[
-              {t:'Custom Package Plans',d:'Create any package — 6-app pet waste removal, quarterly pest, annual pet waste. Fully custom service types and counts.'},
-              {t:'Assign Clients to Packages',d:'Link any client to any package. Track start date, cleanups used, and cleanups remaining automatically.'},
-              {t:'Renewal Alerts',d:'Get alerted before a package expires so you can reach out before the client looks elsewhere.'},
-              {t:'Cleanup Count Tracking',d:'PoopBossPro counts down remaining visits automatically each time a service is marked complete.'},
+              {t:'One Service List',d:'Each service is one of each, like a weekly yard cleanup or a deodorizer treatment. No bundles of visits to set up or count down.'},
+              {t:'+ Add Recurring',d:'From Pending Jobs, set a client to one time, weekly, every 10 days, every 2, 3 or 4 weeks, monthly, or every X days you choose.'},
+              {t:'Planned Up Front',d:'Pick the day, the crew or truck and how far ahead (3, 6 or 12 months). Every visit waits on Pending Jobs until the office schedules it.'},
+              {t:'Recurring Clients',d:'See every client on a series in one place. Change the frequency, Extend 6 months, or stop the series.'},
             ].map((f,i) => (
               <div key={i} className="feat-item"><div className="feat-item-title">{f.t}</div><p>{f.d}</p></div>
             ))}

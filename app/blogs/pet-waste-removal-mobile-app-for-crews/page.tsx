@@ -32,7 +32,7 @@ export default function Page() {
 
         <h2>Live Dispatch Reroutes The Day In Seconds</h2>
         <p>
-          Routes rarely survive the morning untouched. A crew member calls out, a customer texts asking for an emergency cleanup before a weekend party, or a yard turns out to be far bigger than it was quoted. From the office, a dispatcher can move a stop to another crew or drop a fresh job onto a route, and the change appears in the field within seconds &mdash; no phone tag, no rewriting anyone&apos;s list. The same loop lets a half-empty afternoon get filled from the job board instead of going to waste. Because crews see exactly what the office assigns, an unexpected gap or a sudden add-on becomes a quick adjustment rather than a scramble.
+          Routes rarely survive the morning untouched. A crew member calls out, a customer texts asking for an emergency cleanup before a weekend party, or a yard turns out to be far bigger than it was quoted. From the office, a dispatcher can move a stop to another crew or drop a fresh job onto a route, and the change appears in the field within seconds &mdash; no phone tag, no rewriting anyone&apos;s list. The same loop lets a half-empty afternoon get filled from the Pending Jobs board instead of going to waste. Because crews see exactly what the office assigns, an unexpected gap or a sudden add-on becomes a quick adjustment rather than a scramble.
         </p>
 
         <h2>Catching The Work You&apos;d Otherwise Give Away</h2>

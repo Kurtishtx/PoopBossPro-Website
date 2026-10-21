@@ -73,7 +73,7 @@ export default function Page() {
           &quot;your yard is clean&quot; confirmation after, so the customer never has to wonder whether you showed.
           That steady, hands-off communication is what keeps cancellations low and reviews high. It also cuts down the
           &quot;did you come today?&quot; phone calls that eat your afternoon. When growth gets serious, you can even
-          pull in extra help through a job board to cover overflow stops &mdash; another lever that a flat file on your
+          pull in extra help through a Pending Jobs board to cover overflow stops &mdash; another lever that a flat file on your
           desktop will never give you.
         </p>
 

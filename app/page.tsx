@@ -373,7 +373,7 @@ export default function Home() {
           <div className="feature-card"><span className="feature-icon">🏡</span><h3>Yard &amp; Property Profiles</h3><p>Every service address gets its own profile with the gate code, number of dogs, special instructions, coordinates, and full cleanup history &mdash; so your crew is never guessing in the field.</p></div>
           <div className="feature-card"><span className="feature-icon">🔑</span><h3>Gate Codes &amp; Access Notes</h3><p>Store gate codes, lock-box numbers, and access instructions on each yard. Your scooper sees them on their phone the moment they pull up &mdash; no calling the office, no locked-out visits.</p></div>
           <div className="feature-card"><span className="feature-icon">🐕</span><h3>Number of Dogs Tracking</h3><p>Track how many dogs are at each property so your crew knows what to expect and you can price plans fairly. More dogs, more waste, more accurate billing &mdash; right on the yard profile.</p></div>
-          <div className="feature-card"><span className="feature-icon">💼</span><h3>The Job Board</h3><p>Every new request and one-time cleanup lands on the job board. Assign it, schedule it, or turn it into a recurring subscription &mdash; nothing falls through the cracks between the phone and the field.</p></div>
+          <div className="feature-card"><span className="feature-icon">💼</span><h3>The Pending Jobs board</h3><p>Every new request and one-time cleanup lands on the Pending Jobs board. Assign it, schedule it, or turn it into a recurring subscription &mdash; nothing falls through the cracks between the phone and the field.</p></div>
           <div className="feature-card"><span className="feature-icon">👥</span><h3>Customer &amp; Lead Management</h3><p>Manage active customers and new leads side by side. Track quotes, plan history, yards, and notes all tied to each contact in one place.</p></div>
           <div className="feature-card"><span className="feature-icon">📊</span><h3>Dashboard &amp; Reports</h3><p>Custom stat cards show today&apos;s yards cleaned, active subscriptions, monthly recurring revenue, money owed, and more &mdash; all at a glance the moment you log in.</p></div>
         </div>
@@ -420,7 +420,7 @@ export default function Home() {
           <a href="/pet-waste-business-software" className="hub-card">
             <span className="hub-icon">💼</span>
             <h3>Pet Waste Business Software</h3>
-            <p>The complete back office for your business &mdash; customers, the job board, texts, reports, and your whole crew.</p>
+            <p>The complete back office for your business &mdash; customers, the Pending Jobs board, texts, reports, and your whole crew.</p>
             <span className="hub-arrow">Learn more →</span>
           </a>
           <a href="/pet-waste-crew-app-software" className="hub-card">
@@ -464,9 +464,9 @@ export default function Home() {
           <div className="highlight-text">
             <span className="section-label">Scheduling</span>
             <h2>From New Customer to Dispatched in Seconds</h2>
-            <p>PoopBossPro gives you a job board of every yard not yet scheduled, a full dispatch board for booked cleanups, and a live map so you can build tight, efficient recurring routes every morning.</p>
+            <p>PoopBossPro gives you a Pending Jobs board of every yard not yet scheduled, a full dispatch board for booked cleanups, and a live map so you can build tight, efficient recurring routes every morning.</p>
             <ul className="check-list">
-              <li>Job board with new requests and one-time cleanups</li>
+              <li>Pending Jobs board with new requests and one-time cleanups</li>
               <li>One-click scheduling with date picker and crew assignment</li>
               <li>Set weekly, twice-weekly, or bi-weekly recurring frequency</li>
               <li>Drag-and-drop route ordering</li>
@@ -541,7 +541,7 @@ export default function Home() {
             <ul className="check-list">
               <li>Monthly subscription plans with card-on-file billing</li>
               <li>Automatic recurring charges on each customer&apos;s billing date</li>
-              <li>One-time cleanup invoices for casual jobs off the job board</li>
+              <li>One-time cleanup invoices for casual jobs off the Pending Jobs board</li>
               <li>Automatic status tracking: Active → Paid → Past Due</li>
               <li>Invoice management with unpaid, partial, paid, and overdue filters</li>
               <li>Automated payment reminders by text and email</li>

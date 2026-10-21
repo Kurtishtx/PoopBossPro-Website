@@ -25,9 +25,9 @@ export default function Page() {
           A lot of skips happen because a stop is geographically out of the way and a tired crew quietly drops it. PoopBossPro turns the day&apos;s scheduled cleanups into an ordered route, so every yard on the calendar shows up in driving sequence on the crew&apos;s phone. When the route is built from the actual schedule, there is no orphaned address sitting at the bottom of a page that nobody scrolls to. Each property profile carries its gate codes, the number of dogs, and any notes about where the cleanup actually happens, so the crew arrives ready instead of guessing &mdash; and a confused tech is far less likely to skip a yard they cannot figure out.
         </p>
 
-        <h2>Crew Dispatch and the Job Board Close the Gaps</h2>
+        <h2>Crew Dispatch and the Pending Jobs board Close the Gaps</h2>
         <p>
-          When a tech calls out or a route runs long, that is exactly when yards get abandoned for the day. The job board in PoopBossPro is where unassigned or dropped cleanups become visible to the whole operation instead of vanishing. A manager can dispatch a stop to another crew with a tap, and the receiving tech sees the full property profile, gate code, and dog count instantly. Nothing sits in limbo. Because every scheduled job has an owner and a live status, a stop that has not been marked complete by end of day lights up &mdash; so you catch the miss the same afternoon instead of hearing about it from an angry customer a week later.
+          When a tech calls out or a route runs long, that is exactly when yards get abandoned for the day. The Pending Jobs board in PoopBossPro is where unassigned or dropped cleanups become visible to the whole operation instead of vanishing. A manager can dispatch a stop to another crew with a tap, and the receiving tech sees the full property profile, gate code, and dog count instantly. Nothing sits in limbo. Because every scheduled job has an owner and a live status, a stop that has not been marked complete by end of day lights up &mdash; so you catch the miss the same afternoon instead of hearing about it from an angry customer a week later.
         </p>
 
         <h2>Completion Tracking Turns &quot;I Think We Got It&quot; Into Proof</h2>

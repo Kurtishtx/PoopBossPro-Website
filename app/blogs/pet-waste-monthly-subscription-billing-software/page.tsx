@@ -77,7 +77,7 @@ export default function Page() {
         <h2>Onboarding New Customers Onto a Plan</h2>
         <p>
           The fastest way to grow recurring revenue is to make signing up effortless. When a new customer
-          comes in &mdash; off the job board, a referral, or your website &mdash; you create their yard
+          comes in &mdash; off the Pending Jobs board, a referral, or your website &mdash; you create their yard
           profile, set the gate code and dog count, pick a plan, and capture their card in one flow. From
           that moment they&apos;re a subscriber: their first cleanup gets scheduled, their billing day is
           set, and every future charge runs automatically. There&apos;s no separate &quot;now let me set up

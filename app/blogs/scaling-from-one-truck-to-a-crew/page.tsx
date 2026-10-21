@@ -2,7 +2,7 @@ import BlogShell from '../blog-shell';
 
 export const metadata = {
   title: 'Scaling a Pooper Scooper Business From One Truck to a Full Crew With Software | PoopBossPro',
-  description: 'How PoopBossPro turns one solo scooper into a dispatched crew with shared routes, recurring schedules, the job board, and card-on-file billing.',
+  description: 'How PoopBossPro turns one solo scooper into a dispatched crew with shared routes, recurring schedules, the Pending Jobs board, and card-on-file billing.',
 };
 
 export default function Page() {
@@ -27,7 +27,7 @@ export default function Page() {
 
         <h2>Dispatch and Claim Work Without Phone Calls</h2>
         <p>
-          The biggest hidden tax on a growing scooper business is the constant texting and calling to tell techs where to go. PoopBossPro replaces that with real dispatch. Each tech opens the crew app and sees their daily stop list, the property profile, the number of dogs, and the gate code for every yard &mdash; no group chat required. When someone calls in sick or you pick up a same-day cleanup, you do not have to manually reshuffle the whole day. You can post the extra stops to the job board and let an available tech grab them. We cover that workflow in depth in <a href="/blogs/job-board-claiming-scoop-jobs">Using the Job Board to Let Scooper Crews Claim Open Cleanup Jobs</a>, and it is the feature that makes a two- or three-truck operation feel like it runs itself.
+          The biggest hidden tax on a growing scooper business is the constant texting and calling to tell techs where to go. PoopBossPro replaces that with real dispatch. Each tech opens the crew app and sees their daily stop list, the property profile, the number of dogs, and the gate code for every yard &mdash; no group chat required. When someone calls in sick or you pick up a same-day cleanup, you do not have to manually reshuffle the whole day. You can post the extra stops to the Pending Jobs board and let an available tech grab them. We cover that workflow in depth in <a href="/blogs/job-board-claiming-scoop-jobs">Using the Pending Jobs board to Let Scooper Crews Claim Open Cleanup Jobs</a>, and it is the feature that makes a two- or three-truck operation feel like it runs itself.
         </p>
 
         <h2>Yard Profiles Travel With the Job</h2>

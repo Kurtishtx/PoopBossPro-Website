@@ -25,9 +25,9 @@ export default function Page() {
           When you only have one route, you build it by feel. With two or three crews, feel falls apart fast. Software builds routes by geography and service day, so you can carve your service area into territories and assign each one to a crew without overlap. Add a new client on the south side of town and the system slots them into the crew that already covers that zip code instead of sending a truck across the whole city. As you grow, you simply add another route and rebalance &mdash; the same recurring yard cleanup scheduling that ran your first crew runs your fifth crew identically.
         </p>
 
-        <h2>Crew Dispatch and the Job Board</h2>
+        <h2>Crew Dispatch and the Pending Jobs board</h2>
         <p>
-          Once routes are built, dispatch is where the day actually happens. Each crew opens the job board on their phone and sees the exact yards assigned to them, in order, with the gate code and dog count right there on the screen. They check off each property as they finish, so you can watch progress across every crew in real time from one dashboard. No more group texts asking &quot;did you get the Johnson place?&quot; If someone calls in sick, you reassign their stops to another crew with a few taps and the work still gets done that day. The job board is what lets one office manage many trucks without chaos.
+          Once routes are built, dispatch is where the day actually happens. Each crew opens the Pending Jobs board on their phone and sees the exact yards assigned to them, in order, with the gate code and dog count right there on the screen. They check off each property as they finish, so you can watch progress across every crew in real time from one dashboard. No more group texts asking &quot;did you get the Johnson place?&quot; If someone calls in sick, you reassign their stops to another crew with a few taps and the work still gets done that day. The Pending Jobs board is what lets one office manage many trucks without chaos.
         </p>
 
         <h2>Billing That Scales Without More Paperwork</h2>
@@ -42,7 +42,7 @@ export default function Page() {
 
         <h2>One System, Any Number of Trucks</h2>
         <p>
-          The reason all of this works is that the software does not change as you grow &mdash; only the number of routes does. The same yard profiles, gate codes, dog counts, route builder, job board, and card-on-file subscriptions that powered your first crew power crew number ten with zero new tools to learn. You hire a scooper, hand them the app, and assign them a territory. That is the whole onboarding. When the system carries the route, the schedule, the dispatch, and the billing, you are free to do the one thing only the owner can do: sell more yards and add the next crew. To see everything the platform handles, start with the <a href="/pooper-scooper-software">pooper scooper software</a> overview.
+          The reason all of this works is that the software does not change as you grow &mdash; only the number of routes does. The same yard profiles, gate codes, dog counts, route builder, Pending Jobs board, and card-on-file subscriptions that powered your first crew power crew number ten with zero new tools to learn. You hire a scooper, hand them the app, and assign them a territory. That is the whole onboarding. When the system carries the route, the schedule, the dispatch, and the billing, you are free to do the one thing only the owner can do: sell more yards and add the next crew. To see everything the platform handles, start with the <a href="/pooper-scooper-software">pooper scooper software</a> overview.
         </p>
 
         <div className="blog-cta-box">
@@ -51,7 +51,7 @@ export default function Page() {
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
           <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $59/mo</b> after</div>
         </div>
-        <div className="blog-keywords">Keywords: pooper scooper software, pet waste removal route software, dog poop cleanup crew dispatch, recurring yard cleanup scheduling, pet waste subscription billing, scooper job board app</div>
+        <div className="blog-keywords">Keywords: pooper scooper software, pet waste removal route software, dog poop cleanup crew dispatch, recurring yard cleanup scheduling, pet waste subscription billing, scooper Pending Jobs board app</div>
       </article>
     </BlogShell>
   );

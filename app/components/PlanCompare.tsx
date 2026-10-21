@@ -56,7 +56,7 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
                                                      cells: ['50 / month', '100 / month', '1,000 / month'] },
 
   /* ── On every plan ── */
-  { label: 'Recurring scheduling, waiting list & job board', cells: [true, true, true] },
+  { label: 'Recurring scheduling, waiting list & Pending Jobs board', cells: [true, true, true] },
   { label: 'Service packages & recurring plans',     cells: [true, true, true] },
   { label: 'Estimates, templates & follow-ups',      cells: [true, true, true] },
   { label: 'Invoicing',                              cells: [true, true, true] },

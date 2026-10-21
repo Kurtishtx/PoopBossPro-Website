@@ -210,7 +210,7 @@ export default function VsHousecallPro() {
           <div className="premium-card"><div className="premium-card-icon">🗺️</div><h4>Lasso Route Selector</h4><p>Draw a circle on your map, instantly see every yard inside with a service due. Stops, visit, service type — all shown before you schedule. HCP has basic job scheduling. Not the same as a geographic lasso built for service route density.</p></div>
           <div className="premium-card"><div className="premium-card-icon">🧪</div><h4>Service verification Logs</h4><p>Log product, mix rate, area, weather, and tech license automatically on every visit. Pull service history reports on demand. HCP has job notes — not a dedicated service compliance system built for applicator licensing requirements.</p></div>
           <div className="premium-card"><div className="premium-card-icon">👥</div><h4>Unlimited Users at $199</h4><p>HCP Basic is 1 user. HCP Essentials caps at 5 users for $149. PoopBossPro Crew covers your entire team at $199 — no user caps, no tier jumps, no per-seat math as you hire. Add your 10th employee at no extra cost.</p></div>
-          <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Recurring Cleanup Model</h4><p>PoopBossPro is built around recurring service programs — waiting lists, cleanup cycles, package renewals, due-date flags. HCP handles recurring jobs for general trades. The service-specific workflow is different, and HCP wasn&apos;t built for it.</p></div>
+          <div className="premium-card"><div className="premium-card-icon">🔁</div><h4>Recurring Cleanup Model</h4><p>PoopBossPro is built around recurring service programs — waiting lists, cleanup cycles, recurring schedules, due-date flags. HCP handles recurring jobs for general trades. The service-specific workflow is different, and HCP wasn&apos;t built for it.</p></div>
           <div className="premium-card"><div className="premium-card-icon">💬</div><h4>Two-Way SMS Inbox</h4><p>Full inbound/outbound SMS conversation history per contact, organized by customer. Automated appointment alerts, estimate follow-ups, payment reminders — all built in. Included from $89 on Pro, not held back for a $299 tier.</p></div>
         </div>
       </div>
@@ -236,7 +236,7 @@ export default function VsHousecallPro() {
               <tr><td className="feature-name">Lasso Circle Map Route Selector</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Service verification Logs &amp; Reports</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Recurring Cleanup Waiting List</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Package Plans &amp; Renewal Tracking</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Limited</span></td></tr>
+              <tr><td className="feature-name">Recurring Schedules &amp; Extensions</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Limited</span></td></tr>
               <tr><td className="feature-name">Service Product Catalog &amp; Mix Recipes</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Two-Way SMS Inbox Included</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Essentials+</span></td></tr>
               <tr><td className="feature-name">Estimates &amp; Online Acceptance</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
@@ -285,7 +285,7 @@ export default function VsHousecallPro() {
               <li>Full Scheduling, Dispatch &amp; Route Map</li>
               <li>Estimates, Invoices &amp; Card-on-File Payments</li>
               <li>Two-Way SMS &amp; 10+ Automated Alerts</li>
-              <li>Package Plans &amp; Renewal Tracking</li>
+              <li>Recurring Schedules &amp; Extensions</li>
               <li>Mobile App for Scoopers</li>
               <li>2,000 texts/month on Crew (sent + received, US &amp; Canada)</li>
               <li>14-day free trial — no credit card required</li>

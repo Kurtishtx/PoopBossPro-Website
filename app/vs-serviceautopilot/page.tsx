@@ -188,7 +188,7 @@ export default function VsServiceAutopilot() {
               <tr><td className="feature-name">Unlimited Users at Flat Price</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Per-user pricing applies</span></td></tr>
               <tr><td className="feature-name">Lasso Circle Map Route Selector</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Map select — inaccurate visit</span></td></tr>
               <tr><td className="feature-name">Recurring Cleanup Waiting List</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Package Plans &amp; Renewal Tracking</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
+              <tr><td className="feature-name">Recurring Schedules &amp; Extensions</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Estimates &amp; Online Acceptance</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Card-on-File Payments</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Mobile App for Scoopers</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
@@ -342,7 +342,7 @@ export default function VsServiceAutopilot() {
               <li>Automations Included (not a $499 add-on)</li>
               <li>Two-Way SMS Included (not a custom-quote add-on)</li>
               <li>Estimates, Invoices &amp; Card-on-File Payments</li>
-              <li>Package Plans &amp; Renewal Tracking</li>
+              <li>Recurring Schedules &amp; Extensions</li>
               <li>Mobile App for Scoopers</li>
               <li>2,000 texts/month on Crew (sent + received, US &amp; Canada)</li>
             </ul>

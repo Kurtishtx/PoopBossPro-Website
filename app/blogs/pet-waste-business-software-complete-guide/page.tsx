@@ -72,13 +72,13 @@ export default function Page() {
           and sellable down the road.
         </p>
 
-        <h2>Customer Texts and the Job Board</h2>
+        <h2>Customer Texts and the Pending Jobs board</h2>
         <p>
           Communication is the difference between a customer who renews for years and one who
           ghosts you. Automated customer texts let the platform send an on-the-way message, a
           job-complete confirmation, and even a gate-left-open alert without you typing a word.
           Customers love knowing the work happened, and those messages cut down on the &quot;did you
-          come today?&quot; calls that eat your afternoon. Behind the scenes, the job board gives you
+          come today?&quot; calls that eat your afternoon. Behind the scenes, the Pending Jobs board gives you
           a live view of every visit&mdash;scheduled, in progress, completed, or skipped&mdash;so you
           always know where your crews stand. If you ever want to understand why bundling all of
           these pieces matters, read{' '}

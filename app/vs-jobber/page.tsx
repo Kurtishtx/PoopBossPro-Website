@@ -176,7 +176,7 @@ export default function VsJobber() {
               <tr><td className="feature-name">Built Specifically for Pet waste removal &amp; Pet waste removal</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">True Two-Way SMS Inbox (Included)</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Grow plan only ($299/mo)</span></td></tr>
               <tr><td className="feature-name">Recurring Cleanup Waiting List</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
-              <tr><td className="feature-name">Package Plans &amp; Renewal Tracking</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Limited</span></td></tr>
+              <tr><td className="feature-name">Recurring Schedules &amp; Extensions</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Limited</span></td></tr>
               <tr><td className="feature-name">Product Mix &amp; Service Catalog</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗</span></td></tr>
               <tr><td className="feature-name">Estimates &amp; Online Acceptance</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Card-on-File Payments</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
@@ -217,7 +217,7 @@ export default function VsJobber() {
               <li>Product mix catalog with mix recipes stored and logged per job</li>
               <li>Lasso circle map selector — build tight geographic routes fast</li>
               <li>Recurring cleanup tracking with automatic due-date flags</li>
-              <li>Recurring cleanup plan renewals tracked per yard automatically</li>
+              <li>Recurring Clients page to change, extend or stop any client&apos;s series</li>
               <li>True inbound/outbound SMS inbox organized by customer</li>
               <li>$199/month on Crew — add 20 employees, price doesn&apos;t change</li>
             </ul>
@@ -246,7 +246,7 @@ export default function VsJobber() {
             </div>
             <div style={{marginTop:'16px', background:'rgba(255,255,255,.07)', borderRadius:'8px', padding:'14px 16px'}}>
               <div style={{color:'var(--orange)', fontSize:'13px', fontWeight:700, marginBottom:'8px'}}>PoopBossPro also includes things Jobber doesn&apos;t:</div>
-              <div style={{color:'rgba(255,255,255,.6)', fontSize:'12px', lineHeight:2}}>✓ Visit Waiting List by Service Type<br />✓ Service verification Logs &amp; Reports<br />✓ Lasso Circle Map Route Selector<br />✓ Recurring Cleanup Waiting List<br />✓ Package Plan Renewal Tracking</div>
+              <div style={{color:'rgba(255,255,255,.6)', fontSize:'12px', lineHeight:2}}>✓ Visit Waiting List by Service Type<br />✓ Service verification Logs &amp; Reports<br />✓ Lasso Circle Map Route Selector<br />✓ Recurring Cleanup Waiting List<br />✓ Recurring Clients: change, extend or stop a series</div>
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@ export default function VsJobber() {
               <li>Full Scheduling, Dispatch &amp; Route Map</li>
               <li>Estimates, Invoices &amp; Card-on-File Payments</li>
               <li>Two-Way SMS &amp; 10+ Automated Alerts</li>
-              <li>Package Plans &amp; Renewal Tracking</li>
+              <li>Recurring Schedules &amp; Extensions</li>
               <li>Mobile App for Scoopers</li>
               <li>2,000 texts/month on Crew (sent + received, US &amp; Canada)</li>
             </ul>

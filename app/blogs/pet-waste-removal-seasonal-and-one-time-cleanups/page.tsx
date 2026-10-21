@@ -37,7 +37,7 @@ export default function Page() {
 
         <h2>Turning One-Time Customers Into Recurring Ones</h2>
         <p>
-          Every one-time cleanup is a sales opportunity, and your software should make the conversion effortless. Automated customer texts confirm the appointment, let the crew send a &quot;we&apos;re on the way&quot; heads-up, and follow up after the visit with a thank-you and an offer to switch to weekly service. Because the property profile, dog count, gate code, and card are already saved, converting a one-time customer to a recurring plan is a single click in the office &mdash; no new intake. Some operators use the job board to flag completed one-offs for follow-up, so nobody falls through the cracks. The seasonal rush that felt like a logistics headache turns into a pipeline of customers who already trust you.
+          Every one-time cleanup is a sales opportunity, and your software should make the conversion effortless. Automated customer texts confirm the appointment, let the crew send a &quot;we&apos;re on the way&quot; heads-up, and follow up after the visit with a thank-you and an offer to switch to weekly service. Because the property profile, dog count, gate code, and card are already saved, converting a one-time customer to a recurring plan is a single click in the office &mdash; no new intake. Some operators use the Pending Jobs board to flag completed one-offs for follow-up, so nobody falls through the cracks. The seasonal rush that felt like a logistics headache turns into a pipeline of customers who already trust you.
         </p>
 
         <h2>Keeping Visibility Across Both Types Of Work</h2>

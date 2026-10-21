@@ -44,13 +44,13 @@ export default function Page() {
           keeps your cost per stop down and your margins healthy.
         </p>
 
-        <h2>Crew Dispatch and the Job Board</h2>
+        <h2>Crew Dispatch and the Pending Jobs board</h2>
         <p>
           When you have more than one scooper, dispatch becomes the hard part. The software solves it with a
-          shared job board. Every crew member opens the app and sees exactly which yards they are responsible
+          shared Pending Jobs board. Every crew member opens the app and sees exactly which yards they are responsible
           for that day, in order, with the address, the gate code, and the number of dogs at each property.
           As they finish each stop, they mark it complete, and you watch progress in real time from the office.
-          If someone calls out sick, you reassign their stops to another crew with a few taps and the job board
+          If someone calls out sick, you reassign their stops to another crew with a few taps and the Pending Jobs board
           updates instantly. No more group texts trying to figure out who covered which house. Everyone is
           looking at the same live list, so nothing falls through the cracks.
         </p>

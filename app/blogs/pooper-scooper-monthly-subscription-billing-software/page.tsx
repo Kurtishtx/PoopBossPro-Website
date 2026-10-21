@@ -70,7 +70,7 @@ export default function Page() {
           &mdash; and the billing software makes sure every one of those completed visits is backed by a paying,
           automatically renewed account. For a full picture of how the platform fits together, the{' '}
           <a href="/pooper-scooper-software">pooper scooper software</a> overview walks through scheduling, the
-          job board, customer texts, and billing as one connected system.
+          Pending Jobs board, customer texts, and billing as one connected system.
         </p>
 
         <h2>Reporting You Can Actually Use to Grow</h2>

@@ -174,7 +174,7 @@ export default function VsServiceTitan() {
               <tr><td className="feature-name">Published, Transparent Pricing</td><td className="sbp-col"><span className="chk">✓ From $59/mo</span></td><td><span className="crs">✗ Must call sales</span></td></tr>
               <tr><td className="feature-name">Set Up in a Day — No Implementation Team</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="crs">✗ 60–90 days typical</span></td></tr>
               <tr><td className="feature-name">Two-Way SMS Inbox Included</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Add-on cost</span></td></tr>
-              <tr><td className="feature-name">Package Plan Renewals</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Generic contracts</span></td></tr>
+              <tr><td className="feature-name">Recurring Schedules &amp; Extensions</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="prt">Generic contracts</span></td></tr>
               <tr><td className="feature-name">Estimates &amp; Online Acceptance</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Card-on-File Payments</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
               <tr><td className="feature-name">Mobile App for Scoopers</td><td className="sbp-col"><span className="chk">✓</span></td><td><span className="chk">✓</span></td></tr>
@@ -230,7 +230,7 @@ export default function VsServiceTitan() {
             </div>
             <div style={{marginTop:'16px', background:'rgba(255,255,255,.07)', borderRadius:'8px', padding:'14px 16px'}}>
               <div style={{color:'var(--orange)', fontSize:'13px', fontWeight:700, marginBottom:'8px'}}>PoopBossPro also includes things ST doesn&apos;t:</div>
-              <div style={{color:'rgba(255,255,255,.6)', fontSize:'12px', lineHeight:2}}>✓ Visit Waiting List by Service Type<br />✓ Lasso Circle Map Route Selector<br />✓ Service verification Logs &amp; Reports<br />✓ Package Plan Renewal Tracking<br />✓ Set up in one afternoon — no consultants</div>
+              <div style={{color:'rgba(255,255,255,.6)', fontSize:'12px', lineHeight:2}}>✓ Visit Waiting List by Service Type<br />✓ Lasso Circle Map Route Selector<br />✓ Service verification Logs &amp; Reports<br />✓ Recurring Clients: change, extend or stop a series<br />✓ Set up in one afternoon — no consultants</div>
             </div>
           </div>
         </div>
@@ -308,7 +308,7 @@ export default function VsServiceTitan() {
               <li>Full Scheduling, Dispatch &amp; Route Map</li>
               <li>Estimates, Invoices &amp; Card-on-File Payments</li>
               <li>Two-Way SMS &amp; 10+ Automated Alerts</li>
-              <li>Package Plans &amp; Renewal Tracking</li>
+              <li>Recurring Schedules &amp; Extensions</li>
               <li>Mobile App for Scoopers</li>
               <li>2,000 texts/month on Crew (sent + received, US &amp; Canada)</li>
             </ul>

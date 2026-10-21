@@ -77,7 +77,7 @@ export default function Page() {
           you may be underpricing yards with extra dogs and should revisit your number-of-dogs
           pricing. If one crew clears far more stops than another, study their route order and copy it.
           If cancellations cluster in one zip code, reinforce your reminders and customer texts there
-          before a competitor takes more accounts. The job board view shows unassigned and upcoming
+          before a competitor takes more accounts. The Pending Jobs board view shows unassigned and upcoming
           work so a paid cleanup never gets stranded. Every report points at a concrete lever &mdash;
           reprice, reroute, rehire, or re-engage &mdash; instead of leaving you to guess.
         </p>

@@ -32,7 +32,7 @@ export default function Page() {
 
         <h2>Customer Texts That Run on Autopilot</h2>
         <p>
-          Communication is where a lot of scooping businesses quietly lose customers, and it&apos;s also the cheapest thing to fix. PoopBossPro sends automatic texts at the right moments: a heads-up the day before service, an &quot;on the way&quot; message, and a &quot;your yard is clean&quot; confirmation once the visit is marked complete. Customers love knowing exactly when you came, especially when their dogs are inside and they never see the truck. Those texts also cut down the &quot;did you come this week?&quot; calls that eat your afternoon. The job board ties it together&mdash;techs update each stop in the field, and the right message fires the moment the work is done.
+          Communication is where a lot of scooping businesses quietly lose customers, and it&apos;s also the cheapest thing to fix. PoopBossPro sends automatic texts at the right moments: a heads-up the day before service, an &quot;on the way&quot; message, and a &quot;your yard is clean&quot; confirmation once the visit is marked complete. Customers love knowing exactly when you came, especially when their dogs are inside and they never see the truck. Those texts also cut down the &quot;did you come this week?&quot; calls that eat your afternoon. The Pending Jobs board ties it together&mdash;techs update each stop in the field, and the right message fires the moment the work is done.
         </p>
 
         <h2>Billing and Card-on-File: Getting Paid Without Chasing</h2>

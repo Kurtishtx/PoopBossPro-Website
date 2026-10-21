@@ -65,7 +65,7 @@ export default function Page() {
           to step out of one. With centralized dispatch, you assign the day&apos;s routes from
           one screen, push them to each tech&apos;s phone, and watch stops get checked off in real
           time. If someone calls out, you reassign their route in a few taps instead of a panic.
-          New customers from the job board drop into the right route automatically based on
+          New customers from the Pending Jobs board drop into the right route automatically based on
           location, so you&apos;re not manually slotting every signup. The whole point of scaling
           is that the business keeps moving when you&apos;re not the one moving it, and dispatch
           software is the layer that makes that possible.

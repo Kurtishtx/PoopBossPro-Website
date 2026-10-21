@@ -38,7 +38,7 @@ export default function Page() {
 
         <h2>Combining the Two Into One Quote</h2>
         <p>
-          The real power shows up when per-dog and per-visit work together. A new lead fills out your intake or gets quoted by your office, and you enter two facts: three dogs and weekly service. PoopBossPro pulls the weekly per-visit rate, layers in the three-dog adjustment, and produces a monthly subscription price in seconds. No spreadsheet, no guessing. That same engine powers the job board too&mdash;when a one-off &quot;initial cleanup&quot; or vacation catch-up job is posted, it can carry its own pricing based on dog count and yard condition so the tech who claims it knows exactly what it pays.
+          The real power shows up when per-dog and per-visit work together. A new lead fills out your intake or gets quoted by your office, and you enter two facts: three dogs and weekly service. PoopBossPro pulls the weekly per-visit rate, layers in the three-dog adjustment, and produces a monthly subscription price in seconds. No spreadsheet, no guessing. That same engine powers the Pending Jobs board too&mdash;when a one-off &quot;initial cleanup&quot; or vacation catch-up job is posted, it can carry its own pricing based on dog count and yard condition so the tech who claims it knows exactly what it pays.
         </p>
         <p>
           Consistent, rule-based quoting also means any team member can price a yard the same way you would. That removes the bottleneck where only the owner knows the &quot;real&quot; numbers, and it keeps your pricing from drifting customer to customer.

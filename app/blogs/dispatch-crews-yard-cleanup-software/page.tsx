@@ -28,8 +28,8 @@ export default function Page() {
         <h2>Texts, Proof, and Billing That Follow the Crew</h2>
         <p>Good dispatch doesn&apos;t stop when the scooper arrives. PoopBossPro can fire an automatic text to the customer when a crew is on the way and again when the yard is done, which cuts down on &quot;did you come today?&quot; calls. Crews mark each stop complete and can snap a photo of the cleaned yard as proof of service. Because every cleanup is tied to the customer&apos;s recurring subscription and card on file, completed jobs flow straight into monthly billing &mdash; no separate invoicing step, no chasing checks. The card gets charged on schedule, and your scoopers stay focused on yards instead of paperwork.</p>
 
-        <h2>Filling Gaps With the Job Board</h2>
-        <p>Some days a crew finishes early, and some days you take on more work than your regular routes can absorb. PoopBossPro&apos;s job board lets you post open yard cleanups that any available scooper can claim, so unassigned stops don&apos;t fall through the cracks. A new same-day sign-up or a make-up cleanup from a rained-out morning goes on the board, a nearby crew grabs it, and the dispatch map updates automatically. It&apos;s a simple way to keep every scooper productive and every customer served without you playing phone tag all afternoon. All of these tools live together in PoopBossPro&apos;s <a href="/pet-waste-routes-dispatch-software">routes &amp; crew dispatch software</a>, so dispatch, routing, and the job board share the same live data.</p>
+        <h2>Filling Gaps With the Pending Jobs board</h2>
+        <p>Some days a crew finishes early, and some days you take on more work than your regular routes can absorb. PoopBossPro&apos;s Pending Jobs board lets you post open yard cleanups that any available scooper can claim, so unassigned stops don&apos;t fall through the cracks. A new same-day sign-up or a make-up cleanup from a rained-out morning goes on the board, a nearby crew grabs it, and the dispatch map updates automatically. It&apos;s a simple way to keep every scooper productive and every customer served without you playing phone tag all afternoon. All of these tools live together in PoopBossPro&apos;s <a href="/pet-waste-routes-dispatch-software">routes &amp; crew dispatch software</a>, so dispatch, routing, and the Pending Jobs board share the same live data.</p>
 
         <p>The payoff of tight dispatch is more yards cleaned per crew, fewer miles driven, and fewer missed stops. When your scoopers always know where to go next and walk into every yard ready to work, they finish more jobs in less time &mdash; and that is exactly how a pet waste removal business grows without adding headcount.</p>
 
@@ -39,7 +39,7 @@ export default function Page() {
           <a href="https://my.poopbosspro.com">Start Free Trial</a>
           <div className="hero-trust">No credit card required &nbsp;&middot;&nbsp; 14-day free trial &nbsp;&middot;&nbsp; <b>from $59/mo</b> after</div>
         </div>
-        <div className="blog-keywords">Keywords: pet waste removal dispatch software, pooper scooper crew dispatch, dog poop cleanup scheduling, yard cleanup route software, recurring pet waste billing, scooper job board software</div>
+        <div className="blog-keywords">Keywords: pet waste removal dispatch software, pooper scooper crew dispatch, dog poop cleanup scheduling, yard cleanup route software, recurring pet waste billing, scooper Pending Jobs board software</div>
       </article>
     </BlogShell>
   );

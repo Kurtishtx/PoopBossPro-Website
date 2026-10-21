@@ -67,11 +67,11 @@ export default function Page() {
           you&mdash;every reminder is a touchpoint that makes you look professional and keeps churn down.
         </p>
 
-        <h2>Crew Dispatch and the Job Board Scale Without New Office Staff</h2>
+        <h2>Crew Dispatch and the Pending Jobs board Scale Without New Office Staff</h2>
         <p>
           As a scooping company grows, the owner usually becomes the bottleneck&mdash;every schedule change, every
           new yard, every &quot;who is covering this route&quot; runs through one phone. Crew dispatch and a shared
-          job board move that coordination off your plate. Techs see their stops, gate codes, and yard notes
+          Pending Jobs board move that coordination off your plate. Techs see their stops, gate codes, and yard notes
           on their phones; you reassign or fill an open visit from the board in seconds. The return here is
           that you can add a second or third truck without hiring a dispatcher or coordinator. The software
           absorbs the overhead that would otherwise force you to add payroll, which is precisely how a small

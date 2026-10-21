@@ -76,7 +76,7 @@ export default function Page() {
           A Twice-Weekly, three-dog customer gets charged their full tiered amount automatically &mdash;
           base frequency rate plus per-dog add-ons &mdash; with no invoice to chase. If you want the
           deeper mechanics of how that automatic collection works end to end, read{' '}
-          <a href="/blogs/stop-chasing-payments-pet-waste-software">Stop Chasing Payments: How Pet Waste Software Collects Automatically</a>{' '}
+          <a href="/blogs/card-on-file-autopay-pet-waste-removal">Stop Chasing Payments: How Pet Waste Software Collects Automatically</a>{' '}
           for the full breakdown. The point is that well-built tiers plus card-on-file mean the right
           amount leaves the customer&apos;s card on schedule, every single month.
         </p>

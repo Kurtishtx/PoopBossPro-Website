@@ -60,7 +60,7 @@ export default function Page() {
           sense so your routes stay tight. New signups stop being a disruption and start being a clean addition to an
           existing run. If you want to see how the software keeps every one of those newly placed stops covered even when
           a crew member is out, read{' '}
-          <a href="/blogs/pet-waste-job-board-software">How the Pet Waste Software Job Board Keeps Every Cleanup Covered</a>{' '}
+          <a href="/blogs/pet-waste-job-board-software">How the Pet Waste Software Pending Jobs Board Keeps Every Cleanup Covered</a>{' '}
           for the full picture on how unassigned visits get picked up.
         </p>
 

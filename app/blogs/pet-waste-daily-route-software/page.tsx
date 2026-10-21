@@ -33,10 +33,10 @@ export default function Page() {
 
         <h2>Mid-Morning: A Skip, a New Lead, and a Re-Sequenced Loop</h2>
         <p>
-          A few stops in, a customer texts that their dog is boarding this week and the yard does not need service. The office marks the stop skipped and PoopBossPro pulls it off the route on the spot &mdash; the crew never drives to it. At the same moment, a new sign-up lands two streets over. Because that lead hit the job board, the dispatcher drops it onto the current crew as a same-day add, and the app re-sequences the remaining stops so the new yard slots in without blowing up the loop.
+          A few stops in, a customer texts that their dog is boarding this week and the yard does not need service. The office marks the stop skipped and PoopBossPro pulls it off the route on the spot &mdash; the crew never drives to it. At the same moment, a new sign-up lands two streets over. Because that lead hit the Pending Jobs board, the dispatcher drops it onto the current crew as a same-day add, and the app re-sequences the remaining stops so the new yard slots in without blowing up the loop.
         </p>
         <p>
-          This is exactly the kind of mid-day chaos that used to break a paper route and a flurry of group texts. Now a skip and an add are both handled in seconds, and the crew just watches their list update on the phone. The whole field side of this is worth seeing up close, and we walked through it stop by stop in <a href="/blogs/pet-waste-mobile-app-for-scoopers">The Mobile App That Runs a Pooper Scooper Crew in the Field</a>.
+          This is exactly the kind of mid-day chaos that used to break a paper route and a flurry of group texts. Now a skip and an add are both handled in seconds, and the crew just watches their list update on the phone. The whole field side of this is worth seeing up close, and we walked through it stop by stop in <a href="/blogs/pet-waste-removal-mobile-app-for-crews">The Mobile App That Runs a Pooper Scooper Crew in the Field</a>.
         </p>
 
         <h2>Midday: The Texts Handle the Customers</h2>

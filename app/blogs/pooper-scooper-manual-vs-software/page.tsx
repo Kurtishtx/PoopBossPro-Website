@@ -42,7 +42,7 @@ export default function Page() {
 
         <h2>Finding New Work and Scaling Up</h2>
         <p>
-          Paper is a ceiling. Every new yard adds handwriting, every new tech adds confusion, and eventually you stop selling because you cannot keep track of what you already sold. Software is built to absorb growth &mdash; more customers just mean more rows, not more chaos &mdash; and some platforms even feed you new leads through a job board so the schedule keeps filling. When the back office runs itself, you can actually spend time closing yards instead of recopying them. If you want the full picture of what a purpose-built platform handles, start with our overview of <a href="/pooper-scooper-software">pooper scooper software</a> and see which manual headaches it erases first.
+          Paper is a ceiling. Every new yard adds handwriting, every new tech adds confusion, and eventually you stop selling because you cannot keep track of what you already sold. Software is built to absorb growth &mdash; more customers just mean more rows, not more chaos &mdash; and some platforms even feed you new leads through a Pending Jobs board so the schedule keeps filling. When the back office runs itself, you can actually spend time closing yards instead of recopying them. If you want the full picture of what a purpose-built platform handles, start with our overview of <a href="/pooper-scooper-software">pooper scooper software</a> and see which manual headaches it erases first.
         </p>
 
         <div className="blog-cta-box">

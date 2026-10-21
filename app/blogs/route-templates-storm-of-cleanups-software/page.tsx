@@ -41,7 +41,7 @@ export default function Page() {
 
         <h2>Handling the Exceptions</h2>
         <p>
-          Templates give you a reliable starting point, not a straitjacket. When something changes for one day &mdash; a customer pauses for vacation, a new yard needs a one-time deep cleanup, or a scooper calls out &mdash; you load the template and then adjust just that instance. Skip a stop, reassign the route to another crew member, or drop in an extra job from the job board without touching the saved template itself. The base stays clean for next week while today&apos;s version handles the curveball.
+          Templates give you a reliable starting point, not a straitjacket. When something changes for one day &mdash; a customer pauses for vacation, a new yard needs a one-time deep cleanup, or a scooper calls out &mdash; you load the template and then adjust just that instance. Skip a stop, reassign the route to another crew member, or drop in an extra job from the Pending Jobs board without touching the saved template itself. The base stays clean for next week while today&apos;s version handles the curveball.
         </p>
         <p>
           This is also where dispatch shines. Because the template already knows the crew and the stop order, reassigning a route to cover for an absent scooper is a quick swap, and the new person sees the same gate codes, dog counts, and notes the regular would have seen. Nobody is guessing their way through unfamiliar yards.

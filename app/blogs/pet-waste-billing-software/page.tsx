@@ -42,7 +42,7 @@ export default function Page() {
 
         <h2>One Connected System Behind Every Dollar</h2>
         <p>
-          Billing doesn&apos;t live in a vacuum. In PoopBossPro it&apos;s the back half of a single workflow that starts when a lead comes in through the job board, continues through scheduling and route building, and finishes when the crew marks the visit done and the card runs. Because every piece shares the same data, you never key an address twice or wonder whether a serviced yard got billed. That tight integration is the whole point of dedicated <a href="/pet-waste-business-software">pet waste business software</a> &mdash; it&apos;s designed around the way scooping companies actually operate, from gate codes and dog counts to recurring subscriptions and same-day charges. Get the billing wired up correctly and the rest of the business runs quieter, faster, and far more profitably.
+          Billing doesn&apos;t live in a vacuum. In PoopBossPro it&apos;s the back half of a single workflow that starts when a lead comes in through the Pending Jobs board, continues through scheduling and route building, and finishes when the crew marks the visit done and the card runs. Because every piece shares the same data, you never key an address twice or wonder whether a serviced yard got billed. That tight integration is the whole point of dedicated <a href="/pet-waste-business-software">pet waste business software</a> &mdash; it&apos;s designed around the way scooping companies actually operate, from gate codes and dog counts to recurring subscriptions and same-day charges. Get the billing wired up correctly and the rest of the business runs quieter, faster, and far more profitably.
         </p>
 
         <div className="blog-cta-box">

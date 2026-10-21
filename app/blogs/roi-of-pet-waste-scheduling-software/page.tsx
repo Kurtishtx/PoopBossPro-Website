@@ -76,7 +76,7 @@ export default function Page() {
           routes. If you want the full playbook on that, read{' '}
           <a href="/blogs/handling-one-time-cleanup-vs-recurring">Booking One-Time Yard Cleanouts Alongside Recurring Scoop Plans</a>,
           which walks through pricing and converting those one-offs into standing accounts. On top of
-          that, incoming leads from the job board drop straight into your pipeline, so the same system
+          that, incoming leads from the Pending Jobs board drop straight into your pipeline, so the same system
           that runs your routes also feeds them. You can see how all of these pieces connect on the{' '}
           <a href="/dog-waste-cleanup-scheduling-software">dog waste cleanup scheduling</a> hub.
         </p>
